@@ -1,0 +1,161 @@
+---
+title: "Homework 8"
+author: "Your name here - update this!!!!"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: true
+    toc_float:
+      collapsed: false
+    number-sections: true
+    number-depth: 3
+    theme: lumen
+    embed-resources: true
+    html-math-method: mathjax
+---
+
+::: callout-important
+Homework is ready to be worked on!! (11/24/24)
+:::
+
+```{r}
+#| label: "setup"
+#| include: false
+
+library(tidyverse)    
+library(oibiostat)
+library(janitor)
+library(rstatix)
+library(knitr)
+library(gtsummary)
+library(moderndive)
+library(gt)
+library(broom) 
+library(here) 
+library(pwr) # NEW!!
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+**Due Friday 12/6/24**
+
+## Directions {.unnumbered}
+
+[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/EPI-525-1-15028-F24/tool/137d7c54-61a9-4727-9018-374c3773c508) This homework must be submitted using a Quarto document. **Please keep it rendered as an html!** I know past homeworks said pdf, but all Quarto docs should be rendered as html for this class!
+
+You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/F24_EPI_525/blob/main/homework/HW_08.qmd)
+
+:::{.callout-tip}
+It is a good idea to try rendering your document from time to time as you go along!  Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
+:::
+
+# Book exercises {.unnumbered}
+
+## 4.22 Testing for food safety {.unnumbered}
+
+Note from Nicky: I'm sorry. This problem was not supposed to be in HW 7... If you already did it, you can paste it here. Try to reflect and see if this problem is clearer now that we've covered power and sample size. 
+
+## 8.2 Young Americans, Part I {.unnumbered}
+
+Skip part a!
+
+## 8.8 Legalization of marijuana, Part I {.unnumbered}
+
+::: callout-important
+### Additional instructions
+
+* (b): Calculate the CI both using the formula and using the appropriate R statistical test.
+* Add parts (e) & (f) as instructed below.
+:::
+
+### (a) {.unnumbered}
+
+
+
+### (b) {.unnumbered}
+
+
+
+### (c) {.unnumbered}
+
+
+
+### (d) {.unnumbered}
+
+
+
+### (e) {.unnumbered}
+
+Test whether the proportion of US residents who think marijuana should be made legal is different than 0.586. 
+
+### (f) {.unnumbered}
+
+Are the results from CI and hypothesis test consistent? Why or why not?
+
+
+## 8.14 2010 Healthcare Law {.unnumbered}
+
+## 8.26 An apple a day keeps the doctor away {.unnumbered}
+
+# PSS
+
+## Power and Sample size: Auto exhaust and lead exposure revisited
+
+### Power
+
+In exercise 5.12 in Homework 6, we tested whether police officers appear to have been exposed to a higher concentration of lead than 35. Calculate the power for the hypothesis test and include an interpretation of the power in the context of the research question. Was it sufficiently powered? 
+
+### Sample size
+
+For the same test, what sample size would be needed for 80% power? Would it be reasonable to conduct the study with these sample sizes? Why or why not? (Hint: think about the assumptions of our distributions when using a t-test)
+
+
+### Effect size
+
+Suppose the study has resources to include 30 people. What minimum effect size would they be able to detect with 85% power assuming the same sample mean and standard deviation. Use $\alpha$ = 0.05. 
+
+# R
+
+## R1: The Strong Heart Study
+
+The [Strong Heart Study](https://strongheartstudy.org/) is an ongoing study of American Indians residing in 13 tribal communities in three geographic areas (AZ, OK, and SD/ND) to study prevalence and incidence of cardiovascular disease and to identify risk factors. We will be examining the 4-year cumulative incidence of diabetes with one risk factor, glucose tolerance. We are curious if the proportion of individuals diagnosed with diabetes is different between glucose tolerances.
+
+-   **Impaired glucose:** normal or impaired glucose tolerance at baseline visit (between 1988 and 1991)
+
+-   **Diabetes:** Indicator of diabetes at follow-up visit (roughly four years after baseline) according to two-hour oral glucose tolerance test
+
+The data are in `SHS_data.csv` located in the `Data` folder of the shared OneDrive folder. The following table summarizes the data:
+
+```{r}
+#| echo: false
+
+SHS = tibble(Diabetes = c(rep("Not diabetic", 
+                   1338), 
+                   rep("Diabetic", 326)),
+              Glucose = c(rep("Normal", 
+                  1004),#Not diabetic
+          rep("Impaired", 334),
+          rep("Normal", 
+              128), #Diabetic
+          rep("Impaired", 198)))
+
+SHS %>% tabyl(Glucose, Diabetes) %>% 
+  adorn_totals(where = c("row", "col")) %>% 
+  gt() %>% 
+  tab_stubhead(label = "Glucose Impairment") %>%
+  tab_spanner(label = "Diabetes", 
+              columns = c("Not diabetic", "Diabetic")) %>%
+  tab_options(table.font.size = 15)
+```
+
+### Run a hypothesis test
+
+Complete the hypothesis test to see if the proportion of individuals diagnosed with diabetes is different between glucose tolerances.
+(Reminder: Follow all steps and put your conclusion in context of the Strong Heart Study)
+
+### Calculate the confidence interval for the difference in proportions
+
+Calculate and interpret the 95% confidence interval for the difference in proportions using the formula. Is it consistent with CI from the R output of the hypothesis test? (Reminder: Make sure to check the assumptions!)
+
+

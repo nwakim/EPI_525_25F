@@ -1,0 +1,30 @@
+---
+title: "Muddy Points"
+subtitle: "Lesson 12: Hypothesis testing part 02"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    page-layout: full
+    toc: false
+    number-depth: 3
+    number-sections: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Knowing when to use the t-test distribution
+
+First, I wanted to take a second to nitpick the phrase "t-test distribution." I'm not trying to call this question out, but I think this is an important learning opportunity. The distribution is the t-distribution, and the t-test uses the t-distribution to implement a hypothesis test. However, there is no t-test distribution. We could say instead: "Knowing when to use the t-test" or "Knowing when to use the t-distribution in our hypothesis test." Okay, now that's Nicky...
+
+For our class, when we are constructing confidence intervals or running a hypothesis test, we will be using a t-distribution! We use a t-distribution when we do not know the population standard deviation, which is almost always the case for any data analysis. There are some problems specifically asking us to use the standard normal distribution, but for the most part, we use the t-distribution.
+
+The main distinction is the answer to this question: Do we know the population standard deviation? - If yes, use the standard normal distribution! - If no, use the t-distribution!
+
+## I had a hard time keeping track of the R functions that were shown today
+
+[See the muddy points for `tidyverse`!](/lessons/R08_tidyverse_01/R08_tidyverse_01_muddy_points.qmd)
+
+## I am confused on whether we are using a one sample or two sample t-test when it comes to problems we are given
+
+[Here's a pretty good video](https://www.youtube.com/watch?v=Q_pO9NzWxPY&ab_channel=DATAtab) that explains all three t-tests together. I think it does a pretty good job of bringing them together that allows us to distinguish between the tests.

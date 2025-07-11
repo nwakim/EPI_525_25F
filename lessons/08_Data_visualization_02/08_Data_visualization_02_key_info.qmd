@@ -1,0 +1,42 @@
+---
+title: "Key Info and Announcements"
+date: "10/28/2024"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+- Group eval is in HW 04 assignment
+  - Please complete by due date
+- Mid-quarter feedback in HW 05 assignment
+
+- HW 01 solutions graded
+
+- If you need to submit HW late, please include your homework and CC the TAs in your email to me
+  - They grade the work, so if it sits in my inbox for the weekend, they won't get it until I open it on Monday
+
+- If you have extenuating circumstances, and want to attend class sychronously and virtually, please email me!
+  - I may not get back to you, but the Zoom link for class stays the same: <https://pdx.zoom.us/j/7842715376>
+  - I put the link on the main page
+  
+- If you have issues with R code...
+  - Please send me TWO things:
+    - Your code copied from whatever you ran in the R console
+      - This way I can sort through your code and easily copy it
+    - One screenshot of your RStudio with the Environment and Files showing!
+      - This way I can see what you have loaded and where on your computer you are working from
+  - Please do not send me screenshots of R to show me issues with code
+
+
+## Key Dates
+
+- HW 04 assignment due Friday
+- HW 03 solutions due Sunday
+  - I will select **one problem from this assignment for everyone to make solutions on**
+    - You may still work in a group, but everyone will submit their own solution
+    - It will be on 3.22
+    - I decided this because I thought it would be unfair to have one group member have extra work with this problem

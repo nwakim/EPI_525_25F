@@ -1,0 +1,12 @@
+---
+title: "Muddy Points"
+subtitle: "Lesson 08: Data Visualization of two variables"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+We will go over work in R on 11/4!

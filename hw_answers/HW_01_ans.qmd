@@ -1,0 +1,105 @@
+---
+title: "Homework 1 Answers"
+subtitle: "EPI 525"
+date-modified: "today"
+format: 
+  html: 
+    link-external-newwindow: true
+    toc: true
+  pdf: default 
+editor_options: 
+  chunk_output_type: console
+---
+
+These are the **some** numeric/short answers to the homework. Often, these answers are insufficient for your own work or solutions. I just wanted to give you a part of the answer to help guide you in the right direction.
+
+## 1.2 Sinusitis and antibiotics, Part I.
+
+### a
+
+78%
+
+### b
+
+80%
+
+### c
+
+Control
+
+### d
+
+
+
+## 1.4 Buteyko method, study components
+
+### a
+
+### b 
+600
+
+### c
+
+
+
+## 1.8 Smoking habits of UK residents
+
+### a 
+
+### b
+
+1691
+
+### c
+
+
+## 1.12 Herbal remedies
+
+### a
+
+Target population: Healthy young adults
+
+### b
+
+No
+
+### c
+
+Yes
+
+
+## 1.20 City council survey  
+ 
+### a  
+
+Simple random sampling
+
+### b  
+
+Stratified sampling
+
+### c      
+
+Cluster sampling
+
+### d  
+
+Multistage cluster sampling
+
+### e  
+
+Convenience sampling 
+
+## 1.31 Income at the coffee shop  
+
+### a  
+
+Median 
+
+### b  
+
+IQR 
+
+## 1.32 Midrange  
+
+Not robust

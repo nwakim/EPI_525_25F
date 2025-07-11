@@ -1,0 +1,22 @@
+---
+title: "Muddy Points"
+subtitle: "Lesson 13: Hypothesis testing part 03"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    page-layout: full
+    toc: false
+    number-depth: 3
+    number-sections: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Difference in 95% confidence intervals calculated in slide 23
+
+## Understanding how the means of the two samples fall on one distributive curve (still a bit confused)
+
+## what does a wide vs narrow confidence interval mean?
+
+## Difference between running a t-test in R vs by hand, when dealing with 2 different sample means, that part for a while was confusing.
