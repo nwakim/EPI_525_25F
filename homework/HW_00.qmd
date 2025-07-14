@@ -17,10 +17,12 @@ format:
 #| label: "setup"
 #| include: false
 knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+source(here("class_dates.R"))
 ```
 
-
-**Due 10/3/24**
+**Due `r hw0`**
 
 **This homework does not need to be turned in on Sakai.**
 
@@ -36,7 +38,7 @@ Grading will be done as a check/no check for turning in your work.
 
 ### Question 1
 
-Please upload a picture of yourself [to Slack](https://join.slack.com/t/epi525f24/shared_invite/zt-2q9fpa8h3-Yc5U91Ps0MjnemADzTM5Vw). Please follow the below steps to add a picture of yourself in Slack:
+Please upload a picture of yourself to Slack. Please follow the below steps to add a picture of yourself in Slack:
 
 1.  Go to the top right corner in Slack and click your profile picture.
 2.  Click "Profile."
