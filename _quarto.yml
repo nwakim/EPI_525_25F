@@ -20,7 +20,9 @@ website:
             text: Instructors
           - href: homework.qmd
             text: Homework
-
+          - href: quiz.qmd
+            text: Quizzes
+            
 execute:
   freeze: auto
 

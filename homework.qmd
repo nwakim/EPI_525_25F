@@ -37,8 +37,6 @@ Please note that you need to download the `.html` file to see the LaTeX math pro
 
 ## Rubric
 
-### Assignments
-
 A total of 1 point will be given for a complete homework. The following rubric will be used:
 
 |   | 1 point | 0 points |

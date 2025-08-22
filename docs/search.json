@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "EPI 525: Biostatistics 1",
     "section": "",
-    "text": "EPI 525: Biostatistics 1\n\nFall 2025\nWelcome to EPI 525! This course covers a broad range of basic statistical methods used in the health sciences. We will start with a review of descriptive statistics and introductory probability, then explore probability and sampling distributions, central limit theorem, and confidence intervals. These topics will be followed by basic hypothesis testing framework, along with the appropriate power and sample size considerations. We will also cover large-sample hypothesis tests for means, proportions and variances, and some exact tests. Students will be introduced to one-way analysis of variance (ANOVA), correlation and simple linear regression in preparation for BSTA 512/612. Most homework assignments are to be completed using R.\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n OneDrive Folder\n\n\n Class Zoom link\n\n\n\n\n\n\nInstructor\n Dr. Nicky Wakim\n Vanport 622A\n wakim@ohsu.edu\n\n\nOffice Hours\nNicky  TBD\nTA 1  TBD\nTA 2  TBD\n\n\nCourse details\n Mondays, Wednesdays\n Sept 29 - Dec 9\n 1:00 PM - 2:50 PM\n In-person, VPT 515\n\n\nContacting me\nE-mail or Slack is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.\n\n\n\n\n\n\n\n\n View the source on GitHub"
+    "text": "EPI 525: Biostatistics 1\n\nFall 2025\nWelcome to EPI 525! This course covers a broad range of basic statistical methods used in the health sciences. We will start with a review of descriptive statistics and introductory probability, then explore probability and sampling distributions, central limit theorem, and confidence intervals. These topics will be followed by basic hypothesis testing framework, along with the appropriate power and sample size considerations. We will also cover large-sample hypothesis tests for means, proportions and variances, and some exact tests. Students will be introduced to one-way analysis of variance (ANOVA), correlation and simple linear regression in preparation for BSTA 512/612. Most homework assignments are to be completed using R.\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n OneDrive Folder\n\n\n Class Zoom link\n\n\n\n\n\n\nInstructor\n Dr. Nicky Wakim\n Vanport 622A\n wakim@ohsu.edu\n\n\nOffice Hours\nNicky  TBD\nTA 1  TBD\nTA 2  TBD\n\n\nCourse details\n Mondays, Wednesdays\n Sept 29 - Dec 9\n 1:00 PM - 2:50 PM\n In-person, VPT 269\n\n\nContacting me\nE-mail or Slack is the best way to get in contact with me. I will try to respond to all course-related e-mails within 24 hours Monday-Friday.\n\n\n\n\n\n\n\n\n View the source on GitHub"
   },
   {
     "objectID": "schedule.html",
@@ -23895,7 +23895,7 @@
     "href": "homework.html#rubric",
     "title": "Homework",
     "section": "Rubric",
-    "text": "Rubric\n\nAssignments\nA total of 1 point will be given for a complete homework. The following rubric will be used:\n\n\n\n\n\n\n\n\n\n1 point\n0 points\n\n\n\n\nCompleteness\nAll problems and parts (like a, b, c, etc.) are thoroughly attempted. Answers can be incorrect or correct. For parts with longer processes and calculations, solution set up and calculations are required.\nEntire problems or parts are skipped. -OR- The full process of a problem is not completed through the calculation."
+    "text": "Rubric\nA total of 1 point will be given for a complete homework. The following rubric will be used:\n\n\n\n\n\n\n\n\n\n1 point\n0 points\n\n\n\n\nCompleteness\nAll problems and parts (like a, b, c, etc.) are thoroughly attempted. Answers can be incorrect or correct. For parts with longer processes and calculations, solution set up and calculations are required.\nEntire problems or parts are skipped. -OR- The full process of a problem is not completed through the calculation."
   },
   {
     "objectID": "lessons/20_SLR_01/18_SLR_01.html",
@@ -24456,5 +24456,33 @@
     "title": "Lesson 17: Comparing Means with ANOVA",
     "section": "Final note",
     "text": "Final note\n\n\n\nRecall, visually the three looked pretty close\nThis is the case that I would also do some work to report the means and standard deviations of each genotype’s percent change in non-dominant arm strength.\n\n\n\nfamuss %&gt;% \n  group_by(actn3.r577x) %&gt;% \n  summarise(count = n(),\n            mean = mean(ndrm.ch),\n            SD = sd(ndrm.ch))\n\n# A tibble: 3 × 4\n  actn3.r577x count  mean    SD\n  &lt;fct&gt;       &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt;\n1 CC            173  48.9  30.0\n2 CT            261  53.2  33.2\n3 TT            161  58.1  35.7\n\n\n\n\nRevised conclusion statement:\n\nFor people with CC genotype then mean percent change in arm non-dominant arm strength was 48.9% (SD = 30%). For CT, mean percent change was 53.2% (SD = 33.2%). For TT, mean percent change was 58.1% (SD = 35.7%). There is sufficient evidence that at least one of the genotype groups has a change in arm strength statistically different from the other groups. ( \\(p\\)-value =0.0402)"
+  },
+  {
+    "objectID": "quiz.html",
+    "href": "quiz.html",
+    "title": "Quiz Info",
+    "section": "",
+    "text": "Quiz\nTopics\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n\nr q1_open %&gt;% format(\"%m/%d\")\nr q1_open %&gt;% format(\"%m/%d\")\n\n\n2\n\nr q1_open %&gt;% format(\"%m/%d\")\nr q1_open %&gt;% format(\"%m/%d\")\n\n\n3\n\nr q1_open %&gt;% format(\"%m/%d\")\nr q1_open %&gt;% format(\"%m/%d\")"
+  },
+  {
+    "objectID": "quiz.html#quiz-1",
+    "href": "quiz.html#quiz-1",
+    "title": "Quiz Info",
+    "section": "Quiz 1",
+    "text": "Quiz 1"
+  },
+  {
+    "objectID": "quiz.html#quiz-2",
+    "href": "quiz.html#quiz-2",
+    "title": "Quiz Info",
+    "section": "Quiz 2",
+    "text": "Quiz 2"
+  },
+  {
+    "objectID": "quiz.html#quiz-3",
+    "href": "quiz.html#quiz-3",
+    "title": "Quiz Info",
+    "section": "Quiz 3",
+    "text": "Quiz 3"
   }
 ]

@@ -86,7 +86,7 @@ TA 2
 
 {{< iconify icon-park-solid time size=24px >}} 1:00 PM - 2:50 PM
 
-{{< iconify fa6-solid person-chalkboard size=24px >}} In-person, VPT 515
+{{< iconify fa6-solid person-chalkboard size=24px >}} In-person, VPT 269
 :::
 
 ::: g-col-3
