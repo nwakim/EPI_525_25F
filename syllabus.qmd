@@ -26,7 +26,7 @@ editor_options:
 -   If an assignment on Sakai is closed or you are submitting late work, please email me AND the TAs your work
 -   For homework, you will have TWO no-questions-asked, 3-day extensions: one for the first assignment, and one for either the solutions or presentation. You just need to send me and the TAs a quick email saying "I am using my no-questions-asked extension for Homework \_\_ assignment/solutions/presentation."
 -   Attendance policy: attend in person and fill out exit tickets for 12 out of the 19 classes
--   The class will end on December 9, 2024. **All coursework is expected to be completed by December 13, 2024 at 11pm.**
+-   The class will end on December 12, 2025. **All coursework is expected to be completed by December 15, 2025 at 11pm.**
 
 ## Description
 
@@ -46,14 +46,18 @@ At the end of this course, students should be able to...
 
 ## Meeting Times
 
-Mondays          1:00 PM -- 2:50 PM PST in VPT 515
+Mondays          1:00 PM -- 2:50 PM PST in VPT 269
 
-Wednesdays    1:00 PM -- 2:50 PM PST in VPT 515
+Wednesdays    1:00 PM -- 2:50 PM PST in VPT 269
 
 ```{r}
 #| echo: false
 g=3
 ```
+
+### Known Exceptions
+
+Wednesday, November 26    No class
 
 ## Materials
 
@@ -69,25 +73,6 @@ The primary textbook for EPI 525 will be *Introductory Statistics for the Life a
 -   *An Introduction to R* ([free pdf available](http://cran.r-project.org/manuals.html))
 
 ### Online Resources
-
-#### Slack
-
-We will use Slack as our main form of communication for the class. If you are unsure how to do a homework problem or have other questions, please ask me by posting your question(s) on Slack. Please know that Slack is not guarded by the OSHU firewall, so if you have a question about accommodations or any sensitive topics, you may wish to message me via email. You can still message me regarding sensitive information on Slack, but I will not initiate those conversations on Slack.
-
-[\*\*Please use this invitation link for our Slack workspace!\*\*](https://join.slack.com/t/epi525f24/shared_invite/zt-2q9fpa8h3-Yc5U91Ps0MjnemADzTM5Vw)
-
-**Tips on asking questions:**
-
--   When reaching out for help for a homework problem, please include some context on what you have already tried.
-    -   For example, including a photo of your work thus far with an explanation of where you think you might be wrong is a quick way for me to look over your work and help you troubleshoot. This helps me see what parts you already understand and which you need help with. If your question involves code, please **include the copied code (not a screenshot)** and an attachment to your full file. This way I can see the exact line you need help with and the full code in case the problem starts earlier.
-    -   If you are unsure how to start a problem, look through your notes and the book for examples that you think might be similar. When reaching out, mention these examples and why you think they might be helpful, but also why you are still unsure on how to proceed.
-    -   If you only write something similar to "I don't know how to do problem xxx," then my response will be to ask you what you tried so far. Thus, it will be quicker for you to let me know this information right away.
--   If asking for help about a specific example that you don't understand, please also provide some detail beyond "I don't understand example xxx."
-    -   Which steps of the problem do you not understand? You can refer to a line number, for example.
-    -   If you don't understand the first step, do you understand the ones following it?
--   In general, when asking a question, please provide the homework number it is from along with the chapter and problem number. If it's an example from the notes or book, an example number or slide number will help finding it.
--   Want more tips on asking questions? This list on [this site](https://www.weareteachers.com/8-ways-to-pose-better-questions-in-math-class/){.uri} will help!
--   Finally, if I don't respond within a day and you need a response soon, *please remind me by emailing or messaging me again*.
 
 #### Sakai
 
@@ -136,7 +121,7 @@ Your learning and practicing of R will hopefully not be limited to this course. 
 -   [Learn R 4 free](https://www.learnr4free.com/en/index.html)
 -   [Join a local R user groups](https://www.r-consortium.org/blog/2019/09/09/r-community-explorer-r-user-groups)
 -   [Learning Machines](https://blog.ephorie.de/learning-r-the-ultimate-introduction-incl-machine-learning)
--   [Data and Analytics for Research Training Program: Look at Modules with R coding language ](https://arcus.github.io/education_modules/list_of_modules)
+-   [Data and Analytics for Research Training Program: Look at Modules with R coding language](https://arcus.github.io/education_modules/list_of_modules)
 
 #### Online R courses to complement or refresh material from class
 
@@ -152,17 +137,15 @@ Your learning and practicing of R will hopefully not be limited to this course. 
 
 The course is structured around the following four components:
 
-+:------------------------------:+:------------:+:-------------:+:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Component**                  | **Modality** | **Frequency** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-+--------------------------------+--------------+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Lecture                        | In person    | Twice, Weekly | Course content is provided through in-person lectures. Lectures will consist of didactic lessons, interactive examples, PollEverywhere questions, and work time. Sessions will be recorded through Echo360 and linked to this site. **Attending or viewing the lecture within 7 days of the original lecture date is mandatory.** Class attendance will be taken through an Exit Ticket. You must take the Exit Ticket to verify your attendance.                        |
-+--------------------------------+--------------+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Homework Assignment            | Online       | Weekly        | The course includes 9 homework assignments. They are an opportunity for you to engage with important concepts, practice coding, and apply calculating skills. Homework assignments should be submitted online, and will be graded for completeness by the TAs. Students are encouraged to work in groups for homework assignments, but each person should do their own summary and hand in their work. **Homework assignments will be due on Thursday at 11 PM.**        |
-+--------------------------------+--------------+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Homework Solutions             | Online       | Weekly        | The course includes 9 homework solutions. With groups of 4, you will make a homework key for 4 questions (that Nicky chooses). Each group member will be in charge of turning in one question's solutions. Homework solutions should be submitted online, and will be graded by the TAs for correctness. The group will receive the same grade, which is summed across questions. **Homework solutions will be due week following the assignment on \_\_\_\_ at 11 PM.** |
-+--------------------------------+--------------+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Homework Solution Presentation | Online       | 2x            | The course includes 2 presentations on homework solutions. For two homeworks, you will also be asked to make a video presentation or schedule a meeting with Nicky to present your thought process and explain your solutions. You will explain one of the problems that your group made solutions for. Videos will be submitted online and meetings will be help over Webex.                                                                                            |
-+--------------------------------+--------------+---------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++:-------------------:+:------------:+:-------------:+:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Component**       | **Modality** | **Frequency** | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
++---------------------+--------------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Lecture             | In person    | Twice, Weekly | Course content is provided through in-person lectures. Lectures will consist of didactic lessons, interactive examples, PollEverywhere questions, and work time. Sessions will be recorded through Echo360 and linked to this site. **Attending or viewing the lecture within 7 days of the original lecture date is mandatory.** Class attendance will be taken through an Exit Ticket. You must take the Exit Ticket to verify your attendance.                 |
++---------------------+--------------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Homework Assignment | Online       | Weekly        | The course includes 9 homework assignments. They are an opportunity for you to engage with important concepts, practice coding, and apply calculating skills. Homework assignments should be submitted online, and will be graded for completeness by the TAs. Students are encouraged to work in groups for homework assignments, but each person should do their own summary and hand in their work. **Homework assignments will be due on Thursday at 11 PM.** |
++---------------------+--------------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Quizzes             | Online       | Every 3 weeks | The purpose of the quizzes is to assess how well you have achieved the learning objectives through questions covering important concepts, conducting statistical processes, and interpreting output. **We will have our quizzes online, over a few days, and it will be open book.** Students must work on the quizzes independently.                                                                                                                             |
++---------------------+--------------+---------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 #### Types of assessments
 
@@ -180,27 +163,23 @@ Letter grades will be assigned roughly according to the following scheme: A (\>=
 
 Grades will be based on homework assignments, homework solutions, homework presentations, group evaluations, exit tickets, and feedback as follows:
 
-+:-------------------------:+:----------------------:+:----------------:+:-----------------------------:+
-| **Course activity**       | **Type of Assessment** | **Due Dates**    | **Percentage of final grade** |
-+---------------------------+------------------------+------------------+-------------------------------+
-| Homework Assignment       | Formative              | Every week       | 27%                           |
-+---------------------------+------------------------+------------------+-------------------------------+
-| Homework Solutions        | Summative              | Every week       | 40%                           |
-+---------------------------+------------------------+------------------+-------------------------------+
-| Homework Presentations    | Summative              | Twice in quarter | 18%                           |
-+---------------------------+------------------------+------------------+-------------------------------+
-| Group evals               | N/A                    | Twice in quarter | 8%                            |
-+---------------------------+------------------------+------------------+-------------------------------+
-| Exit tickets (Attendance) | N/A                    | Twice Weekly     | 5%                            |
-+---------------------------+------------------------+------------------+-------------------------------+
-| Mid-Quarter Feedback      | N/A                    | 10/28            | 2%                            |
-+---------------------------+------------------------+------------------+-------------------------------+
++:-------------------------:+:----------------------:+:-------------:+:-----------------------------:+
+| **Course activity**       | **Type of Assessment** | **Due Dates** | **Percentage of final grade** |
++---------------------------+------------------------+---------------+-------------------------------+
+| Homework Assignments      | Formative              | Every week    | 50%                           |
++---------------------------+------------------------+---------------+-------------------------------+
+| Quizzes                   | Summative              | Every 3 weeks | 36%                           |
++---------------------------+------------------------+---------------+-------------------------------+
+| Exit tickets (Attendance) | N/A                    | Twice Weekly  | 12%                           |
++---------------------------+------------------------+---------------+-------------------------------+
+| Mid-Quarter Feedback      | N/A                    | 10/28         | 2%                            |
++---------------------------+------------------------+---------------+-------------------------------+
 
 ### Homework grading
 
-No student has the same amount of time available to dedicate to homework. This class may not be a priority to you, you may be taking several other courses, or you may need to dedicate time to other activities. Homework assignments are **formative assessments**, meaning its purpose is to help you learn and practice. To reduce the pressure on you to have perfect homework (the first time around), I have a very simple grading policy: **Your homework will be given a check mark if you turn in completed work (whether it is correct or wrong).** I highly encourage you to stay up-to-date with the homeworks and put in as much effort as you can. This will be the most helpful work in this class!
+No student has the same amount of time available to dedicate to homework. This class may not be a priority to you, you may be taking several other courses, or you may need to dedicate time to other activities. Homework assignments are **formative assessments**, meaning its purpose is to help you learn and practice. To reduce the pressure on you to have perfect homework (the first time around), I have a very simple grading policy: **Your homework will be given a check mark if you turn in 75% of the questions parts completed (whether the 75% is correct or wrong).** I highly encourage you to stay up-to-date with the homeworks and put in as much effort as you can. This will be the most helpful work in this class!
 
-Because each homework assignment has dependent assignments (solutions and presentations), I will not accept late homework. If you have an accomodation, then there are exceptions to this. If you turn it in a couple hours after the assignment is closed, that is fine! The main reason why I have this strict rule is so that you do not get behind on your homework nor prevent your group from moving forward on the solutions.
+If you turn in the homework on time, the TAs will give you feedback (on one or more complete problems). There is no penalty for turning in the homework late, **but you will not get feedback on your work.** Please make sure to check the solutions or go to office hours to assess your work.
 
 ### Viewing Grades in Sakai
 
@@ -254,35 +233,35 @@ Every professor has different expectations when assigning certain work or provid
 
 ### Assignments
 
-+:------------------:+:----------------------:+:----------------------------------------------------------------------------------------+:---------------------------------------------------------------------------------------------------+
-| **Assignment**     | **Type of assessment** | **Before you submit/take it**                                                           | **After it is graded**                                                                             |
-+--------------------+------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
-| Homework           | Formative              | -   Work out each problem on your own as much as you can                                | -   Discuss problems with your group                                                               |
-|                    |                        |                                                                                         |                                                                                                    |
-| assignment         |                        | -   Talk through problems with a peer                                                   | -   For answers that involve writing sentences, check with me or a TA if your answer is sufficient |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Go to Office Hours for help                                                         | -   Go to Office Hours to ask about your work                                                      |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Write down work that shows your thought process                                     |                                                                                                    |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Search your issue on Stack Exchange/Stack Overflow                                  |                                                                                                    |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Ask fellow students on Slack                                                        |                                                                                                    |
-+--------------------+------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
-| Homework solutions | Summative              | -   Discuss work with your group to compile thoughts and work                           | -   Discuss problems with your group                                                               |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Go to Office Hours for help                                                         | -   Get clarification on any missed points                                                         |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Write down work that shows your thought process                                     | -   Go to Office Hours to ask about your work                                                      |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Search your issue on Stack Exchange/Stack Overflow                                  | -   Prepare notes on how to change your work for your presentation                                 |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Ask other students and groups in person or on Slack                                 |                                                                                                    |
-+--------------------+------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
-| Class Exit Tickets | N/A                    | -   Bring appropriate electronic device to participate in polls                         | -   Review muddiest and clearest points from the week                                              |
-|                    |                        |                                                                                         |                                                                                                    |
-|                    |                        | -   Complete the survey during the last 5 minutes of class or after class within 7 days |                                                                                                    |
-+--------------------+------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+
++:------------------:+:----------------------:+:----------------------------------------------------------------------------------------+:---------------------------------------------------------------------------------------------------------+
+| **Assignment**     | **Type of assessment** | **Before you submit/take it**                                                           | **After it is graded**                                                                                   |
++--------------------+------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| Homework           | Formative              | -   Work out each problem on your own as much as you can                                | -   Discuss problems with your group                                                                     |
+|                    |                        |                                                                                         |                                                                                                          |
+| assignment         |                        | -   Talk through problems with a peer                                                   | -   For answers that involve writing sentences, check with me or a TA if your answer is sufficient       |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        | -   Go to Office Hours for help                                                         | -   Go to Office Hours to ask about your work                                                            |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        | -   Write down work that shows your thought process                                     |                                                                                                          |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        | -   Search your issue on Stack Exchange/Stack Overflow                                  |                                                                                                          |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        | -   Ask fellow students, TAs, AI                                                        |                                                                                                          |
++--------------------+------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| Quizzes            | Summative              | -   Identify and achieve learning objectives in each lecture                            | -   Review the solutions                                                                                 |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        | -   Understand why certain statistics tools are used for certain cases                  | -   Review your mistakes                                                                                 |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        | -   Practice testing yourself and others on concepts                                    | -   For solutions that involve writing sentences, check with me or a TA if your answer fits the solution |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        | -   Come to Office Hours for help with specific problems or concepts                    | -   Go to Office Hours to ask about your solutions                                                       |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        |                                                                                         | -   Do not ask for a regrade unless you have viewed the solutions                                        |
++--------------------+------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
+| Class Exit Tickets | N/A                    | -   Bring appropriate electronic device to participate in polls                         | -   Review muddiest and clearest points from the week                                                    |
+|                    |                        |                                                                                         |                                                                                                          |
+|                    |                        | -   Complete the survey during the last 5 minutes of class or after class within 7 days |                                                                                                          |
++--------------------+------------------------+-----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+
 
 If you would like any other course resources explained in this format, please request it through the [Ongoing Course Feedback](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUNkQ0TEdVQzFXTTBVNzYwQklETDhSMFNGRy4u). 
 
@@ -292,7 +271,7 @@ If you would like any other course resources explained in this format, please re
 
 I encourage you to make your best effort to submit all assignments on time, but I understand circumstances arise that are beyond our control. Please see this [Swansea University's page on extenuating circumstances](https://myuni.swansea.ac.uk/academic-life/extenuating-circumstances/#how-can-the-university-support-me-and-what-should-i-do=is-expanded&what-are-extenuating-circumstances=is-expanded&what-isnt-an-extenuating-circumstance=is-expanded&what-supporting-evidence-is-required=is-expanded&who-should-i-contact-to-make-an-extenuating-circumstances-application=is-expanded&who-will-make-a-decision-on-my-application=is-expanded) for some examples. Not all circumstances are covered here, so please reach out if you have questions. 
 
--   The class will end on December 9, 2024. **All coursework is expected to be completed by December 13, 2024 at 11pm.** If you have *extenuating circumstances*, and need additional time to complete class assignments, please contact me. Together, we will come up with a plan for completion and to sort out registrar logistics.
+-   The class will end on December 9, 2025. **All coursework is expected to be completed by December 13, 2025 at 11pm.** If you have *extenuating circumstances*, and need additional time to complete class assignments, please contact me. Together, we will come up with a plan for completion and to sort out registrar logistics.
 
 -   If you have extenuating circumstances that may jeopardize your ability to do work for several weeks, please contact me. We will come up with a plan to keep you on track in the course and prevent any delay in your education.
 
@@ -316,7 +295,7 @@ This is meant to keep you on track within the course and prevent a pile up of ma
 
 ### Plagiarism and Attribution
 
-Please note that this section has been motivated by [Dr. Steven Bedrick's Course Policies and Grading site](https://dmice.ohsu.edu/bedricks/courses/bmi525/policies.html) for BMI 525. (Note that this is a good example of informal attribution of someone else's work.)
+Please note that this section has been motivated by and heavily borrowed from [Dr. Steven Bedrick's Course Policies and Grading site](https://dmice.ohsu.edu/bedricks/courses/bmi525/policies.html) for BMI 525. (Note that this is a good example of informal attribution of someone else's work.)
 
 In this class, it is easy to use ChatGPT or other AI tools to solve your homework for you. Many problems follow a basic structure that is especially easy for ChatGPT to solve. In this class, you **may** use ChatGPT to help with your homework. You may even ask for direct answers. However, there are a few things I do not want you to do:
 
@@ -361,7 +340,7 @@ I will provide clear instructions for all assignments, and a grading rubric when
 **You are expected to attend at least 12 scheduled class meetings in-person. Attendance is taken through exit tickets. If you have issues accessing the poll on a specific day, please let me know. 
 
 [*Participate**\
-***]{.underline}I encourage you to participate actively in class and in Slack discussions. I will expect all students, and all instructors, to be respectful of each other's contributions, whether I agree with them or not. Professional interactions are expected.
+***]{.underline}I encourage you to participate actively in class and in office hours. I will expect all students, and all instructors, to be respectful of each other's contributions, whether I agree with them or not. Professional interactions are expected.
 
 [*Build rapport*]{.underline}\
 If you find that you have any trouble keeping up with assignments or other aspects of the course, make sure you let me know as early as possible. As you will find, building rapport and effective relationships are key to becoming an effective professional. Make sure that you are proactive in informing me when difficulties arise during the quarter so that I can help you find a solution in regards to coursework.
@@ -388,14 +367,14 @@ Cheating and other forms of academic misconduct will not be tolerated in this co
 
 ## Course Communications
 
-**Sakai/Slack announcements\
-**For important/urgent matters, I will communicate with you using announcements via Sakai that will be delivered to your OHSU Email account as well as displayed in the Sakai course site Announcements section. I will copy these announcements in Slack if they do not involve changes to the schedule. Unfortunately, there are certain announcements that OHSU requires I initiate behind the firewall.
+**Sakai announcements\
+**For important/urgent matters, I will communicate with you using announcements via Sakai that will be delivered to your OHSU Email account as well as displayed in the Sakai course site Announcements section.
 
 **General course questions\
-**It is normal to have many questions about things that relate to the course, such as clarification about assignments, course materials, or assessments. Please post these on our Slack Workspace. Please use the channels that I created for questions. You are encouraged to give answers and help each other. I will monitor these threads, so I will endorse or correct responses as needed. Please give me 24 hours to respond to questions within Monday-Friday. Work-life balance is important for me as well, so I will try to respond as quickly as I can within my healthy limits. 
+**It is normal to have many questions about things that relate to the course, such as clarification about assignments, course materials, or assessments. Please search the class website first and ask other students. If you are unsure after, you can email me. Please give me 24 hours to respond to questions within Monday-Friday. Work-life balance is important for me as well, so I will try to respond as quickly as I can within my healthy limits. 
 
 **E-mail**\
-E-mail should be used only for messages that are private in nature. Please send private messages to my OHSU email address (wakim\@ohsu.edu). **Messages sent through Sakai Inbox will not be answered.** Do not send messages asking general information about the class; please post those on Slack instead.
+I'm not the best with email. You can send questions Please send private messages to my OHSU email address (wakim\@ohsu.edu). **Messages sent through Sakai Inbox will not be answered.**
 
 ## Further Student Resources
 

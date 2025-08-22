@@ -3,7 +3,7 @@ title: "Welcome to EPI 525!"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "09/30/2024"
+date: "`r library(here); source(here('class_dates.R')); w1d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -19,6 +19,13 @@ execute:
 ---
 
 ## Nicky Wakim (she/her)
+
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+
+library(tidyverse)
+```
 
 ::::::: columns
 ::: {.column width="45%"}

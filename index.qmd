@@ -67,14 +67,14 @@ Welcome to EPI 525! This course covers a broad range of basic statistical method
 ### Office Hours
 
 Nicky
-{{< iconify icon-park-solid time size=18px >}} M 3-4pm VPT 515
+{{< iconify icon-park-solid time size=18px >}} TBD
 
 
-Miyuki
-{{< iconify icon-park-solid time size=18px >}} W 3-4pm VPT 515
+TA 1
+{{< iconify icon-park-solid time size=18px >}} TBD
 
-[Liv](https://ohsu.webex.com/meet/ainsworl)
-{{< iconify icon-park-solid time size=18px >}} W 12-1pm virtual
+TA 2
+{{< iconify icon-park-solid time size=18px >}} TBD
 :::
 
 ::: g-col-3

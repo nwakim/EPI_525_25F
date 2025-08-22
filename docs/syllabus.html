@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Biostatistics 1 - EPI 525 Syllabus</title>
+<title>EPI 525 Syllabus – Biostatistics 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,17 +35,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c1e687fbe98376d5618f4a6ba0d8996d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -67,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-sm navbar-dark ">
+    <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
     <img src="./images/EPI_525.png" alt="" class="navbar-logo">
     </a>
@@ -78,31 +85,31 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html" rel="" target="">
- <span class="menu-text">Schedule</span></a>
+    <a class="nav-link" href="./schedule.html"> 
+<span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./syllabus.html" rel="" target="" aria-current="page">
- <span class="menu-text">Syllabus</span></a>
+    <a class="nav-link active" href="./syllabus.html" aria-current="page"> 
+<span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./instructors.html" rel="" target="">
- <span class="menu-text">Instructors</span></a>
+    <a class="nav-link" href="./instructors.html"> 
+<span class="menu-text">Instructors</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./homework.html" rel="" target="">
- <span class="menu-text">Homework</span></a>
+    <a class="nav-link" href="./homework.html"> 
+<span class="menu-text">Homework</span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -121,7 +128,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#course-learning-objectives" id="toc-course-learning-objectives" class="nav-link" data-scroll-target="#course-learning-objectives">Course Learning Objectives</a></li>
   </ul></li>
   <li><a href="#instructors" id="toc-instructors" class="nav-link" data-scroll-target="#instructors">Instructors</a></li>
-  <li><a href="#meeting-times" id="toc-meeting-times" class="nav-link" data-scroll-target="#meeting-times">Meeting Times</a></li>
+  <li><a href="#meeting-times" id="toc-meeting-times" class="nav-link" data-scroll-target="#meeting-times">Meeting Times</a>
+  <ul class="collapse">
+  <li><a href="#known-exceptions" id="toc-known-exceptions" class="nav-link" data-scroll-target="#known-exceptions">Known Exceptions</a></li>
+  </ul></li>
   <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a>
   <ul class="collapse">
   <li><a href="#textbooks" id="toc-textbooks" class="nav-link" data-scroll-target="#textbooks">Textbooks</a></li>
@@ -180,21 +190,23 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page-left">
 
     
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 29, 2024</p>
+      <p class="date-modified">August 22, 2025</p>
     </div>
   </div>
     
   </div>
   
 
+
 </header>
+
 
 <div class="cell">
 <style type="text/css">
@@ -212,7 +224,7 @@ ul.task-list li input[type="checkbox"] {
 <li>If an assignment on Sakai is closed or you are submitting late work, please email me AND the TAs your work</li>
 <li>For homework, you will have TWO no-questions-asked, 3-day extensions: one for the first assignment, and one for either the solutions or presentation. You just need to send me and the TAs a quick email saying “I am using my no-questions-asked extension for Homework __ assignment/solutions/presentation.”</li>
 <li>Attendance policy: attend in person and fill out exit tickets for 12 out of the 19 classes</li>
-<li>The class will end on December 9, 2024. <strong>All coursework is expected to be completed by December 13, 2024 at 11pm.</strong></li>
+<li>The class will end on December 12, 2025. <strong>All coursework is expected to be completed by December 15, 2025 at 11pm.</strong></li>
 </ul>
 </section>
 <section id="description" class="level2">
@@ -234,8 +246,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="meeting-times" class="level2">
 <h2 class="anchored" data-anchor-id="meeting-times">Meeting Times</h2>
-<p>Mondays&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1:00 PM – 2:50 PM PST in VPT 515</p>
-<p>Wednesdays&nbsp;&nbsp;&nbsp;&nbsp;1:00 PM – 2:50 PM PST in VPT 515</p>
+<p>Mondays&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1:00 PM – 2:50 PM PST in VPT 269</p>
+<p>Wednesdays&nbsp;&nbsp;&nbsp;&nbsp;1:00 PM – 2:50 PM PST in VPT 269</p>
+<section id="known-exceptions" class="level3">
+<h3 class="anchored" data-anchor-id="known-exceptions">Known Exceptions</h3>
+<p>Wednesday, November 26&nbsp; &nbsp; No class</p>
+</section>
 </section>
 <section id="materials" class="level2">
 <h2 class="anchored" data-anchor-id="materials">Materials</h2>
@@ -255,28 +271,6 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="online-resources" class="level3">
 <h3 class="anchored" data-anchor-id="online-resources">Online Resources</h3>
-<section id="slack" class="level4">
-<h4 class="anchored" data-anchor-id="slack">Slack</h4>
-<p>We will use Slack as our main form of communication for the class. If you are unsure how to do a homework problem or have other questions, please ask me by posting your question(s) on Slack. Please know that Slack is not guarded by the OSHU firewall, so if you have a question about accommodations or any sensitive topics, you may wish to message me via email. You can still message me regarding sensitive information on Slack, but I will not initiate those conversations on Slack.</p>
-<p><a href="https://join.slack.com/t/epi525f24/shared_invite/zt-2q9fpa8h3-Yc5U91Ps0MjnemADzTM5Vw">**Please use this invitation link for our Slack workspace!**</a></p>
-<p><strong>Tips on asking questions:</strong></p>
-<ul>
-<li>When reaching out for help for a homework problem, please include some context on what you have already tried.
-<ul>
-<li>For example, including a photo of your work thus far with an explanation of where you think you might be wrong is a quick way for me to look over your work and help you troubleshoot. This helps me see what parts you already understand and which you need help with. If your question involves code, please <strong>include the copied code (not a screenshot)</strong> and an attachment to your full file. This way I can see the exact line you need help with and the full code in case the problem starts earlier.</li>
-<li>If you are unsure how to start a problem, look through your notes and the book for examples that you think might be similar. When reaching out, mention these examples and why you think they might be helpful, but also why you are still unsure on how to proceed.</li>
-<li>If you only write something similar to “I don’t know how to do problem xxx,” then my response will be to ask you what you tried so far. Thus, it will be quicker for you to let me know this information right away.</li>
-</ul></li>
-<li>If asking for help about a specific example that you don’t understand, please also provide some detail beyond “I don’t understand example xxx.”
-<ul>
-<li>Which steps of the problem do you not understand? You can refer to a line number, for example.</li>
-<li>If you don’t understand the first step, do you understand the ones following it?</li>
-</ul></li>
-<li>In general, when asking a question, please provide the homework number it is from along with the chapter and problem number. If it’s an example from the notes or book, an example number or slide number will help finding it.</li>
-<li>Want more tips on asking questions? This list on <a href="https://www.weareteachers.com/8-ways-to-pose-better-questions-in-math-class/" class="uri">this site</a> will help!</li>
-<li>Finally, if I don’t respond within a day and you need a response soon, <em>please remind me by emailing or messaging me again</em>.</li>
-</ul>
-</section>
 <section id="sakai" class="level4">
 <h4 class="anchored" data-anchor-id="sakai">Sakai</h4>
 <p>While most course materials will be delivered online through this website, assignments will be turned in through <a href="https://sakai.ohsu.edu/">Sakai</a>, OHSU’s course management system. I will include a link on this website to the Sakai assignment page.&nbsp;</p>
@@ -343,12 +337,12 @@ ul.task-list li input[type="checkbox"] {
 <section id="assessment" class="level2">
 <h2 class="anchored" data-anchor-id="assessment">Assessment</h2>
 <p>The course is structured around the following four components:</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
-<col style="width: 6%">
+<col style="width: 4%">
 <col style="width: 2%">
 <col style="width: 3%">
-<col style="width: 87%">
+<col style="width: 89%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -370,16 +364,10 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">The course includes 9 homework assignments. They are an opportunity for you to engage with important concepts, practice coding, and apply calculating skills. Homework assignments should be submitted online, and will be graded for completeness by the TAs. Students are encouraged to work in groups for homework assignments, but each person should do their own summary and hand in their work. <strong>Homework assignments will be due on Thursday at 11 PM.</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Homework Solutions</td>
+<td style="text-align: center;">Quizzes</td>
 <td style="text-align: center;">Online</td>
-<td style="text-align: center;">Weekly</td>
-<td style="text-align: left;">The course includes 9 homework solutions. With groups of 4, you will make a homework key for 4 questions (that Nicky chooses). Each group member will be in charge of turning in one question’s solutions. Homework solutions should be submitted online, and will be graded by the TAs for correctness. The group will receive the same grade, which is summed across questions. <strong>Homework solutions will be due week following the assignment on ____ at 11 PM.</strong></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Homework Solution Presentation</td>
-<td style="text-align: center;">Online</td>
-<td style="text-align: center;">2x</td>
-<td style="text-align: left;">The course includes 2 presentations on homework solutions. For two homeworks, you will also be asked to make a video presentation or schedule a meeting with Nicky to present your thought process and explain your solutions. You will explain one of the problems that your group made solutions for. Videos will be submitted online and meetings will be help over Webex.</td>
+<td style="text-align: center;">Every 3 weeks</td>
+<td style="text-align: left;">The purpose of the quizzes is to assess how well you have achieved the learning objectives through questions covering important concepts, conducting statistical processes, and interpreting output. <strong>We will have our quizzes online, over a few days, and it will be open book.</strong> Students must work on the quizzes independently.</td>
 </tr>
 </tbody>
 </table>
@@ -398,12 +386,12 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="grading-requirements">Grading &amp; Requirements</h3>
 <p>Letter grades will be assigned roughly according to the following scheme: A (&gt;=93%), A- (90-92%), B+ (88-89%), B(83-87%), B- (82-80%), C+(78-79%), C(73-77%), C- (70-72%), D (60 – 69%), F(&lt;60%).</p>
 <p>Grades will be based on homework assignments, homework solutions, homework presentations, group evaluations, exit tickets, and feedback as follows:</p>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
-<col style="width: 26%">
-<col style="width: 23%">
-<col style="width: 17%">
-<col style="width: 30%">
+<col style="width: 27%">
+<col style="width: 24%">
+<col style="width: 15%">
+<col style="width: 31%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -413,34 +401,22 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: center;"><strong>Percentage of final grade</strong></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Homework Assignment</td>
+<td style="text-align: center;">Homework Assignments</td>
 <td style="text-align: center;">Formative</td>
 <td style="text-align: center;">Every week</td>
-<td style="text-align: center;">27%</td>
+<td style="text-align: center;">50%</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Homework Solutions</td>
+<td style="text-align: center;">Quizzes</td>
 <td style="text-align: center;">Summative</td>
-<td style="text-align: center;">Every week</td>
-<td style="text-align: center;">40%</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Homework Presentations</td>
-<td style="text-align: center;">Summative</td>
-<td style="text-align: center;">Twice in quarter</td>
-<td style="text-align: center;">18%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Group evals</td>
-<td style="text-align: center;">N/A</td>
-<td style="text-align: center;">Twice in quarter</td>
-<td style="text-align: center;">8%</td>
+<td style="text-align: center;">Every 3 weeks</td>
+<td style="text-align: center;">36%</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;">Exit tickets (Attendance)</td>
 <td style="text-align: center;">N/A</td>
 <td style="text-align: center;">Twice Weekly</td>
-<td style="text-align: center;">5%</td>
+<td style="text-align: center;">12%</td>
 </tr>
 <tr class="odd">
 <td style="text-align: center;">Mid-Quarter Feedback</td>
@@ -453,8 +429,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="homework-grading" class="level3">
 <h3 class="anchored" data-anchor-id="homework-grading">Homework grading</h3>
-<p>No student has the same amount of time available to dedicate to homework. This class may not be a priority to you, you may be taking several other courses, or you may need to dedicate time to other activities. Homework assignments are <strong>formative assessments</strong>, meaning its purpose is to help you learn and practice. To reduce the pressure on you to have perfect homework (the first time around), I have a very simple grading policy: <strong>Your homework will be given a check mark if you turn in completed work (whether it is correct or wrong).</strong> I highly encourage you to stay up-to-date with the homeworks and put in as much effort as you can. This will be the most helpful work in this class!</p>
-<p>Because each homework assignment has dependent assignments (solutions and presentations), I will not accept late homework. If you have an accomodation, then there are exceptions to this. If you turn it in a couple hours after the assignment is closed, that is fine! The main reason why I have this strict rule is so that you do not get behind on your homework nor prevent your group from moving forward on the solutions.</p>
+<p>No student has the same amount of time available to dedicate to homework. This class may not be a priority to you, you may be taking several other courses, or you may need to dedicate time to other activities. Homework assignments are <strong>formative assessments</strong>, meaning its purpose is to help you learn and practice. To reduce the pressure on you to have perfect homework (the first time around), I have a very simple grading policy: <strong>Your homework will be given a check mark if you turn in 75% of the questions parts completed (whether the 75% is correct or wrong).</strong> I highly encourage you to stay up-to-date with the homeworks and put in as much effort as you can. This will be the most helpful work in this class!</p>
+<p>If you turn in the homework on time, the TAs will give you feedback (on one or more complete problems). There is no penalty for turning in the homework late, <strong>but you will not get feedback on your work.</strong> Please make sure to check the solutions or go to office hours to assess your work.</p>
 </section>
 <section id="viewing-grades-in-sakai" class="level3">
 <h3 class="anchored" data-anchor-id="viewing-grades-in-sakai">Viewing Grades in Sakai</h3>
@@ -491,7 +467,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Every professor has different expectations when assigning certain work or providing certain resources. I want to walk through each class resource and assignment so that you know what you can do to succeed in <em>this class</em>. For resources, I want you to optimize the opportunities to learn. For assignments, I want you to know the strategies that students can use to learn the most and prepare for future exams.</p>
 <section id="resources" class="level3">
 <h3 class="anchored" data-anchor-id="resources">Resources</h3>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 4%">
 <col style="width: 38%">
@@ -533,12 +509,12 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="assignments" class="level3">
 <h3 class="anchored" data-anchor-id="assignments">Assignments</h3>
-<table class="table">
+<table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
 <col style="width: 10%">
-<col style="width: 37%">
-<col style="width: 42%">
+<col style="width: 36%">
+<col style="width: 43%">
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -557,7 +533,7 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Go to Office Hours for help</p></li>
 <li><p>Write down work that shows your thought process</p></li>
 <li><p>Search your issue on Stack Exchange/Stack Overflow</p></li>
-<li><p>Ask fellow students on Slack</p></li>
+<li><p>Ask fellow students, TAs, AI</p></li>
 </ul></td>
 <td style="text-align: left;"><ul>
 <li><p>Discuss problems with your group</p></li>
@@ -566,20 +542,20 @@ ul.task-list li input[type="checkbox"] {
 </ul></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Homework solutions</td>
+<td style="text-align: center;">Quizzes</td>
 <td style="text-align: center;">Summative</td>
 <td style="text-align: left;"><ul>
-<li><p>Discuss work with your group to compile thoughts and work</p></li>
-<li><p>Go to Office Hours for help</p></li>
-<li><p>Write down work that shows your thought process</p></li>
-<li><p>Search your issue on Stack Exchange/Stack Overflow</p></li>
-<li><p>Ask other students and groups in person or on Slack</p></li>
+<li><p>Identify and achieve learning objectives in each lecture</p></li>
+<li><p>Understand why certain statistics tools are used for certain cases</p></li>
+<li><p>Practice testing yourself and others on concepts</p></li>
+<li><p>Come to Office Hours for help with specific problems or concepts</p></li>
 </ul></td>
 <td style="text-align: left;"><ul>
-<li><p>Discuss problems with your group</p></li>
-<li><p>Get clarification on any missed points</p></li>
-<li><p>Go to Office Hours to ask about your work</p></li>
-<li><p>Prepare notes on how to change your work for your presentation</p></li>
+<li><p>Review the solutions</p></li>
+<li><p>Review your mistakes</p></li>
+<li><p>For solutions that involve writing sentences, check with me or a TA if your answer fits the solution</p></li>
+<li><p>Go to Office Hours to ask about your solutions</p></li>
+<li><p>Do not ask for a regrade unless you have viewed the solutions</p></li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -604,7 +580,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="late-work-policy">Late Work Policy</h3>
 <p>I encourage you to make your best effort to submit all assignments on time, but I understand circumstances arise that are beyond our control. Please see this <a href="https://myuni.swansea.ac.uk/academic-life/extenuating-circumstances/#how-can-the-university-support-me-and-what-should-i-do=is-expanded&amp;what-are-extenuating-circumstances=is-expanded&amp;what-isnt-an-extenuating-circumstance=is-expanded&amp;what-supporting-evidence-is-required=is-expanded&amp;who-should-i-contact-to-make-an-extenuating-circumstances-application=is-expanded&amp;who-will-make-a-decision-on-my-application=is-expanded">Swansea University’s page on extenuating circumstances</a> for some examples. Not all circumstances are covered here, so please reach out if you have questions.&nbsp;</p>
 <ul>
-<li><p>The class will end on December 9, 2024. <strong>All coursework is expected to be completed by December 13, 2024 at 11pm.</strong> If you have <em>extenuating circumstances</em>, and need additional time to complete class assignments, please contact me. Together, we will come up with a plan for completion and to sort out registrar logistics.</p></li>
+<li><p>The class will end on December 9, 2025. <strong>All coursework is expected to be completed by December 13, 2025 at 11pm.</strong> If you have <em>extenuating circumstances</em>, and need additional time to complete class assignments, please contact me. Together, we will come up with a plan for completion and to sort out registrar logistics.</p></li>
 <li><p>If you have extenuating circumstances that may jeopardize your ability to do work for several weeks, please contact me. We will come up with a plan to keep you on track in the course and prevent any delay in your education.</p></li>
 <li><p>For homework, I ask you to email me and the TAs directly about any late submissions. You can explain your circumstances and may ask us for an extension. I am very likely to grant an extension, but <strong>I want to emphasize how important it will be to stay on track with your homework</strong>! Your group is depending on you, and delaying homework may only add stress on the next homework!</p></li>
 <li><p>For homework, you will have TWO no-questions-asked, 3-day extensions: one for the first assignment part and one for either the solutions or presentation. Please use this wisely! You just need to send me a quick email saying “I am using my no-questions-asked extension for Homework __ assignment/solutions/presentation.”</p></li>
@@ -623,7 +599,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="plagiarism-and-attribution" class="level3">
 <h3 class="anchored" data-anchor-id="plagiarism-and-attribution">Plagiarism and Attribution</h3>
-<p>Please note that this section has been motivated by <a href="https://dmice.ohsu.edu/bedricks/courses/bmi525/policies.html">Dr.&nbsp;Steven Bedrick’s Course Policies and Grading site</a> for BMI 525. (Note that this is a good example of informal attribution of someone else’s work.)</p>
+<p>Please note that this section has been motivated by and heavily borrowed from <a href="https://dmice.ohsu.edu/bedricks/courses/bmi525/policies.html">Dr.&nbsp;Steven Bedrick’s Course Policies and Grading site</a> for BMI 525. (Note that this is a good example of informal attribution of someone else’s work.)</p>
 <p>In this class, it is easy to use ChatGPT or other AI tools to solve your homework for you. Many problems follow a basic structure that is especially easy for ChatGPT to solve. In this class, you <strong>may</strong> use ChatGPT to help with your homework. You may even ask for direct answers. However, there are a few things I do not want you to do:</p>
 <ul>
 <li><p><strong>Do not copy ChatGPT’s answer directly into your homework.</strong> Your homework is graded for full credit if you turn it in, in any state, so turning in ChatGPT’s answers is unacceptable. I rather see half-written answers that show what you’re thinking than see a correct answer from ChatGPT.</p></li>
@@ -668,7 +644,7 @@ I will provide clear instructions for all assignments, and a grading rubric when
 <p><u><em>Attend class</em></u><strong><br>
 </strong>You are expected to attend at least 12 scheduled class meetings in-person. Attendance is taken through exit tickets. If you have issues accessing the poll on a specific day, please let me know.&nbsp;</p>
 <p><u><em>Participate<strong><br>
-</strong></em></u>I encourage you to participate actively in class and in Slack discussions. I will expect all students, and all instructors, to be respectful of each other’s contributions, whether I agree with them or not. Professional interactions are expected.</p>
+</strong></em></u>I encourage you to participate actively in class and in office hours. I will expect all students, and all instructors, to be respectful of each other’s contributions, whether I agree with them or not. Professional interactions are expected.</p>
 <p><u><em>Build rapport</em></u><br>
 If you find that you have any trouble keeping up with assignments or other aspects of the course, make sure you let me know as early as possible. As you will find, building rapport and effective relationships are key to becoming an effective professional. Make sure that you are proactive in informing me when difficulties arise during the quarter so that I can help you find a solution in regards to coursework.</p>
 <p><u><em>Complete assignments</em></u><br>
@@ -689,12 +665,12 @@ You should speak with or email me before or during the first week of classes reg
 </section>
 <section id="course-communications" class="level2">
 <h2 class="anchored" data-anchor-id="course-communications">Course Communications</h2>
-<p><strong>Sakai/Slack announcements<br>
-</strong>For important/urgent matters, I will communicate with you using announcements via Sakai that will be delivered to your OHSU Email account as well as displayed in the Sakai course site Announcements section. I will copy these announcements in Slack if they do not involve changes to the schedule. Unfortunately, there are certain announcements that OHSU requires I initiate behind the firewall.</p>
+<p><strong>Sakai announcements<br>
+</strong>For important/urgent matters, I will communicate with you using announcements via Sakai that will be delivered to your OHSU Email account as well as displayed in the Sakai course site Announcements section.</p>
 <p><strong>General course questions<br>
-</strong>It is normal to have many questions about things that relate to the course, such as clarification about assignments, course materials, or assessments. Please post these on our Slack Workspace. Please use the channels that I created for questions. You are encouraged to give answers and help each other. I will monitor these threads, so I will endorse or correct responses as needed. Please give me 24 hours to respond to questions within Monday-Friday. Work-life balance is important for me as well, so I will try to respond as quickly as I can within my healthy limits.&nbsp;</p>
+</strong>It is normal to have many questions about things that relate to the course, such as clarification about assignments, course materials, or assessments. Please search the class website first and ask other students. If you are unsure after, you can email me. Please give me 24 hours to respond to questions within Monday-Friday. Work-life balance is important for me as well, so I will try to respond as quickly as I can within my healthy limits.&nbsp;</p>
 <p><strong>E-mail</strong><br>
-E-mail should be used only for messages that are private in nature. Please send private messages to my OHSU email address (wakim@ohsu.edu). <strong>Messages sent through Sakai Inbox will not be answered.</strong> Do not send messages asking general information about the class; please post those on Slack instead.</p>
+I’m not the best with email. You can send questions Please send private messages to my OHSU email address (wakim@ohsu.edu). <strong>Messages sent through Sakai Inbox will not be answered.</strong></p>
 </section>
 <section id="further-student-resources" class="level2">
 <h2 class="anchored" data-anchor-id="further-student-resources">Further Student Resources</h2>
@@ -764,18 +740,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -807,11 +772,53 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -821,8 +828,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -834,7 +850,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -878,6 +1016,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -903,6 +1042,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -960,23 +1125,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
