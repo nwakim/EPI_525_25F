@@ -4,15 +4,12 @@ format:
   html:
     page-layout: full
     link-external-newwindow: true
-    toc: true
 ---
 
 ```{r setup, include=FALSE}
 library(here)
 source(here("class_dates.R"))
 ```
-
-## Homeworks
 
 | Homework | Assignment | Assignment due (\@11pm) | Answers | Solutions (`.qmd`) | Solutions (`.html`)\* |
 |------------|------------|------------------|------------|------------|------------|
