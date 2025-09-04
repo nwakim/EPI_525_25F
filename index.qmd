@@ -70,10 +70,10 @@ Nicky
 {{< iconify icon-park-solid time size=18px >}} TBD
 
 
-TA 1
+Hannah
 {{< iconify icon-park-solid time size=18px >}} TBD
 
-TA 2
+Sophia
 {{< iconify icon-park-solid time size=18px >}} TBD
 :::
 
