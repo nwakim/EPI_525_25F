@@ -1,7 +1,7 @@
 ---
 title: "Homework 1"
 subtitle: "Lessons 1-2"
-author: "Your name here - update this!!!!"
+author: "Your name here - update this!!"
 date-modified: "today"
 format: 
   html:
@@ -9,7 +9,6 @@ format:
     toc: true
     toc_float:
       collapsed: false
-    theme: lumen
     self-contained: true
 ---
 
@@ -17,11 +16,14 @@ format:
 #| label: "setup"
 #| include: false
 knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+source(here("class_dates.R"))
 ```
 
-
-**Due 10/11/24**
-
+::: {.callout-note appearance="minimal"}
+**Due `r hw1 %>% format("%m/%d")`**
+:::
 
 # Directions
 
