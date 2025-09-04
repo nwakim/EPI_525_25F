@@ -66,15 +66,15 @@ w9d1 = cal_dates[57]
 w9d2 = cal_dates[59]
 
 ## Week 10 dates
-w10d1 = cal_dates[63]
-w10d2 = cal_dates[65]
-hw8 = cal_dates[66]
+w10d1 = cal_dates[64]
+w10d2 = cal_dates[66]
+hw8 = cal_dates[67]
 hw7sol = cal_dates[69]
 
 ## Week 11 dates
-w11d1 = cal_dates[70]
-w11d2 = cal_dates[72]
-hw9 = cal_dates[73]
+w11d1 = cal_dates[71]
+w11d2 = cal_dates[73]
+hw9 = cal_dates[74]
 hw8sol = cal_dates[75]
 hw6prez = cal_dates[73]
 q3_open = cal_dates[70]
