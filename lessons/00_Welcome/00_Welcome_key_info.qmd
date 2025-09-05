@@ -2,7 +2,6 @@
 title: "Key Info and Announcements"
 subtitle: "Welcome"
 date-modified: "today"
-date: "2024-09-30"
 format: 
   html:
     link-external-newwindow: true
@@ -12,8 +11,13 @@ editor_options:
 
 ## Announcements
 
-- Jamie Jones in coming at the end of next class to discuss IP/PE!!
-- If you filled out the WhenIsGood before 9/28 at 11:30 am, then the link was wrong. I didn't update the link soon enough!
-  - Please fill out this WhenisGood: <http://whenisgood.net/gqz22ff>
-  
+- Welcome! I will put announcements and reminders on these pages!
+- Thanks for being patient while I've been out of the country!
+
+## Key dates
+
 - Homework 0 is due THIS THURSDAY at 11pm!
+
+## Last class
+
+- There wasn't one heh
