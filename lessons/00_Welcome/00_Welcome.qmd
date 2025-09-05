@@ -27,6 +27,16 @@ source(here("class_dates.R"))
 library(tidyverse)
 ```
 
+```{css}
+#| echo: false
+
+<style>
+#wrap { width: 600px; height: 390px; padding: 0; overflow: hidden; }
+#frame { width: 1300px; height: 600px; border: 1px solid black; }
+#frame { zoom: 1.5; -moz-transform: scale(1.5); -moz-transform-origin: 0 0; }
+</style>
+```
+
 ::::::: columns
 ::: {.column width="45%"}
 -   **Call me "Nicky," "Dr. W," "Professor Wakim," or any combo!**
@@ -62,21 +72,7 @@ library(tidyverse)
 :::
 :::::::
 
-## 
-
-::::: orange
-::: orange-ttl
-Important Note
-:::
-
-::: orange-cont
-**This is my first time teaching the course.** I will work hard to answer your questions in class, but I will often need some time outside of class to make sure I give you the best answer possible! Also, many of the examples are not my own. I will work to improve examples, but if you have feedback or suggestions, I am happy to hear them!
-:::
-:::::
-
 ## Some important tasks
-
--   [Join the Slack page!](https://join.slack.com/t/epi525f24/shared_invite/zt-2q9fpa8h3-Yc5U91Ps0MjnemADzTM5Vw)
 
 -   Star the class website: <https://nwakim.github.io/F24_EPI_525/>
 
@@ -91,7 +87,9 @@ Important Note
 
 ## Let's visit the website: Homepage
 
-![[Homepage](https://nwakim.github.io/F24_EPID_525/)](../img_slides/site_homepage1.png)
+```{=html}
+<iframe id="frame" src="https://nwakim.github.io/EPI_525_25F/"></iframe>
+```
 
 ## Let's visit the website: Syllabus
 
@@ -99,8 +97,8 @@ Important Note
 -   Textbook in shared folder!
 -   R: we will start to learn this programming language
 -   Assessments and grade breakdowns
--   Homework: 3 parts + grading
--   Feedback: in the form of exit tickets, group evals, midterm feedback, and final course
+    - Mostly homework + quizzes
+-   Feedback from you to me: in the form of exit tickets, midterm feedback, and final course
 -   How to succeed in this course: resources and assignments explained
 -   Late work policy / Attendance policy
 -   ChatGPT and other AI technology
@@ -108,10 +106,18 @@ Important Note
     -   And a few ways I expect from you!
 -   Communicating with me: give me 24 hours to reply M-F
     -   Online communication is not my strength!
-    
+
+## Let's visit the website: Syllabus (2/2)
+
+```{=html}
+<iframe id="frame" src="https://nwakim.github.io/EPI_525_25F/syllabus.html"></iframe>
+```
+
 ## A potential decision
 
 - This class will have recordings
+
+ 
 
 - Questions to ask yourself when deciding to attend in person vs. online
   - Can you learn the lecture content just as well online?
@@ -121,18 +127,24 @@ Important Note
   - Does peer interaction add value to your experience?
   - Is it important to develop a relationship with your professors?
 
+ 
+
+- We will vote on attendance policies in HW 0
+
 ## Let's visit the website: Schedule (1/2)
 
--   Weeks, class info, exams, homeworks
+-   Weeks, class info, homeworks, labs
 
-![](../img_slides/site_homepage2.png){fig-align="center"}
+```{=html}
+<iframe id="frame" src="https://nwakim.github.io/EPI_525_25F/schedule.html"></iframe>
+```
 
 ## Let's visit the website: Schedule (2/2)
 
 |  |  |  |
 |:----------------------------|:-------------|:-----------------------------|
 | [[{{< iconify akar-icons info-fill size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample_key_info.qmd)]{style="color:#f8f5f0;"} | Key Info | I will post announcements and other important class related info here. For example, if I change a due date or discuss a common mistake in homework, I will put it here. |
-| [[{{< iconify ri slideshow-fill size=80px >}}](lessons/17_Negative_binomial_rv/17_Negative_binomial_rv.qmd)]{style="color:#f8f5f0;"} | Slides QMD | These are the basic slides that will open in your browser. |
+| [[{{< iconify ri slideshow-fill size=80px >}}](lessons/17_Negative_binomial_rv/17_Negative_binomial_rv.qmd)]{style="color:#f8f5f0;"} | Slides HTML | These are the basic slides that will open in your browser. |
 | [[{{< iconify bi file-earmark-pdf-fill size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample.pdf)]{style="color:#f8f5f0;"} | Slides PDF | These are the slides in pdf form for easy note taking. I'm not always the best at posting these before class, so make sure you know how to save your own copy of pdf slides! |
 | [[{{< iconify pepicons-pop pen-circle-filled size=80px >}}](lessons/01_Outcomes_Events_Sample/01_Outcomes_Events_Sample_notes.pdf)]{style="color:#f8f5f0;"} | Slides Notes | These are the annotated slides in pdf form. In class, I add my own notes to slides. After class, I will post them here. |
 | [[{{< iconify healthicons health-worker-form size=90px >}}](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRt)]{style="color:#f8f5f0;"} | Exit tix | These are links to that day's exit ticket. |
@@ -141,7 +153,15 @@ Important Note
 
 ## Let's visit the website: Search
 
+```{=html}
+<iframe id="frame" src="https://nwakim.github.io/EPI_525_25F/schedule.html"></iframe>
+```
+
 ## Let's visit the website: Homework!
+
+```{=html}
+<iframe id="frame" src="https://nwakim.github.io/EPI_525_25F/homework.html"></iframe>
+```
 
 ## Decision on Homework due dates
 
@@ -149,22 +169,21 @@ Important Note
 
 -   Please look at your other classes, your calendar, etc
 
--   Consider what day of the week you would like to turn in your assignment, solutions, and video/meeting
+-   Consider what day of the week you would like to turn in your assignments
 
 -   Question in HW 0 to cast your vote and share your opinion
-
--   We have homework every week
-
-    -   Homework 8 is due on 11/26 (Wednesday before Thanksgiving break)
-    -   You will have the option of turning it in with Homework 9
 
 ## Structure for this course
 
 -   Learning the basic tools to understand statistics
 
+ 
+
 -   It is going to feel useless at times, but I swear it is not!
 
--   This class will help you build a toolbox that allows to analyze data while understanding the inner theory at play
+ 
+
+-   This class will help you build a toolbox that allows you to analyze data while understanding the inner theory at play
 
 ## What we will cover
 
