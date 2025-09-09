@@ -82,7 +82,7 @@ Sophia
 
 {{< iconify fa6-solid calendar-days size=24px >}} Mondays, Wednesdays
 
-{{< iconify fa6-solid calendar size=24px >}} Sept 29 - Dec 9
+{{< iconify fa6-solid calendar size=24px >}} Sept 29 - Dec 10
 
 {{< iconify icon-park-solid time size=24px >}} 1:00 PM - 2:50 PM
 

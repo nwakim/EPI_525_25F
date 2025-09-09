@@ -74,14 +74,16 @@ library(tidyverse)
 
 ## Some important tasks
 
--   Star the class website: <https://nwakim.github.io/F24_EPI_525/>
+-   Star the class website: <https://nwakim.github.io/EPI_525_25F/>
 
--   Complete the [WhenIsGood](http://whenisgood.net/gqz22ff) for office hours
+ 
 
 -   Complete Homework 0 by this Thursday at 11pm!
 
     -   Includes some items above
     -   Think about what day of the week you would like your homeworks due
+
+ 
 
 -   Highly suggest that you make an appointment with a learning specialist through [Student Academic Success Center](https://sakai.ohsu.edu/portal/site/Student_Support)!
 
@@ -120,12 +122,12 @@ library(tidyverse)
  
 
 - Questions to ask yourself when deciding to attend in person vs. online
-  - Can you learn the lecture content just as well online?
-  - Do you benefit from in-person learning? Does it align with your learning style?
-  - What is your experience in-person vs. online?
-  - Do you engage with the content differently in-person vs. online?
-  - Does peer interaction add value to your experience?
-  - Is it important to develop a relationship with your professors?
+  - Can you *learn the lecture content just as well online*?
+  - Do you *benefit from in-person learning*? Does it align with your learning style?
+  - What is *your experience* in-person vs. online?
+  - Do you *engage with the content differently* in-person vs. online?
+  - Does *peer interaction add value* to your experience?
+  - Is it important to *develop a relationship with your professors*?
 
  
 
