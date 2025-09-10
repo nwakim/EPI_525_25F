@@ -3,7 +3,7 @@ title: "Lesson 1: Data collection"
 author: "Nicky Wakim, Meike Niederhausen"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "09/30/2024"
+date: "`r library(here); source(here('class_dates.R')); w1d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -27,6 +27,13 @@ execute:
 ## Where are we?
 
 ![](../img_slides/course_map.png){fig-align="center"}
+
+```{r setup, include=FALSE}
+library(here)
+source(here("class_dates.R"))
+
+library(tidyverse)
+```
 
 # Learning Objectives
 
@@ -222,21 +229,21 @@ __"Random" samples can be unrepresentative by random chance__
 
 * If it is important for our data to represent specific groups (to answer our research question), then we may consider more complex sampling methods
 
-## Sampling methods (3/4) 
+## Sampling methods (1/2) 
 
 ::: columns
 ::: {.column width="50%"}
-* __Simple random sample (SRS)__
-  * Each individual of a population has the _same chance_ of being sampled
-  * _Statistical methods taught in this class assume a SRS!_
+- [**Simple random sample (SRS)**]{style="color: #EF85B3;"}
+  - Each individual of a population has the *same chance* of being sampled
+  - *Statistical methods taught in this class assume a SRS!*
   
  
 
  
 
-* __Stratified sampling__
-  * Divide population into groups (strata) before selecting cases within each stratum (often via SRS)
-  * Usually cases within a strata are similar, but are different from other strata with respect to the outcome of interest, such as gender or age groups
+- [**Stratified sampling**]{style="color: #E75B5C;"}
+  - Divide population into groups (strata) before selecting cases within each stratum (often via SRS)
+  - Usually cases within a strata are similar, but are different from other strata with respect to the outcome of interest, such as gender or age groups
 :::
 
 ::: {.column width="50%"}
@@ -244,23 +251,41 @@ __"Random" samples can be unrepresentative by random chance__
 :::
 :::
 
-## Sampling methods (4/4) 
+## Sampling methods (2/2) 
 
 ::: columns
 ::: {.column width="50%"}
-* __Cluster sample__
-  * First divide population into groups (clusters)
-  * Then sample a fixed number of clusters, and include _all_ observations from chosen clusters
-  * Clusters are often hospitals, clinicians, schools, etc., where each cluster will have similar services/ policies/ etc. 
-  * Cases within clusters usually very diverse
+- [**Cluster sample**]{style="color: #BF396F;"}
+  - First divide population into groups (clusters)
+  - Then sample a fixed number of clusters, and include *all* observations from chosen clusters
+  - Clusters are often hospitals, clinicians, schools, etc., where each cluster will have similar services/ policies/ etc. 
+  - Usually cases within clusters are diverse
 
-
-* __Multistage sample__
-  * Similar to a cluster sample, but select a random sample within each selected cluster instead of all individuals
+- [**Multistage sample**]{style="color: #459B99;"}
+  - Similar to a cluster sample, but select a random sample within each selected cluster instead of all individuals
+  - Stacking random samples: first randomly select clusters, then randomly select individuals within each selected cluster
 :::
 
 ::: {.column width="50%"}
 ![](../img_slides/cluster_multistage.png){fig-align="center"}
+:::
+:::
+
+## One setting, different sampling
+
+::: columns
+::: {.column width="70%"}
+Let's say we want to *sample students* in Oregon with **100 schools and 50,000 students**. Our end goal is to measure vaccination status of students. We have evidence that proximity to a health clinic may influence vaccination status.
+
+- [**Simple random sample:**]{style="color: #EF85B3;"} randomly select 1,000 students from all 50,000 students
+- [**Stratified sampling:**]{style="color: #E75B5C;"} we create strata based on rural and urban schools, and then we randomly select 500 students from rural schools and 500 students from urban schools
+    - The thought here is that rural schools are typically further from health clinics
+- [**Cluster sample:**]{style="color: #BF396F;"} randomly select 10 schools, then include all students from those schools
+- [**Multistage sample:**]{style="color: #459B99;"} randomly select 10 schools, then randomly select 20 students from each selected school 
+
+:::
+
+::: {.column width="30%"}
 
 :::
 :::

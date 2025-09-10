@@ -4673,7 +4673,7 @@
     "href": "lessons/01_Data_collection/01_Data_collection.html#sampling-methods-44",
     "title": "Lesson 1: Data collection",
     "section": "Sampling methods (4/4)",
-    "text": "Sampling methods (4/4)\n\n\n\nCluster sample\n\nFirst divide population into groups (clusters)\nThen sample a fixed number of clusters, and include all observations from chosen clusters\nClusters are often hospitals, clinicians, schools, etc., where each cluster will have similar services/ policies/ etc.\nCases within clusters usually very diverse\n\nMultistage sample\n\nSimilar to a cluster sample, but select a random sample within each selected cluster instead of all individuals"
+    "text": "Sampling methods (4/4)\n\n\n\nCluster sample\n\nFirst divide population into groups (clusters)\nThen sample a fixed number of clusters, and include all observations from chosen clusters\nClusters are often hospitals, clinicians, schools, etc., where each cluster will have similar services/ policies/ etc.\nUsually cases within clusters are diverse\n\nMultistage sample\n\nSimilar to a cluster sample, but select a random sample within each selected cluster instead of all individuals\nStacking random samples: first randomly select clusters, then randomly select individuals within each selected cluster"
   },
   {
     "objectID": "lessons/01_Data_collection/01_Data_collection.html#experiments-12",
@@ -7333,7 +7333,7 @@
     "href": "lessons/01_Data_collection/01_Data_collection.html#observational-studies-prospective-vs.-retrospective-studies",
     "title": "Lesson 1: Data collection",
     "section": "Observational studies: prospective vs. retrospective studies",
-    "text": "Observational studies: prospective vs. retrospective studies\nSome studies can have prospective and retrospective data!\n\n\n\n\nProspective\n\n\n\nIdentifies participants and collects information at scheduled times or as events unfold.\n\n\n\n\n\n\nRetrospective\n\n\n\nCollect data after events have taken place, such as from medical records\n\n\n\n\n\nExample: The Cancer Care Outcomes Research and Surveillance Consortium (CanCORS) enrolled participants with lung or colorectal cancer, collected information about diagnosis, treatment, and previous health behavior (retrospective), but also maintained contact with participants to gather data about long-term outcomes (prospective)."
+    "text": "Observational studies: prospective vs. retrospective studies\nSome studies can have prospective and retrospective data!\n\n\n\n\nProspective\n\n\n\nIdentifies participants and collects information at scheduled times or as events unfold.\n\n\n\n\n\n\nRetrospective\n\n\n\nCollect data after events have taken place, such as from medical records\n\n\n\n\nExample: The Cancer Care Outcomes Research and Surveillance Consortium (CanCORS) enrolled participants with lung or colorectal cancer, collected information about diagnosis, treatment, and previous health behavior (retrospective), but also maintained contact with participants to gather data about long-term outcomes (prospective)."
   },
   {
     "objectID": "lessons/01_Data_collection/01_Data_collection.html#section",
@@ -11834,7 +11834,7 @@
     "href": "lessons/01_Data_collection/01_Data_collection.html#poll-everywhere-question-4",
     "title": "Lesson 1: Data collection",
     "section": "Poll Everywhere Question 4",
-    "text": "Poll Everywhere Question 4\n\n\nLesson 1 Slides"
+    "text": "Poll Everywhere Question 4"
   },
   {
     "objectID": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#where-are-we",
@@ -24505,5 +24505,26 @@
     "title": "Welcome to EPI 525!",
     "section": "Let’s visit the website: Syllabus (2/2)",
     "text": "Let’s visit the website: Syllabus (2/2)"
+  },
+  {
+    "objectID": "lessons/01_Data_collection/01_Data_collection.html#one-setting-different-sampling",
+    "href": "lessons/01_Data_collection/01_Data_collection.html#one-setting-different-sampling",
+    "title": "Lesson 1: Data collection",
+    "section": "One setting, different sampling",
+    "text": "One setting, different sampling\n\n\nLet’s say we want to sample students in Oregon with 100 schools and 50,000 students. Our end goal is to measure vaccination status of students. We have evidence that proximity to a health clinic may influence vaccination status.\n\nSimple random sample: randomly select 1,000 students from all 50,000 students\nStratified sampling: we create strata based on rural and urban schools, and then we randomly select 500 students from rural schools and 500 students from urban schools\n\nThe thought here is that rural schools are typically further from health clinics\n\nCluster sample: randomly select 10 schools, then include all students from those schools\nMultistage sample: randomly select 10 schools, then randomly select 20 students from each selected school"
+  },
+  {
+    "objectID": "lessons/01_Data_collection/01_Data_collection.html#sampling-methods-12",
+    "href": "lessons/01_Data_collection/01_Data_collection.html#sampling-methods-12",
+    "title": "Lesson 1: Data collection",
+    "section": "Sampling methods (1/2)",
+    "text": "Sampling methods (1/2)\n\n\n\nSimple random sample (SRS)\n\nEach individual of a population has the same chance of being sampled\nStatistical methods taught in this class assume a SRS!\n\n\n \n \n\nStratified sampling\n\nDivide population into groups (strata) before selecting cases within each stratum (often via SRS)\nUsually cases within a strata are similar, but are different from other strata with respect to the outcome of interest, such as gender or age groups"
+  },
+  {
+    "objectID": "lessons/01_Data_collection/01_Data_collection.html#sampling-methods-22",
+    "href": "lessons/01_Data_collection/01_Data_collection.html#sampling-methods-22",
+    "title": "Lesson 1: Data collection",
+    "section": "Sampling methods (2/2)",
+    "text": "Sampling methods (2/2)\n\n\n\nCluster sample\n\nFirst divide population into groups (clusters)\nThen sample a fixed number of clusters, and include all observations from chosen clusters\nClusters are often hospitals, clinicians, schools, etc., where each cluster will have similar services/ policies/ etc.\nUsually cases within clusters are diverse\n\nMultistage sample\n\nSimilar to a cluster sample, but select a random sample within each selected cluster instead of all individuals\nStacking random samples: first randomly select clusters, then randomly select individuals within each selected cluster"
   }
 ]
