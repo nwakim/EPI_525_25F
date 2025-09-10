@@ -1,5 +1,6 @@
 ---
 title: "Lesson 1: Data collection"
+subtitle: "TB sections 1.2, 1.4"
 author: "Nicky Wakim, Meike Niederhausen"
 title-slide-attributes:
     data-background-color: "#3070BF"

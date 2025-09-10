@@ -3,7 +3,7 @@ title: "R03: R Basics, part 2"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/7/2024"
+date: "`r library(here); source(here('class_dates.R')); w2d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -14,7 +14,7 @@ format:
     height: 1100
     footer: R03 Slides
     html-math-method: mathjax
-    highlight-style: arrow
+    highlight-style: ayu
 execute:
   echo: true
   freeze: auto
@@ -33,6 +33,17 @@ library(here)
 
 # terminal: for icons
 # quarto install extension quarto-ext/fontawesome
+
+# set ggplot theme for slides 
+theme_set(
+  theme_bw(base_size = 22)
+  ) %>%
+  theme_update(
+    plot.title = element_text(size = 22, hjust = 0.5)
+    )
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+
+source(here("class_dates.R"))
 ```
 
 ## Last time

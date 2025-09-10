@@ -11,7 +11,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\nDate\nLes-son\nTopic\nTB sections\nKey Info\nSlides HTML\nSlides PDF\nSlides Notes\nExit tix\nRecord-ing\nMuddy Points\n\n\n\n\n1\n09/29\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n\n\n1\nData collection\n1.3\n\n\n\n\n\n\n\n\n\n\n10/01\n2\nIntro to Data, Summarizing numerical data\n1.2, 1.4\n\n\n\n\n\n\n\n\n\n\n\nR01\nDownload R and RStudio\n\n\n\n\n\n\n\n\n\n\n\n\nR02\nR Basics, part 1\n\n\n\n\n\n\n\n\n\n\n\n10/02\n\nHW 0 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n10/06\n3\nDefining Probability\n2.1\n\n\n\n\n\n\n\n\n\n\n10/08\n4\nConditional Probability\n2.2\n\n\n\n\n\n\n\n\n\n\n\nR03\nR Basics, part 2\n\n\n\n\n\n\n\n\n\n\n\n10/09\n\nHW 1 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n10/13\n5\nRandom variables, Binomial distribution\n3.1-3.2\n\n\n\n\n\n\n\n\n\n\n\nR04\nReproducibility, File Organization, and Projects\n\n\n\n\n\n\n\n\n\n\n\n10/15\n6\nNormal distribution\n3.3-3.4\n\n\n\n\n\n\n\n\n\n\n\nR05\nIntro to Quarto, packages, and importing data\n\n\n\n\n\n\n\n\n\n\n\n10/16\n\nHW 2 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n10/20\n7\nPoisson distribution\n\n\n\n\n\n\n\n\n\n\n\n10/22\n8\nData visualization of a single variable\n1.5-1.7\n\n\n\n\n\n\n\n\n\n\n\nR06\nggplot , part 1\n\n\n\n\n\n\n\n\n\n\n\n10/22\n\nQuiz 1 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n10/23\n\nHW 3 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n10/26\n\nQuiz 1 closes @11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n10/27\n9\nData visualization of two variables\n1.5-1.7\n\n\n\n\n\n\n\n\n\n\n10/29\n10\nVariability in estimates\n4.1\n\n\n\n\n\n\n\n\n\n\n\nR07\nLaTeX in Quarto\n\n\n\n\n\n\n\n\n\n\n\n10/30\n\nHW 4 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n11/03\n11\nConfidence Intervals\n4.2\n\n\n\n\n\n\n\n\n\n\n11/05\n12\nHypothesis Testing 1: Single-sample mean\n4.3, 5.1\n\n\n\n\n\n\n\n\n\n\n11/06\n\nHW 5 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n11/10\n13\nInference for mean difference from two-sample dependent/paired data (Hypothesis Testing 2)\n5.2\n\n\n\n\n\n\n\n\n\n\n\nR08\nTransforming and subetting data with tidyverse\n\n\n\n\n\n\n\n\n\n\n\n11/12\n14\nInference for difference in means from two independent samples (Hypothesis Testing 3)\n5.3\n\n\n\n\n\n\n\n\n\n\n\nR08\nTransforming and subetting data with tidyverse\n\n\n\n\n\n\n\n\n\n\n\n11/12\n\nQuiz 2 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n11/13\n\nHW 6 due @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n11/16\n\nQuiz 2 closes @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n11/17\n15\nPower and sample size calculations for difference of means\n5.4\n\n\n\n\n\n\n\n\n\n\n11/19\n16\nInference for a single proportion or difference in proportions\n8.1-8.2\n\n\n\n\n\n\n\n\n\n\n11/20\n\nHW 7 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n11/24\n17\nChi-squared tests, Fishers exact test\n8.3-8.4\n\n\n\n\n\n\n\n\n\n\n11/26\n\nNo class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n12/01\n18\nComparing Means with ANOVA\n5.5\n\n\n\n\n\n\n\n\n\n\n12/03\n19\nNon-parametric tests\nOther TB\n\n\n\n\n\n\n\n\n\n\n\nR09\nSummarizing data with tidyverse and Table 1\n\n\n\n\n\n\n\n\n\n\n\n12/04\n\nHW 8 due 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n12/08\n20\nSimple Linear Regression\n6.1-6.4\n\n\n\n\n\n\n\n\n\n\n12/07\n\nQuiz 3 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n12/10\n\nClass if needed\n\n\n\n\n\n\n\n\n\n\n\n12/11\n\nOptional HW 9 due 11 pm\n\n\n\n\n\n\n\n\n\n\n\n12/12\n\nQuiz 3 closes @ 11pm"
+    "text": "Week\nDate\nLes-son\nTopic\nTB sections\nKey Info\nSlides HTML\nSlides PDF\nSlides Notes\nExit tix\nRecord-ing\nMuddy Points\n\n\n\n\n1\n09/29\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n\n\n1\nData collection\n1.3\n\n\n\n\n\n\n\n\n\n\n10/01\n2\nIntro to data & numerical summaries\n1.2, 1.4\n\n\n\n\n\n\n\n\n\n\n\nR01\nDownload R and RStudio\n\n\n\n\n\n\n\n\n\n\n\n\nR02\nR Basics, part 1\n\n\n\n\n\n\n\n\n\n\n\n10/02\n\nHW 0 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n10/06\n3\nDefining Probability\n2.1\n\n\n\n\n\n\n\n\n\n\n10/08\n4\nConditional Probability\n2.2\n\n\n\n\n\n\n\n\n\n\n\nR03\nR Basics, part 2\n\n\n\n\n\n\n\n\n\n\n\n10/09\n\nHW 1 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n10/13\n5\nRandom variables, Binomial distribution\n3.1-3.2\n\n\n\n\n\n\n\n\n\n\n\nR04\nReproducibility, File Organization, and Projects\n\n\n\n\n\n\n\n\n\n\n\n10/15\n6\nNormal distribution\n3.3-3.4\n\n\n\n\n\n\n\n\n\n\n\nR05\nIntro to Quarto, packages, and importing data\n\n\n\n\n\n\n\n\n\n\n\n10/16\n\nHW 2 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n10/20\n7\nPoisson distribution\n\n\n\n\n\n\n\n\n\n\n\n10/22\n8\nData visualization of a single variable\n1.5-1.7\n\n\n\n\n\n\n\n\n\n\n\nR06\nggplot , part 1\n\n\n\n\n\n\n\n\n\n\n\n10/22\n\nQuiz 1 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n10/23\n\nHW 3 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n10/26\n\nQuiz 1 closes @11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n10/27\n9\nData visualization of two variables\n1.5-1.7\n\n\n\n\n\n\n\n\n\n\n10/29\n10\nVariability in estimates\n4.1\n\n\n\n\n\n\n\n\n\n\n\nR07\nLaTeX in Quarto\n\n\n\n\n\n\n\n\n\n\n\n10/30\n\nHW 4 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n11/03\n11\nConfidence Intervals\n4.2\n\n\n\n\n\n\n\n\n\n\n11/05\n12\nHypothesis Testing 1: Single-sample mean\n4.3, 5.1\n\n\n\n\n\n\n\n\n\n\n11/06\n\nHW 5 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n11/10\n13\nInference for mean difference from two-sample dependent/paired data (Hypothesis Testing 2)\n5.2\n\n\n\n\n\n\n\n\n\n\n\nR08\nTransforming and subetting data with tidyverse\n\n\n\n\n\n\n\n\n\n\n\n11/12\n14\nInference for difference in means from two independent samples (Hypothesis Testing 3)\n5.3\n\n\n\n\n\n\n\n\n\n\n\nR08\nTransforming and subetting data with tidyverse\n\n\n\n\n\n\n\n\n\n\n\n11/12\n\nQuiz 2 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n11/13\n\nHW 6 due @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n11/16\n\nQuiz 2 closes @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n11/17\n15\nPower and sample size calculations for difference of means\n5.4\n\n\n\n\n\n\n\n\n\n\n11/19\n16\nInference for a single proportion or difference in proportions\n8.1-8.2\n\n\n\n\n\n\n\n\n\n\n11/20\n\nHW 7 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n11/24\n17\nChi-squared tests, Fishers exact test\n8.3-8.4\n\n\n\n\n\n\n\n\n\n\n11/26\n\nNo class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n12/01\n18\nComparing Means with ANOVA\n5.5\n\n\n\n\n\n\n\n\n\n\n12/03\n19\nNon-parametric tests\nOther TB\n\n\n\n\n\n\n\n\n\n\n\nR09\nSummarizing data with tidyverse and Table 1\n\n\n\n\n\n\n\n\n\n\n\n12/04\n\nHW 8 due 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n12/08\n20\nSimple Linear Regression\n6.1-6.4\n\n\n\n\n\n\n\n\n\n\n12/07\n\nQuiz 3 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n12/10\n\nClass if needed\n\n\n\n\n\n\n\n\n\n\n\n12/11\n\nOptional HW 9 due 11 pm\n\n\n\n\n\n\n\n\n\n\n\n12/12\n\nQuiz 3 closes @ 11pm"
   },
   {
     "objectID": "lessons/12_Prop_inference/12_Prop_inference.html",
@@ -11379,7 +11379,7 @@
     "href": "lessons/R01_Download_R/R01_Download_R.html#rstudio-anatomy",
     "title": "R1: Download + Intro to R & Rstudio",
     "section": "RStudio anatomy",
-    "text": "RStudio anatomy\n\n\nEmma Rand\nR01 Slides"
+    "text": "RStudio anatomy\n\n\n\nEmma Rand"
   },
   {
     "objectID": "lessons/R01_Download_R/R01_Download_R.html#we-open-rstudio-on-our-computer-not-r",
@@ -12352,7 +12352,7 @@
     "href": "lessons/R02_Basics_01/R02_Basics_01.html#math-calculations-using-r",
     "title": "R02: R Basics",
     "section": "Math calculations using R",
-    "text": "Math calculations using R\n\nWe can use R as a calculator!!\nRules for order of operations are followed\nSpaces between numbers and characters are ignored\n\n \n\n\n\n10^2\n\n[1] 100\n\n3 ^ 7\n\n[1] 2187\n\n6/9\n\n[1] 0.6666667\n\n9-43\n\n[1] -34\n\n\n\n\n4^3-2* 7+9 /2\n\n[1] 54.5\n\n\nThe equation above is computed as \\[4^3 − (2 \\cdot 7) + \\frac{9}{2}\\]\n\n\n\n\nR02 Slides"
+    "text": "Math calculations using R\n\nWe can use R as a calculator!!\nRules for order of operations are followed\nSpaces between numbers and characters are ignored\n\n \n\n\n\n10^2\n\n[1] 100\n\n3 ^ 7\n\n[1] 2187\n\n6/9\n\n[1] 0.6666667\n\n9-43\n\n[1] -34\n\n\n\n\n4^3-2* 7+9 /2\n\n[1] 54.5\n\n\nThe equation above is computed as \\[4^3 − (2 \\cdot 7) + \\frac{9}{2}\\]"
   },
   {
     "objectID": "lessons/R02_Basics_01/R02_Basics_01.html#variables-saved-r-objects",
@@ -12695,7 +12695,7 @@
     "href": "lessons/R03_Basics_02/R03_Basics_02.html#common-console-errors-22",
     "title": "R03: R Basics, part 2",
     "section": "Common console errors (2/2)",
-    "text": "Common console errors (2/2)\nObject is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError in eval(expr, envir, enclos): object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError in eval(expr, envir, enclos): object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
+    "text": "Common console errors (2/2)\nObject is not found\n\nThis happens when text is entered for a non-existent variable (object)\n\nExample:\n\nhello\n\nError: object 'hello' not found\n\n\n\nCan be due to missing quotes\n\n\ninstall.packages(dplyr) \n\nError: object 'dplyr' not found\n\n# correct code is: install.packages(\"dplyr\")"
   },
   {
     "objectID": "lessons/R03_Basics_02/R03_Basics_02.html#fishers-or-andersons-iris-data-set",
@@ -12758,7 +12758,7 @@
     "href": "lessons/R03_Basics_02/R03_Basics_02.html#some-sources-for-useful-base-r-commands",
     "title": "R03: R Basics, part 2",
     "section": "Some sources for useful base R commands",
-    "text": "Some sources for useful base R commands\n\nhttps://sites.calvin.edu/scofield/courses/m143/materials/RcmdsFromClass.pdf\nhttps://www2.kenyon.edu/Depts/Math/hartlaub/Math206%20Spring2011/R.htm\n\n\n\nR03 Slides"
+    "text": "Some sources for useful base R commands\n\nhttps://sites.calvin.edu/scofield/courses/m143/materials/RcmdsFromClass.pdf\nhttps://www2.kenyon.edu/Depts/Math/hartlaub/Math206%20Spring2011/R.htm"
   },
   {
     "objectID": "lessons/04_Cond_prob/04_Cond_prob.html",
@@ -14228,7 +14228,7 @@
     "href": "lessons/R03_Basics_02/R03_Basics_02.html#inline-code",
     "title": "R03: R Basics, part 2",
     "section": "Inline code",
-    "text": "Inline code\n\nWith markdown you can also report R code output inline with the text instead of using a chunk.\n\n\n\nText in editor:\n\n\n\n\n\n\nOutput:\nThe mean petal width for all 3 species combined is 1.2 (SD = 0.8) cm.\n\n\n\nReporting summary statistics this way in a report, makes the numbers computationally reproducible.\nFor example, if this were for an abstract and a year later you are wondering where the numbers came from, your R code will tell you exactly which dataset was used to calculate the values."
+    "text": "Inline code\n\nWith markdown you can also report R code output inline with the text instead of using a chunk.\n\n\n\nText in editor:\n\n\n\n\n\n\nOutput:\nThe mean petal width for all 3 species combined is 1.2 (SD = 0.8) cm.\n\n\nReporting summary statistics this way in a report, makes the numbers computationally reproducible.\nFor example, if this were for an abstract and a year later you are wondering where the numbers came from, your R code will tell you exactly which dataset was used to calculate the values."
   },
   {
     "objectID": "lessons/R03_Basics_02/R03_Basics_02.html#table-1-example",
@@ -24526,5 +24526,19 @@
     "title": "Lesson 1: Data collection",
     "section": "Sampling methods (2/2)",
     "text": "Sampling methods (2/2)\n\n\n\nCluster sample\n\nFirst divide population into groups (clusters)\nThen sample a fixed number of clusters, and include all observations from chosen clusters\nClusters are often hospitals, clinicians, schools, etc., where each cluster will have similar services/ policies/ etc.\nUsually cases within clusters are diverse\n\nMultistage sample\n\nSimilar to a cluster sample, but select a random sample within each selected cluster instead of all individuals\nStacking random samples: first randomly select clusters, then randomly select individuals within each selected cluster"
+  },
+  {
+    "objectID": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html",
+    "href": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html",
+    "title": "Lesson 2: Intro to data & numerical summaries",
+    "section": "",
+    "text": "Define observations and variables, and recognize them in a data frame.\nDefine four variable types in data.\nDefine and calculate measures of center (including mean and median).\nDefine and calculate measures of spread (including standard deviation and interquartile range)."
+  },
+  {
+    "objectID": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#footnotes",
+    "href": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#footnotes",
+    "title": "Lesson 2: Intro to data & numerical summaries",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFrom Introductory Statistics for the Life and Biomedical Sciences↩︎\nChen, W., et al. Maternal investment increases with altitude in a frog on the Tibetan Plateau. Journal of evolutionary biology 26.12 (2013): 2710-2715.\n\n↩︎"
   }
 ]
