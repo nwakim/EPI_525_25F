@@ -2398,7 +2398,7 @@
     "href": "homework/HW_01.html",
     "title": "Homework 1",
     "section": "",
-    "text": "Due 10/09"
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF.\nPlease let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework."
   },
   {
     "objectID": "homework/HW_01.html#directions",
@@ -5261,7 +5261,7 @@
     "href": "homework/HW_00.html",
     "title": "Homework 0",
     "section": "",
-    "text": "Due 10/02\nThis homework does not need to be turned in on Sakai."
+    "text": "This homework does not need to be turned in on Sakai."
   },
   {
     "objectID": "homework/HW_00.html#upload-a-photo-using-sakai-submission",
@@ -7466,7 +7466,7 @@
     "href": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#measures-of-center-mean",
     "title": "Lesson 2: Intro to data & numerical summaries",
     "section": "Measures of center: mean",
-    "text": "Measures of center: mean\n\n\nSample mean\n\n\nthe average value of observations\n\\[\\overline{x} = \\frac{x_1+x_2+\\cdots+x_n}{n} = \\sum_{i=1}^{n}\\frac{x_i}{n}\\]\nwhere \\(x_1, x_2, \\ldots, x_n\\) represent the \\(n\\) observed values in a sample\n\n\nExample: What is the mean clutch volume in the frog dataset?\n\\[\\overline{x} = \\sum_{i=1}^{431}\\frac{x_i}{431}\\]\n\nmean(frog$clutch.volume)\n\n[1] 882.474\n\n\nAnswer: the mean clutch volume is 882.5 \\(\\text{mm}^3\\)."
+    "text": "Measures of center: mean\n\n\nSample mean\n\n\nthe average value of observations\n\\[\\overline{x} = \\frac{x_1+x_2+\\cdots+x_n}{n} = \\sum_{i=1}^{n}\\frac{x_i}{n}\\]\nwhere \\(x_1, x_2, \\ldots, x_n\\) represent the \\(n\\) observed values in a sample\n\n\nExample: What is the mean clutch volume in the frog dataset?\n\\[\\overline{x} = \\sum_{i=1}^{431}\\frac{x_i}{431}\\]\n\nmean(frog$clutch.volume, na.rm = T)\n\n[1] 882.474\n\n\nAnswer: the mean clutch volume is 882.5 \\(\\text{mm}^3\\)."
   },
   {
     "objectID": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#measures-of-center-median",
@@ -7494,7 +7494,7 @@
     "href": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#measures-of-spread-standard-deviation-sd-13",
     "title": "Lesson 2: Intro to data & numerical summaries",
     "section": "Measures of spread: standard deviation (SD) (1/3)",
-    "text": "Measures of spread: standard deviation (SD) (1/3)\n\n\nStandard deviation (SD)\n\n\n(Approximately) the average distance between a typical observation and the mean\n\nAn observation’s deviation is the distance between its value \\(x\\) and the sample mean \\(\\overline{x}\\): deviation = \\(x - \\overline{x}\\)"
+    "text": "Measures of spread: standard deviation (SD) (1/3)\n\n\nStandard deviation (SD)\n\n\n(Approximately) the average distance between an observation and the mean\n\nAn observation’s deviation is the distance between its value \\(x\\) and the sample mean \\(\\overline{x}\\): deviation = \\(x - \\overline{x}\\)"
   },
   {
     "objectID": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#measures-of-spread-sd-23",
@@ -7536,7 +7536,7 @@
     "href": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#measures-of-spread-iqr-22",
     "title": "Lesson 2: Intro to data & numerical summaries",
     "section": "Measures of spread: IQR (2/2)",
-    "text": "Measures of spread: IQR (2/2)\n5 number summary\n\nsummary(frog$clutch.volume)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  151.4   609.6   831.8   882.5  1096.5  2630.3 \n\n\n\\[IQR = Q_3 - Q_1 = 1096.5 - 609.6 = 486.9\\]\n \n\n\n\n\n\n\n\n\nWhat is the IQR of the sepal widths?\n\nquantile(frog$clutch.volume, c(.25, .75))\n\n      25%       75% \n 609.5773 1096.4782 \n\ndiff(quantile(frog$clutch.volume, c(.25, .75)))\n\n     75% \n486.9009 \n\n\n\nIQR(frog$clutch.volume)\n\n[1] 486.9009"
+    "text": "Measures of spread: IQR (2/2)\n5 number summary\n\nsummary(frog$clutch.volume)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  151.4   609.6   831.8   882.5  1096.5  2630.3 \n\n\n\\[IQR = Q_3 - Q_1 = 1096.5 - 609.6 = 486.9\\]\n \n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the IQR of the sepal widths?\n\nquantile(frog$clutch.volume, c(.25, .75))\n\n      25%       75% \n 609.5773 1096.4782 \n\ndiff(quantile(frog$clutch.volume, c(.25, .75)))\n\n     75% \n486.9009 \n\n\n\nIQR(frog$clutch.volume)\n\n[1] 486.9009"
   },
   {
     "objectID": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#robust-estimates",
@@ -12163,7 +12163,7 @@
     "href": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#variable-column-types-in-r",
     "title": "Lesson 2: Intro to data & numerical summaries",
     "section": "Variable (column) types in R",
-    "text": "Variable (column) types in R\n\nWe have not done much with R yet, but I want this to serve as a reference for you!\nVariable types (as we speak them) are translated by R a little differently\nBelow is the mapping of R types to variable types\n\n\n\n\n\n\n\n\n\nR type\nvariable type\ndescription\n\n\n\n\ninteger\ndiscrete\ninteger-valued numbers\n\n\ndouble or numeric\ncontinuous\nnumbers that are decimals\n\n\nfactor\ncategorical\ncategorical variables stored with levels (groups)\n\n\ncharacter\ncategorical\ntext, “strings”\n\n\nlogical\ncategorical\nboolean (TRUE, FALSE)"
+    "text": "Variable (column) types in R\n\nWe have not done much with R yet, but I want this to serve as a reference for you!\nVariable types (as we speak them) are translated by R a little differently\nBelow is the mapping of R types to variable types\n\n\n\n\n\n\n\n\n\nR type\nVariable type\nDescription\n\n\n\n\ninteger\ndiscrete\ninteger-valued numbers\n\n\ndouble or numeric\ncontinuous\nnumbers that are decimals\n\n\nfactor\ncategorical\ncategorical variables stored with levels (groups)\n\n\ncharacter\ncategorical\ntext, “strings”\n\n\nlogical\ncategorical\nboolean (TRUE, FALSE)"
   },
   {
     "objectID": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#empirical-rule-one-way-to-think-about-the-sd",
@@ -12177,7 +12177,7 @@
     "href": "lessons/02_Intro_data_num_summaries/02_Intro_data_num_summaries.html#poll-everywhere-question-4",
     "title": "Lesson 2: Intro to data & numerical summaries",
     "section": "Poll Everywhere Question 4",
-    "text": "Poll Everywhere Question 4\n\n\nLesson 2 Slides"
+    "text": "Poll Everywhere Question 4"
   },
   {
     "objectID": "lessons/R02_Basics/R02_Basics.html#now-lets-use-some-functions-for-summary-statistics",

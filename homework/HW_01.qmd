@@ -2,6 +2,7 @@
 title: "Homework 1"
 subtitle: "Lessons 1-2"
 author: "Your name here - update this!!"
+description: "Due: `r library(here); source(here('class_dates.R')); hw1 %>% format('%m/%d')`"
 date-modified: "today"
 format: 
   html:
@@ -20,10 +21,6 @@ knitr::opts_chunk$set(echo = TRUE)
 library(here)
 source(here("class_dates.R"))
 ```
-
-::: {.callout-note appearance="minimal"}
-**Due `r hw1 %>% format("%m/%d")`**
-:::
 
 # Directions
 
