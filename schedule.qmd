@@ -9,6 +9,15 @@ editor_options:
   chunk_output_type: console
 ---
 
+```{css, echo=FALSE}
+.title{
+  font-size: 30px;
+  color: #3070BF;
+  background-color: #fff;
+  padding: 0px;
+}
+```
+
 ```{r setup, include=FALSE}
 library(here)
 source(here("class_dates.R"))
