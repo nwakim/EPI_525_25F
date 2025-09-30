@@ -12,6 +12,9 @@ editor_options:
 
 ## Announcements
 
+- Campus safety: Since we are on the PSU campus, please take a look at some of the Student Resources for PSU campus safety: <https://www.pdx.edu/dean-student-life/student-resources>
+  - Our classroom does not require badge access - if you ever feel unsafe, the 5th and 6th floors require badges
+
 ### MPH Practice Experience Information 
 
 All MPH programs require a Practice Experience (PE). 

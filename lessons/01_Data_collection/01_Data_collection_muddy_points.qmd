@@ -10,26 +10,50 @@ editor_options:
   chunk_output_type: console
 ---
 
-## Our long delayed example of cluster sampling, stratified sampling, and multistage
+## Fall 2025
+
+### 1. Cluster sampling versus stratified sampling?
+
+There are two main differences between cluster sampling and stratified sampling:
+
+1. How groups (or clusters) are formed
+1. How observations/individuals are selected within each group
+
+I think most of us were confused about the first point. Whats the difference between a subgroup in stratified sampling and a cluster in cluster sampling?
+
+In stratified sampling, subgroups (or strata) are formed based on **shared characteristics relevant to the study**. Typically, the individuals within the groups/strate are more homogeneous than individuals from other strata. The goal is to ensure that each subgroup is represented in the sample.
+
+In cluster sampling, clusters are often formed based on **natural groupings or locations**. Typically, the individuals within each cluster are diverse. The goal is to randomly select entire clusters.
+
+We'll discuss more in class when we look at the example!
+
+### 2. When to use Sakai vs when to use the class website?
+
+The class site will contain all course information. The only time you need to use Sakai is for submitting homework assignments, submitting quizzes, and checking your grades. 
+
+
+## Fall 2024
+
+### Our long delayed example of cluster sampling, stratified sampling, and multistage
 
 This answer comes from our sweet, sweet friend, ChatGPT: 
 
 Here’s a set of examples focused on **studying patient satisfaction within a single hospital**:
 
-### 1. **Cluster Sampling:**
+#### 1. **Cluster Sampling:**
    **Example**: A researcher wants to assess patient satisfaction within a large hospital but cannot survey every patient. The researcher could:
    
    - Divide the hospital into **floors** (clusters).
    - Randomly select a few floors.
    - Survey **all patients** on the selected floors.
 
-### 2. **Stratified Sampling:**
+#### 2. **Stratified Sampling:**
    **Example**: The researcher wants to ensure representation of patients from different **types of care** (e.g., inpatient, outpatient, emergency). The researcher could:
    
    - Divide the patients into **strata based on the type of care** they received.
    - Then, randomly select patients from each care category to ensure proportional representation in the sample.
 
-### 3. **Multistage Sampling:**
+#### 3. **Multistage Sampling:**
    **Example**: To study patient satisfaction within the hospital, the researcher could use multistage sampling:
    
    - **First stage**: Randomly select **departments** (e.g., Oncology, Surgery, Cardiology).
@@ -38,7 +62,7 @@ Here’s a set of examples focused on **studying patient satisfaction within a s
 
 This example is specific to a single hospital, using different sampling techniques to focus on patient satisfaction within various departments and care types.
 
-### Now back to Nicky
+#### Now back to Nicky
 
 One of the key pieces of info here is that we are sampling **patients**! In the cluster sampling, we survey all patients in our randomly chosen cluster. In stratified, we set the subgroups, but we only sample some of the patients in each subgroup!
 
