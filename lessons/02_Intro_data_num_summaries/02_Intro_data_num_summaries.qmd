@@ -1,7 +1,7 @@
 ---
 title: "Lesson 2: Intro to data & numerical summaries"
 subtitle: "TB sections 1.2, 1.4"
-author: "Meike Niederhausen and Nicky Wakim"
+author: "Nicky Wakim, Meike Niederhausen"
 title-slide-attributes:
     data-background-color: "#3070BF"
 date: "`r library(here); source(here('class_dates.R')); w1d2`"
@@ -28,6 +28,7 @@ execute:
 #| warning: false
 
 library(tidyverse)
+library(ggthemes)
 library(lubridate)
 library(janitor)
 library(here)
@@ -37,12 +38,16 @@ library(oibiostat)
 # quarto install extension quarto-ext/fontawesome
 
 # set ggplot theme for slides 
-theme_set(
+set_theme(
   theme_bw(base_size = 22)
   ) %>%
-  theme_update(
-    plot.title = element_text(size = 22, hjust = 0.5)
+  update_theme(
+    plot.title = element_text(size = 22, hjust = 0.5), 
+    strip.text = element_text(size=22), 
+    axis.title = element_text(size=20),
+    axis.text = element_text(size=18)
     )
+
 knitr::opts_chunk$set(warning=FALSE, message=FALSE)
 
 source(here("class_dates.R"))
