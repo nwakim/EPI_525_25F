@@ -18,14 +18,6 @@ format:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Key dates
-
-- Assignment due 10/25
-- Solutions due 11/3
-- Presentation 
-  - Due 11/12 for videos
-  - Meetings scheduled for week of 11/11
-
 ## Directions {.unnumbered}
 
 [Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/EPI-525-1-15028-F24/tool/137d7c54-61a9-4727-9018-374c3773c508) Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
