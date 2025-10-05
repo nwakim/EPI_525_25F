@@ -4,7 +4,7 @@ subtitle: "TB sections 2.2"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/9/2024"
+date: "`r library(here); source(here('class_dates.R')); w2d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -39,8 +39,15 @@ library(knitr)
 # quarto install extension quarto-ext/fontawesome
 
 # set ggplot theme for slides 
-theme_set(theme_bw(base_size = 22))
-# theme_update(text = element_text(size=20))  # set global text size for ggplots
+theme_set(
+  theme_bw(base_size = 22)
+  ) %>%
+  theme_update(
+    plot.title = element_text(size = 22, hjust = 0.5)
+    )
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+
+source(here("class_dates.R"))
 ```
 
 # Learning Objectives
@@ -443,7 +450,7 @@ How accurate is rapid testing for COVID-19?
 
  
 
-3.  What is the probability of not having COVID-19 if you get a negative test result?
+3.  If time: What is the probability of not having COVID-19 if you get a negative test result?
 
 ## Let's apply the steps to our example (4/7)
 
@@ -456,9 +463,11 @@ How accurate is rapid testing for COVID-19?
 :::
 :::
 
-**Step 4:** Define our question's probability statement using the probability statements with assigned values
+**Step 4 & 5:** Define our question's probability statement using the probability statements with assigned values and calculate
 
 1.  $P(T^{+}) =$
+
+## 
 
 ## Let's apply the steps to our example (5/7)
 
@@ -471,11 +480,11 @@ How accurate is rapid testing for COVID-19?
 :::
 :::
 
-**Step 4:** Define our question's probability statement using the probability statements with assigned values
+**Step 4 & 5:** Define our question's probability statement using the probability statements with assigned values and calculate
 
 2.  $P(D|T^{+}) =$
 
-
+##
 
 ## Let's apply the steps to our example (6/7)
 
@@ -488,20 +497,16 @@ How accurate is rapid testing for COVID-19?
 :::
 :::
 
-**Step 4:** Define our question's probability statement using the probability statements with assigned values
+**Step 4 & 5:** Define our question's probability statement using the probability statements with assigned values and calculate
 
 3.  $P(D^{\text{c}}|T^{-}) =$
 
-## Let's apply the steps to our example (7/7)
+##
 
-::: example
-::: ex-ttl
-How accurate is rapid testing for COVID-19?
-:::
-::: ex-cont
-"Based on the results of a clinical study where the iHealth® COVID-19 Antigen Rapid Test was compared to an FDA authorized molecular SARS-CoV-2 test, iHealth® COVID-19 Antigen Rapid Test correctly identified 94.3% of positive specimens and 98.1% of negative specimens." In October 2022, 83.8 people per 100k in Multnomah County with Covid-19. 
-:::
-:::
+# Learning Objectives
 
-**Step 5:** Calculate answer
+1.  Recognize joint, marginal, and conditional probabilities in contingency and probability tables
 
+2. Mathematically define probability properties that relate to conditional probability (general multiplication rule, independence and conditional probability, and Bayes' theorem)
+
+3. Apply probability properties to solve a world problem on positive predictive value (PPV)

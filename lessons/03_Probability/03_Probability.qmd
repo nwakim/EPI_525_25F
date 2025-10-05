@@ -4,7 +4,7 @@ subtitle: "TB sections 2.1"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/7/2024"
+date: "`r library(here); source(here('class_dates.R')); w2d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -35,6 +35,32 @@ editor:
 ## Where are we?
 
 ![](../img_slides/course_map.png){fig-align="center"}
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+
+# terminal: for icons
+# quarto install extension quarto-ext/fontawesome
+
+# set ggplot theme for slides 
+theme_set(
+  theme_bw(base_size = 22)
+  ) %>%
+  theme_update(
+    plot.title = element_text(size = 22, hjust = 0.5)
+    )
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+
+source(here("class_dates.R"))
+```
 
 ## Let's start with an example!
 
@@ -366,7 +392,7 @@ If a subject has an
 
 -   10% chance of *not* taking their medication *either* week,
 
-then find the probability of them taking their medication exactly one of the two weeks.
+then find the probability of them taking their medication both weeks.
 :::
 :::
 :::
