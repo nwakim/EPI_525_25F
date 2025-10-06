@@ -189,6 +189,8 @@
       margin-right: 0; 
     }
   </style>
+  <link href="../../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+  <script src="../../site_libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -206,6 +208,22 @@ Meike Niederhausen and Nicky Wakim
 </div>
 
   <p class="date">2025-10-06</p>
+</section>
+<section id="where-are-we" class="slide level2">
+<h2>Where are we?</h2>
+
+<img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="we-will" class="slide level2">
+<h2>We will…</h2>
+<ul>
+<li>Become familiar with the console and a script file</li>
+<li>Run some math calculations in R!</li>
+<li>Assign things in R</li>
+<li>Use functions to calculate</li>
+<li>Familiarize ourselves with common issues</li>
+<li>Troubleshoot with different tools</li>
+<li>Go over an example dataset</li>
+</ul>
 </section>
 <section id="we-will-open-rstudio-on-our-computer-not-r" class="slide level2">
 <h2>We will open RStudio on our computer (not R!)</h2>
@@ -310,9 +328,565 @@ Meike Niederhausen and Nicky Wakim
 </div>
 <p>The equation above is computed as <span class="math display">\[4^3 − (2 \cdot 7) + \frac{9}{2}\]</span></p>
 </div></div>
+</section>
+<section id="variables-saved-r-objects" class="slide level2">
+<h2>Variables (saved R objects)</h2>
+<p>Variables are used to store data, figures, model output, etc.</p>
+<div class="columns">
+<div class="column" style="width:49%;">
+<ul>
+<li>Can assign a variable using either <code>=</code> or <code>&lt;-</code>
+<ul>
+<li><strong>Using <code>&lt;-</code> is preferable</strong> for certain occasions</li>
+<li>I usually just use <code>=</code> because less typing hehe</li>
+</ul></li>
+</ul>
+<p>Assign just one value:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>x <span class="ot">=</span> <span class="dv">5</span></span>
+<span id="cb11-2"><a></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb13-2"><a></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:2%;">
 
+</div><div class="column" style="width:49%;">
+<p>Assign a <strong>vector</strong> of values</p>
+<ul>
+<li>Consecutive integers using <code>:</code></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>a <span class="ot">&lt;-</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb15-2"><a></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  3  4  5  6  7  8  9 10</code></pre>
+</div>
+</div>
+<ul>
+<li><strong>Concatenate</strong> a string of numbers</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">12</span>, <span class="dv">2</span>, <span class="dv">100</span>, <span class="dv">8</span>)</span>
+<span id="cb17-2"><a></a>b</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]   5  12   2 100   8</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="lets-try-it-out" class="slide level2">
+<h2>Let’s try it out!</h2>
+<ul>
+<li>Create a new variable <code>y</code> that is assigned the value of 8</li>
+<li>Create a new variable <code>c</code> that is assigned the vector of values 15 through 20</li>
+<li>Create a new variable <code>d</code> that is assigned the vector of values 16 through 19 and 22.</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Did you notice anything in the <code>Environment</code> section of Rstudio?</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_5b7752fa" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="doing-math-with-variables" class="slide level2">
+<h2>Doing math with variables</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Math using variables with just one value</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>x <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb19-2"><a></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>x <span class="sc">+</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 8</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>y <span class="ot">&lt;-</span> x<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb23-2"><a></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 25</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Math on vectors of values:<br>
+<strong>element-wise</strong> computation</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>a <span class="ot">&lt;-</span> <span class="dv">3</span><span class="sc">:</span><span class="dv">6</span></span>
+<span id="cb25-2"><a></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3 4 5 6</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>a<span class="sc">+</span><span class="dv">2</span>; a<span class="sc">*</span><span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5 6 7 8</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  9 12 15 18</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>a<span class="sc">*</span>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  9 16 25 36</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="lets-try-it-out-1" class="slide level2">
+<h2>Let’s try it out!</h2>
+<ul>
+<li>Use the variable name <code>y</code> to find the addition of <code>y</code> and 5</li>
+<li>Add 5 to the vector <code>c</code></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_e1bc9f60" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">02</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="variables-can-include-text-characters" class="slide level2">
+<h2>Variables can include text (characters)</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>hi <span class="ot">&lt;-</span> <span class="st">"hello"</span></span>
+<span id="cb32-2"><a></a>hi</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "hello"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a>greetings <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Guten Tag"</span>, <span class="st">"Hola"</span>, hi)</span>
+<span id="cb34-2"><a></a>greetings</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Guten Tag" "Hola"      "hello"    </code></pre>
+</div>
+</div>
+</section>
+<section id="using-functions" class="slide level2">
+<h2>Using functions</h2>
+<ul>
+<li><code>mean()</code> is an example of a function</li>
+<li>functions have “arguments” that can be specified within the <code>()</code></li>
+<li><code>?mean</code> in console will show help file for <code>mean()</code></li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Function <font color="#BF396F">arguments specified</font> by name:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a><span class="fu">mean</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.5</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">12</span>, <span class="at">by =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  1  4  7 10</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a><span class="fu">seq</span>(<span class="at">by =</span> <span class="dv">3</span>, <span class="at">to =</span> <span class="dv">12</span>, <span class="at">from =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  1  4  7 10</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Function <font color="#BF396F">arguments not specified</font>, but listed in order:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a><span class="fu">mean</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2.5</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a><span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">12</span>, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  1  4  7 10</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="now-lets-use-some-functions-for-summary-statistics" class="slide level2">
+<h2>Now let’s use some functions for summary statistics</h2>
+<ul>
+<li>We will calculate the mean for <code>c</code></li>
+<li>Let’s also calculate the standard deviation for <code>c</code>
+<ul>
+<li>Recall, our function is <code>sd()</code></li>
+<li>Use <code>?sd</code> in the console to identify the arguments for <code>c</code></li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>If you have more time, you can try to calculate the median and IQR for <code>c</code></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_e2cd8be3" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="common-console-errors-12" class="slide level2">
+<h2>Common console errors (1/2)</h2>
+<p><strong>Incomplete commands</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>When the console is waiting for a new command, the prompt line begins with <code>&gt;</code>
+<ul>
+<li>If the console prompt is <code>+</code>, then a previous command is incomplete</li>
+<li>You can finish typing the command in the console window</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a><span class="sc">&gt;</span> <span class="dv">3</span> <span class="sc">+</span> (<span class="dv">2</span><span class="sc">*</span><span class="dv">6</span></span>
+<span id="cb46-2"><a></a><span class="sc">+</span> )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 15</code></pre>
+</div>
+</div>
+</div></div>
+</section>
+<section id="common-console-errors-22" class="slide level2">
+<h2>Common console errors (2/2)</h2>
+<p><strong>Object is not found</strong></p>
+<ul>
+<li>This happens when text is entered for a non-existent variable (object)</li>
+</ul>
+<p>Example:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a></a>hello</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'hello' not found</code></pre>
+</div>
+</div>
+<ul>
+<li>Can be due to missing quotes</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a><span class="fu">install.packages</span>(dplyr) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error: object 'dplyr' not found</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a></a><span class="co"># correct code is: install.packages("dplyr")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section>
+<section id="getting-help-with-r" class="title-slide slide level1 center">
+<h1>Getting help with R</h1>
 
 </section>
+<section id="there-are-many-ways-to-get-help-when-you-are-stuck" class="slide level2">
+<h2>There are many ways to get help when you are stuck</h2>
+<ol type="1">
+<li><p><span style="color:#BF396F;">Use the <code>?</code> in front of the function name to get more information!</span></p>
+<ul>
+<li>Usually if I need help with the arguments for a function</li>
+</ul></li>
+<li><p><span style="color:#3070BF;">Google or go to stackoverflow.com</span></p>
+<ul>
+<li>Often when I Google, I get redirected to something like stackoverflow</li>
+<li>For example, let’s say my <code>mean</code> function was outputting <code>NA</code>. I would Google something like “keep getting NA for mean in R” Then end up <a href="https://stackoverflow.com/questions/25297705/mean-na-rm-true-still-returns-na">here</a></li>
+</ul></li>
+<li><p><span style="color:#459B99;">I can also go to my favorite AI tool to get help</span></p>
+<ul>
+<li>This is most useful for getting code started if it’s complicated (we’re not really at that level yet)</li>
+<li>I asked ChatGPT “can you give me the code for calculating the mean in R”
+<ul>
+<li><a href="https://chatgpt.com/share/66f8a2b9-9918-8006-88af-0dc7b64bb86a">This is what I got</a></li>
+</ul></li>
+<li>For code generation, it gives you WAY too much</li>
+<li>I also asked ChatGPT “Why is the mean function in R giving me an NA?” (in above link)</li>
+</ul></li>
+</ol>
+</section>
+<section id="more-on-ai-usage" class="slide level2">
+<h2>More on AI usage</h2>
+<ul>
+<li><a href="https://nwakim.github.io/F24_EPI_525/syllabus.html#plagiarism-and-attribution">In the syllabus</a></li>
+<li>If you cannot trace code back to the class notes, then do NOT use it!
+<ul>
+<li>There’s different coding practices and functions out there</li>
+<li>I’m giving you a specific set of tools that will serve as a good introduction</li>
+<li>You should be able to explain all your code and work</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="lets-try-with-an-example-dataset" class="title-slide slide level1 center">
+<h1>Let’s try with an example dataset</h1>
+
+</section>
+<section id="fishers-or-andersons-iris-data-set" class="slide level2">
+<h2>Fisher’s (or Anderson’s) Iris data set</h2>
+<p>Data description:</p>
+<ul>
+<li>n = 150</li>
+<li>3 species of Iris flowers (Setosa, Virginica, and Versicolour)
+<ul>
+<li>50 measurements of each type of Iris</li>
+</ul></li>
+<li><strong>Variables</strong>:
+<ul>
+<li>sepal length, sepal width, petal length, petal width, and species</li>
+</ul></li>
+</ul>
+<center>
+<img src="../img_slides/Iris_types.png" width="70%" height="50%"><img src="../img_slides/Iris_parts.png" width="28%" height="50%">
+</center>
+<p><a href="https://github.com/Datagatherer2357/Gareth-Duffy-GMIT-Project">Gareth Duffy</a></p>
+</section>
+<section id="view-the-iris-dataset" class="slide level2">
+<h2>View the <code>iris</code> dataset</h2>
+<ul>
+<li>The <code>iris</code> dataset is already pre-loaded in <em>base</em> R and ready to use.</li>
+<li>Type the following command in the console window
+<ul>
+<li><em>Warning: this command cannot be rendered. It will give an error.</em></li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<div class="columns">
+<div class="column" style="width:37%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a></a><span class="fu">View</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>A new tab in the scripting window should appear with the <code>iris</code> dataset.</p>
+</div><div class="column" style="width:63%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img_slides/screenshot_iris_View.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div></div>
+</section>
+<section id="data-structure-12" class="slide level2">
+<h2>Data structure (1/2)</h2>
+<ul>
+<li><p>What are the different <strong>variable types</strong> in this data set?</p></li>
+<li><p>We are going to use the <code>str</code> function</p>
+<ul>
+<li>Can you use the console to tell me what we can input into <code>str</code>?</li>
+</ul></li>
+</ul>
+</section>
+<section id="data-structure-22" class="slide level2">
+<h2>Data structure (2/2)</h2>
+<ul>
+<li><p>What are the different <strong>variable types</strong> in this data set?</p></li>
+<li><p>We are going to use the <code>str</code> function</p>
+<ul>
+<li>Can you use the console to tell me what we can input into <code>str</code>?</li>
+</ul></li>
+</ul>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a></a><span class="fu">str</span>(iris)   <span class="co"># structure of data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>'data.frame':   150 obs. of  5 variables:
+ $ Sepal.Length: num  5.1 4.9 4.7 4.6 5 5.4 4.6 5 4.4 4.9 ...
+ $ Sepal.Width : num  3.5 3 3.2 3.1 3.6 3.9 3.4 3.4 2.9 3.1 ...
+ $ Petal.Length: num  1.4 1.4 1.3 1.5 1.4 1.7 1.4 1.5 1.4 1.5 ...
+ $ Petal.Width : num  0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 ...
+ $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...</code></pre>
+</div>
+</div>
+</section>
+<section id="data-set-summary" class="slide level2">
+<h2>Data set summary</h2>
+<ul>
+<li>Can we quickly summarize all the data?</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a></a><span class="fu">summary</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Sepal.Length    Sepal.Width     Petal.Length    Petal.Width   
+ Min.   :4.300   Min.   :2.000   Min.   :1.000   Min.   :0.100  
+ 1st Qu.:5.100   1st Qu.:2.800   1st Qu.:1.600   1st Qu.:0.300  
+ Median :5.800   Median :3.000   Median :4.350   Median :1.300  
+ Mean   :5.843   Mean   :3.057   Mean   :3.758   Mean   :1.199  
+ 3rd Qu.:6.400   3rd Qu.:3.300   3rd Qu.:5.100   3rd Qu.:1.800  
+ Max.   :7.900   Max.   :4.400   Max.   :6.900   Max.   :2.500  
+       Species  
+ setosa    :50  
+ versicolor:50  
+ virginica :50  
+                
+                
+                </code></pre>
+</div>
+</div>
+</section>
+<section id="data-set-info" class="slide level2">
+<h2>Data set info</h2>
+<ul>
+<li>You can use different functions to find information on a data frame</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a></a><span class="fu">dim</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 150   5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a></a><span class="fu">nrow</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 150</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a></a><span class="fu">ncol</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a></a><span class="fu">names</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Sepal.Length" "Sepal.Width"  "Petal.Length" "Petal.Width"  "Species"     </code></pre>
+</div>
+</div>
+<ul>
+<li>We can also look at the <code>Environment</code> section</li>
+</ul>
+</section>
+<section id="take-a-moment-to-find-the-information-on-the-iris-data-frame" class="slide level2">
+<h2>Take a moment to find the information on the iris data frame</h2>
+<ul>
+<li>Go to environment section to see the <code>iris</code> data frame</li>
+</ul>
+</section>
+<section id="view-the-beginning-or-end-of-a-dataset" class="slide level2">
+<h2>View the beginning or end of a dataset</h2>
+<ul>
+<li>These commands can be helpful if the data frame has a lot of rows</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a></a><span class="fu">head</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1          5.1         3.5          1.4         0.2  setosa
+2          4.9         3.0          1.4         0.2  setosa
+3          4.7         3.2          1.3         0.2  setosa
+4          4.6         3.1          1.5         0.2  setosa
+5          5.0         3.6          1.4         0.2  setosa
+6          5.4         3.9          1.7         0.4  setosa</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a></a><span class="fu">tail</span>(iris)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
+145          6.7         3.3          5.7         2.5 virginica
+146          6.7         3.0          5.2         2.3 virginica
+147          6.3         2.5          5.0         1.9 virginica
+148          6.5         3.0          5.2         2.0 virginica
+149          6.2         3.4          5.4         2.3 virginica
+150          5.9         3.0          5.1         1.8 virginica</code></pre>
+</div>
+</div>
+</section>
+<section id="specify-how-many-rows-to-view-at-beginning-or-end-of-a-dataset" class="slide level2">
+<h2>Specify how many rows to view at beginning or end of a dataset</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a></a><span class="fu">head</span>(iris, <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  Sepal.Length Sepal.Width Petal.Length Petal.Width Species
+1          5.1         3.5          1.4         0.2  setosa
+2          4.9         3.0          1.4         0.2  setosa
+3          4.7         3.2          1.3         0.2  setosa</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a></a><span class="fu">tail</span>(iris, <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>    Sepal.Length Sepal.Width Petal.Length Petal.Width   Species
+149          6.2         3.4          5.4         2.3 virginica
+150          5.9         3.0          5.1         1.8 virginica</code></pre>
+</div>
+</div>
+</section>
+<section id="the" class="slide level2">
+<h2>The <code>$</code></h2>
+<ul>
+<li>Suppose we want to single out the column of petal width values.</li>
+<li>One way to do this is to use the <code>$</code>
+<ul>
+<li><code>DatSetName$VariableName</code></li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a></a>iris<span class="sc">$</span>Petal.Width</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] 0.2 0.2 0.2 0.2 0.2 0.4 0.3 0.2 0.2 0.1 0.2 0.2 0.1 0.1 0.2 0.4 0.4 0.3
+ [19] 0.3 0.3 0.2 0.4 0.2 0.5 0.2 0.2 0.4 0.2 0.2 0.2 0.2 0.4 0.1 0.2 0.2 0.2
+ [37] 0.2 0.1 0.2 0.2 0.3 0.3 0.2 0.6 0.4 0.3 0.2 0.2 0.2 0.2 1.4 1.5 1.5 1.3
+ [55] 1.5 1.3 1.6 1.0 1.3 1.4 1.0 1.5 1.0 1.4 1.3 1.4 1.5 1.0 1.5 1.1 1.8 1.3
+ [73] 1.5 1.2 1.3 1.4 1.4 1.7 1.5 1.0 1.1 1.0 1.2 1.6 1.5 1.6 1.5 1.3 1.3 1.3
+ [91] 1.2 1.4 1.2 1.0 1.3 1.2 1.3 1.3 1.1 1.3 2.5 1.9 2.1 1.8 2.2 2.1 1.7 1.8
+[109] 1.8 2.5 2.0 1.9 2.1 2.0 2.4 2.3 1.8 2.2 2.3 1.5 2.3 2.0 2.0 1.8 2.1 1.8
+[127] 1.8 1.8 2.1 1.6 1.9 2.0 2.2 1.5 1.4 2.3 2.4 1.8 1.8 2.1 2.4 2.3 1.9 2.3
+[145] 2.5 2.3 1.9 2.0 2.3 1.8</code></pre>
+</div>
+</div>
+</section>
+<section id="example-using-the" class="slide level2">
+<h2>Example using the <code>$</code></h2>
+<p>The <code>$</code> is helpful if you want to create a new dataset for just that one variable, or, more commonly, if you want to calculate summary statistics for that one variable.</p>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a></a><span class="fu">mean</span>(iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.199333</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a></a><span class="fu">sd</span>(iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.7622377</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a></a><span class="fu">median</span>(iris<span class="sc">$</span>Petal.Width)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1.3</code></pre>
+</div>
+</div>
+</section>
+<section id="inline-code" class="slide level2">
+<h2>Inline code</h2>
+<ul>
+<li>With markdown you can also report <strong>R code output inline</strong> with the text instead of using a chunk.</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Text in editor:</strong></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="../img_slides/screenshot_code_inline_petalwidth.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<p><strong>Output:</strong></p>
+<p>The mean petal width for all 3 species combined is 1.2 (SD = 0.8) cm.</p>
+</div></div>
+<ul>
+<li>Reporting summary statistics this way in a report, makes the numbers computationally reproducible.</li>
+<li>For example, if this were for an abstract and a year later you are wondering where the numbers came from, your R code will tell you exactly which dataset was used to calculate the values.</li>
+</ul>
+</section>
+<section id="some-sources-for-useful-base-r-commands" class="slide level2">
+<h2>Some sources for useful base R commands</h2>
+<ul>
+<li><a href="https://sites.calvin.edu/scofield/courses/m143/materials/RcmdsFromClass.pdf" class="uri">https://sites.calvin.edu/scofield/courses/m143/materials/RcmdsFromClass.pdf</a></li>
+<li><a href="https://www2.kenyon.edu/Depts/Math/hartlaub/Math206%20Spring2011/R.htm" class="uri">https://www2.kenyon.edu/Depts/Math/hartlaub/Math206%20Spring2011/R.htm</a></li>
+</ul>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

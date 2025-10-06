@@ -1,0 +1,20 @@
+---
+title: "Muddy Points"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Fall 2024
+
+### 1. For R, if we don't want "y=6" anymore, how do we remove that?
+
+There are a couple ways to remove `y=6` from your saved R objects. 
+
+- You can use the command `rm(y)`. If you check the Envioronment, it should be gone!
+- You can also use the little broom/sweeping icon ![](../img_slides/broom.png) in the Environment to clear out **ALL** your saved objects. Just note, that everything will be erased with this option.
+- You can also reassign `y` to anything else and it will overwrite your previous assignment
+

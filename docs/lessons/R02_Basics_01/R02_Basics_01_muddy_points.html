@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-10-07">
 
 <title>Muddy Points – Biostatistics 1</title>
 <style>
@@ -68,35 +67,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -156,16 +126,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#fall-2025" id="toc-fall-2025" class="nav-link active" data-scroll-target="#fall-2025">Fall 2025</a>
+  <li><a href="#fall-2024" id="toc-fall-2024" class="nav-link active" data-scroll-target="#fall-2024">Fall 2024</a>
   <ul class="collapse">
-  <li><a href="#the-last-question-about-calculating-pa-and-b.-when-can-you-use-the-papb-definition-and-when-can-you-not-maybe-some-more-examples-would-help." id="toc-the-last-question-about-calculating-pa-and-b.-when-can-you-use-the-papb-definition-and-when-can-you-not-maybe-some-more-examples-would-help." class="nav-link" data-scroll-target="#the-last-question-about-calculating-pa-and-b.-when-can-you-use-the-papb-definition-and-when-can-you-not-maybe-some-more-examples-would-help.">1. The last question about calculating P(A and B). When can you use the P(A)P(B) definition and when can you not? Maybe some more examples would help.</a></li>
-  </ul></li>
-  <li><a href="#fall-2024" id="toc-fall-2024" class="nav-link" data-scroll-target="#fall-2024">Fall 2024</a>
-  <ul class="collapse">
-  <li><a href="#disjoint-vs.-independent-events" id="toc-disjoint-vs.-independent-events" class="nav-link" data-scroll-target="#disjoint-vs.-independent-events">1. Disjoint vs.&nbsp;Independent Events</a></li>
-  <li><a href="#how-do-i-know-if-two-events-are-independent" id="toc-how-do-i-know-if-two-events-are-independent" class="nav-link" data-scroll-target="#how-do-i-know-if-two-events-are-independent">2. How do I know if two events are independent?</a></li>
-  <li><a href="#medication-example-and-venn-diagram" id="toc-medication-example-and-venn-diagram" class="nav-link" data-scroll-target="#medication-example-and-venn-diagram">3. Medication example (and Venn Diagram)</a></li>
-  <li><a href="#for-r-if-we-dont-y6-anymore-how-do-we-remove-that" id="toc-for-r-if-we-dont-y6-anymore-how-do-we-remove-that" class="nav-link" data-scroll-target="#for-r-if-we-dont-y6-anymore-how-do-we-remove-that">4. For R, if we don’t “y=6” anymore, how do we remove that?</a></li>
+  <li><a href="#for-r-if-we-dont-want-y6-anymore-how-do-we-remove-that" id="toc-for-r-if-we-dont-want-y6-anymore-how-do-we-remove-that" class="nav-link" data-scroll-target="#for-r-if-we-dont-want-y6-anymore-how-do-we-remove-that">1. For R, if we don’t want “y=6” anymore, how do we remove that?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -183,12 +146,6 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">October 7, 2024</p>
-    </div>
-  </div>
   
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
@@ -204,43 +161,10 @@ window.Quarto = {
 </header>
 
 
-<section id="fall-2025" class="level2">
-<h2 class="anchored" data-anchor-id="fall-2025">Fall 2025</h2>
-<p>See some repeat questions from Fall 2024 below!!</p>
-<section id="the-last-question-about-calculating-pa-and-b.-when-can-you-use-the-papb-definition-and-when-can-you-not-maybe-some-more-examples-would-help." class="level3">
-<h3 class="anchored" data-anchor-id="the-last-question-about-calculating-pa-and-b.-when-can-you-use-the-papb-definition-and-when-can-you-not-maybe-some-more-examples-would-help.">1. The last question about calculating P(A and B). When can you use the P(A)P(B) definition and when can you not? Maybe some more examples would help.</h3>
-<p>When you <strong>know</strong> events A and B are independent, then you can say <span class="math inline">\(P(A \text{ and } B) = P(A)P(B)\)</span>. If you do not know that A and B are independent, then you cannot use this formula.</p>
-</section>
-</section>
 <section id="fall-2024" class="level2">
 <h2 class="anchored" data-anchor-id="fall-2024">Fall 2024</h2>
-<section id="disjoint-vs.-independent-events" class="level3">
-<h3 class="anchored" data-anchor-id="disjoint-vs.-independent-events">1. Disjoint vs.&nbsp;Independent Events</h3>
-<p><a href="https://www.youtube.com/watch?v=aVqmWW3xmdU&amp;ab_channel=AceTutors">Here is a pretty good video</a> breaking down disjoint (mutually exclusive) events and independent events. It includes examples as well.</p>
-<ul>
-<li><a href="https://www.youtube.com/watch?v=L5tLN1PP9OI&amp;ab_channel=zedstatistics">And here’s a another good video!</a></li>
-</ul>
-<p>Basically, mutually exclusive events do not share any probability space! Aka the probability of both events is 0. Both cannot happen at the same time. Independent events can happen at the same time!</p>
-</section>
-<section id="how-do-i-know-if-two-events-are-independent" class="level3">
-<h3 class="anchored" data-anchor-id="how-do-i-know-if-two-events-are-independent">2. How do I know if two events are independent?</h3>
-<p>My main piece of advice for independence is to rely on the math to show it, not logic! Don’t go into a problem thinking “Logically, these two events are independent.” If the problem does not say “Assume independence,” <strong>then we need to show it mathematically.</strong> (For example, the math holds for the two dice even though I don’t explicitly write it down.)</p>
-<p>Same goes with the definition of independence. When we say “knowing the outcome of one provides <strong>no information</strong> about the outcome of the other,” we once again need to show this mathematically, not just using logic. We will discuss this in Lesson 4: Conditional Probability, where we translate the previous statement to <span class="math display">\[P(A) = P(A|B)\]</span> And we need to show this mathematically!</p>
-</section>
-<section id="medication-example-and-venn-diagram" class="level3">
-<h3 class="anchored" data-anchor-id="medication-example-and-venn-diagram">3. Medication example (and Venn Diagram)</h3>
-<p><a href="https://ohsuitg-my.sharepoint.com/:v:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/F24_EPI_525/Student_files_EPI_525/Recordings/03_Probability_example.mp4?csf=1&amp;web=1&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&amp;e=fRotbB">Please follow this link for my work through of the example.</a> And <a href="../../lessons/03_Probability/03_Probability_example.pdf">here is the PDF with my work</a>.</p>
-<ul>
-<li>Note that I make some references that are specific to a different class that I teach
-<ul>
-<li>I reference chapter 3, which is just a chapter on independent events</li>
-<li>I also reference certain “axioms.” I think I explain most of the actual rules of the axioms.</li>
-</ul></li>
-</ul>
-<p><strong>Sub-question:</strong> why don’t we just multiply the probability of A and B to get the intersection? This is a specific property of probability when A and B are independent. Only when A and B are independent can we conclude that <span class="math inline">\(P(A \cap B) = P(A)P(B)\)</span>.</p>
-</section>
-<section id="for-r-if-we-dont-y6-anymore-how-do-we-remove-that" class="level3">
-<h3 class="anchored" data-anchor-id="for-r-if-we-dont-y6-anymore-how-do-we-remove-that">4. For R, if we don’t “y=6” anymore, how do we remove that?</h3>
+<section id="for-r-if-we-dont-want-y6-anymore-how-do-we-remove-that" class="level3">
+<h3 class="anchored" data-anchor-id="for-r-if-we-dont-want-y6-anymore-how-do-we-remove-that">1. For R, if we don’t want “y=6” anymore, how do we remove that?</h3>
 <p>There are a couple ways to remove <code>y=6</code> from your saved R objects.</p>
 <ul>
 <li>You can use the command <code>rm(y)</code>. If you check the Envioronment, it should be gone!</li>

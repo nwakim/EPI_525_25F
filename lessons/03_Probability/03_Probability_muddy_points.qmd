@@ -8,8 +8,17 @@ format:
 editor_options: 
   chunk_output_type: console
 ---
+## Fall 2025
 
-## 1. Disjoint vs. Independent Events
+See some repeat questions from Fall 2024 below!!
+
+### 1. The last question about calculating P(A and B). When can you use the P(A)P(B) definition and when can you not? Maybe some more examples would help.
+
+When you **know** events A and B are independent, then you can say $P(A \text{ and } B) = P(A)P(B)$. If you do not know that A and B are independent, then you cannot use this formula.
+
+## Fall 2024
+
+### 1. Disjoint vs. Independent Events
 
 [Here is a pretty good video](https://www.youtube.com/watch?v=aVqmWW3xmdU&ab_channel=AceTutors) breaking down disjoint (mutually exclusive) events and independent events. It includes examples as well.
 
@@ -17,13 +26,13 @@ editor_options:
 
 Basically, mutually exclusive events do not share any probability space! Aka the probability of both events is 0. Both cannot happen at the same time. Independent events can happen at the same time! 
 
-## 2. How do I know if two events are independent?
+### 2. How do I know if two events are independent?
 
 My main piece of advice for independence is to rely on the math to show it, not logic! Don't go into a problem thinking "Logically, these two events are independent." If the problem does not say "Assume independence," **then we need to show it mathematically.** (For example, the math holds for the two dice even though I don't explicitly write it down.)
 
 Same goes with the definition of independence. When we say "knowing the outcome of one provides **no information** about the outcome of the other," we once again need to show this mathematically, not just using logic. We will discuss this in Lesson 4: Conditional Probability, where we translate the previous statement to $$P(A) = P(A|B)$$ And we need to show this mathematically!
 
-## 3. Medication example (and Venn Diagram)
+### 3. Medication example (and Venn Diagram)
 
 [Please follow this link for my work through of the example.](https://ohsuitg-my.sharepoint.com/:v:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/F24_EPI_525/Student_files_EPI_525/Recordings/03_Probability_example.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fRotbB) And [here is the PDF with my work](/lessons/03_Probability/03_Probability_example.pdf).
 
@@ -33,7 +42,7 @@ Same goes with the definition of independence. When we say "knowing the outcome 
 
 **Sub-question:** why don't we just multiply the probability of A and B to get the intersection? This is a specific property of probability when A and B are independent. Only when A and B are independent can we conclude that $P(A \cap B) = P(A)P(B)$.
 
-## 4. For R, if we don't "y=6" anymore, how do we remove that?
+### 4. For R, if we don't "y=6" anymore, how do we remove that?
 
 There are a couple ways to remove `y=6` from your saved R objects. 
 
