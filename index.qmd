@@ -66,14 +66,13 @@ Welcome to EPI 525! This course covers a broad range of basic statistical method
 ::: g-col-3
 ### Office Hours
 
-Nicky
-{{< iconify icon-park-solid time size=18px >}} TBD
+[Hannah](https://ohsu.webex.com/meet/cunninha)
+{{< iconify icon-park-solid time size=18px >}} Tu 3:30-4:30 PM
 
-[Hannah
-{{< iconify icon-park-solid time size=18px >}} Tu 3:30-4:30 PM](https://ohsu.webex.com/meet/cunninha)
+[Nicky](https://ohsu.webex.com/meet/wakim) {{< iconify icon-park-solid time size=24px >}} Th 10-11am
 
-[Sophia
-{{< iconify icon-park-solid time size=18px >}} F 12:30-1:30 PM](https://ohsu.webex.com/ohsu/j.php?MTID=m7be2e2fb1f446a87dcf66e6c17bb5750)
+[Sophia](https://ohsu.webex.com/ohsu/j.php?MTID=m7be2e2fb1f446a87dcf66e6c17bb5750)
+{{< iconify icon-park-solid time size=18px >}} F 12:30-1:30 PM
 :::
 
 ::: g-col-3
