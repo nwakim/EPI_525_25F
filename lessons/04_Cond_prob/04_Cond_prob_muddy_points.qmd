@@ -1,6 +1,5 @@
 ---
 title: "Muddy Points"
-date: "10/7/2024"
 date-modified: "today"
 format: 
   html:
@@ -9,46 +8,71 @@ editor_options:
   chunk_output_type: console
 ---
 
-## 1. COVID-19 rapid testing example!
+## Fall 2025
+
+### 1. Conditional Probability: How does it differ from marginal and joint probability?
+
+For two events, here's a little summary table the different probabilities:
+
+| Concept | Meaning | Formula | Example |
+|----------------|------------------|------------------|--------------------|
+| **Joint** | Both A and B occur | $P(A \cap B)$ | Smoker **and** has lung disease |
+| **Marginal** | A occurs (overall) | $P(A)$ or $P(B)$ | Smoker (regardless of disease) |
+| **Conditional** | A occurs **given** B occurred | $P(A \mid B) = P(A \cap B) / P(B)$ | Smoker **given** has lung disease |
+
+### 2. I’m still a little fuzzy on determining when something is independent and when that is relevant to solving a problem Law of Total Probability??
+
+The Law of Total Probability holds whether or not events are independent, so we do not need to determine if something is independent to use it. [Here's a video on how we construct the Law of Total Probability](https://www.youtube.com/watch?v=F3y8qupFfUs).
+
+We will either be told that events are independent or we will need to prove that events are independent. **If we are told events are independent**, then we can use some of the special versions of our equations, like:
+
+1.  $P(A \cap B) = P(A)P(B)$
+2.  $P(A \mid B) = P(A)$
+
+**If we do not know two events are independent**, then we need to show one of the above equations holds. You need to calculate both sides of the equation **using other rules** then see if they are equal.
+
+## Fall 2024
+
+### 1. COVID-19 rapid testing example!
 
 Here's another video and PDF with a better explanation of what we did in class!
 
-[Please follow this link for my work through of the example.](https://ohsuitg-my.sharepoint.com/:v:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/F24_EPI_525/Student_files_EPI_525/Recordings/04_Cond_prob_example.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=urPXgR) 
+[Please follow this link for my work through of the example.](https://ohsuitg-my.sharepoint.com/:v:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/EPI_525_25F/Student_files_EPI_525/Recordings/04_Cond_prob_example.mp4?csf=1&web=1&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=lGXmAR)
 
 And [here is the PDF with my work](/lessons/04_Cond_prob/04_Cond_prob_example.pdf).
 
-## 2. Bayes' theorem: applications
+### 2. Bayes' theorem: applications
 
 See the last two questions in the above example for the application of Bayes' Theorem!!
 
-## 3. 2 x 2 diagnostic table for diagnostic problems
+### 3. 2 x 2 diagnostic table for diagnostic problems
 
-See above link to video and pdf where I use the 2 x 2 table. It's not necessary for this type of problem, but you can use it! I also like tree diagrams, which I included in the example above. 
+See above link to video and pdf where I use the 2 x 2 table. It's not necessary for this type of problem, but you can use it! I also like tree diagrams, which I included in the example above.
 
-### Can we use a 2x2 in homework solutions?
+#### Can we use a 2x2 in homework solutions?
 
 Yes, definitely!! But do not confuse a 2x2 diagnostic table with the probability or contingency tables. The diagnostic table puts conditional probabilities in the cells instead of joint probabilities!!
 
-## 4. Will probability language be necessary to remember for assignments in the future?
+### 4. Will probability language be necessary to remember for assignments in the future?
 
 Not in such a precise way like we use them in this week's word problems. Understanding joint, marginal, and conditional probabilities are important. And knowing the mathematical implications of independent and not independent events. Honestly, it's more important for you to have a sense of what someone means when they (most likely me hehe) use those words in passing to define something else. There are a lot of statistics methods that hinge on independence, joint, marginal, and conditional.
 
-## 5. Does the upside down U mean "intersection", "union", as well as "and"?
+### 5. Does the upside down U mean "intersection", "union", as well as "and"?
 
-- $\cup$ means "union" and "or." You can think of $A \cup B$ as: event A on its own OR event B on its own OR both events
+-   $\cup$ means "union" and "or." You can think of $A \cup B$ as: event A on its own OR event B on its own OR both events
 
-- $\cap$ means "intersection" and "and." You can think of $A \cap B$ as: event A and B happening (cannot be each on their own)
+-   $\cap$ means "intersection" and "and." You can think of $A \cap B$ as: event A and B happening (cannot be each on their own)
 
-- [Here's me posing a similar question to ChatGPT](https://chatgpt.com/share/6709715f-8d34-8006-806c-08aa4d8d101f)
+-   [Here's me posing a similar question to ChatGPT](https://chatgpt.com/share/6709715f-8d34-8006-806c-08aa4d8d101f)
 
-## 6. Why does $P(B|A) + P(B^c|A) = 1$?
+### 6. Why does $P(B|A) + P(B^c|A) = 1$?
 
 A few facts will help us here:
 
-- $B$ and $B^c$ are disjoint events (this is by nature of complements)
-- For disjoint events, the probability of the union is the addition of each probability: $$P(B \cup B^c) = P(B) + P(B^c)$$
-- $P(B|A) = \dfrac{P(B\cap A)}{P(A)}$ and we can even extend this to something like $P(D \cup C|A) = \dfrac{P([D \cup C]\cap A)}{P(A)}$
-  - No matter what is on the left or right side of the "|" (given) statement, we can apply the same conditional probability
+-   $B$ and $B^c$ are disjoint events (this is by nature of complements)
+-   For disjoint events, the probability of the union is the addition of each probability: $$P(B \cup B^c) = P(B) + P(B^c)$$
+-   $P(B|A) = \dfrac{P(B\cap A)}{P(A)}$ and we can even extend this to something like $P(D \cup C|A) = \dfrac{P([D \cup C]\cap A)}{P(A)}$
+    -   No matter what is on the left or right side of the "\|" (given) statement, we can apply the same conditional probability
 
 We can start with the fact that
 
