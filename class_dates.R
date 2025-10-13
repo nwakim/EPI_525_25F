@@ -49,7 +49,7 @@ hw4sol = cal_dates[42]
 ## Week 7 dates
 w7d1 = cal_dates[43]
 w7d2 = cal_dates[45]
-hw6 = cal_dates[53]
+hw6 = cal_dates[49]
 hw3prez = cal_dates[46]
 hw5sol = cal_dates[49]
 q2_open = cal_dates[45]
