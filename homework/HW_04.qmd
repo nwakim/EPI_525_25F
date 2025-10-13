@@ -2,7 +2,8 @@
 title: "Homework 4"
 subtitle: "Lessons 7-8"
 author: "Your name here - update this!!!!"
-date: "Due 10/31/24"
+description: "Due: `r library(here); source(here('class_dates.R')); hw4 %>% format('%m/%d')` at 11pm"
+date-modified: "today"
 format: 
   html:
     link-external-newwindow: true
@@ -11,7 +12,6 @@ format:
       collapsed: false
     number-sections: true
     number-depth: 3
-    theme: lumen
     self-contained: true
     html-math-method: mathjax
 ---
@@ -20,10 +20,10 @@ format:
 #| label: "setup"
 #| include: false
 knitr::opts_chunk$set(echo = TRUE)
-```
 
-- Assignment due 11/1
-- Solutions due 11/10
+library(here)
+source(here("class_dates.R"))
+```
 
 ## Directions {.unnumbered}
 
@@ -34,12 +34,6 @@ You can download the .qmd file for this assignment from [Github](https://github.
 :::{.callout-tip}
 It is a good idea to try rendering your document from time to time as you go along!  Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
 :::
-
-## Complete the group evaluation
-
-Please complete the group evaluation form by the homework assignment due date.
-
-<https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhURUY1SEhBVzJLQkxGM1lZWERQUlRLNEUzSi4u>
 
 # Book exercises
 

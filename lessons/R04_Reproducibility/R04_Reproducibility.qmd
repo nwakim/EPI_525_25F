@@ -3,7 +3,7 @@ title: "R04: Reproducibility, File Organization, and Projects"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/9/2024"
+date: "`r library(here); source(here('class_dates.R')); w3d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -23,6 +23,33 @@ execute:
 ## Where are we?
 
 ![](../img_slides/course_map.png){fig-align="center"}
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+library(here)
+library(knitr)
+
+# terminal: for icons
+# quarto install extension quarto-ext/fontawesome
+
+# set ggplot theme for slides 
+theme_set(
+  theme_bw(base_size = 22)
+  ) %>%
+  theme_update(
+    plot.title = element_text(size = 22, hjust = 0.5)
+    )
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+
+source(here("class_dates.R"))
+```
 
 ## Using OneDrive
 
@@ -44,7 +71,7 @@ execute:
 
 ```{r}
 #| echo: false
-countdown::countdown(5)
+countdown::countdown(3)
 ```
 
 ## Folder organization
@@ -83,7 +110,7 @@ countdown::countdown(5)
 
 ```{r}
 #| echo: false
-countdown::countdown(5)
+countdown::countdown(3)
 ```
 
 ## Aside: folder and file naming
@@ -152,7 +179,5 @@ There are a few good practices for naming files and folders for easy tracking:
 
 ```{r}
 #| echo: false
-countdown::countdown(5)
+countdown::countdown(3)
 ```
-
-## If time, we will move to R05: Intro to Quarto!

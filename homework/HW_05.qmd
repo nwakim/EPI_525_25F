@@ -2,6 +2,7 @@
 title: "Homework 5"
 subtitle: "Lessons 7-9"
 author: "Your name here - update this!!!!"
+description: "Due: `r library(here); source(here('class_dates.R')); hw4 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
 format: 
   html:
@@ -11,7 +12,6 @@ format:
       collapsed: false
     number-sections: true
     number-depth: 3
-    theme: lumen
     embed-resources: true
     html-math-method: mathjax
 ---
@@ -20,11 +20,14 @@ format:
 #| label: "setup"
 #| include: false
 knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+source(here("class_dates.R"))
 ```
 
 ## Directions {.unnumbered}
 
-[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/EPI-525-1-15028-F24/tool/137d7c54-61a9-4727-9018-374c3773c508) This homework must be submitted using a Quarto document. **Please keep it rendered as an html!** I know past homeworks said pdf, but all Quarto docs should be rendered as html for this class!
+**Please turn in this homework on Sakai.** This homework must be submitted using a Quarto document. **Please keep it rendered as an html!** I know past homeworks said pdf, but all Quarto docs should be rendered as html for this class!
 
 You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/F24_EPI_525/blob/main/homework/HW_05.qmd)
 

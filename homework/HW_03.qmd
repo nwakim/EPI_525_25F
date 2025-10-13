@@ -2,6 +2,8 @@
 title: "Homework 3"
 subtitle: "Lessons 5-6"
 author: "Your name here - update this!!!!"
+description: "Due: `r library(here); source(here('class_dates.R')); hw3 %>% format('%m/%d')` at 11pm"
+date-modified: "today"
 format: 
   html:
     link-external-newwindow: true
@@ -16,20 +18,23 @@ format:
 #| label: "setup"
 #| include: false
 knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
+source(here("class_dates.R"))
 ```
 
 ## Directions {.unnumbered}
 
-[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/EPI-525-1-15028-F24/tool/137d7c54-61a9-4727-9018-374c3773c508) Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+**Please turn in this homework on Sakai.** Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
 
-You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/F24_EPI_525/blob/main/homework/HW_03.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**
+You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/EPI_525_25F/blob/main/homework/HW_03.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**
 
 
 :::{.callout-important}
 * The non-R exercises may be completed not using Quarto. I especially recommend writing out by hand the chapter 3 probability questions, whether on paper or a tablet.
     * _Some problems involve R code to calculate a probability, but the code is brief and you can write out the code and the answer by hand if you want._
     * You can also have all your R code together at the end of your homework file
-* If you are completing the homework on paper, you can use a scanning app, such as Adobe Scan, to create a pdf of your assignment.
+* If you are completing the homework on paper, you can use a scanning app, such as Adobe Scan or iPhone notes, to create a pdf of your assignment.
 :::
 
 # Book exercises {.unnumbered}
