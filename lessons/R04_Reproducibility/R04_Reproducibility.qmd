@@ -55,7 +55,7 @@ source(here("class_dates.R"))
 
 -   We all have free access to OneDrive to store files
 
--   [Let's login](https://login.microsoftonline.com/) into our online accounts
+-   You can [login](https://login.microsoftonline.com/) into your online account
 
 -   [You can also download OneDrive for your desktop](https://www.microsoft.com/en-us/microsoft-365/onedrive/download)
 
@@ -68,11 +68,6 @@ source(here("class_dates.R"))
     -   I can access all the files through RStudio as well!
 
 -   Let's take a couple minutes to log into OneDrive
-
-```{r}
-#| echo: false
-countdown::countdown(3)
-```
 
 ## Folder organization
 

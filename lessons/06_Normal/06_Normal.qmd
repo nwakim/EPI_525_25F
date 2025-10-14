@@ -58,8 +58,6 @@ source(here("lessons", "slides_color_palette.R"))
 2.  Calculate probabilities for specific events using a Normal
     distribution
 3.  Apply the Normal distribution to approximate probabilities for binomial events
-4.  Calculate probabilities for different events using a Poisson
-    distribution
 
 ```{css, echo=FALSE}
 .reveal code {
@@ -80,8 +78,6 @@ source(here("lessons", "slides_color_palette.R"))
 2.  Calculate probabilities for specific events using a Normal
     distribution
 3.  Apply the Normal distribution to approximate probabilities for binomial events
-4.  Calculate probabilities for different events using a Poisson
-    distribution
 
 ## Last time: Discrete vs. continuous random variables
 
@@ -169,8 +165,6 @@ When working with continuous random variables, probability is found for
 :::
 
 3.  Apply the Normal distribution to approximate probabilities for binomial events
-4.  Calculate probabilities for different events using a Poisson
-    distribution
 
 ## Normal distribution
 
@@ -556,9 +550,6 @@ qnorm(p = 0.95,
 ::: lob
 3.  Apply the Normal distribution to approximate probabilities for binomial events
 :::
-
-4.  Calculate probabilities for different events using a Poisson
-    distribution
 
 ## Normal Approximation of the Binomial Distribution
 

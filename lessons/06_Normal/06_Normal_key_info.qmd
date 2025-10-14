@@ -1,6 +1,5 @@
 ---
 title: "Key Info and Announcements"
-date: "10/16/2024"
 date-modified: "today"
 format: 
   html:
@@ -11,12 +10,11 @@ editor_options:
 
 ## Announcements
 
-- Group assignments are up!
-- Did you catch the muddy points from last week?
-  - Posted extra videos and notes for some of the confusing class examples
+- Virtual class today!
+  - Finish R lecture from last week, then start on random variables
+-   Practice fire drills this week! 
 
 ## Key Dates
 
-- Homework 2 due this Friday!
-- Homework 1 solutions due Sunday 
-  - BUT with very flexible deadline since you might need more time to initially organize as a group
+-   Homework 2 Assignment due this Sunday at 11pm!
+- Quiz 1 will open next Wednesday after class

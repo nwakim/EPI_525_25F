@@ -54,15 +54,12 @@ source(here("lessons", "slides_color_palette.R"))
 
 # Learning Objectives
 
-1.  Understand how probability distributions extend to continuous distributions
-2.  Calculate probabilities for specific events using a Normal
+1.  Calculate probabilities for different events using a Poisson
     distribution
-3.  Apply the Normal distribution to approximate probabilities for binomial events
 
-::: lob
-4.  Calculate probabilities for different events using a Poisson
-    distribution
-:::
+## Where are we?
+
+![](../img_slides/course_map.png){fig-align="center"}
 
 ## Introduction to the Poisson distribution
 
