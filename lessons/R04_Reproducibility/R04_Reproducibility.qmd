@@ -3,7 +3,7 @@ title: "R04: Reproducibility, File Organization, and Projects"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "`r library(here); source(here('class_dates.R')); w3d1`"
+date: "`r library(here); source(here('class_dates.R')); w3d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"

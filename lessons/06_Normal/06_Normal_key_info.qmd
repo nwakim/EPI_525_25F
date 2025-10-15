@@ -10,9 +10,11 @@ editor_options:
 
 ## Announcements
 
-- Virtual class today!
-  - Finish R lecture from last week, then start on random variables
--   Practice fire drills this week! 
+- Thanks for being flexible on Monday! 
+  - I'm sorry if this messed up your afternoon flow
+- Today: need to finish lesson 5, then start lesson 6
+  - Likely that we will not get to R04
+- Fire drills this week!
 
 ## Key Dates
 
