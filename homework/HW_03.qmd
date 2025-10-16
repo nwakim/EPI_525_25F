@@ -1,6 +1,6 @@
 ---
 title: "Homework 3"
-subtitle: "Lessons 5-6"
+subtitle: "Lessons 5"
 author: "Your name here - update this!!!!"
 description: "Due: `r library(here); source(here('class_dates.R')); hw3 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
@@ -25,7 +25,7 @@ source(here("class_dates.R"))
 
 ## Directions {.unnumbered}
 
-**Please turn in this homework on Sakai.** Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+**Please turn in this homework on Sakai.** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
 
 You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/EPI_525_25F/blob/main/homework/HW_03.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**
 
@@ -55,32 +55,10 @@ Assume all random varibles are independent.
 
 For #3.8, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.
 
-In part d, $|Z| < 0.5$ uses an absolute value. This translates to $-0.5 < Z < 0.5$.
-
 
 ## 3.10 Chickenpox, Part II.  {.unnumbered}
 
 For #3.10, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.
-
-## 3.20 Area under the curve, Part II {.unnumbered}
-
-:::{.callout-important}
-For this problem:
-
-- Make a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.
-- Calculate probabilities using R (You can hand write the code you used to find your answer if you do not want submit typed R code or a Quarto document.)
-:::
-
-
-## 3.22 Triathlon times {.unnumbered}
-
-
-
-## 3.28 Arsenic poisoning {.unnumbered}
-
-
-## 3.32 Chickenpox, Part III  {.unnumbered}
-
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Homework 4"
-subtitle: "Lessons 7-8"
+subtitle: "Lessons 6-7"
 author: "Your name here - update this!!!!"
 description: "Due: `r library(here); source(here('class_dates.R')); hw4 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
@@ -27,15 +27,35 @@ source(here("class_dates.R"))
 
 ## Directions {.unnumbered}
 
-[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/EPI-525-1-15028-F24/tool/137d7c54-61a9-4727-9018-374c3773c508) Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+**Please turn in this homework on Sakai.** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
 
-You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/F24_EPI_525/blob/main/homework/HW_03.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**
+You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/EPI_525_25F/blob/main/homework/HW_04.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**
 
 :::{.callout-tip}
 It is a good idea to try rendering your document from time to time as you go along!  Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
 :::
 
 # Book exercises
+
+## 3.20 Area under the curve, Part II {.unnumbered}
+
+:::{.callout-important}
+For this problem:
+
+- Make a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.
+- Calculate probabilities using R (You can hand write the code you used to find your answer if you do not want submit typed R code or a Quarto document.)
+:::
+
+
+## 3.22 Triathlon times {.unnumbered}
+
+
+
+## 3.28 Arsenic poisoning {.unnumbered}
+
+
+## 3.32 Chickenpox, Part III  {.unnumbered}
+
 
 ## 3.38 Stenographer’s typos {.unnumbered}
 

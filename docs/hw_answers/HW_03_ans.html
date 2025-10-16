@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Biostatistics 1 - Homework 3 Answers</title>
+<title>Homework 3 Answers – Biostatistics 1</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -35,17 +35,23 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-c1e687fbe98376d5618f4a6ba0d8996d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -54,6 +60,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -67,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-sm navbar-dark ">
+    <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
     <img src="../images/EPI_525.png" alt="" class="navbar-logo">
     </a>
@@ -78,31 +85,35 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../schedule.html" rel="" target="">
- <span class="menu-text">Schedule</span></a>
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../syllabus.html" rel="" target="">
- <span class="menu-text">Syllabus</span></a>
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../instructors.html" rel="" target="">
- <span class="menu-text">Instructors</span></a>
+    <a class="nav-link" href="../instructors.html"> 
+<span class="menu-text">Instructors</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../homework.html" rel="" target="">
- <span class="menu-text">Homework</span></a>
+    <a class="nav-link" href="../homework.html"> 
+<span class="menu-text">Homework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../quiz.html"> 
+<span class="menu-text">Quizzes</span></a>
   </li>  
 </ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -141,26 +152,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#a-3" id="toc-a-3" class="nav-link" data-scroll-target="#a-3">a</a></li>
   <li><a href="#b-3" id="toc-b-3" class="nav-link" data-scroll-target="#b-3">b</a></li>
   </ul></li>
-  <li><a href="#area-under-the-curve-part-ii" id="toc-area-under-the-curve-part-ii" class="nav-link" data-scroll-target="#area-under-the-curve-part-ii">3.20 Area under the curve, Part II</a>
-  <ul class="collapse">
-  <li><a href="#a-4" id="toc-a-4" class="nav-link" data-scroll-target="#a-4">a</a></li>
-  <li><a href="#b-4" id="toc-b-4" class="nav-link" data-scroll-target="#b-4">b</a></li>
-  <li><a href="#c-2" id="toc-c-2" class="nav-link" data-scroll-target="#c-2">c</a></li>
-  <li><a href="#d-1" id="toc-d-1" class="nav-link" data-scroll-target="#d-1">d</a></li>
-  </ul></li>
-  <li><a href="#triathlon-times" id="toc-triathlon-times" class="nav-link" data-scroll-target="#triathlon-times">3.22 Triathlon times</a>
-  <ul class="collapse">
-  <li><a href="#a-5" id="toc-a-5" class="nav-link" data-scroll-target="#a-5">a</a></li>
-  <li><a href="#b-5" id="toc-b-5" class="nav-link" data-scroll-target="#b-5">b</a></li>
-  <li><a href="#c-3" id="toc-c-3" class="nav-link" data-scroll-target="#c-3">c</a></li>
-  <li><a href="#d-2" id="toc-d-2" class="nav-link" data-scroll-target="#d-2">d</a></li>
-  </ul></li>
-  <li><a href="#arsenic-poisoning" id="toc-arsenic-poisoning" class="nav-link" data-scroll-target="#arsenic-poisoning">3.28 Arsenic poisoning</a></li>
-  <li><a href="#chickenpox-part-iii" id="toc-chickenpox-part-iii" class="nav-link" data-scroll-target="#chickenpox-part-iii">3.32 Chickenpox, Part III</a>
-  <ul class="collapse">
-  <li><a href="#a-6" id="toc-a-6" class="nav-link" data-scroll-target="#a-6">a</a></li>
-  <li><a href="#b-6" id="toc-b-6" class="nav-link" data-scroll-target="#b-6">b</a></li>
-  </ul></li>
   </ul></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="HW_03_ans.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
@@ -183,14 +174,16 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 25, 2024</p>
+      <p class="date-modified">October 16, 2025</p>
     </div>
   </div>
     
   </div>
   
 
+
 </header>
+
 
 <section id="book-exercises" class="level1 unnumbered">
 <h1 class="unnumbered">Book exercises</h1>
@@ -266,76 +259,6 @@ Important
 <section id="b-3" class="level3">
 <h3 class="anchored" data-anchor-id="b-3">b</h3>
 <p>No</p>
-</section>
-</section>
-<section id="area-under-the-curve-part-ii" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="area-under-the-curve-part-ii">3.20 Area under the curve, Part II</h2>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Important
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>For this problem:</p>
-<ul>
-<li>Make a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.</li>
-<li>Calculate probabilities using R (You can hand write the code you used to find your answer if you do not want submit typed R code or a Quarto document.)</li>
-</ul>
-</div>
-</div>
-<section id="a-4" class="level3">
-<h3 class="anchored" data-anchor-id="a-4">a</h3>
-<p>87.08%</p>
-</section>
-<section id="b-4" class="level3">
-<h3 class="anchored" data-anchor-id="b-4">b</h3>
-<p>57.14%</p>
-</section>
-<section id="c-2" class="level3">
-<h3 class="anchored" data-anchor-id="c-2">c</h3>
-<p>6.22^{-14}%</p>
-</section>
-<section id="d-1" class="level3">
-<h3 class="anchored" data-anchor-id="d-1">d</h3>
-<p>38.29%</p>
-</section>
-</section>
-<section id="triathlon-times" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="triathlon-times">3.22 Triathlon times</h2>
-<section id="a-5" class="level3">
-<h3 class="anchored" data-anchor-id="a-5">a</h3>
-<p>13.8%</p>
-</section>
-<section id="b-5" class="level3">
-<h3 class="anchored" data-anchor-id="b-5">b</h3>
-<p>37.74%</p>
-</section>
-<section id="c-3" class="level3">
-<h3 class="anchored" data-anchor-id="c-3">c</h3>
-<p>3354.05 seconds</p>
-</section>
-<section id="d-2" class="level3">
-<h3 class="anchored" data-anchor-id="d-2">d</h3>
-<p>6295.21 seconds</p>
-</section>
-</section>
-<section id="arsenic-poisoning" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="arsenic-poisoning">3.28 Arsenic poisoning</h2>
-<p>0.26μg/dl and 6.14μg/dl</p>
-</section>
-<section id="chickenpox-part-iii" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="chickenpox-part-iii">3.32 Chickenpox, Part III</h2>
-<section id="a-6" class="level3">
-<h3 class="anchored" data-anchor-id="a-6">a</h3>
-<p>Expected value: 108, sd: 3.29</p>
-</section>
-<section id="b-6" class="level3">
-<h3 class="anchored" data-anchor-id="b-6">b</h3>
-<p>0.223</p>
 
 
 </section>
@@ -378,18 +301,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -421,11 +333,53 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -435,8 +389,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -448,7 +411,129 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -492,6 +577,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -517,6 +603,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -574,23 +686,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-          // target, if specified
-          link.setAttribute("target", "_blank");
-      }
-    }
 });
 </script>
 </div> <!-- /content -->
+
 
 
 

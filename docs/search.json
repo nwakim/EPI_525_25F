@@ -2202,7 +2202,7 @@
     "href": "homework.html",
     "title": "Homework",
     "section": "",
-    "text": "Homework\nAssignment\nAssignment due (@11pm)\nAnswers\nSolutions (.qmd)\nSolutions (.html)*\n\n\n\n\n0\n\n10/02\n\n\n\n\n\n1\n\n10/12\n\n\n\n\n\n2\n\n10/19\n\n\n\n\n\n3\n\n10/26\n\n\n\n\n\n4\n\n11/02\n\n\n\n\n\n5\n\n11/09\n\n\n\n\n\n6\n\n11/20\n\n\n\n\n\n7\n\n11/23\n\n\n\n\n\n8\n\n12/07\n\n\n\n\n\n9 (optional)\n\n12/11\nPlease note that you need to download the .html file to see the LaTeX math properly."
+    "text": "Homework\nAssignment\nAssignment due (@11pm)\nAnswers\nSolutions folder\n\n\n\n\n0\n\n10/02\n\n\n\n\n1\n\n10/12\n\n\n\n\n2\n\n10/19\n\n\n\n\n3\n\n10/26\n\n\n\n\n4\n\n11/02\n\n\n\n\n5\n\n11/09\n\n\n\n\n6\n\n11/16\n\n\n\n\n7\n\n11/23\n\n\n\n\n8\n\n12/07\n\n\n\n\n9 (optional)\n\n12/11\nPlease note that you need to download the .html file to see the LaTeX math properly."
   },
   {
     "objectID": "homework.html#assignments",
@@ -2335,14 +2335,14 @@
     "href": "homework/HW_03.html",
     "title": "Homework 3",
     "section": "",
-    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou can download the .qmd file for this assignment from Github if you want to work in a Quarto doc. You do not need to work in a Quarto doc for this homework!!\n\n\n\n\n\n\nImportant\n\n\n\n\nThe non-R exercises may be completed not using Quarto. I especially recommend writing out by hand the chapter 3 probability questions, whether on paper or a tablet.\n\nSome problems involve R code to calculate a probability, but the code is brief and you can write out the code and the answer by hand if you want.\nYou can also have all your R code together at the end of your homework file\n\nIf you are completing the homework on paper, you can use a scanning app, such as Adobe Scan or iPhone notes, to create a pdf of your assignment."
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format if you are not rendering a Quarto document. If you are using a Quarto doc to render your full homework, then you can keep it as an html! You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou can download the .qmd file for this assignment from Github if you want to work in a Quarto doc. You do not need to work in a Quarto doc for this homework!!\n\n\n\n\n\n\nImportant\n\n\n\n\nThe non-R exercises may be completed not using Quarto. I especially recommend writing out by hand the chapter 3 probability questions, whether on paper or a tablet.\n\nSome problems involve R code to calculate a probability, but the code is brief and you can write out the code and the answer by hand if you want.\nYou can also have all your R code together at the end of your homework file\n\nIf you are completing the homework on paper, you can use a scanning app, such as Adobe Scan or iPhone notes, to create a pdf of your assignment."
   },
   {
     "objectID": "homework/HW_03.html#directions",
     "href": "homework/HW_03.html#directions",
     "title": "Homework 3",
     "section": "",
-    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format. You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou can download the .qmd file for this assignment from Github if you want to work in a Quarto doc. You do not need to work in a Quarto doc for this homework!!\n\n\n\n\n\n\nImportant\n\n\n\n\nThe non-R exercises may be completed not using Quarto. I especially recommend writing out by hand the chapter 3 probability questions, whether on paper or a tablet.\n\nSome problems involve R code to calculate a probability, but the code is brief and you can write out the code and the answer by hand if you want.\nYou can also have all your R code together at the end of your homework file\n\nIf you are completing the homework on paper, you can use a scanning app, such as Adobe Scan or iPhone notes, to create a pdf of your assignment."
+    "text": "Please turn in this homework on Sakai. Please submit your homework in pdf format if you are not rendering a Quarto document. If you are using a Quarto doc to render your full homework, then you can keep it as an html! You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\nYou can download the .qmd file for this assignment from Github if you want to work in a Quarto doc. You do not need to work in a Quarto doc for this homework!!\n\n\n\n\n\n\nImportant\n\n\n\n\nThe non-R exercises may be completed not using Quarto. I especially recommend writing out by hand the chapter 3 probability questions, whether on paper or a tablet.\n\nSome problems involve R code to calculate a probability, but the code is brief and you can write out the code and the answer by hand if you want.\nYou can also have all your R code together at the end of your homework file\n\nIf you are completing the homework on paper, you can use a scanning app, such as Adobe Scan or iPhone notes, to create a pdf of your assignment."
   },
   {
     "objectID": "homework/HW_03.html#baggage-fees",
@@ -2370,7 +2370,7 @@
     "href": "homework/HW_03.html#chickenpox-part-i.",
     "title": "Homework 3",
     "section": "3.8 Chickenpox, Part I.",
-    "text": "3.8 Chickenpox, Part I.\nFor #3.8, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.\nIn part d, \\(|Z| &lt; 0.5\\) uses an absolute value. This translates to \\(-0.5 &lt; Z &lt; 0.5\\)."
+    "text": "3.8 Chickenpox, Part I.\nFor #3.8, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities."
   },
   {
     "objectID": "homework/HW_03.html#chickenpox-part-ii.",
@@ -2517,7 +2517,7 @@
     "href": "homework/HW_04.html#area-under-the-curve-part-ii",
     "title": "Homework 4",
     "section": "3.20 Area under the curve, Part II",
-    "text": "3.20 Area under the curve, Part II"
+    "text": "3.20 Area under the curve, Part II\n\n\n\n\n\n\nImportant\n\n\n\nFor this problem:\n\nMake a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.\nCalculate probabilities using R (You can hand write the code you used to find your answer if you do not want submit typed R code or a Quarto document.)"
   },
   {
     "objectID": "homework/HW_04.html#triathlon-times",
@@ -14998,7 +14998,7 @@
     "href": "hw_answers/HW_03_ans.html",
     "title": "Homework 3 Answers",
     "section": "",
-    "text": "Important\n\n\n\nNote that the solutions in the back of the book are not quite right. For part (a), the answer is correct, but there is an error in the work and the notation is sloppy. For part (b), the answer is not correct, as a result of the error in the work for part (a).\n\n\n\n\n215\n\n\n\n8.53\n\n\n\n\n\n\nExpected value: 54 fl oz, SD: 1.09 fl oz\n\n\n\nExpected value: 46 fl oz, SD: 1.03 fl oz\n\n\n\n\n\n\n\nFor #3.8, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.\n\n\nAppropriate\n\n\n\n0.0059\n\n\n\n0.0059\n\n\n\n0.9999999999 (lots of 9’s) or 1\n\n\n\n0.9872\n\n\n\n\nFor #3.10, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.\n\n\nExpected value: 108, sd: 3.29\n\n\n\nNo\n\n\n\n\n\n\n\n\n\n\nImportant\n\n\n\nFor this problem:\n\nMake a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.\nCalculate probabilities using R (You can hand write the code you used to find your answer if you do not want submit typed R code or a Quarto document.)\n\n\n\n\n\n87.08%\n\n\n\n57.14%\n\n\n\n6.22^{-14}%\n\n\n\n38.29%\n\n\n\n\n\n\n13.8%\n\n\n\n37.74%\n\n\n\n3354.05 seconds\n\n\n\n6295.21 seconds\n\n\n\n\n0.26μg/dl and 6.14μg/dl\n\n\n\n\n\nExpected value: 108, sd: 3.29\n\n\n\n0.223"
+    "text": "Important\n\n\n\nNote that the solutions in the back of the book are not quite right. For part (a), the answer is correct, but there is an error in the work and the notation is sloppy. For part (b), the answer is not correct, as a result of the error in the work for part (a).\n\n\n\n\n215\n\n\n\n8.53\n\n\n\n\n\n\nExpected value: 54 fl oz, SD: 1.09 fl oz\n\n\n\nExpected value: 46 fl oz, SD: 1.03 fl oz\n\n\n\n\n\n\n\nFor #3.8, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.\n\n\nAppropriate\n\n\n\n0.0059\n\n\n\n0.0059\n\n\n\n0.9999999999 (lots of 9’s) or 1\n\n\n\n0.9872\n\n\n\n\nFor #3.10, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.\n\n\nExpected value: 108, sd: 3.29\n\n\n\nNo"
   },
   {
     "objectID": "hw_answers/HW_03_ans.html#gull-clutch-size",
@@ -17672,7 +17672,7 @@
     "href": "hw_answers/HW_04_ans.html",
     "title": "Homework 4 Answers",
     "section": "",
-    "text": "A very skilled court stenographer makes one typographical error (typo) per hour on average.\n\n\nWhat are the mean and the standard deviation of the number of typos this stenographer makes in an hour?\n\nMean: 1, standard deviation: 1\n\n\n\n\nCalculate the probability that this stenographer makes at most 3 typos in a given hour.\n\n0.981\n\n\n\n\nCalculate the probability that this stenographer makes at least 5 typos over 3 hours.\n\n0.185\n\n\n\n\n\nOsteosarcoma is a relatively rare type of bone cancer. It occurs most often in young adults, age 10 - 19; it is diagnosed in approximately 8 per 1,000,000 individuals per year in that age group. In New York City (including all five boroughs), the number of young adults in this age range is approximately 1,400,000.\n\n\nWhat is the expected number of cases of osteosarcoma in NYC in a given year?\n\n11.2\n\n\n\n\nWhat is the probability that 15 or more cases will be diagnosed in a given year?\n\n0.161\n\n\n\n\nThe largest concentration of young adults in NYC is in the borough of Brooklyn, where the population in that age range is approximately 450,000. What is the probability of 10 or more cases in Brooklyn in a given year?\n\n0.004\n\n\n\n\nSuppose that in a given year, 10 cases of osteosarcoma were observed in NYC, with all 10 cases occurring among young adults living in Brooklyn. An official from the NYC Public Health Department claims that the probability of this event (that is, the probability of 10 or more cases being observed, and all of them occurring in Brooklyn) is what was calculated in part c). Is the official correct? Explain your answer. You may assume that your answer to part c) is correct. This question can be answered without doing any calculations.\n\nOfficial is not correct\n\n\n\n\nSuppose that over five years, there was one year in which 10 or more cases of osteosarcoma were observed in Brooklyn. Is the probability of this event equal to the probability calculated in part c)? Explain your answer.\n\n0.01979"
+    "text": "Important\n\n\n\nFor this problem:\n\nMake a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.\nCalculate probabilities using R (You can hand write the code you used to find your answer if you do not want submit typed R code or a Quarto document.)\n\n\n\n\n\n87.08%\n\n\n\n57.14%\n\n\n\n\\(6.22^{-14}\\)%\n\n\n\n38.29%\n\n\n\n\n\n\n13.8%\n\n\n\n37.74%\n\n\n\n3354.05 seconds\n\n\n\n6295.21 seconds\n\n\n\n\n0.26μg/dl and 6.14μg/dl\n\n\n\n\n\nExpected value: 108, sd: 3.29\n\n\n\n0.223\n\n\n\n\nA very skilled court stenographer makes one typographical error (typo) per hour on average.\n\n\nWhat are the mean and the standard deviation of the number of typos this stenographer makes in an hour?\n\nMean: 1, standard deviation: 1\n\n\n\n\nCalculate the probability that this stenographer makes at most 3 typos in a given hour.\n\n0.981\n\n\n\n\nCalculate the probability that this stenographer makes at least 5 typos over 3 hours.\n\n0.185\n\n\n\n\n\nOsteosarcoma is a relatively rare type of bone cancer. It occurs most often in young adults, age 10 - 19; it is diagnosed in approximately 8 per 1,000,000 individuals per year in that age group. In New York City (including all five boroughs), the number of young adults in this age range is approximately 1,400,000.\n\n\nWhat is the expected number of cases of osteosarcoma in NYC in a given year?\n\n11.2\n\n\n\n\nWhat is the probability that 15 or more cases will be diagnosed in a given year?\n\n0.161\n\n\n\n\nThe largest concentration of young adults in NYC is in the borough of Brooklyn, where the population in that age range is approximately 450,000. What is the probability of 10 or more cases in Brooklyn in a given year?\n\n0.004\n\n\n\n\nSuppose that in a given year, 10 cases of osteosarcoma were observed in NYC, with all 10 cases occurring among young adults living in Brooklyn. An official from the NYC Public Health Department claims that the probability of this event (that is, the probability of 10 or more cases being observed, and all of them occurring in Brooklyn) is what was calculated in part c). Is the official correct? Explain your answer. You may assume that your answer to part c) is correct. This question can be answered without doing any calculations.\n\nOfficial is not correct\n\n\n\n\nSuppose that over five years, there was one year in which 10 or more cases of osteosarcoma were observed in Brooklyn. Is the probability of this event equal to the probability calculated in part c)? Explain your answer.\n\n0.01979"
   },
   {
     "objectID": "hw_answers/HW_04_ans.html#stenographers-typos",
@@ -17693,7 +17693,7 @@
     "href": "hw_answers/HW_04_ans.html#r-exercise-1",
     "title": "Homework 4 Answers",
     "section": "R exercise 1",
-    "text": "R exercise 1\nBelow you will be using a dataset from Gapminder to complete a few R exercises.\n\nLoad all the packages you need below here\nYou don’t need to do it all at once, you can add more libraries as you realize you need them.\n\n\n\n\n\nImport dataset\nImport the dataset called “Gapminder_2011_LifeExp_CO2.csv” You can find it in the student files under Data then Homework. You will need to download the file onto your computer, and use the correct file path to import the data.\n\n\n\n\n\nMake a histogram\nUsing ggplot2, make a histogram of the variable CO2emissions.\n\n\n\n`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n\n\nWarning: Removed 4 rows containing non-finite outside the scale range\n(`stat_bin()`)."
+    "text": "R exercise 1\nBelow you will be using a dataset from Gapminder to complete a few R exercises.\n\nLoad all the packages you need below here\nYou don’t need to do it all at once, you can add more libraries as you realize you need them.\n\n\n\n\n\nImport dataset\nImport the dataset called “Gapminder_2011_LifeExp_CO2.csv” You can find it in the student files under Data then Homework. You will need to download the file onto your computer, and use the correct file path to import the data.\n\n\n\n\n\nMake a histogram\nUsing ggplot2, make a histogram of the variable CO2emissions.\n\n\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\nWarning: Removed 4 rows containing non-finite outside the scale range\n(`stat_bin()`)."
   },
   {
     "objectID": "homework/HW_05.html#income-and-education-in-us-counties",
@@ -25009,5 +25009,33 @@
     "title": "Key Info and Announcements",
     "section": "Key Dates",
     "text": "Key Dates\n\nHomework 2 Assignment due this Sunday at 11pm!\nQuiz 1 will open next Wednesday after class"
+  },
+  {
+    "objectID": "hw_answers/HW_04_ans.html#area-under-the-curve-part-ii",
+    "href": "hw_answers/HW_04_ans.html#area-under-the-curve-part-ii",
+    "title": "Homework 4 Answers",
+    "section": "",
+    "text": "Important\n\n\n\nFor this problem:\n\nMake a sketch of the normal distribution curve with the mean and 1 sd away from the mean clearly labeled, and the area representing probability of interest shaded in.\nCalculate probabilities using R (You can hand write the code you used to find your answer if you do not want submit typed R code or a Quarto document.)\n\n\n\n\n\n87.08%\n\n\n\n57.14%\n\n\n\n\\(6.22^{-14}\\)%\n\n\n\n38.29%"
+  },
+  {
+    "objectID": "hw_answers/HW_04_ans.html#triathlon-times",
+    "href": "hw_answers/HW_04_ans.html#triathlon-times",
+    "title": "Homework 4 Answers",
+    "section": "",
+    "text": "13.8%\n\n\n\n37.74%\n\n\n\n3354.05 seconds\n\n\n\n6295.21 seconds"
+  },
+  {
+    "objectID": "hw_answers/HW_04_ans.html#arsenic-poisoning",
+    "href": "hw_answers/HW_04_ans.html#arsenic-poisoning",
+    "title": "Homework 4 Answers",
+    "section": "",
+    "text": "0.26μg/dl and 6.14μg/dl"
+  },
+  {
+    "objectID": "hw_answers/HW_04_ans.html#chickenpox-part-iii",
+    "href": "hw_answers/HW_04_ans.html#chickenpox-part-iii",
+    "title": "Homework 4 Answers",
+    "section": "",
+    "text": "Expected value: 108, sd: 3.29\n\n\n\n0.223"
   }
 ]
