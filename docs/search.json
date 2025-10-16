@@ -24462,7 +24462,7 @@
     "href": "quiz.html",
     "title": "Quiz Info",
     "section": "",
-    "text": "Quiz\nTopics\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n\nr q1_open %&gt;% format(\"%m/%d\")\nr q1_open %&gt;% format(\"%m/%d\")\n\n\n2\n\nr q1_open %&gt;% format(\"%m/%d\")\nr q1_open %&gt;% format(\"%m/%d\")\n\n\n3\n\nr q1_open %&gt;% format(\"%m/%d\")\nr q1_open %&gt;% format(\"%m/%d\")"
+    "text": "Below is the general timing and lessons for each quiz:\n\n\n\n\n\n\n\n\n\nQuiz\nLessons\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n1-4\n10/22\n10/26\n\n\n2\n5-12\n11/12\n11/16\n\n\n3\n13-19\n12/07\n12/12\n\n\n\nMore information specific to each quiz will be posted below.\n\nQuiz 1\n\n\nQuiz 2\n\n\nQuiz 3"
   },
   {
     "objectID": "quiz.html#quiz-1",
