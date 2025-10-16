@@ -3,7 +3,7 @@ title: "R05: Quarto in R"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/14/2024"
+date: "`r library(here); source(here('class_dates.R')); w3d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -26,6 +26,13 @@ editor_options:
 #| echo: false
 
 library(here)
+
+# terminal: for icons
+# quarto install extension quarto-ext/fontawesome
+
+knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+
+source(here("class_dates.R"))
 ```
 
 # Saving your work with Quarto
