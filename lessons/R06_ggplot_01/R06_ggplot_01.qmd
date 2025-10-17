@@ -1,9 +1,9 @@
 ---
-title: "R06: `ggplot2`, Part 1"
+title: "R06: `ggplot2`"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/21/2024"
+date: "`r library(here); source(here('class_dates.R')); w4d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -39,6 +39,8 @@ library(here)
 # set ggplot theme for slides 
 theme_set(theme_bw(base_size = 22))
 # theme_update(text = element_text(size=20))  # set global text size for ggplots
+
+source(here("class_dates.R"))
 ```
 
 ## From last time: R Packages

@@ -1,6 +1,6 @@
 ---
 title: "Lesson 7: Poisson distribution"
-subtitle: "TB sections 3.3-3.4"
+subtitle: "TB sections 3.4"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
@@ -40,12 +40,8 @@ library(knitr)
 # quarto install extension quarto-ext/fontawesome
 
 # set ggplot theme for slides 
-theme_set(
-  theme_bw(base_size = 22)
-  ) %>%
-  theme_update(
-    plot.title = element_text(size = 22, hjust = 0.5)
-    )
+theme_set(theme_bw(base_size = 22))
+theme_update(plot.title = element_text(size = 22, hjust = 0.5))
 knitr::opts_chunk$set(warning=FALSE, message=FALSE)
 
 source(here("class_dates.R"))
@@ -117,6 +113,9 @@ source(here("lessons", "slides_color_palette.R"))
 R commands with their [input]{style="color:#BF396F"} and
 [output]{style="color:#367B79"}:
 
+::: columns
+::: column
+
 +----------------+-----------------------------------------------+
 | R code         | What does it return?                          |
 +================+===============================================+
@@ -139,6 +138,11 @@ R commands with their [input]{style="color:#BF396F"} and
 |                | cases]{style="color:#367B79"} corresponding  |
 |                | to [desired quantile]{style="color:#BF396F"}  |
 +----------------+-----------------------------------------------+
+
+:::
+::: column
+:::
+:::
 
 ## Example: probabilities from a Poisson distribution (1/4)
 
@@ -304,7 +308,8 @@ ggplot(binom %>% filter(y > 1e-5) %>%
        aes(x, y, color=factor(n))) +
   geom_point(size=1) +
   geom_segment(aes(x=x, xend=x, y=0, yend=y, color=factor(n)), lwd=0.8, alpha=0.5) +
-  facet_grid(rows = vars(p), cols = vars(n), scales="free_x", space="free_x") +
+  facet_grid(rows = vars(p), cols = vars(n), scales="free_x", space="free_x", 
+             labeller = \(x) label_both(x, sep = "=")) +
   theme(legend.position = "none",
         axis.title = element_text(size = 14),    # Axis title size
         axis.text = element_text(size = 12),     # Axis text size

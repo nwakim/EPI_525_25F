@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Meike Niederhausen and Nicky Wakim">
-  <meta name="dcterms.date" content="2025-10-15">
+  <meta name="dcterms.date" content="2025-10-20">
   <title>Biostatistics 1 – Lesson 6: Normal distribution</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -196,7 +196,7 @@
 
 <section id="title-slide" data-background-color="#3070BF" class="quarto-title-block center">
   <h1 class="title">Lesson 6: Normal distribution</h1>
-  <p class="subtitle">TB sections 3.3-3.4</p>
+  <p class="subtitle">TB sections 3.3</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -206,7 +206,7 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 
-  <p class="date">2025-10-15</p>
+  <p class="date">2025-10-20</p>
 </section>
 <section>
 <section id="learning-objectives" class="title-slide slide level1 center">
@@ -363,10 +363,12 @@ Meike Niederhausen and Nicky Wakim
 <section id="normal-distribution-r-commands" class="slide level2">
 <h2>Normal distribution: R commands</h2>
 <p>R commands with their <span style="color:#BF396F">input</span> and <span style="color:#367B79">output</span>:</p>
-<table class="caption-top" style="width:90%;">
+<div class="columns">
+<div class="column">
+<table class="caption-top" style="width:89%;">
 <colgroup>
 <col style="width: 23%">
-<col style="width: 66%">
+<col style="width: 65%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -396,6 +398,9 @@ Meike Niederhausen and Nicky Wakim
 </tr>
 </tbody>
 </table>
+</div><div class="column">
+
+</div></div>
 </section>
 <section id="calculating-probabilities-from-a-normal-distribution" class="slide level2">
 <h2>Calculating probabilities from a Normal distribution</h2>
@@ -416,6 +421,7 @@ Meike Niederhausen and Nicky Wakim
 <li><p>R commands</p>
 <ul>
 <li><span class="math inline">\(P(Z \leq q) =\)</span> <code>pnorm(q, mean = 0, sd = 1, lower.tail = TRUE)</code></li>
+<li><span class="math inline">\(P(Z &gt; q) =\)</span> <code>pnorm(q, mean = 0, sd = 1, lower.tail = FALSE)</code></li>
 </ul></li>
 </ol>
 <p>&nbsp;</p>
@@ -459,7 +465,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="columns">
 <div class="column">
 <ol type="1">
-<li>Draw on standard Normal curve: <img data-src="../img_slides/standard_normal.png" width="800"></li>
+<li>Draw on standard Normal curve: <img data-src="../img_slides/standard_normal.png" width="760"></li>
 </ol>
 </div><div class="column">
 <ol start="2" type="1">
@@ -497,7 +503,7 @@ Meike Niederhausen and Nicky Wakim
 <ol type="1">
 <li>Draw on standard Normal curve:</li>
 </ol>
-<p><img data-src="../img_slides/standard_normal.png" width="800"></p>
+<p><img data-src="../img_slides/standard_normal.png" width="760"></p>
 </div><div class="column">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="dv">1</span> <span class="sc">-</span> <span class="fu">pnorm</span>(<span class="at">q =</span> <span class="sc">-</span><span class="fl">0.37</span>, </span>
@@ -534,7 +540,7 @@ Meike Niederhausen and Nicky Wakim
 <ol type="1">
 <li>Draw on standard Normal curve:</li>
 </ol>
-<p><img data-src="../img_slides/standard_normal.png" width="800"></p>
+<p><img data-src="../img_slides/standard_normal.png" width="760"></p>
 </div><div class="column">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">pnorm</span>(<span class="at">q =</span> <span class="fl">2.46</span>, <span class="at">mean =</span> <span class="dv">0</span>, <span class="at">sd =</span> <span class="dv">1</span>) <span class="sc">-</span> </span>
@@ -563,13 +569,13 @@ Meike Niederhausen and Nicky Wakim
 <ol type="1">
 <li>Draw on standard Normal curve:</li>
 </ol>
-<p><img data-src="../img_slides/standard_normal.png" width="800"></p>
+<p><img data-src="../img_slides/standard_normal.png" width="760"></p>
 </div><div class="column">
 
 </div></div>
 </section>
-<section id="using-normal-distribution-in-word-problems" class="slide level2">
-<h2>Using Normal distribution in word problems</h2>
+<section id="example-using-normal-distribution-in-word-problems-14" class="slide level2">
+<h2>Example: Using Normal distribution in word problems (1/4)</h2>
 <div class="example">
 <div class="ex-ttl">
 <p>Example: Diastolic blood pressure (DBP)</p>
@@ -584,8 +590,8 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 </section>
-<section id="using-normal-distribution-in-word-problems-1" class="slide level2">
-<h2>Using Normal distribution in word problems</h2>
+<section id="example-using-normal-distribution-in-word-problems-24" class="slide level2">
+<h2>Example: Using Normal distribution in word problems (2/4)</h2>
 <div class="example">
 <div class="ex-ttl">
 <p>Example: Diastolic blood pressure (DBP)</p>
@@ -600,7 +606,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="columns">
 <div class="column">
 <ul>
-<li>Draw on a normal curve:</li>
+<li>Draw on a normal curve: <img data-src="../img_slides/normal.png" width="750"></li>
 </ul>
 </div><div class="column">
 <ul>
@@ -617,8 +623,8 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div></div>
 </section>
-<section id="using-normal-distribution-in-word-problems-2" class="slide level2">
-<h2>Using Normal distribution in word problems</h2>
+<section id="example-using-normal-distribution-in-word-problems-34" class="slide level2">
+<h2>Example: Using Normal distribution in word problems (3/4)</h2>
 <div class="example">
 <div class="ex-ttl">
 <p>Example: Diastolic blood pressure (DBP)</p>
@@ -633,7 +639,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="columns">
 <div class="column">
 <ul>
-<li>Draw on a normal curve:</li>
+<li>Draw on a normal curve: <img data-src="../img_slides/normal.png" width="750"></li>
 </ul>
 </div><div class="column">
 <ul>
@@ -649,8 +655,8 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div></div>
 </section>
-<section id="using-normal-distribution-in-word-problems-3" class="slide level2">
-<h2>Using Normal distribution in word problems</h2>
+<section id="example-using-normal-distribution-in-word-problems-44" class="slide level2">
+<h2>Example: Using Normal distribution in word problems (4/4)</h2>
 <div class="example">
 <div class="ex-ttl">
 <p>Example: Diastolic blood pressure (DBP)</p>
@@ -665,7 +671,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="columns">
 <div class="column">
 <ul>
-<li>Draw on a normal curve:</li>
+<li>Draw on a normal curve: <img data-src="../img_slides/normal.png" width="750"></li>
 </ul>
 </div><div class="column">
 <ul>

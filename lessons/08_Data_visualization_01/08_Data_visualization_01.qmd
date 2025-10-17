@@ -3,7 +3,7 @@ title: "Lesson 7: Data visualization of a single variable"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/21/2024"
+date: "`r library(here); source(here('class_dates.R')); w3d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -39,6 +39,8 @@ data(frog)
 # set ggplot theme for slides 
 theme_set(theme_bw(base_size = 22))
 knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+
+source(here("class_dates.R"))
 ```
 
 # Learning Objectives
