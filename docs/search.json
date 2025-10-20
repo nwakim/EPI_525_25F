@@ -10784,7 +10784,7 @@
     "href": "lessons/05_RVs_Binomial/05_RVs_Binomial.html#binomial-distribution",
     "title": "Lesson 5: Random variables and Binomial distribution",
     "section": "Binomial distribution",
-    "text": "Binomial distribution\n\n\nDistribution of a Binomial random variable\n\n\nLet \\(X\\) be the total number of successes in \\(n\\) independent trials, each with probability \\(p\\) of a success. Then probability of observing exactly \\(k\\) successes in \\(n\\) independent trials is\n\\[P(X = x) = \\binom{n}{x} p^x (1-p)^{n-x},  x= 0, 1, 2, \\dots, n \\]\n\n\n\nThe parameters of a binomial distribution are \\(p\\) and \\(n\\).\nIf a r.v. \\(X\\) is modeled by a binomial distribution, then we write in shorthand\n\n\n\nMean and variance of a Binomial r.v\n\n\nIf \\(X\\) is a binomial r.v. with probability of success \\(p\\), then \\(E(X) = np\\) and \\(\\text{Var}(X)=np(1-p)\\)"
+    "text": "Binomial distribution\n\n\nDistribution of a Binomial random variable\n\n\nLet \\(X\\) be the total number of successes in \\(n\\) independent trials, each with probability \\(p\\) of a success. Then probability of observing exactly \\(k\\) successes in \\(n\\) independent trials is\n\\[P(X = x) = \\binom{n}{x} p^x (1-p)^{n-x},  x= 0, 1, 2, \\dots, n \\]\n\n\n\nThe parameters of a binomial distribution are \\(p\\) and \\(n\\).\nIf a r.v. \\(X\\) is modeled by a binomial distribution, then we write in shorthand \\(X \\sim \\text{Binom}(n,p)\\)\n\n\n\nMean and variance of a Binomial r.v\n\n\nIf \\(X\\) is a binomial r.v. with probability of success \\(p\\), then \\(E(X) = np\\) and \\(\\text{Var}(X)=np(1-p)\\)"
   },
   {
     "objectID": "lessons/05_RVs_Binomial/05_RVs_Binomial.html#day-6-topics",
@@ -15151,8 +15151,8 @@
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#from-last-time-r-packages",
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#from-last-time-r-packages",
     "title": "R06: ggplot2",
-    "section": "From last time: R Packages",
-    "text": "From last time: R Packages\nA good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\nModernDive Figure 1.4"
+    "section": "",
+    "text": "A good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\n\n\nModernDive Figure 1.4"
   },
   {
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#from-last-time-load-packages-with-library-command",
@@ -15383,7 +15383,7 @@
     "href": "lessons/05_RVs_Binomial/05_RVs_Binomial.html#relationship-between-bernoulli-and-binomial1",
     "title": "Lesson 5: Random variables and Binomial distribution",
     "section": "Relationship between Bernoulli and Binomial1",
-    "text": "Relationship between Bernoulli and Binomial1\n\nThe Bernoulli distribution is a special case of the Binomial distribution where \\(n=1\\)\n\nSpecifically: \\[\\text{Binomial}(1, p) = \\text{Bernoulli}(p) \\]\n\nTo get a Binomial distribution, we simply extend the scenario from a single trial to multiple independent trials.\n\nIf we conduct \\(n\\) independent Bernoulli trials with the same success probability \\(p\\), the total number of successes across these \\(n\\) trials will follow a Binomial distribution\n\n\n \n\nQuick example:\n\nBernoulli: If you flip a coin once, with probability \\(p=0.5\\) of landing heads, that is a Bernoulli trial.\nBinomial: If you flip the coin 5 times, and you want to know how many times it will land heads, the number of heads will follow a Binomial distribution with parameters \\(n=5\\) and \\(p=0.5\\)\n\n\nInformation on slide heavily borrowed from ChatGPT with prompt: “can you explain how we go from a bernoulli distribution to a binomial”"
+    "text": "Relationship between Bernoulli and Binomial1\n\nThe Bernoulli distribution is a special case of the Binomial distribution where \\(n=1\\)\n\nSpecifically: \\[\\text{Binomial}(1, p) = \\text{Bernoulli}(p) \\]\n\nTo get a Binomial distribution, we simply extend the scenario from a single trial to multiple independent trials.\n\nIf we conduct \\(n\\) independent Bernoulli trials with the same success probability \\(p\\), the total number of successes across these \\(n\\) trials will follow a Binomial distribution\n\n\n \n\nQuick example:\n\nBernoulli: If you flip a coin once, with probability \\(p=0.5\\) of landing heads, that is a Bernoulli trial.\nBinomial: If you flip the coin 5 times, and you want to know how many times it will land heads, the number of heads will follow a Binomial distribution with parameters \\(n=5\\) and \\(p=0.5\\)"
   },
   {
     "objectID": "lessons/05_RVs_Binomial/05_RVs_Binomial.html#binomial-distribution-example-1",
@@ -16263,7 +16263,7 @@
   {
     "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html",
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html",
-    "title": "R06: ggplot2, Part 1",
+    "title": "R06: ggplot2",
     "section": "",
     "text": "A good analogy for R packages is that they are like apps you can download onto a mobile phone:\n\n\n\nModernDive Figure 1.4"
   },
@@ -16468,7 +16468,7 @@
     "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#works-best-with-tidy-data1",
     "title": "R06: ggplot2",
     "section": "Works best with “tidy” data1",
-    "text": "Works best with “tidy” data1\n\n\n\n\n\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell.\n\nSource: R for Data Science. Grolemund and Wickham."
+    "text": "Works best with “tidy” data1\n\n\n\n\n\n\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell."
   },
   {
     "objectID": "lessons/07_Data_visualization_01/07_Data_visualization_01.html#section",
@@ -24462,7 +24462,7 @@
     "href": "quiz.html",
     "title": "Quiz Info",
     "section": "",
-    "text": "Below is the general timing and lessons for each quiz:\n\n\n\n\n\n\n\n\n\nQuiz\nLessons\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n1-4\n10/22\n10/26\n\n\n2\n5-12\n11/12\n11/16\n\n\n3\n13-19\n12/07\n12/12\n\n\n\nQuizzes will be mostly conceptual questions with 10-15 multiple choice questions. Some calculations will need to be done for certain questions, but the focus will be on understanding concepts.\nMore information specific to each quiz will be posted below.\n\nInstructions that will presented for each quiz\n\nI have written a 30-minute quiz, but there is no time limit on the quiz. You will have from Wednesday at 3pm to Sunday at 11pm to finish the quiz.\nThe quiz is open book and open notes. You may use books other than the class textbook, you may use anything on our course webpage, and you may use reference websites (like Wikipedia, Googling expected value of specific distribution, etc.).\nNo cheating will be tolerated. Cheating includes:\n\nUsing ChatGPT or any other AI software\nCopy and pasting the question from Sakai to any search engine.\nUsing question and answer threads typically seen on sites like StackExchange, WikiHow, Quora, Reddit, StackOverflow, Chegg, etc.\nAsking other students, sharing quiz work or sharing quiz results.\n\nEach question is worth 1 point, including multiple choice and free response questions.\n\n\n\nQuiz 1\n\n\nQuiz 2\n\n\nQuiz 3"
+    "text": "Below is the general timing and lessons for each quiz:\n\n\n\n\n\n\n\n\n\nQuiz\nLessons\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n1-4\n10/22\n10/26\n\n\n2\n5-12\n11/12\n11/16\n\n\n3\n13-19\n12/07\n12/12\n\n\n\nQuizzes will be mostly conceptual questions with 10-15 multiple choice questions. Some calculations will need to be done for certain questions, but the focus will be on understanding concepts.\nMore information specific to each quiz will be posted below.\n\nInstructions that will presented for each quiz\n\nI have written a 30-minute quiz, but there is no time limit on the quiz. You will have from Wednesday at 3pm to Sunday at 11pm to finish the quiz.\nThe quiz is open book and open notes. You may use books other than the class textbook, you may use anything on our course webpage, and you may use reference websites (like Wikipedia, Googling expected value of specific distribution, etc.).\nNo cheating will be tolerated. Cheating includes:\n\nUsing ChatGPT or any other AI software\nCopy and pasting the question from Sakai to any search engine.\nUsing question and answer threads typically seen on sites like StackExchange, WikiHow, Quora, Reddit, StackOverflow, Chegg, etc.\nAsking other students, sharing quiz work or sharing quiz results.\n\nEach question is worth 1 point, including multiple choice and free response questions.\n\n\n\nQuiz 1\n\nA practice quiz is posted if you would like to do a trial run before the actual quiz\nIncludes Lessons 1-4\n\nCovers some data collection, sampling, data types (about half the questions)\nCovers some probability rules and calculations (about half the questions)\n\nTwo problems have calculations with probabilities\nFor a few questions with probabilities, you will be given a scenario, and you will need to connect it back to probability rules\n\nExample: If two events are mutually exclusive, what is the probability of their intersection?\n\n\n\n\nQuiz 2\n\n\nQuiz 3"
   },
   {
     "objectID": "quiz.html#quiz-1",
@@ -24994,21 +24994,21 @@
     "href": "lessons/06_Normal/06_Normal_key_info.html",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "Thanks for being flexible on Monday!\n\nI’m sorry if this messed up your afternoon flow\n\nToday: need to finish lesson 5, then start lesson 6\n\nLikely that we will not get to R04\n\nFire drills this week!"
+    "text": "Homework 1 feedback\n\nQuestion 1.12:\n\npopulation of interest vs. sample population\n\ntarget population: healthy young adults\nsample population: healthy young adults at a University of Virginia\nSlightly confusing example - mostly linked to original claim\n\ngeneralizability\nestablishing causal relationships\n\nQuestion 1.8:\n\nage: numeric value\n\nYes, technically only whole numbers, but it is not really a count\nBecause so many possible ages, we treat as continuous\n\n\n\nQuiz 1 info"
   },
   {
     "objectID": "lessons/06_Normal/06_Normal_key_info.html#announcements",
     "href": "lessons/06_Normal/06_Normal_key_info.html#announcements",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "Thanks for being flexible on Monday!\n\nI’m sorry if this messed up your afternoon flow\n\nToday: need to finish lesson 5, then start lesson 6\n\nLikely that we will not get to R04\n\nFire drills this week!"
+    "text": "Homework 1 feedback\n\nQuestion 1.12:\n\npopulation of interest vs. sample population\n\ntarget population: healthy young adults\nsample population: healthy young adults at a University of Virginia\nSlightly confusing example - mostly linked to original claim\n\ngeneralizability\nestablishing causal relationships\n\nQuestion 1.8:\n\nage: numeric value\n\nYes, technically only whole numbers, but it is not really a count\nBecause so many possible ages, we treat as continuous\n\n\n\nQuiz 1 info"
   },
   {
     "objectID": "lessons/06_Normal/06_Normal_key_info.html#key-dates",
     "href": "lessons/06_Normal/06_Normal_key_info.html#key-dates",
     "title": "Key Info and Announcements",
     "section": "Key Dates",
-    "text": "Key Dates\n\nHomework 2 Assignment due this Sunday at 11pm!\nQuiz 1 will open next Wednesday after class"
+    "text": "Key Dates\n\nHomework 3 Assignment due this Sunday at 11pm!\nQuiz 1 will open Wednesday after class"
   },
   {
     "objectID": "hw_answers/HW_04_ans.html#area-under-the-curve-part-ii",
@@ -25048,147 +25048,147 @@
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#section",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#section",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "",
     "text": "Artwork by @allison_horst"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#why-do-we-bother-with-visualizing-data1",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#why-do-we-bother-with-visualizing-data1",
-    "title": "Lesson 7: Data visualization of a single variable",
-    "section": "Why do we bother with visualizing data?1",
-    "text": "Why do we bother with visualizing data?1\n\nMakes data easier to understand\n\nhelps you understand large amounts of data by turning it into a visual context, such as a graph or map\n\nHelps identify patterns\n\nhelps identify patterns, trends, and outliers in data sets. \n\nReveals data features\n\nreveals data features that statistics and models might miss, such as unusual distributions, gaps, and outliers\n\nHelps with decision-making\n\nhelps with decision-making on analysis plans\n\n\nAdapted from my Google search AI results: https://www.google.com/search?q=why+do+statistics+bother+with+data+visualization&rlz=1C5GCEM_enUS1130&oq=why+do+statistics+bother+with+data+visu&gs_lcrp=EgZjaHJvbWUqBwgBECEYoAEyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRirAtIBCDk3NDBqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8"
+    "title": "Lesson 8: Data visualization of a single variable",
+    "section": "",
+    "text": "Makes data easier to understand\n\nhelps you understand large amounts of data by turning it into a visual context, such as a graph or map\n\nHelps identify patterns\n\nhelps identify patterns, trends, and outliers in data sets. \n\nReveals data features\n\nreveals data features that statistics and models might miss, such as unusual distributions, gaps, and outliers\n\nHelps with decision-making\n\nhelps with decision-making on analysis plans"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-2-example-the-frog-study2",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-2-example-the-frog-study2",
-    "title": "Lesson 7: Data visualization of a single variable",
-    "section": "From Lesson 2: Example: the frog study1",
-    "text": "From Lesson 2: Example: the frog study1\nIn evolutionary biology, parental investment refers to the amount of time, energy, or other resources devoted towards raising offspring.\n \nWe will be working with the frog dataset, which originates from a 2013 study2 about maternal investment in a frog species. Reproduction is a costly process for female frogs, necessitating a trade-off between individual egg size and total number of eggs produced.\n \nResearchers were interested in investigating how maternal investment varies with altitude. They collected measurements on egg clutches found at breeding ponds across 11 study sites; for 5 sites, the body size of individual female frogs was also recorded.\n \n \nhttps://www.cdc.gov/nchs/products/databriefs/db220.htmChen, W., et al. Maternal investment increases with altitude in a frog on the Tibetan Plateau. Journal of evolutionary biology 26.12 (2013): 2710-2715."
+    "title": "Lesson 8: Data visualization of a single variable",
+    "section": "",
+    "text": "In evolutionary biology, parental investment refers to the amount of time, energy, or other resources devoted towards raising offspring.\n \nWe will be working with the frog dataset, which originates from a 2013 study3 about maternal investment in a frog species. Reproduction is a costly process for female frogs, necessitating a trade-off between individual egg size and total number of eggs produced.\n \nResearchers were interested in investigating how maternal investment varies with altitude. They collected measurements on egg clutches found at breeding ponds across 11 study sites; for 5 sites, the body size of individual female frogs was also recorded."
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-2-four-rows-from-frog-data-frame",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-2-four-rows-from-frog-data-frame",
-    "title": "Lesson 7: Data visualization of a single variable",
-    "section": "From Lesson 2: Four rows from frog data frame",
-    "text": "From Lesson 2: Four rows from frog data frame\n\n\n\n\n\n\n\n\n\n\n\n\n\naltitude\nlatitude\negg.size\nclutch.size\nclutch.volume\nbody.size\n\n\n\n\n1\n3,462.00\n34.82\n1.95\n181.97\n177.83\n3.63\n\n\n2\n3,462.00\n34.82\n1.95\n269.15\n257.04\n3.63\n\n\n3\n3,462.00\n34.82\n1.95\n158.49\n151.36\n3.72\n\n\n150\n2,597.00\n34.05\n2.24\n537.03\n776.25\nNA\n\n\n\n \n\nEach row is an observation\nEach column is a variable\nAll the observations and variables together make a data frame (sometimes called data matrix)\n\n \n\nMissing values: NA means the measured value for body size in clutch #150 is missing"
+    "title": "Lesson 8: Data visualization of a single variable",
+    "section": "",
+    "text": "altitude\nlatitude\negg.size\nclutch.size\nclutch.volume\nbody.size\n\n\n\n\n1\n3,462.00\n34.82\n1.95\n181.97\n177.83\n3.63\n\n\n2\n3,462.00\n34.82\n1.95\n269.15\n257.04\n3.63\n\n\n3\n3,462.00\n34.82\n1.95\n158.49\n151.36\n3.72\n\n\n150\n2,597.00\n34.05\n2.24\n537.03\n776.25\nNA\n\n\n\n \n\nEach row is an observation\nEach column is a variable\nAll the observations and variables together make a data frame (sometimes called data matrix)\n\n \n\nMissing values: NA means the measured value for body size in clutch #150 is missing"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-2-exploring-data-initially",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-2-exploring-data-initially",
-    "title": "Lesson 7: Data visualization of a single variable",
-    "section": "From Lesson 2: Exploring data initially",
-    "text": "From Lesson 2: Exploring data initially\n\nTechniques for exploring and summarizing data differ for numerical versus categorical variables.\n\n \n\nNumerical and graphical summaries are useful for examining variables one at a time\n\nCan also be used for exploring the relationships between variables\nNumerical summaries are not just for numerical variables (certain ones are used for categorical variables)\n\n\n \n\nToday we we look at ways to visualize a numerical variable and a categorical variable"
+    "title": "Lesson 8: Data visualization of a single variable",
+    "section": "",
+    "text": "Techniques for exploring and summarizing data differ for numerical versus categorical variables.\n\n \n\nNumerical and graphical summaries are useful for examining variables one at a time\n\nCan also be used for exploring the relationships between variables\nNumerical summaries are not just for numerical variables (certain ones are used for categorical variables)\n\n\n \n\nToday we we look at ways to visualize a numerical variable and a categorical variable"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#histograms",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#histograms",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Histograms",
     "text": "Histograms\n\n\n\nHistograms show the counts of observations (y-axis) that have values within a specific interval for a specific variable (x-axis)\nShow the shape of the distribution and data density\nDistribution is considered symmetric if the trailing parts of the plot are roughly equal\nDistribution is considered asymmetric if one tail trails off more than the other (as we see with clutch volume)\nAsymmetric distributions are said to be skewed\n\nSkewed right if trails off to right\nSkewed left if trails off to the left"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#histograms-1",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#histograms-1",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Histograms",
     "text": "Histograms\n\nMode is represented by the tallest peak in the distribution\nWhen data have one prominent peak, we call it unimodel\nIf there is more than one relative peak, we call it multimodel"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#histograms-2",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#histograms-2",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Histograms",
     "text": "Histograms\nWe can make a histogram of clutch volume or clutch size:\n\n\n\nggplot(data = frog, \n       aes(x = clutch.volume)) +\n  geom_histogram() \n\n\n\n\n\n\n\n\n\n\nggplot(data = frog, \n       aes(x = clutch.size)) +\n  geom_histogram()"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#poll-everywhere-question-1",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#poll-everywhere-question-1",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Poll Everywhere Question 1",
     "text": "Poll Everywhere Question 1"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#boxplots",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#boxplots",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Boxplots",
     "text": "Boxplots\n\n\n\nA boxplot indicates the positions of the first, second, and third quartiles of a distribution in addition to extreme observations\nInterquartile range (IQR) represented by rectangle with black line through it for the median\nWhiskers extend from the box to capture data that are between \\(Q_1\\) and \\(Q_1 - 1.5 IQR\\) and separately between \\(Q_3\\) and \\(Q_3 + 1.5 IQR\\)\nAn outlier is a value that appears extreme relative to the rest of the data\n\nIt is more than \\(1.5IQR\\) away from \\(Q_1\\) and \\(Q_3\\)"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#boxplots-1",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#boxplots-1",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Boxplots",
     "text": "Boxplots\n\n\n\nggplot(data = frog, \n       aes(x = clutch.volume)) + \n  geom_boxplot() \n\n\n\n\n\n\n\n\n\n\nggplot(data = frog, \n       aes(y = clutch.volume)) + \n  geom_boxplot()"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#we-may-want-to-transform-data",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#we-may-want-to-transform-data",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "We may want to transform data",
     "text": "We may want to transform data\n\nWhen working with strongly skewed data, it can be useful to apply a transformation\nCommon to use the natural log transformation on skewed data\n\nWe typically just call this the “log transformation”\nEspecially for variables with many values clustered near 0 and other observations that are positive\n\nTransformations are mostly used when we make certain assumptions about the distribution of our data\n\nFor a lot of statistics methods, we assume the data is distributed normally\nSo we may need to transform the data to make it normal!"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#lets-transform-clutch-volume",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#lets-transform-clutch-volume",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Let’s transform clutch volume!",
     "text": "Let’s transform clutch volume!\n\n\n\nggplot(data = frog, \n       aes(x = clutch.volume)) +\n  geom_histogram() \n\n\n\n\n\n\n\n\n\n\nggplot(data = frog, \n       aes(x = log(clutch.volume))) +\n  geom_histogram()"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#poll-everywhere-question-2",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#poll-everywhere-question-2",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Poll everywhere question 2",
     "text": "Poll everywhere question 2"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-4-example-hypertension-prevalence-12",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-4-example-hypertension-prevalence-12",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "From Lesson 4: Example: hypertension prevalence (1/2)",
-    "text": "From Lesson 4: Example: hypertension prevalence (1/2)\n\nUS CDC estimated that between 2011 and 20141, 29% of the population in America had hypertension\n\n \n\nA health care practitioner seeing a new patient would expect a 29% chance that the patient might have hypertension\n\nHowever, this is only the case if nothing else is known about the patient\n\n\nhttps://www.cdc.gov/nchs/products/databriefs/db220.htm"
+    "text": "From Lesson 4: Example: hypertension prevalence (1/2)\n\nUS CDC estimated that between 2011 and 20144, 29% of the population in America had hypertension\n\n \n\nA health care practitioner seeing a new patient would expect a 29% chance that the patient might have hypertension\n\nHowever, this is only the case if nothing else is known about the patient"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-4-example-hypertension-prevalence",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-4-example-hypertension-prevalence",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "From Lesson 4: Example: hypertension prevalence",
     "text": "From Lesson 4: Example: hypertension prevalence\n\nPrevalence of hypertension varies significantly with age\n\nAmong adults aged 18-39, 7.3% have hypertension\nAdults aged 40-59, 32.2%\nAdults aged 60 or older, 64.9% have hypertension\n\n\n \n\nKnowing the age of a patient provides important information about the likelihood of hypertension\n\nAge and hypertension status are not independent (we will get into this)\n\nWhile the probability of hypertension of a randomly chosen adult is 0.29…\n\nThe conditional probability of hypertension in a person known to be 60 or older is 0.649"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-4-contingency-tables",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#from-lesson-4-contingency-tables",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "From Lesson 4: Contingency tables",
     "text": "From Lesson 4: Contingency tables\n\nWe can start looking at the contingency table for hypertension for different age groups\n\nContingency table: type of data table that displays the frequency distribution of two or more categorical variables\n\n\n\n\n\nTable: Contingency table showing hypertension status and age group, in thousands.\n\n\nAge Group\nHypertension\nNo Hypertension\nTotal\n\n\n\n\n18-39 years\n8836\n112206\n121042\n\n\n40 to 59 years\n42109\n88663\n130772\n\n\nGreater than 60 years\n39917\n21589\n61506\n\n\nTotal\n90862\n222458\n313320"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#lets-look-at-each-variable-separately",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#lets-look-at-each-variable-separately",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Let’s look at each variable separately",
     "text": "Let’s look at each variable separately\n\nThe label “contingency tables” are usually reserved for when we have two variables in one table\nWhen we have one variable, we often call these frequency tables\n\nShows the count of observations that fall into a specific category\n\nIn a relative frequency table, proportions for each category is shown instead of counts\n\n\n\n\n\n\nFrequency table for age group variable\n\n\nAge Group\nCount\n\n\n\n\n18-39 years\n121042\n\n\n40 to 59 years\n130772\n\n\nGreater than 60 years\n61506\n\n\nTotal\n313320\n\n\n\n\n\n\n\n\n\nRelative frequency table for age group variable\n\n\nAge Group\nCount\n\n\n\n\n18-39 years\n0.3863\n\n\n40 to 59 years\n0.4174\n\n\nGreater than 60 years\n0.1963\n\n\nTotal\n1.0000"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#barplots",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#barplots",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Barplots",
     "text": "Barplots\n\nA bar plot is a common way to display a single categorical variable\n\nShow counts (or proportion) per category for a variable\n\n\n\n\n\nggplot(data = hyp_data, \n       aes(x = Age_Group)) + \n  geom_bar()\n\n\n\n\n\n\n\n\n\n\nggplot(data = hyp_data, \n       aes(x = Age_Group)) + \n  geom_bar(aes(y = stat(prop), \n               group = 1))"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#when-to-use-what",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#when-to-use-what",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "When to use what?",
     "text": "When to use what?\n\n\n\n\n\n\n\n\nVariable type\nPossible Visualizations\nNicky’s preferences\n\n\n\n\nNumerical, discrete\nhistograms, boxplots\nhistograms\n\n\nNumerical, continuous\nhistograms, boxplots\nhistograms\n\n\nCategorical, ordinal\nfrequency tables, barplots\nif I’m just looking: barplot\nif I’m writing a report: frequency table\n\n\nCategorical, nominal\nfrequency tables, barplots\nif I’m just looking: barplot\nif I’m writing a report: frequency table\n\n\nCategorical, logical (binary)\nfrequency tables, barplots\nfrequency table or just a percent for one of the categories"
   },
   {
     "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#some-notes-about-my-visualization-process",
     "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#some-notes-about-my-visualization-process",
-    "title": "Lesson 7: Data visualization of a single variable",
+    "title": "Lesson 8: Data visualization of a single variable",
     "section": "Some notes about my visualization process",
     "text": "Some notes about my visualization process\n\nIf I am just looking at data alone, I use visualizations and summary statistics\n\nI keep everything in its basic form without polishing the output\nPlot labels are kept as variable name\nI use a basic function like summary() to get\n\nMean and standard deviation for numeric variables\nCounts for categorical variables\n\n\nIf I am presenting visualizations or summary statistics, I will polish up everything\n\nSo that someone who is unfamiliar with the data can understand what I’m looking at\n\nFor example, I make sure variable names are written out and explained\n\n\n\n \n\nI want us to practice presenting visualizations, so I really want our homework visualizations to be polished"
   },
@@ -25219,5 +25219,40 @@
     "title": "Lesson 6: Normal distribution",
     "section": "Example: Using Normal distribution in word problems (4/4)",
     "text": "Example: Using Normal distribution in word problems (4/4)\n\n\nExample: Diastolic blood pressure (DBP)\n\n\nSuppose the distribution of diastolic blood pressure (DBP) in 35- to 44-year old men is normally distributed with mean 80 mm Hg and variance 144 mm Hg.\n\nWhat is the \\(95^{th}\\) percentile of the DBP distribution?\n\n\n\n\n\n\nDraw on a normal curve: \n\n\n\nCompute in R:\n\n\nqnorm(p = 0.95, \n      mean = 80, \n      sd = sqrt(144))\n\n[1] 99.73824"
+  },
+  {
+    "objectID": "lessons/05_RVs_Binomial/05_RVs_Binomial.html",
+    "href": "lessons/05_RVs_Binomial/05_RVs_Binomial.html",
+    "title": "Lesson 5: Random variables and Binomial distribution",
+    "section": "",
+    "text": "Define random variables and how they map to probability distributions\nCalculate the expected value and variance of discrete random variables\nCalculate the expected value and variance of linear combinations of discrete random variables\nCalculate probabilities for different events using a Binomial distribution"
+  },
+  {
+    "objectID": "lessons/05_RVs_Binomial/05_RVs_Binomial.html#footnotes",
+    "href": "lessons/05_RVs_Binomial/05_RVs_Binomial.html#footnotes",
+    "title": "Lesson 5: Random variables and Binomial distribution",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nInformation on slide heavily borrowed from ChatGPT with prompt: “can you explain how we go from a bernoulli distribution to a binomial”↩︎"
+  },
+  {
+    "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html",
+    "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html",
+    "title": "Lesson 8: Data visualization of a single variable",
+    "section": "",
+    "text": "Visualize distributions of numeric data/variables using histograms and boxplots\nRecognize when transforming data helps make asymmetric data more symmetric (log values)\nVisualize distributions of categorical data/variables using frequency tables and barplots\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArtwork by @allison_horst\n\n\n\n\n\n\nMakes data easier to understand\n\nhelps you understand large amounts of data by turning it into a visual context, such as a graph or map\n\nHelps identify patterns\n\nhelps identify patterns, trends, and outliers in data sets. \n\nReveals data features\n\nreveals data features that statistics and models might miss, such as unusual distributions, gaps, and outliers\n\nHelps with decision-making\n\nhelps with decision-making on analysis plans\n\n\n\n\n\nIn evolutionary biology, parental investment refers to the amount of time, energy, or other resources devoted towards raising offspring.\n \nWe will be working with the frog dataset, which originates from a 2013 study3 about maternal investment in a frog species. Reproduction is a costly process for female frogs, necessitating a trade-off between individual egg size and total number of eggs produced.\n \nResearchers were interested in investigating how maternal investment varies with altitude. They collected measurements on egg clutches found at breeding ponds across 11 study sites; for 5 sites, the body size of individual female frogs was also recorded.\n \n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\naltitude\nlatitude\negg.size\nclutch.size\nclutch.volume\nbody.size\n\n\n\n\n1\n3,462.00\n34.82\n1.95\n181.97\n177.83\n3.63\n\n\n2\n3,462.00\n34.82\n1.95\n269.15\n257.04\n3.63\n\n\n3\n3,462.00\n34.82\n1.95\n158.49\n151.36\n3.72\n\n\n150\n2,597.00\n34.05\n2.24\n537.03\n776.25\nNA\n\n\n\n \n\nEach row is an observation\nEach column is a variable\nAll the observations and variables together make a data frame (sometimes called data matrix)\n\n \n\nMissing values: NA means the measured value for body size in clutch #150 is missing\n\n\n\n\n\nTechniques for exploring and summarizing data differ for numerical versus categorical variables.\n\n \n\nNumerical and graphical summaries are useful for examining variables one at a time\n\nCan also be used for exploring the relationships between variables\nNumerical summaries are not just for numerical variables (certain ones are used for categorical variables)\n\n\n \n\nToday we we look at ways to visualize a numerical variable and a categorical variable"
+  },
+  {
+    "objectID": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#footnotes",
+    "href": "lessons/08_Data_visualization_01/08_Data_visualization_01.html#footnotes",
+    "title": "Lesson 8: Data visualization of a single variable",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nAdapted from my Google search AI results: https://www.google.com/search?q=why+do+statistics+bother+with+data+visualization&rlz=1C5GCEM_enUS1130&oq=why+do+statistics+bother+with+data+visu&gs_lcrp=EgZjaHJvbWUqBwgBECEYoAEyBggAEEUYOTIHCAEQIRigATIHCAIQIRigATIHCAMQIRirAtIBCDk3NDBqMGo0qAIAsAIB&sourceid=chrome&ie=UTF-8↩︎\nhttps://www.cdc.gov/nchs/products/databriefs/db220.htm↩︎\nChen, W., et al. Maternal investment increases with altitude in a frog on the Tibetan Plateau. Journal of evolutionary biology 26.12 (2013): 2710-2715.\n\n↩︎\nhttps://www.cdc.gov/nchs/products/databriefs/db220.htm↩︎"
+  },
+  {
+    "objectID": "lessons/R06_ggplot_01/R06_ggplot_01.html#footnotes",
+    "href": "lessons/R06_ggplot_01/R06_ggplot_01.html#footnotes",
+    "title": "R06: ggplot2",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nSource: R for Data Science. Grolemund and Wickham.↩︎"
   }
 ]

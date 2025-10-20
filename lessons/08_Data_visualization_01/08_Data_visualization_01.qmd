@@ -1,9 +1,9 @@
 ---
-title: "Lesson 7: Data visualization of a single variable"
+title: "Lesson 8: Data visualization of a single variable"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "`r library(here); source(here('class_dates.R')); w3d2`"
+date: "`r library(here); source(here('class_dates.R')); w4d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -12,7 +12,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 7 Slides
+    footer: Lesson 8 Slides
     html-math-method: mathjax
 execute:
   echo: true

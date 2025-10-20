@@ -44,6 +44,14 @@ Wikipedia, Googling expected value of specific distribution, etc.).
 
 ### Quiz 1
 
+- A practice quiz is posted if you would like to do a trial run before the actual quiz
+- Includes Lessons 1-4
+    - Covers some data collection, sampling, data types (about half the questions)
+    - Covers some probability rules and calculations (about half the questions)
+- Two problems have calculations with probabilities
+- For a few questions with probabilities, you will be given a scenario, and you will need to connect it back to probability rules
+    - Example: If two events are mutually exclusive, what is the probability of their intersection?
+
 ### Quiz 2
 
 ### Quiz 3

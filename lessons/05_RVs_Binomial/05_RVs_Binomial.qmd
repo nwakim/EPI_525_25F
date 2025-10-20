@@ -510,7 +510,7 @@ $$P(X = x) = \binom{n}{x} p^x (1-p)^{n-x},  x= 0, 1, 2, \dots, n $$
 
 -   The parameters of a binomial distribution are $p$ and $n$.
 
--   If a r.v. $X$ is modeled by a binomial distribution, then we write in shorthand
+-   If a r.v. $X$ is modeled by a binomial distribution, then we write in shorthand $X \sim \text{Binom}(n,p)$
 
 ::: orange
 ::: orange-ttl

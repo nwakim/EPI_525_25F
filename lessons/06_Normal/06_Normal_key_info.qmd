@@ -10,13 +10,21 @@ editor_options:
 
 ## Announcements
 
-- Thanks for being flexible on Monday! 
-  - I'm sorry if this messed up your afternoon flow
-- Today: need to finish lesson 5, then start lesson 6
-  - Likely that we will not get to R04
-- Fire drills this week!
+-   Homework 1 feedback
+    -   Question 1.12:![](HW_01_q.png)
+        -   population of interest vs. sample population
+            -   target population: healthy young adults
+            -   sample population: healthy young adults at a University of Virginia
+            -   Slightly confusing example - mostly linked to original claim
+        -   generalizability
+        -   establishing causal relationships
+    -   Question 1.8:
+        -   age: numeric value
+            -   Yes, technically only whole numbers, but it is not really a count
+            -   Because so many possible ages, we treat as continuous
+-   Quiz 1 info
 
 ## Key Dates
 
--   Homework 2 Assignment due this Sunday at 11pm!
-- Quiz 1 will open next Wednesday after class
+-   Homework 3 Assignment due this Sunday at 11pm!
+-   Quiz 1 will open Wednesday after class
