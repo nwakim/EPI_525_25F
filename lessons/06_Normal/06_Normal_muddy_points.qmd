@@ -11,24 +11,38 @@ editor_options:
   chunk_output_type: console
 ---
 
-## 1. Why do we care about the Normal approximation of the Binomial distribution?
+## Fall 2025
+
+### 1. In what types of data sets would you apply the continuity correction? Just small ones?
+
+### 2. Normal approximation of the binomial Why we add/subtract 0.5 for the correction of binomial
+
+### 3. I understand that binomial distributions approximate a normal distribution as n increases, but I'm not quite understanding this figure, specifically the p part. on one side p is 0.1 and 0.5, and on the other side it varies?
+
+### 4. how to tell if you need to use a normal or binomial distribution
+
+### 5. Why did we need to show that np >10 and n(1-p)>10 for the example normal approximation or bionomial distribution? (e.g., where does the 10 come from?)
+
+## Fall 2024
+
+### 1. Why do we care about the Normal approximation of the Binomial distribution?
 
 Because statistical software can easily compute probabilities for Binomial random variables (RVs), it may seem like the Normal approximation of the Binomial distribution is not necessary. And that's mostly true! 
 
 However, once we get to inference, we will see some cases where the Normal approximation is really helpful. For example, calculating confidence intervals for the probability of success is really hard to do with a Binomial distribution, but it is much easier with a Normal approximation!
 
-## 2. Why is Quarto necessary?
+### 2. Why is Quarto necessary?
 
 It's not necessary, but it is an incredible tool when you are trying to share or show your coding work to someone else. You will be able to neatly and clearly explain yourself outside of the code, then integrate code and output into one document!
 
-## 3. Normal approximation of the Binomial distribution feeling difficult?
+### 3. Normal approximation of the Binomial distribution feeling difficult?
 
 Try watching YouTube videos on it, like this one: <https://www.youtube.com/watch?v=CCqWkJ_pqNU&ab_channel=jbstatistics>
 
-## 4. Need more help with the R coding for the `dnorm` and `pnorm` functions?
+### 4. Need more help with the R coding for the `dnorm` and `pnorm` functions?
 
 Here's a good site! <https://seankross.com/notes/dpqr/>
 
-## 4. Need help with Normal distribution probabilities?
+### 4. Need help with Normal distribution probabilities?
 
 Textbook pages 156-160 have some pretty helpful graphics with a Normal curve that show how to calculate probabilities!

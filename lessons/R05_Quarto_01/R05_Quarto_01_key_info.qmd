@@ -1,0 +1,19 @@
+---
+title: "Key Info and Announcements"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+-   Quiz 1 out today at 3pm
+    -   Q: Will the first quiz require us to do any commands in R? A: No! You will not need to run any R
+
+## Key Dates
+
+-   Homework 3 Assignment due this Sunday at 11pm!
+-   Quiz 1 will open Wednesday after class
