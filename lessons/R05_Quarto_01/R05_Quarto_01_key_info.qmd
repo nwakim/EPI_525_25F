@@ -12,6 +12,15 @@ editor_options:
 
 -   Quiz 1 out today at 3pm
     -   Q: Will the first quiz require us to do any commands in R? A: No! You will not need to run any R
+- If links do not work on this site, there are two places where the files live:
+  - Github page: <https://github.com/nwakim/EPI_525_25F>
+      - Link also on this homepage
+  - [OHSU OneDrive](https://ohsuitg-my.sharepoint.com/:f:/r/personal/wakim_ohsu_edu/Documents/Teaching/Classes/EPI_525_25F/Student_files_EPI_525?csf=1&web=1&e=NBRFoo)
+    - You should have access to this folder
+- If you want to attend class virtually when we're in-person, then you can use: <https://pdx.zoom.us/j/84010624366>
+  - However, I will not support virtual attendance when we're in-person
+  - I will not be monitoring the chat or helping with technical issues
+
 
 ## Key Dates
 
