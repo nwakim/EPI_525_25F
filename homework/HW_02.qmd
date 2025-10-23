@@ -37,6 +37,8 @@ source(here("class_dates.R"))
 
 ## 2.8 School absences {.unnumbered}
 
+- In part d and e, assume the kids are independent.
+
 ## 2.10 Health coverage, frequencies {.unnumbered}
 
 ## 2.14 Health coverage, relative frequencies {.unnumbered}
