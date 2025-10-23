@@ -18372,7 +18372,7 @@
     "href": "homework/HW_05.html#r1-nhanes",
     "title": "Homework 5",
     "section": "1.2 R1: NHANES",
-    "text": "1.2 R1: NHANES\n\nBelow you will be using the dataset called NHANES from the NHANES R package.\nInstall and load the NHANES package using the code below.\n\nThis loads the dataset also called NHANES that is within the NHANES package.\n\n\n\ninstall.packages(\"NHANES\")\n\n\nlibrary(NHANES)\ndata(\"NHANES\")\n\n\nThe National Health and Nutrition Examination Survey (NHANES) is a survey conducted annually by the US National Center for Health Statistics (NCHS). While the original data uses a survey design that oversamples certain subpopulations, the data have been reweighted to undo oversampling effects and can be treated as if it were a simple random sample from the American population.\n\n\nTo view the complete list of study variables and their descriptions, access the NHANES documentation page with ?NHANES.\n\nYou must first install the NHANES package to see the help files.\n\n\n\n\n\n\n\n\nWarning\n\n\n\n\nFor most of the summary statistic base R commands (such as mean(), sd(), median(), etc.), you will get NA as the result if there are missing values.\nIn order for R to compute the statistic using the values in the data set, you need to tell R to remove the missing values using the na.rm = TRUE option within the parentheses of the command: mean(dataset$variablename, na.rm = TRUE).\n\n\n\n\n1.2.1 What are the dimensions and column names of the dataset?\nHint: Use functions covered in the R lesson on Basics in R (part 2)\n\n\n1.2.2 How many unique ID identifiers are in the dataset? Compare this to the number of rows in the dataset. What is the explanation for these two different numbers?\nThis will require a new function called unique(). For example, if I want the unique ages (from variable Age) from the dataset, I can use unique(NHANES$Age)\nThen I can use the function, length() to see how long the list of unique IDs is. length(unique(NHANES$Age))\n\n\n1.2.3 Using numerical summaries and data visualization, describe the distribution of ages among study participants.\nYou don’t need to need to use exact stat verbage for this one. Think: is it evenly distributed? Does it trail off? Does it seem like most ages are represented equally? Is there a reason why there’s more 80yo’s than 79 yo’s?\n\n\n1.2.4 Using numerical and graphical summaries, describe the distribution of heights among study participants.\nFor this one, we learned a few more terms and phrases to describe data. Try them out!\n\n\n1.2.5 Calculate the median and interquartile range of the distribution of the variable Poverty\nWrite a sentence explaining the median and IQR in the context of these data. Make sure to look up what Poverty means in this dataset so you can give the appropriate context!\n\n\n1.2.6 Investigate at which age people generally reach their adult height.\nYou can use whatever data visualization tool to look at this. Hint: age and height are both numeric variables!\n\n\n1.2.7 Investigate the relationship between trouble sleeping and hours slept.\nThis may require you to use a few options to visualize the data! Also, hours slept is numeric, but there’s only 11 unique values. It might be interesting to try out the visualization methods for two categorical variables."
+    "text": "1.2 R1: NHANES\n\nBelow you will be using the dataset called NHANES from the NHANES R package.\nInstall and load the NHANES package using the code below.\n\nThis loads the dataset also called NHANES that is within the NHANES package.\n\n\n\ninstall.packages(\"NHANES\")\n\n\nlibrary(NHANES)\ndata(\"NHANES\")\n\n\nThe National Health and Nutrition Examination Survey (NHANES) is a survey conducted annually by the US National Center for Health Statistics (NCHS). While the original data uses a survey design that oversamples certain subpopulations, the data have been reweighted to undo oversampling effects and can be treated as if it were a simple random sample from the American population.\n\n\nTo view the complete list of study variables and their descriptions, access the NHANES documentation page with ?NHANES.\n\nYou must first install the NHANES package to see the help files.\n\n\n\n\n\n\n\n\nWarning\n\n\n\n\nFor most of the summary statistic base R commands (such as mean(), sd(), median(), etc.), you will get NA as the result if there are missing values.\nIn order for R to compute the statistic using the values in the data set, you need to tell R to remove the missing values using the na.rm = TRUE option within the parentheses of the command: mean(dataset$variablename, na.rm = TRUE).\n\n\n\n\n1.2.1 What are the dimensions and column names of the dataset?\nHint: Use functions covered in the R lesson on Basics in R!\n\n\n1.2.2 How many unique ID identifiers are in the dataset? Compare this to the number of rows in the dataset. What is the explanation for these two different numbers?\nThis will require a new function called unique(). For example, if I want the unique ages (from variable Age) from the dataset, I can use unique(NHANES$Age)\nThen I can use the function, length() to see how long the list of unique IDs is. length(unique(NHANES$Age))\n\n\n1.2.3 Using numerical summaries and data visualization, describe the distribution of ages among study participants.\nYou don’t need to need to use exact stat verbage for this one. Think: is it evenly distributed? Does it trail off? Does it seem like most ages are represented equally? Is there a reason why there’s more 80yo’s than 79 yo’s?\n\n\n1.2.4 Using numerical and graphical summaries, describe the distribution of heights among study participants.\nFor this one, we learned a few more terms and phrases to describe data. Try them out!\n\n\n1.2.5 Calculate the median and interquartile range of the distribution of the variable Poverty\nWrite a sentence explaining the median and IQR in the context of these data. Make sure to look up what Poverty means in this dataset so you can give the appropriate context!\n\n\n1.2.6 Investigate at which age people generally reach their adult height.\nYou can use whatever data visualization tool to look at this. Hint: age and height are both numeric variables!\n\n\n1.2.7 Investigate the relationship between trouble sleeping and hours slept.\nThis may require you to use a few options to visualize the data! Also, hours slept is numeric, but there’s only 11 unique values. It might be interesting to try out the visualization methods for two categorical variables."
   },
   {
     "objectID": "homework/HW_05.html#r2-nhanes",
@@ -27564,5 +27564,68 @@
     "title": "Lesson 18: Simple Linear Regression (SLR)",
     "section": "For reference: quick CI for \\(\\beta_0\\)",
     "text": "For reference: quick CI for \\(\\beta_0\\)\n\nCalculate CI for population intercept \\(\\beta_0\\): \\(\\widehat{\\beta}_0 \\pm t^*\\cdot SE_{\\beta_0}\\)\n\nwhere \\(t^*\\) is the \\(t\\)-distribution critical value with \\(df = n -2\\)\n\nUse the regression table\n\n\ntidy(model1, conf.int = T) %&gt;% gt() %&gt;%\n  tab_options(table.font.size = 40) %&gt;% fmt_number(decimals = 3)\n\n\n\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\nconf.low\nconf.high\n\n\n\n\n(Intercept)\n50.928\n2.660\n19.143\n0.000\n45.631\n56.224\n\n\nfemale_literacy_rate_2011\n0.232\n0.031\n7.377\n0.000\n0.170\n0.295\n\n\n\n\n\n\n\n\n\nGeneral statement for population intercept inference\n\n\nThe expected outcome for the \\(Y\\)-variable is (\\(\\widehat\\beta_0\\)) when the \\(X\\)-variable is 0 (95% CI: LB, UB).\n\n\n\nFor example: The average life expectancy is 50.9 years when the female literacy rate is 0 (95% CI: 45.63, 56.22)."
+  },
+  {
+    "objectID": "lessons/07_Poisson/07_Poisson_key_info.html",
+    "href": "lessons/07_Poisson/07_Poisson_key_info.html",
+    "title": "Key Info and Announcements",
+    "section": "",
+    "text": "Homework 2 from TAs\n\nTry to write your final answers with a sentence"
+  },
+  {
+    "objectID": "lessons/07_Poisson/07_Poisson_key_info.html#announcements",
+    "href": "lessons/07_Poisson/07_Poisson_key_info.html#announcements",
+    "title": "Key Info and Announcements",
+    "section": "",
+    "text": "Homework 2 from TAs\n\nTry to write your final answers with a sentence"
+  },
+  {
+    "objectID": "lessons/07_Poisson/07_Poisson_key_info.html#key-dates",
+    "href": "lessons/07_Poisson/07_Poisson_key_info.html#key-dates",
+    "title": "Key Info and Announcements",
+    "section": "Key Dates",
+    "text": "Key Dates\n\nHomework 2 due this Friday!\nHomework 1 solutions due Sunday\n\nBUT with very flexible deadline since you might need more time to initially organize as a group"
+  },
+  {
+    "objectID": "homework/HW_05.html#stenographers-typos",
+    "href": "homework/HW_05.html#stenographers-typos",
+    "title": "Homework 5",
+    "section": "3.38 Stenographer’s typos",
+    "text": "3.38 Stenographer’s typos"
+  },
+  {
+    "objectID": "homework/HW_05.html#osteosarcoma-in-nyc",
+    "href": "homework/HW_05.html#osteosarcoma-in-nyc",
+    "title": "Homework 5",
+    "section": "3.40 Osteosarcoma in NYC",
+    "text": "3.40 Osteosarcoma in NYC\nOnly parts a-c"
+  },
+  {
+    "objectID": "homework/HW_04.html#mix-and-match-sec-methods-.unnumbered",
+    "href": "homework/HW_04.html#mix-and-match-sec-methods-.unnumbered",
+    "title": "Homework 4",
+    "section": "1.1 1.28 Mix-and-match {#sec-methods, .unnumbered}",
+    "text": "1.1 1.28 Mix-and-match {#sec-methods, .unnumbered}"
+  },
+  {
+    "objectID": "homework/HW_04.html#mix-and-match-sec-methods",
+    "href": "homework/HW_04.html#mix-and-match-sec-methods",
+    "title": "Homework 4",
+    "section": "1.28 Mix-and-match {#sec-methods}",
+    "text": "1.28 Mix-and-match {#sec-methods}"
+  },
+  {
+    "objectID": "homework/HW_04.html#sec-methods",
+    "href": "homework/HW_04.html#sec-methods",
+    "title": "Homework 4",
+    "section": "1.28 Mix-and-match",
+    "text": "1.28 Mix-and-match"
+  },
+  {
+    "objectID": "homework/HW_04.html#sec-lesson-08",
+    "href": "homework/HW_04.html#sec-lesson-08",
+    "title": "Homework 4",
+    "section": "1.28 Mix-and-match",
+    "text": "1.28 Mix-and-match"
   }
 ]

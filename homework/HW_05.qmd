@@ -1,6 +1,6 @@
 ---
 title: "Homework 5"
-subtitle: "Lessons 7-9"
+subtitle: "Lessons 7, 9, 10"
 author: "Your name here - update this!!!!"
 description: "Due: `r library(here); source(here('class_dates.R')); hw4 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
@@ -29,21 +29,22 @@ source(here("class_dates.R"))
 
 **Please turn in this homework on Sakai.** This homework must be submitted using a Quarto document. **Please keep it rendered as an html!** I know past homeworks said pdf, but all Quarto docs should be rendered as html for this class!
 
-You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/F24_EPI_525/blob/main/homework/HW_05.qmd)
+You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/EPI_525_25F/blob/main/homework/HW_05.qmd)
 
 :::{.callout-tip}
 It is a good idea to try rendering your document from time to time as you go along!  Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
 :::
 
-## Complete the mid-quarter feedback
-
-<https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhURVc3WkpWQVk5OVQ1OUhSMkg0UUZLUjZJOC4u>
-
 # Book exercises {.unnumbered}
 
-## 1.24 Income and education in US counties {.unnumbered}
+## 3.38 Stenographer’s typos {.unnumbered}
 
-## 1.28 Mix-and-match {.unnumbered}
+## 3.40 Osteosarcoma in NYC {.unnumbered}
+
+Only parts a-c
+
+
+## 1.24 Income and education in US counties {.unnumbered}
 
 ## 1.36 Associations {.unnumbered}
 
@@ -96,9 +97,7 @@ data("NHANES")
 
 ### What are the dimensions and column names of the dataset?
 
-Hint: Use [functions covered in the R lesson on Basics in R (part 2)](https://nwakim.github.io/F24_EPI_525/lessons/R03_Basics_02/R03_Basics_02.html#/data-set-info)
-
-
+Hint: Use functions covered in the R lesson on Basics in R!
 
 ### How many unique ID identifiers are in the dataset? Compare this to the number of rows in the dataset. What is the explanation for these two different numbers?  
 

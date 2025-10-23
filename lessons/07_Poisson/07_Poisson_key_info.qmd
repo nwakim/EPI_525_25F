@@ -11,9 +11,8 @@ editor_options:
 
 ## Announcements
 
-- Group assignments are up!
-- Did you catch the muddy points from last week?
-  - Posted extra videos and notes for some of the confusing class examples
+- Homework 2 from TAs
+  - Try to write your final answers with a sentence
 
 ## Key Dates
 

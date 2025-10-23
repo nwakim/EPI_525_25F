@@ -1,6 +1,6 @@
 ---
 title: "Homework 4"
-subtitle: "Lessons 6-7"
+subtitle: "Lessons 6, 8"
 author: "Your name here - update this!!!!"
 description: "Due: `r library(here); source(here('class_dates.R')); hw4 %>% format('%m/%d')` at 11pm"
 date-modified: "today"
@@ -56,12 +56,8 @@ For this problem:
 
 ## 3.32 Chickenpox, Part III  {.unnumbered}
 
+## 1.28 Mix-and-match {#sec-lesson-08 .unnumbered}
 
-## 3.38 Stenographer’s typos {.unnumbered}
-
-## 3.40 Osteosarcoma in NYC {.unnumbered}
-
-Only parts a-c
 
 # R exercises
 
