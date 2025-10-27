@@ -3,7 +3,7 @@ title: "Lesson 9: Data visualization of two variables"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "`r library(here); source(here('class_dates.R')); w4d1`"
+date: "`r library(here); source(here('class_dates.R')); w5d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
