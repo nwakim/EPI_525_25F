@@ -1,6 +1,5 @@
 ---
 title: "Key Info and Announcements"
-date: "10/16/2024"
 date-modified: "today"
 format: 
   html:
@@ -11,11 +10,16 @@ editor_options:
 
 ## Announcements
 
-- Homework 2 from TAs
-  - Try to write your final answers with a sentence
+-   Quiz 1: everyone got a score of 11/15 or higher!
+    - Two hardest questions: 
+        - Question 7: A researcher is studying the link between air quality and asthma-related emergency room (ER) visits. They collect data for each zip code in the state. For every zip code, they record the average daily air pollution level and the total number of asthma-related ER visits for the year. In this study, what is the observational unit?
+            - Correct: Each zip code
+            - Incorrect: Each emergency room visit
+        - Question 11: Which statement accurately describes the relationship between independent and mutually exclusive events, assuming both events have a non-zero probability?
+            - Correct: If two events are mutually exclusive, they cannot be independent.
+            - Incorrect: Independence and mutual exclusivity are unrelated concepts.
+    
 
 ## Key Dates
 
-- Homework 2 due this Friday!
-- Homework 1 solutions due Sunday 
-  - BUT with very flexible deadline since you might need more time to initially organize as a group
+-   Homework 4 due this Sunday at 11pm!
