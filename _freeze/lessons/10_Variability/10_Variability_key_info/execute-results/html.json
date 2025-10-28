@@ -1,0 +1,15 @@
+{
+  "hash": "944eff89a127e328694be58fdb9b2f33",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Key Info and Announcements\"\ndate-modified: \"today\"\nformat: \n  html:\n    link-external-newwindow: true\neditor_options: \n  chunk_output_type: console\n---\n\n\n\n## Announcements\n\n- Homework 2 feedback: really good job!\n    - Incorrect statements such as \"there is a 90% probability...\" \n    - Question 2.18 and non-TB question\n        - Let's take a second to review the Law of Total Probability and Bayes Theorem\n- If you need additional sources for R: [Data and Analytics for Research Training Program](https://arcus.github.io/education_modules/list_of_modules)\n  - R starts about halfway through the page\n\n## Key Dates\n\n-   HW 04 due 11/02 at 11pm\n-   [Midterm feedback](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUMk44UkxXTlVBTFBBUkc5UE9FUkdZVUdJNCQlQCNjPTEu) form also due 11/02 at 11pm\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

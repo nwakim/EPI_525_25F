@@ -4,7 +4,7 @@ subtitle: "TB sections 4.1"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/30/2024"
+date: "`r library(here); source(here('class_dates.R')); w5d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -36,6 +36,8 @@ library(knitr)
 library(moderndive) # NEW!!
 library(ggplot2)
 library(dplyr)
+
+source(here("class_dates.R"))
 
 # terminal: for icons
 # quarto install extension quarto-ext/fontawesome
@@ -668,23 +670,31 @@ samp_dist_plot10000
 
 ## The Central Limit Theorem (CLT) 
 
-- If a sample consists of **at least 30 independent observations**, then the [**sampling distribution**]{style="color:#E75B5C"} of the sample mean is **approximated by a normal model**
+- If a sample consists of **at least 30 independent observations in EACH sample**, then the [**sampling distribution**]{style="color:#E75B5C"} of the sample mean is **approximated by a normal model**
+
+ 
 
 - Aka, for **"large" sample sizes** ( $n\geq 30$ ),
     * The [**sampling distribution**]{style="color:#E75B5C"} of the sample mean can be approximated by a __normal distribution__,with 
       * Mean equal to the population mean value $\mu$
       * Standard deviation $\frac{\sigma}{\sqrt{n}}$
+        - This is actually referred to as **standard error**: a quick way to say "the standard deviation of the sampling distribution of the sample mean"
+  
+  
       
 - This is **regardless of the original sample is from a different distribution**
   - For example, if we count the number of heads in 50 coin flips, and do this for many samples, then our [**sampling distribution**]{style="color:#E75B5C"} will be Normally distributed around $n\cdot p = 50 \cdot 0.5= 25$
   
 
 ## Other cases for normal approximation 
-* For **small sample sizes**, if the **population is known to be normally distributed**, then
+
+* For **small sample sizes** (when $n < 30$), if the **population is known to be normally distributed**, then
     * The [**sampling distribution**]{style="color:#E75B5C"} of the sample mean is a __normal distribution__, with 
       * Mean equal to the population mean value $\mu$, and 
-      * Standard deviation $\frac{\sigma}{\sqrt{n}}$
-      
+      * Standard deviation $\frac{\sigma}{\sqrt{n}}$ (aka standard error)
+
+ 
+
 - Not technically the Central Limit Theorem, but [**sampling distribution**]{style="color:#E75B5C"} approximated using same Normal distribution 
   
 ## Sampling Distribution of Sample Means (with the CLT)
@@ -927,7 +937,7 @@ The probability that a 100-person sample has a mean of 65 or greater is 0.006. M
 
 ![](../img_slides/CLT_video_preview.png){fig-align="center" width=80%}
 
-## Summary Review: Point Estimate Terminology
+## Summary Review: Point Estimate and Variance Terminology
 
 - **Population mean**: $\mu$
 - **Population standard deviation**: $\sigma$
