@@ -27,13 +27,15 @@ source(here("class_dates.R"))
 
 ## Directions {.unnumbered}
 
-**Please turn in this homework on Sakai.** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.
+**Please turn in this homework on Sakai. You will need to turn in an html file and a qmd file,** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** 
 
 You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/EPI_525_25F/blob/main/homework/HW_04.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**
 
 :::{.callout-tip}
 It is a good idea to try rendering your document from time to time as you go along!  Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
 :::
+
+Please note that the [midterm feedback form](https://forms.office.com/Pages/ResponsePage.aspx?id=V3lz4rj6fk2U9pvWr59xWFMopmPUjRtDiHLswhgacNhUMk44UkxXTlVBTFBBUkc5UE9FUkdZVUdJNCQlQCNjPTEu) is also due at the same time as this homework! 
 
 # Book exercises
 
