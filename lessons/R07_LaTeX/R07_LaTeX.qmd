@@ -3,7 +3,7 @@ title: "R07: LaTeX"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "10/30/2024"
+date: "`r library(here); source(here('class_dates.R')); w5d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -21,6 +21,33 @@ execute:
 editor_options: 
   chunk_output_type: console
 ---
+
+```{r}
+#| label: "setup" 
+#| include: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+library(janitor)
+library(rstatix)
+library(oibiostat) 
+library(knitr)
+library(moderndive) # NEW!!
+library(ggplot2)
+library(dplyr)
+
+source(here("class_dates.R"))
+
+# terminal: for icons
+# quarto install extension quarto-ext/fontawesome
+
+# set ggplot theme for slides 
+theme_set(theme_bw(base_size = 22))
+# theme_update(text = element_text(size=16))  # set global text size for ggplots
+
+set.seed(456)
+```
 
 ## Introduction to LaTeX in Quarto
 

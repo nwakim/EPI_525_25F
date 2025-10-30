@@ -12,6 +12,8 @@ editor_options:
   chunk_output_type: console
 ---
 
+# Fall 2024
+
 ## 1. Central Limit Theorem
 
 I'm sorry for those online (and those watching the recording) who can't hear me for part of the Central Limit Theorem!
