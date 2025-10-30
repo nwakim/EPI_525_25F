@@ -1,7 +1,7 @@
 ---
-title: "Homework 6 Answers"
-subtitle: "Due 11/17/24"
-author: "Nicky Wakim"
+title: "Homework 6"
+subtitle: "Lessons 11 and 12"
+author: "Your name here - update this!!!!"
 date-modified: "today"
 format: 
   html:
@@ -11,7 +11,6 @@ format:
       collapsed: false
     number-sections: true
     number-depth: 3
-    theme: lumen
     embed-resources: true
     html-math-method: mathjax
 ---

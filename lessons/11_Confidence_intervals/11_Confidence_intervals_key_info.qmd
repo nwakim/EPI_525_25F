@@ -11,16 +11,12 @@ editor_options:
 
 ## Announcements
 
-- Tomorrow I will be sending out a Calendly invite for next week
-  - To make an appointment with me to present your HW 3 solutions
-  - It will be posted around 11:45am/12pm
-  - There are limited spots just based on my availability
-- I updated the Homework page to include more info on the presentation
+- Let's go over how to insert an image into a qmd!
+- Homework 3
+  - 3.6a: variance wrong
+    - Y is a random variable
+- Go to office hours!
 
 ## Key Dates
 
-- Thursday: HW 5 due
-- Sunday: HW 4 solutions due
-- Week of 11/11
-  - Make a meeting with me
-  - 11/12: recordings due if you are making that
+
