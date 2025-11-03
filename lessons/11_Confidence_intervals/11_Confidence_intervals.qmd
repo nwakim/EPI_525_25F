@@ -1,10 +1,10 @@
 ---
-title: "Lesson 10: Confidence intervals"
+title: "Lesson 11: Confidence intervals"
 subtitle: "TB sections 4.2"
-author: "Meike Niederhausen and Nicky Wakim"
+author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "11/04/2024"
+date: "`r library(here); source(here('class_dates.R')); w6d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -13,7 +13,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 10 Slides
+    footer: Lesson 11 Slides
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -44,14 +44,14 @@ theme_set(theme_bw(base_size = 22))
 set.seed(456)
 ```
 
-## Where are we?
-
-![](../img_slides/course_map.png){fig-align="center"}
-
 # Learning Objectives
 1. Calculate a confidence interval when we know the population standard deviation
 2. Interpret a confidence interval when we know the population standard deviation
 3. Calculate and interpret a confidence interval *using the t-distribution* when we do not know the population standard deviation
+
+## Where are we?
+
+![](../img_slides/course_map.png){fig-align="center"}
 
 # Learning Objectives
 
@@ -400,7 +400,7 @@ $$
 \end{aligned}
 $$
 
-We are 95% confident that the mean height is between `r round(66.1-1.96*3/sqrt(50), 3)` and `r round(66.1+1.96*3/sqrt(50), 3)` inches.
+We are 95% confident that the population mean height is between `r round(66.1-1.96*3/sqrt(50), 3)` and `r round(66.1+1.96*3/sqrt(50), 3)` inches.
 
 # Learning Objectives
 1. Calculate a confidence interval when we know the population standard deviation
@@ -417,8 +417,9 @@ We are 95% confident that the mean height is between `r round(66.1-1.96*3/sqrt(5
 :::: {.column width="55%"}
 Simulating Confidence Intervals: <http://www.rossmanchance.com/applets/ConfSim.html>
 
-The figure shows CI's from 100 simulations:
+The figure shows CI's from 100 samples:
 
+-   100 samples: I find the mean and confidence interval of each sample
 -   The true value of $\mu =65$ is the vertical black line
 -   The horizontal lines are 95% CI's from 100 samples
     -   [**Blue**]{style="color:#3070BF"}: the CI "captured" the true value of $\mu$
@@ -505,6 +506,7 @@ for(i in 1:k){
 [What we typically write as "shorthand":]{style="color:#459B99"}
 
 -   In general form: We are 95% *confident* that (the 95% confidence interval) captures the value of the population parameter.
+- Recall example: "We are 95% confident that the population mean height is between `r round(66.1-1.96*3/sqrt(50), 3)` and `r round(66.1+1.96*3/sqrt(50), 3)` inches."
 
 [WRONG interpretation:]{style="color:#BF396F"}
 

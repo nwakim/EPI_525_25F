@@ -14,7 +14,7 @@ editor_options:
 - Let's go over how to insert an image into a qmd!
 - Homework 3
   - 3.6a: variance wrong
-    - Y is a random variable
+    - $Y$ is a random variable, so we cannot use linear combo $X+3Y$, we need to use $X + Y_1 + Y_2 + Y_3$
 - Go to office hours!
 
 ## Key Dates

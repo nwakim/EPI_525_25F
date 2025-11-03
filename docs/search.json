@@ -26630,133 +26630,133 @@
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#last-time-central-limit-theorem-applied-to-sampling-distribution",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#last-time-central-limit-theorem-applied-to-sampling-distribution",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Last time: Central Limit Theorem applied to sampling distribution",
-    "text": "Last time: Central Limit Theorem applied to sampling distribution\n\nCLT tells us that we can model the sampling distribution of mean heights using a normal distribution\n\n\n\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_bar()`).\n\n\n\n\n\n\n\n\n\n\n\n\nWarning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.\nℹ Please use `linewidth` instead.\n\n\nWarning: The dot-dot notation (`..density..`) was deprecated in ggplot2 3.4.0.\nℹ Please use `after_stat(density)` instead.\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_bar()`).\n\n\n\n\n\n\n\n\n\n\n\\[\\overline{X} \\sim \\text{Normal}\\big(\\mu_{\\overline{X}}=65, SE = 0.424 \\big)\\]"
+    "text": "Last time: Central Limit Theorem applied to sampling distribution\n\nCLT tells us that we can model the sampling distribution of mean heights using a normal distribution\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\\overline{X} \\sim \\text{Normal}\\big(\\mu_{\\overline{X}}=65, SE = 0.424 \\big)\\]"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#last-time-sampling-distribution-of-sample-means-with-the-clt",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#last-time-sampling-distribution-of-sample-means-with-the-clt",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Last time: Sampling Distribution of Sample Means (with the CLT)",
-    "text": "Last time: Sampling Distribution of Sample Means (with the CLT)\n\n\n\nThe sampling distribution is the distribution of sample means calculated from repeated random samples of the same size from the same population\nIt is useful to think of a particular sample statistic as being drawn from a sampling distribution\n\nSo the red sample with \\(\\overline{x} = 65.1\\) is just one sample mean in the sampling distribution\n\n\n\n\nWith CLT and \\(\\overline{X}\\) as the RV for the sampling distribution\n\n\n\nTheoretically (using only population values): \\(\\overline{X} \\sim \\text{Normal} \\big(\\mu_{\\overline{X}} = \\mu, \\sigma_{\\overline{X}}= SE = \\frac{\\sigma}{\\sqrt{n}} \\big)\\)\nIn real use (using sample values for SE): \\(\\overline{X} \\sim \\text{Normal} \\big(\\mu_{\\overline{X}} = \\mu, \\sigma_{\\overline{X}}= SE = \\frac{s}{\\sqrt{n}} \\big)\\)\n\n\n\n\n \n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_bar()`).\n\n\n\n\n\n\n\n\n\n\\[ \\mu_{\\overline{X}} = 65 \\text{ inches}\\] \\[ SE = 0.424 \\text{ inches}\\]"
+    "text": "Last time: Sampling Distribution of Sample Means (with the CLT)\n\n\n\nThe sampling distribution is the distribution of sample means calculated from repeated random samples of the same size from the same population\nIt is useful to think of a particular sample statistic as being drawn from a sampling distribution\n\nSo the red sample with \\(\\overline{x} = 65.1\\) is just one sample mean in the sampling distribution\n\n\n\n\nWith CLT and \\(\\overline{X}\\) as the RV for the sampling distribution\n\n\n\nTheoretically (using only population values): \\(\\overline{X} \\sim \\text{Normal} \\big(\\mu_{\\overline{X}} = \\mu, \\sigma_{\\overline{X}}= SE = \\frac{\\sigma}{\\sqrt{n}} \\big)\\)\nIn real use (using sample values for SE): \\(\\overline{X} \\sim \\text{Normal} \\big(\\mu_{\\overline{X}} = \\mu, \\sigma_{\\overline{X}}= SE = \\frac{s}{\\sqrt{n}} \\big)\\)\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\\[ \\mu_{\\overline{X}} = 65 \\text{ inches}\\] \\[ SE = 0.424 \\text{ inches}\\]"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#last-time-point-estimates",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#last-time-point-estimates",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Last time: point estimates",
-    "text": "Last time: point estimates\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_bar()`)."
+    "text": "Last time: point estimates"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#this-time-interval-estimates-of-population-parameter",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#this-time-interval-estimates-of-population-parameter",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "This time: Interval estimates of population parameter",
     "text": "This time: Interval estimates of population parameter\n\nA point estimate consists of a single value\nAn interval estimate provides a plausible range of values for a parameter\n\nRemember: parameters are from the population and estimates are from our sample\n\nWe can create a plausible range of values for a population mean (\\(\\mu\\)) from a sample’s mean \\(\\overline{x}\\)\nA confidence interval gives us a plausible range for \\(\\mu\\)\nConfidence intervals take the general form: \\[\\big(\\overline{x} - m, \\overline{x} + m \\big) = \\overline{x} \\pm m\\]\n\nWhere \\(m\\) is the margin of error"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#point-estimates-with-their-confidence-intervals-for-mu",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#point-estimates-with-their-confidence-intervals-for-mu",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Point estimates with their confidence intervals for \\(\\mu\\)",
-    "text": "Point estimates with their confidence intervals for \\(\\mu\\)\n\n\n \n\n\n\n\n\n\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_bar()`).\nRemoved 2 rows containing missing values or values outside the scale range\n(`geom_bar()`).\nRemoved 2 rows containing missing values or values outside the scale range\n(`geom_bar()`).\nRemoved 2 rows containing missing values or values outside the scale range\n(`geom_bar()`).\n\n\n\n\n\n\n\n\n\n\nDo these confidence intervals include \\(\\mu\\)?"
+    "text": "Point estimates with their confidence intervals for \\(\\mu\\)\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDo these confidence intervals include \\(\\mu\\)?"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#poll-everywhere-question-1",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#poll-everywhere-question-1",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Poll Everywhere Question 1",
     "text": "Poll Everywhere Question 1"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#confidence-interval-ci-for-the-mean-mu",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#confidence-interval-ci-for-the-mean-mu",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Confidence interval (CI) for the mean \\(\\mu\\)",
-    "text": "Confidence interval (CI) for the mean \\(\\mu\\)\n\n\n\n\nConfidence interval for \\(\\mu\\)\n\n\n\\[\\overline{x}\\ \\pm\\ z^*\\times \\text{SE}\\]\n\nwith \\(\\text{SE} = \\frac{\\sigma}{\\sqrt{n}}\\) if population sd is known\n\n\n\n\n\n\n \nWhen can this be applied?\n\nWhen CLT can be applied!\nWhen we know the population standard deviation!\n\n\n\n\n\\(z^*\\) depends on the confidence level\nFor a 95% CI, \\(z^*\\) is chosen such that 95% of the standard normal curve is between \\(-z^*\\) and \\(z^*\\)\n\nThis corresponds to \\(z^* = 1.96\\) for a 95% CI\n\nWe can use R to calculate \\(z^*\\) for any desired CI\nBelow is how we calculate \\(z^*\\) for the 95% CI\n\n\nqnorm(p = 0.975)\n\n[1] 1.959964"
+    "text": "Confidence interval (CI) for the mean \\(\\mu\\)\n\n\n\n\nConfidence interval for \\(\\mu\\)\n\n\n\\[\\overline{x}\\ \\pm\\ z^*\\times \\text{SE}\\]\n\nwith \\(\\text{SE} = \\frac{\\sigma}{\\sqrt{n}}\\) if population sd is known\n\n\n\n\n\n\n \nWhen can this be applied?\n\nWhen CLT can be applied!\nWhen we know the population standard deviation!\n\n\n\n\\(z^*\\) depends on the confidence level\nFor a 95% CI, \\(z^*\\) is chosen such that 95% of the standard normal curve is between \\(-z^*\\) and \\(z^*\\)\n\nThis corresponds to \\(z^* = 1.96\\) for a 95% CI\n\nWe can use R to calculate \\(z^*\\) for any desired CI\nBelow is how we calculate \\(z^*\\) for the 95% CI\n\n\nqnorm(p = 0.975)\n\n[1] 1.959964"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#example-ci-for-mean-height-mu-with-sigma",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#example-ci-for-mean-height-mu-with-sigma",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Example: CI for mean height \\(\\mu\\) with \\(\\sigma\\)",
-    "text": "Example: CI for mean height \\(\\mu\\) with \\(\\sigma\\)\n\n\nExample 1: Using our green sample from previous plots\n\n\nFor a random sample of 50 people, the mean height is 66.1 inches. Assume the population standard deviation is 3 inches. Find the 95% confidence interval for the population mean.\n\n\n\\[\n\\begin{aligned}\n\\overline{x} \\pm \\ & z^* \\times \\text{SE} \\\\\n\\overline{x} \\pm \\ & z^* \\times \\dfrac{\\sigma}{\\sqrt{n}} \\\\\n66.1 \\pm \\ & 1.96 \\times \\dfrac{3}{\\sqrt{50}} \\\\\n66.1 \\pm \\ & 0.8315576 \\\\\n(66.1 - 0.8315576, & \\ 66.1 + 0.8315576)\\\\\n(65.268, & \\ 66.932)\\\\\n\\end{aligned}\n\\]\nWe are 95% confident that the mean height is between 65.268 and 66.932 inches."
+    "text": "Example: CI for mean height \\(\\mu\\) with \\(\\sigma\\)\n\n\nExample 1: Using our green sample from previous plots\n\n\nFor a random sample of 50 people, the mean height is 66.1 inches. Assume the population standard deviation is 3 inches. Find the 95% confidence interval for the population mean.\n\n\n\\[\n\\begin{aligned}\n\\overline{x} \\pm \\ & z^* \\times \\text{SE} \\\\\n\\overline{x} \\pm \\ & z^* \\times \\dfrac{\\sigma}{\\sqrt{n}} \\\\\n66.1 \\pm \\ & 1.96 \\times \\dfrac{3}{\\sqrt{50}} \\\\\n66.1 \\pm \\ & 0.8315576 \\\\\n(66.1 - 0.8315576, & \\ 66.1 + 0.8315576)\\\\\n(65.268, & \\ 66.932)\\\\\n\\end{aligned}\n\\]\nWe are 95% confident that the population mean height is between 65.268 and 66.932 inches."
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#how-do-we-interpret-confidence-intervals-12",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#how-do-we-interpret-confidence-intervals-12",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "How do we interpret confidence intervals? (1/2)",
-    "text": "How do we interpret confidence intervals? (1/2)\n\n\nSimulating Confidence Intervals: http://www.rossmanchance.com/applets/ConfSim.html\nThe figure shows CI’s from 100 simulations:\n\nThe true value of \\(\\mu =65\\) is the vertical black line\nThe horizontal lines are 95% CI’s from 100 samples\n\nBlue: the CI “captured” the true value of \\(\\mu\\)\nRed: the CI did not “capture” the true value of \\(\\mu\\)\n\n\n\n\nWhat percent of CI’s captured the true value of \\(\\mu\\)?\n\n\n\n\n\n\nLoading required package: airports\n\n\nLoading required package: cherryblossom\n\n\nLoading required package: usdata\n\n\n\nAttaching package: 'openintro'\n\n\nThe following objects are masked from 'package:moderndive':\n\n    babies, evals"
+    "text": "How do we interpret confidence intervals? (1/2)\n\n\nSimulating Confidence Intervals: http://www.rossmanchance.com/applets/ConfSim.html\nThe figure shows CI’s from 100 samples:\n\n100 samples: I find the mean and confidence interval of each sample\nThe true value of \\(\\mu =65\\) is the vertical black line\nThe horizontal lines are 95% CI’s from 100 samples\n\nBlue: the CI “captured” the true value of \\(\\mu\\)\nRed: the CI did not “capture” the true value of \\(\\mu\\)\n\n\n\n\nWhat percent of CI’s captured the true value of \\(\\mu\\)?"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#how-do-we-interpret-confidence-intervals-22",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#how-do-we-interpret-confidence-intervals-22",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "How do we interpret confidence intervals? (2/2)",
-    "text": "How do we interpret confidence intervals? (2/2)\nActual interpretation:\n\nIf we were to\n\nrepeatedly take random samples from a population and\ncalculate a 95% CI for each random sample,\n\nthen we would expect 95% of our CI’s to contain the true population parameter \\(\\mu\\).\n\n\n\n\nWhat we typically write as “shorthand”:\n\nIn general form: We are 95% confident that (the 95% confidence interval) captures the value of the population parameter.\n\nWRONG interpretation:\n\nThere is a 95% chance that (the 95% confidence interval) captures the value of the population parameter.\n\nFor one CI on its own, it either does or doesn’t contain the population parameter with probability 0 or 1. We just don’t know which!"
+    "text": "How do we interpret confidence intervals? (2/2)\nActual interpretation:\n\nIf we were to\n\nrepeatedly take random samples from a population and\ncalculate a 95% CI for each random sample,\n\nthen we would expect 95% of our CI’s to contain the true population parameter \\(\\mu\\).\n\n\n\n\nWhat we typically write as “shorthand”:\n\nIn general form: We are 95% confident that (the 95% confidence interval) captures the value of the population parameter.\nRecall example: “We are 95% confident that the population mean height is between 65.268 and 66.932 inches.”\n\nWRONG interpretation:\n\nThere is a 95% chance that (the 95% confidence interval) captures the value of the population parameter.\n\nFor one CI on its own, it either does or doesn’t contain the population parameter with probability 0 or 1. We just don’t know which!"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#poll-everywhere-question-2",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#poll-everywhere-question-2",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Poll Everywhere Question 2",
     "text": "Poll Everywhere Question 2"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#what-if-we-dont-know-sigma-12",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#what-if-we-dont-know-sigma-12",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "What if we don’t know \\(\\sigma\\) ? (1/2)",
-    "text": "What if we don’t know \\(\\sigma\\) ? (1/2)\nSimulating Confidence Intervals: http://www.rossmanchance.com/applets/ConfSim.html\n\n\n\n\n\n\nThe normal distribution doesn’t have a 95% “coverage rate” when using \\(s\\) instead of \\(\\sigma\\)\nThere’s another distribution, called the t-distribution, that does have a 95% “coverage rate” when we use \\(s\\)"
+    "text": "What if we don’t know \\(\\sigma\\) ? (1/2)\nSimulating Confidence Intervals: http://www.rossmanchance.com/applets/ConfSim.html\n\n\nThe normal distribution doesn’t have a 95% “coverage rate” when using \\(s\\) instead of \\(\\sigma\\)\nThere’s another distribution, called the t-distribution, that does have a 95% “coverage rate” when we use \\(s\\)"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#poll-everywhere-question-3",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#poll-everywhere-question-3",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Poll Everywhere Question 3",
     "text": "Poll Everywhere Question 3"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#what-if-we-dont-know-sigma-22",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#what-if-we-dont-know-sigma-22",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "What if we don’t know \\(\\sigma\\) ? (2/2)",
     "text": "What if we don’t know \\(\\sigma\\) ? (2/2)\n\nIn real life, we don’t know what the population sd is ( \\(\\sigma\\) )\nIf we replace \\(\\sigma\\) with \\(s\\) in the SE formula, we add in additional variability to the SE! \\[\\frac{\\sigma}{\\sqrt{n}} ~~~~\\textrm{vs.} ~~~~ \\frac{s}{\\sqrt{n}}\\]\nThus when using \\(s\\) instead of \\(\\sigma\\) when calculating the SE, we need a different probability distribution with thicker tails than the normal distribution.\n\nIn practice this will mean using a different value than 1.96 when calculating the CI\n\nInstead, we use the Student’s t-distribution"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#students-t-distribution",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#students-t-distribution",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Student’s t-distribution",
     "text": "Student’s t-distribution\n\n\n\nIs bell shaped and symmetric\nA “generalized” version of the normal distribution\n\n \n\nIts tails are a thicker than that of a normal distribution\n\nThe “thickness” depends on its degrees of freedom: \\(df = n–1\\) , where n = sample size\n\n\n \n\nAs the degrees of freedom (sample size) increase,\n\nthe tails are less thick, and\nthe t-distribution is more like a normal distribution\nin theory, with an infinite sample size the t-distribution is a normal distribution."
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#confidence-interval-ci-for-the-mean-mu-1",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#confidence-interval-ci-for-the-mean-mu-1",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Confidence interval (CI) for the mean \\(\\mu\\)",
-    "text": "Confidence interval (CI) for the mean \\(\\mu\\)\n\n\n\n\nConfidence interval for \\(\\mu\\)\n\n\n\\[\\overline{x}\\ \\pm\\ t^*\\times \\text{SE}\\]\n\nwith \\(\\text{SE} = \\frac{s}{\\sqrt{n}}\\) if population sd is not known\n\n\n\n\n\n\n \nWhen can this be applied?\n\nWhen CLT can be applied!\nWhen we do not know the population standard deviation!\n\n\n\n\n\n\n\\(t^*\\) depends on the confidence level and degrees of freedom\n\ndegrees of freedom (df) is: \\(df=n-1\\) (n is number of observations in sample)\n\nqt gives the quartiles for a t-distribution. Need to specify\n\nthe percent under the curve to the left of the quartile\nthe degrees of freedom = \\(n-1\\)\n\nNote in the R output to the right that \\(t^*\\) gets closer to 1.96 as the sample size increases\n\n\n\nqt(p = 0.975, df=9)  #df = n-1\n\n[1] 2.262157\n\nqt(p = 0.975, df=49)\n\n[1] 2.009575\n\nqt(p = 0.975, df=99)\n\n[1] 1.984217\n\nqt(p = 0.975, df=999)\n\n[1] 1.962341"
+    "text": "Confidence interval (CI) for the mean \\(\\mu\\)\n\n\n\n\nConfidence interval for \\(\\mu\\)\n\n\n\\[\\overline{x}\\ \\pm\\ t^*\\times \\text{SE}\\]\n\nwith \\(\\text{SE} = \\frac{s}{\\sqrt{n}}\\) if population sd is not known\n\n\n\n\n\n\n \nWhen can this be applied?\n\nWhen CLT can be applied!\nWhen we do not know the population standard deviation!\n\n\n\n\n\n\\(t^*\\) depends on the confidence level and degrees of freedom\n\ndegrees of freedom (df) is: \\(df=n-1\\) (n is number of observations in sample)\n\nqt gives the quartiles for a t-distribution. Need to specify\n\nthe percent under the curve to the left of the quartile\nthe degrees of freedom = \\(n-1\\)\n\nNote in the R output to the right that \\(t^*\\) gets closer to 1.96 as the sample size increases\n\n\n\nqt(p = 0.975, df=9)  #df = n-1\n\n[1] 2.262157\n\nqt(p = 0.975, df=49)\n\n[1] 2.009575\n\nqt(p = 0.975, df=99)\n\n[1] 1.984217\n\nqt(p = 0.975, df=999)\n\n[1] 1.962341"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#example-ci-for-mean-height-mu-with-s",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#example-ci-for-mean-height-mu-with-s",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Example: CI for mean height \\(\\mu\\) with \\(s\\)",
-    "text": "Example: CI for mean height \\(\\mu\\) with \\(s\\)\n\n\nExample 2: Using our green sample from previous plots\n\n\nFor a random sample of 50 people, the mean height is 66.1 inches and the standard deviation is 3.5 inches. Find the 95% confidence interval for the population mean.\n\n\n\n\n\\[\n\\begin{aligned}\n\\overline{x} \\pm \\ & t^* \\times \\text{SE} \\\\\n\\overline{x} \\pm \\ & t^* \\times \\dfrac{s}{\\sqrt{n}} \\\\\n66.1 \\pm \\ & 2.0096 \\times \\dfrac{3.5}{\\sqrt{50}} \\\\\n66.1 \\pm \\ & 0.994689 \\\\\n(66.1 - 0.994689, & \\ 66.1 + 0.994689)\\\\\n(65.105, & \\ 67.095)\\\\\n\\end{aligned}\n\\]\n\n \nWhat is \\(t^*\\)? \\[df = n-1 = 50-1=49\\] \\(t^* =\\) qt(p = 0.975, df = 49) \\(= 2.0096\\)\n\n\nWe are 95% confident that the mean height is between 65.105 and 67.095 inches."
+    "text": "Example: CI for mean height \\(\\mu\\) with \\(s\\)\n\n\nExample 2: Using our green sample from previous plots\n\n\nFor a random sample of 50 people, the mean height is 66.1 inches and the standard deviation is 3.5 inches. Find the 95% confidence interval for the population mean.\n\n\n\n\n\\[\n\\begin{aligned}\n\\overline{x} \\pm \\ & t^* \\times \\text{SE} \\\\\n\\overline{x} \\pm \\ & t^* \\times \\dfrac{s}{\\sqrt{n}} \\\\\n66.1 \\pm \\ & 2.0096 \\times \\dfrac{3.5}{\\sqrt{50}} \\\\\n66.1 \\pm \\ & 0.994689 \\\\\n(66.1 - 0.994689, & \\ 66.1 + 0.994689)\\\\\n(65.105, & \\ 67.095)\\\\\n\\end{aligned}\n\\]\n\n \nWhat is \\(t^*\\)? \\[df = n-1 = 50-1=49\\] \\(t^* =\\) qt(p = 0.975, df = 49) \\(= 2.0096\\)\n\nWe are 95% confident that the mean height is between 65.105 and 67.095 inches."
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#confidence-interval-ci-for-the-mean-mu-z-vs.-t",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#confidence-interval-ci-for-the-mean-mu-z-vs.-t",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Confidence interval (CI) for the mean \\(\\mu\\) (\\(z\\) vs. \\(t\\))",
     "text": "Confidence interval (CI) for the mean \\(\\mu\\) (\\(z\\) vs. \\(t\\))\n\nIn summary, we have two cases that lead to different ways to calculate the confidence interval\n\n\n\n\n\nCase 1: We know the population standard deviation\n\n\n\\[\\overline{x}\\ \\pm\\ z^*\\times \\text{SE}\\]\n\nwith \\(\\text{SE} = \\frac{\\sigma}{\\sqrt{n}}\\) and \\(\\sigma\\) is the population standard deviation\n\n \n\nFor 95% CI, we use:\n\n\\(z^* =\\) qnorm(p = 0.975) \\(=1.96\\)\n\n\n\n\n\n\n\nCase 2: We do not know the population sd\n\n\n\\[\\overline{x}\\ \\pm\\ t^*\\times \\text{SE}\\]\n\nwith \\(\\text{SE} = \\frac{s}{\\sqrt{n}}\\) and \\(s\\) is the sample standard deviation\n\n \n\nFor 95% CI, we use:\n\n\\(t^* =\\) qt(p = 0.975, df = n-1)"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#some-final-words-said-slightly-differently",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#some-final-words-said-slightly-differently",
-    "title": "Lesson 10: Confidence intervals",
+    "title": "Lesson 11: Confidence intervals",
     "section": "Some final words (said slightly differently?)",
     "text": "Some final words (said slightly differently?)\n\nRule of thumb:\n\nUse normal distribution ONLY if you know the population standard deviation \\(\\sigma\\)\nIf using \\(s\\) for the \\(SE\\), then use the Student’s t-distribution\n\n\n \n\nFor either case, we need to remember when we can calculate the confidence interval:\n\n\\(n \\geq 30\\) and population distribution not strongly skewed (using Central Limit Theorem)\n\nIf there is skew or some large outliers, then \\(n \\geq 50\\) gives better estimates\n\n\\(n &lt; 30\\) and data approximately symmetric with no large outliers\n\n\n \n\nIf do not know population distribution, then check the distribution of the data.\n\nAka, use what we learned in datavisualization to see what the data look like"
   },
@@ -27122,14 +27122,14 @@
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals_key_info.html",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "Let’s go over how to insert an image into a qmd!\nHomework 3\n\n3.6a: variance wrong\n\nY is a random variable\n\n\nGo to office hours!"
+    "text": "Let’s go over how to insert an image into a qmd!\nHomework 3\n\n3.6a: variance wrong\n\n\\(Y\\) is a random variable, so we cannot use linear combo \\(X+3Y\\), we need to use \\(X + Y_1 + Y_2 + Y_3\\)\n\n\nGo to office hours!"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals_key_info.html#announcements",
     "href": "lessons/11_Confidence_intervals/11_Confidence_intervals_key_info.html#announcements",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "Let’s go over how to insert an image into a qmd!\nHomework 3\n\n3.6a: variance wrong\n\nY is a random variable\n\n\nGo to office hours!"
+    "text": "Let’s go over how to insert an image into a qmd!\nHomework 3\n\n3.6a: variance wrong\n\n\\(Y\\) is a random variable, so we cannot use linear combo \\(X+3Y\\), we need to use \\(X + Y_1 + Y_2 + Y_3\\)\n\n\nGo to office hours!"
   },
   {
     "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals_key_info.html#key-dates",
@@ -27718,5 +27718,12 @@
     "title": "Homework 5 Answers",
     "section": "3.40 Osteosarcoma in NYC",
     "text": "3.40 Osteosarcoma in NYC\nOsteosarcoma is a relatively rare type of bone cancer. It occurs most often in young adults, age 10 - 19; it is diagnosed in approximately 8 per 1,000,000 individuals per year in that age group. In New York City (including all five boroughs), the number of young adults in this age range is approximately 1,400,000.\n\na\nWhat is the expected number of cases of osteosarcoma in NYC in a given year?\n\n11.2\n\n\n\nb\nWhat is the probability that 15 or more cases will be diagnosed in a given year?\n\n0.161\n\n\n\nc\nThe largest concentration of young adults in NYC is in the borough of Brooklyn, where the population in that age range is approximately 450,000. What is the probability of 10 or more cases in Brooklyn in a given year?\n\n0.004\n\n\n\nd\nSuppose that in a given year, 10 cases of osteosarcoma were observed in NYC, with all 10 cases occurring among young adults living in Brooklyn. An official from the NYC Public Health Department claims that the probability of this event (that is, the probability of 10 or more cases being observed, and all of them occurring in Brooklyn) is what was calculated in part c). Is the official correct? Explain your answer. You may assume that your answer to part c) is correct. This question can be answered without doing any calculations.\n\nOfficial is not correct\n\n\n\ne\nSuppose that over five years, there was one year in which 10 or more cases of osteosarcoma were observed in Brooklyn. Is the probability of this event equal to the probability calculated in part c)? Explain your answer.\n\n0.01979"
+  },
+  {
+    "objectID": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#where-are-we",
+    "href": "lessons/11_Confidence_intervals/11_Confidence_intervals.html#where-are-we",
+    "title": "Lesson 11: Confidence intervals",
+    "section": "Where are we?",
+    "text": "Where are we?"
   }
 ]
