@@ -1,10 +1,10 @@
 ---
-title: "Lesson 11: Hypothesis Testing 1: Single-sample mean"
+title: "Lesson 13: Hypothesis Testing 1: Single-sample mean"
 subtitle: "TB sections 4.3, 5.1"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "11/6/2024"
+date: "`r library(here); source(here('class_dates.R')); w6d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -13,7 +13,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 11 Slides
+    footer: Lesson 12 Slides
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -47,21 +47,27 @@ theme_set(theme_bw(base_size = 22))
 set.seed(456)
 ```
 
+# Learning Objectives
+
+1.  Understand the relationship between point estimates, confidence intervals, and hypothesis tests.
+2.  Determine if a single-sample mean is different than a population mean using a hypothesis test.
+3.  Use R to calculate the test statistic, p-value, and confidence interval for a single-sample mean.
+
 ## Where are we?
 
 ![](../img_slides/course_map.png){fig-align="center"}
 
-## Where are we? Continuous outcome zoomed in {visibility="hidden"}
+## Hypothesis tests we will learn
 
-<br> <br>
+CI's and hypothesis testing for different scenarios:
 
-![](../img_slides/flowchart_only_continuous.jpg){fig-align="center"}
-
-# Learning Objectives
-
-1.  Understand the relationship between point estimates, confidence intervals, and hypothesis tests.
-2.  Determine if s single-sample mean is different than a population mean using a hypothesis test.
-3.  Use R to calculate the test statistic, p-value, and confidence interval for a single-sample mean.
+| Lesson | Section | Population parameter | Symbol (pop) | Point estimate | Symbol (sample) |
+|:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
+| 12 | 5.1 | Pop mean | $\mu$ | Sample mean | $\overline{x}$ |
+| 13 | 5.2 | Pop mean of paired diff | $\mu_d$ or $\delta$ | Sample mean of paired diff | $\overline{x}_{d}$ |
+| 14 | 5.3 | Diff in pop means | $\mu_1-\mu_2$ | Diff in sample means | $\overline{x}_1 - \overline{x}_2$ |
+| 16 | 8.1 | Pop proportion | $p$ | Sample prop | $\widehat{p}$ |
+| 16 | 8.2 | Diff in pop prop's | $p_1-p_2$ | Diff in sample prop's | $\widehat{p}_1-\widehat{p}_2$ |
 
 ```{css, echo=FALSE}
 .reveal code {
@@ -75,12 +81,14 @@ set.seed(456)
 1.  Understand the relationship between point estimates, confidence intervals, and hypothesis tests.
 :::
 
-2.  Determine if s single-sample mean is different than a population mean using a hypothesis test.
+2.  Determine if a single-sample mean is different than a population mean using a hypothesis test.
 3.  Use R to calculate the test statistic, p-value, and confidence interval for a single-sample mean.
 
-## Answering a research question
+## Answering a research question with a single mean
 
-**Research question is a generic form:** Is there evidence to support that the population mean is different than $\mu$?
+**Research question is a generic form:** Is there evidence to support that the population mean is different than $\mu_0$?
+
+-   $\mu_0$ is the generic form for a prescribed value: $\mu$ is the population mean and we want to see if $\mu=\mu_0$
 
  
 
@@ -94,8 +102,9 @@ Confidence interval
 :::
 
 ::: green2-cont
--   Create a **confidence interval (CI)** for the population mean $\mu$ from our sample data and determine whether a prescribed value is inside the CI or not.
--   Answering the question: is $\mu$ a plausible value given our data?
+-   Create a **confidence interval (CI)** for the population mean $\mu$ from our sample data and determine whether a prescribed value ($\mu_0$) is inside the CI or not
+-   Answering the question: is $\mu_0$ a plausible value given our data?
+    -   If CI does NOT contain $\mu_0$ then the answer is "Yes, evidence to support population mean is different than $\mu_0$
 :::
 :::::
 ::::::
@@ -110,7 +119,7 @@ Hypothesis test
 :::
 
 ::: pink-cont
--   Run a **hypothesis test** to see if there is evidence that the population mean $\mu$ is *significantly different* from a prescribed value
+-   Run a **hypothesis test** to see if there is evidence that the population mean $\mu$ is *significantly different* from a prescribed value ($\mu_0$)
 -   This does not give us a range of plausible values for the population mean $\mu$.
 -   Instead, we calculate a *test statistic* and *p-value*
 -   See how likely we are to observe the sample mean $\overline{x}$ or a more extreme sample mean assuming that the population mean $\mu$ is a prescribed value
@@ -403,7 +412,7 @@ samp_dist_blue / samp_dist_yell / samp_dist_red / samp_dist_green
 :::
 
 ::: {.column width="28%"}
-Assuming the population mean is $\mu$, what is the probability that we observe $\overline{x}$ or a more extreme sample mean?
+Assuming the population mean is $\mu$ (65 inches), what is the probability that we observe $\overline{x}$ or a more extreme sample mean?
 :::
 ::::::
 
@@ -565,7 +574,7 @@ sd <- 0.733
 (UB <- xbar + moe)
 ```
 
-::::: columns
+::::::: columns
 ::: {.column width="40%"}
 CI for $\mu$: \begin{align}
 \overline{x} &\pm t^*\cdot\frac{s}{\sqrt{n}}\\
@@ -575,16 +584,20 @@ CI for $\mu$: \begin{align}
 \end{align}
 :::
 
-::: {.column width="60%"}
+::::: {.column width="60%"}
  
 
 Used $t^*$ = `qt(.975, df=129)` = `r round(qt(.975, df=129),3)`
 
  
 
+:::: green
+::: green-cont
 **Conclusion:** We are 95% confident that the (population) mean body temperature is between `r round(LB, 3)`°F and `r round(UB, 3)`°F, which is discernably different than 98.6°F.
 :::
+::::
 :::::
+:::::::
 
 ## [Approach 2: Hypothesis Test]{style="color:#BF396F"}
 
@@ -609,12 +622,12 @@ From before:
 1.  Understand the relationship between point estimates, confidence intervals, and hypothesis tests.
 
 ::: lob
-2.  Determine if s single-sample mean is different than a population mean using a hypothesis test.
+2.  Determine if a single-sample mean is different than a population mean using a hypothesis test.
 :::
 
 3.  Use R to calculate the test statistic, p-value, and confidence interval for a single-sample mean.
 
-## Steps in a Hypothesis Test
+## General steps in a Hypothesis Test
 
 1.  Check the [**assumptions**]{style="color:#3070BF"}
 
@@ -641,6 +654,7 @@ From before:
 
     -   **Independent observations**: the observations were collected independently.
     -   **Approximately normal sample or big n**: the distribution of the sample should be approximately normal, *or* the sample size should be at least 30
+        -   AKA: sample is approximately Normal OR we can use the CLT
 
  
 
@@ -665,6 +679,7 @@ From before:
 -   This is parallel to our confidence interval
 
     -   $\alpha$ is the probability of rejecting the null hypothesis when it is true (it's a measure of potential error)
+        -   Null: our initial assumption about the mean (in example, $\mu = 98.6$)
     -   From repeated ($1-\alpha$)% confidence intervals, we will have about $\alpha$% intervals that do not cover $\mu$ even though they come from the distribution with mean $\mu$
 
 ## Step 3: Null & Alternative Hypotheses (1/2)
@@ -956,7 +971,7 @@ H_0 &: \mu = 98.6\\
 # Learning Objectives
 
 1.  Understand the relationship between point estimates, confidence intervals, and hypothesis tests.
-2.  Determine if s single-sample mean is different than a population mean using a hypothesis test.
+2.  Determine if a single-sample mean is different than a population mean using a hypothesis test.
 
 ::: lob
 3.  Use R to calculate the test statistic, p-value, and confidence interval for a single-sample mean.
@@ -1018,11 +1033,11 @@ CI's and hypothesis testing for different scenarios:
 
 | Lesson | Section | Population parameter | Symbol (pop) | Point estimate | Symbol (sample) |
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|
-| 11 | 5.1 | Pop mean | $\mu$ | Sample mean | $\overline{x}$ |
-| 12 | 5.2 | Pop mean of paired diff | $\mu_d$ or $\delta$ | Sample mean of paired diff | $\overline{x}_{d}$ |
-| 13 | 5.3 | Diff in pop means | $\mu_1-\mu_2$ | Diff in sample means | $\overline{x}_1 - \overline{x}_2$ |
-| 15 | 8.1 | Pop proportion | $p$ | Sample prop | $\widehat{p}$ |
-| 15 | 8.2 | Diff in pop prop's | $p_1-p_2$ | Diff in sample prop's | $\widehat{p}_1-\widehat{p}_2$ |
+| 12 | 5.1 | Pop mean | $\mu$ | Sample mean | $\overline{x}$ |
+| 13 | 5.2 | Pop mean of paired diff | $\mu_d$ or $\delta$ | Sample mean of paired diff | $\overline{x}_{d}$ |
+| 14 | 5.3 | Diff in pop means | $\mu_1-\mu_2$ | Diff in sample means | $\overline{x}_1 - \overline{x}_2$ |
+| 16 | 8.1 | Pop proportion | $p$ | Sample prop | $\widehat{p}$ |
+| 16 | 8.2 | Diff in pop prop's | $p_1-p_2$ | Diff in sample prop's | $\widehat{p}_1-\widehat{p}_2$ |
 
 ## Reference: what does it all look like together?
 
