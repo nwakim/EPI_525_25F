@@ -1,10 +1,10 @@
 ---
-title: "Lesson 13: Hypothesis Testing 1: Single-sample mean"
+title: "Lesson 12: Hypothesis Testing 1: Single-sample mean"
 subtitle: "TB sections 4.3, 5.1"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "`r library(here); source(here('class_dates.R')); w6d1`"
+date: "`r library(here); source(here('class_dates.R')); w6d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"

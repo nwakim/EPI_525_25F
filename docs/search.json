@@ -27743,7 +27743,7 @@
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#where-are-we",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#where-are-we",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Where are we?",
     "text": "Where are we?"
   },
@@ -27757,70 +27757,70 @@
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#last-last-time-point-estimates",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#last-last-time-point-estimates",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Last last time: Point estimates",
     "text": "Last last time: Point estimates"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#last-time-point-estimates-with-their-confidence-intervals-for-mu",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#last-time-point-estimates-with-their-confidence-intervals-for-mu",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Last time: Point estimates with their confidence intervals for \\(\\mu\\)",
     "text": "Last time: Point estimates with their confidence intervals for \\(\\mu\\)\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDo these confidence intervals include \\(\\mu\\)?"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#this-time-point-estimates-with-probability-assuming-population-mean-mu",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#this-time-point-estimates-with-probability-assuming-population-mean-mu",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "This time: Point estimates with probability assuming population mean \\(\\mu\\)",
     "text": "This time: Point estimates with probability assuming population mean \\(\\mu\\)\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAssuming the population mean is \\(\\mu\\) (65 inches), what is the probability that we observe \\(\\overline{x}\\) or a more extreme sample mean?"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#last-time-confidence-interval-ci-for-the-mean-mu-z-vs.-t",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#last-time-confidence-interval-ci-for-the-mean-mu-z-vs.-t",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Last time: Confidence interval (CI) for the mean \\(\\mu\\) (\\(z\\) vs. \\(t\\))",
     "text": "Last time: Confidence interval (CI) for the mean \\(\\mu\\) (\\(z\\) vs. \\(t\\))\n\nIn summary, we have two cases that lead to different ways to calculate the confidence interval\n\n\n\n\n\nCase 1: We know the population standard deviation\n\n\n\\[\\overline{x}\\ \\pm\\ z^*\\times \\text{SE}\\]\n\nwith \\(\\text{SE} = \\frac{\\sigma}{\\sqrt{n}}\\) and \\(\\sigma\\) is the population standard deviation\n\n \n\nFor 95% CI, we use:\n\n\\(z^* =\\) qnorm(p = 0.975) \\(=1.96\\)\n\n\n\n\n\n\n\nCase 2: We do not know the population sd\n\n\n\\[\\overline{x}\\ \\pm\\ t^*\\times \\text{SE}\\]\n\nwith \\(\\text{SE} = \\frac{s}{\\sqrt{n}}\\) and \\(s\\) is the sample standard deviation\n\n \n\nFor 95% CI, we use:\n\n\\(t^* =\\) qt(p = 0.975, df = n-1)"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#poll-everywhere-question-1",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#poll-everywhere-question-1",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Poll Everywhere Question 1",
     "text": "Poll Everywhere Question 1"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#this-time-hypothesis-test-z-vs.-t",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#this-time-hypothesis-test-z-vs.-t",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "This time: Hypothesis test (\\(z\\) vs. \\(t\\))",
     "text": "This time: Hypothesis test (\\(z\\) vs. \\(t\\))\n\nWe have two different distributions from which we run a hypothesis test\n\n\n\n\n\nCase 1: We know the population standard deviation\n\n\n\nWe use a test statistic from a Normal distribution: \\[z_{\\overline{x}} = \\dfrac{\\overline{x} - \\mu}{SE}\\]\nwith \\(\\text{SE} = \\frac{\\sigma}{\\sqrt{n}}\\) and \\(\\sigma\\) is the population standard deviation\n\n\n\n\n\n\nCase 2: We do not know the population sd\n\n\n\nWe use a test statistic from a Student’s t-distribution: \\[t_{\\overline{x}} = \\dfrac{\\overline{x} - \\mu}{SE}\\]\nwith \\(\\text{SE} = \\frac{s}{\\sqrt{n}}\\) and \\(\\sigma\\) is the sample standard deviation\n\n \n\nThis is usually the case in real life"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#is-98.6f-really-the-mean-healthy-body-temperature",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#is-98.6f-really-the-mean-healthy-body-temperature",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Is 98.6°F really the mean “healthy” body temperature?",
     "text": "Is 98.6°F really the mean “healthy” body temperature?\n\nWe will illustrate how to perform a hypothesis test as we work through this example\nWhere did the 98.6°F value come from?\n\nGerman physician Carl Reinhold August Wunderlich determined 98.6°F (or 37°C) based on temperatures from 25,000 patients in Leipzig in 1851.\n\n1992 JAMA article by Mackowiak, Wasserman, & Levine\n\nThey claim that 98.2°F (36.8°C) is a more accurate average body temp\nSample: n = 148 healthy individuals aged 18 - 40 years\n\nOther research indicating that the human body temperature is lower\n\nDecreasing human body temperature in the United States since the Industrial Revolution\nDefining Usual Oral Temperature Ranges in Outpatients Using an Unsupervised Learning Algorithm\nNYT article The Average Human Body Temperature Is Not 98.6 Degrees\n\n\n\nQuestion: based on the 1992 JAMA data, is there evidence to support that the population mean body temperature is different from 98.6°F?"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#question-based-on-the-1992-jama-data-is-there-evidence-to-support-that-the-population-mean-body-temperature-is-different-from-98.6f",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#question-based-on-the-1992-jama-data-is-there-evidence-to-support-that-the-population-mean-body-temperature-is-different-from-98.6f",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Question: based on the 1992 JAMA data, is there evidence to support that the population mean body temperature is different from 98.6°F?",
     "text": "Question: based on the 1992 JAMA data, is there evidence to support that the population mean body temperature is different from 98.6°F?\nTwo approaches to answer this question:\n\n\n\n\nConfidence interval\n\n\n\nCreate a confidence interval (CI) for the population mean \\(\\mu\\) and determine whether 98.6°F is inside the CI or not.\nAnswering the question: is 98.6°F a plausible value?\n\n\n\n\n\n\n\n\nHypothesis test\n\n\n\nRun a hypothesis test to see if there is evidence that the population mean \\(\\mu\\) is significantly different from 98.6°F or not\nThis does not give us a range of plausible values for the population mean \\(\\mu\\).\nInstead, we calculate a test statistic and p-value\nSee how likely we are to observe the sample mean \\(\\overline{x}\\) or a more extreme sample mean assuming that the population mean \\(\\mu\\) is 98.6°F"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#approach-1-create-a-95-ci-for-the-population-mean-body-temperature",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#approach-1-create-a-95-ci-for-the-population-mean-body-temperature",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Approach 1: Create a 95% CI for the population mean body temperature",
     "text": "Approach 1: Create a 95% CI for the population mean body temperature\n\nUse data based on the results from the 1992 JAMA study\n\nThe original dataset used in the JAMA article is not available\nHowever, Allen Shoemaker from Calvin College created a dataset with the same summary statistics as in the JAMA article, which we will use:\n\n\n\\[\\overline{x} = 98.25,~s=0.733,~n=130\\]\n\n\nCI for \\(\\mu\\): \\[\\begin{align}\n\\overline{x} &\\pm t^*\\cdot\\frac{s}{\\sqrt{n}}\\\\\n98.25 &\\pm 1.979\\cdot\\frac{0.733}{\\sqrt{130}}\\\\\n98.25 &\\pm 0.127\\\\\n(98.123&, 98.377)\n\\end{align}\\]\n\n \nUsed \\(t^*\\) = qt(.975, df=129) = 1.979\n \n\n\nConclusion: We are 95% confident that the (population) mean body temperature is between 98.123°F and 98.377°F, which is discernably different than 98.6°F."
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#approach-2-hypothesis-test",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#approach-2-hypothesis-test",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Approach 2: Hypothesis Test",
     "text": "Approach 2: Hypothesis Test\nFrom before:\n\nRun a hypothesis test to see if there is evidence that the population mean \\(\\mu\\) is significantly different from 98.6°F or not.\n\nThis does not give us a range of plausible values for the population mean \\(\\mu\\).\nInstead, we calculate a test statistic and p-value\n\nto see how likely we are to observe the sample mean \\(\\overline{x}\\)\nor a more extreme sample mean\nassuming that the population mean \\(\\mu\\) is 98.6°F.\n\n\n\nHow do we calculate a test statistic and p-value?\n\nUse the sampling distribution and central limit theorem!!\nFocus on Case 2: we don’t know the population sd \\(\\sigma\\)"
   },
@@ -27834,140 +27834,140 @@
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-1-check-the-assumptions",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-1-check-the-assumptions",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 1: Check the assumptions",
     "text": "Step 1: Check the assumptions\n\nThe assumptions to run a hypothesis test on a sample are:\n\nIndependent observations: the observations were collected independently.\nApproximately normal sample or big n: the distribution of the sample should be approximately normal, or the sample size should be at least 30\n\nAKA: sample is approximately Normal OR we can use the CLT\n\n\n\n \n\nThese are the criteria for the Central Limit Theorem in Lesson 09: Variability in estimates\n\n \n\nIn our example, we would check the assumptions with a statement:\n\nThe individual observations are independent and the number of individuals in our sample is 130. Thus, we can use CLT to approximate the sampling distribution."
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-2-set-the-level-of-significance-alpha",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-2-set-the-level-of-significance-alpha",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 2: Set the level of significance \\(\\alpha\\)",
     "text": "Step 2: Set the level of significance \\(\\alpha\\)\n\nBefore doing a hypothesis test, we set a cut-off for how small the \\(p\\)-value should be in order to reject \\(H_0\\).\nIt is important to specify how rare or unlikely an event must be in order to represent sufficient evidence against the null hypothesis.\nWe call this the significance level, denoted by the Greek symbol alpha ( \\(\\alpha\\) )\n\nTypically choose \\(\\alpha = 0.05\\)\n\nThis is parallel to our confidence interval\n\n\\(\\alpha\\) is the probability of rejecting the null hypothesis when it is true (it’s a measure of potential error)\n\nNull: our initial assumption about the mean (in example, \\(\\mu = 98.6\\))\n\nFrom repeated (\\(1-\\alpha\\))% confidence intervals, we will have about \\(\\alpha\\)% intervals that do not cover \\(\\mu\\) even though they come from the distribution with mean \\(\\mu\\)"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-3-null-alternative-hypotheses-12",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-3-null-alternative-hypotheses-12",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 3: Null & Alternative Hypotheses (1/2)",
     "text": "Step 3: Null & Alternative Hypotheses (1/2)\nIn statistics, a hypothesis is a statement about the value of an unknown population parameter.\nA hypothesis test consists of a test between two competing hypotheses:\n\na null hypothesis \\(H_0\\) (pronounced “H-naught”) vs.\nan alternative hypothesis \\(H_A\\) (also denoted \\(H_1\\))\n\nExample of hypotheses in words:\n\\[\\begin{aligned}\nH_0 &: \\text{The population mean body temperature is 98.6°F}\\\\\n\\text{vs. } H_A &: \\text{The population mean body temperature is not 98.6°F}\n\\end{aligned}\\]\n\n\\(H_0\\) is a claim that there is “no effect” or “no difference of interest.”\n\\(H_A\\) is the claim a researcher wants to establish or find evidence to support. It is viewed as a “challenger” hypothesis to the null hypothesis \\(H_0\\)"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-3-null-alternative-hypotheses-22",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-3-null-alternative-hypotheses-22",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 3: Null & Alternative Hypotheses (2/2)",
     "text": "Step 3: Null & Alternative Hypotheses (2/2)\n\n\n\n\nNotation for hypotheses\n\n\n\\[\\begin{aligned}\nH_0 &: \\mu = \\mu_0\\\\\n\\text{vs. } H_A&: \\mu \\neq, &lt;, \\textrm{or}, &gt; \\mu_0\n\\end{aligned}\\]\n\n\n\n\n\nHypotheses test for example\n\n\n\\[\\begin{aligned}\nH_0 &: \\mu = 98.6\\\\\n\\text{vs. } H_A&: \\mu \\neq 98.6\n\\end{aligned}\\]\n\n\n\nWe call \\(\\mu_0\\) the null value (hypothesized population mean from \\(H_0\\))\n\n\n\\(H_A: \\mu \\neq \\mu_0\\)\n\nnot choosing a priori whether we believe the population mean is greater or less than the null value \\(\\mu_0\\)\n\n\n\n\n\\(H_A: \\mu &lt; \\mu_0\\)\n\nbelieve the population mean is less than the null value \\(\\mu_0\\)\n\n\n\n\n\\(H_A: \\mu &gt; \\mu_0\\)\n\nbelieve the population mean is greater than the null value \\(\\mu_0\\)\n\n\n\n\\(H_A: \\mu \\neq \\mu_0\\) is the most common option, since it’s the most conservative"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#poll-everywhere-question-2",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#poll-everywhere-question-2",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Poll Everywhere Question 2",
     "text": "Poll Everywhere Question 2"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-4-test-statistic-its-distribution",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-4-test-statistic-its-distribution",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 4: Test statistic (& its distribution)",
     "text": "Step 4: Test statistic (& its distribution)\n\n\n\n\nCase 1: We know the population standard deviation\n\n\n\nWe use a test statistic from a Normal distribution: \\[z_{\\overline{x}} = \\dfrac{\\overline{x} - \\mu}{SE}\\]\nwith \\(\\text{SE} = \\frac{\\sigma}{\\sqrt{n}}\\) and \\(\\sigma\\) is the population standard deviation\nStatistical theory tells us that \\(z_{\\overline{x}}\\) follows a Standard Normal distribution \\(N(0,1)\\)\n\n\n\n\n\n\nCase 2: We do not know the population sd\n\n\n\nWe use test statistic from Student’s t-distribution: \\[t_{\\overline{x}} = \\dfrac{\\overline{x} - \\mu}{SE}\\]\nwith \\(\\text{SE} = \\frac{s}{\\sqrt{n}}\\) and \\(\\sigma\\) is the sample standard deviation\nStatistical theory tells us that \\(t_{\\overline{x}}\\) follows a Student’s t distribution with degrees of freedom (df) = \\(n-1\\)\n\n\n\n\n\\(\\overline{x}\\) = sample mean, \\(\\mu_0\\) = hypothesized population mean from \\(H_0\\),\n\\(\\sigma\\) = population standard deviation, \\(s\\) = sample standard deviation,\n\\(n\\) = sample size"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-4-test-statistic-calculation",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-4-test-statistic-calculation",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 4: Test statistic calculation",
     "text": "Step 4: Test statistic calculation\nFrom our example: Recall that \\(\\overline{x} = 98.25\\), \\(s=0.733\\), and \\(n=130\\)\nThe test statistic is:\n\\[t_{\\overline{x}} = \\frac{\\overline{x} - \\mu_0}{\\frac{s}{\\sqrt{n}}}\n= \\frac{98.25 - 98.6}{\\frac{0.73}{\\sqrt{130}}}\n= -5.45\\]\n\nStatistical theory tells us that \\(t_{\\overline{x}}\\) follows a Student’s t-distribution with \\(df = n-1 = 129\\)"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-5-p-value",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-5-p-value",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 5: p-value",
     "text": "Step 5: p-value\nThe p-value is the probability of obtaining a test statistic just as extreme or more extreme than the observed test statistic assuming the null hypothesis \\(H_0\\) is true.\n\n\n \n\nThe \\(p\\)-value is a quantification of “surprise”\n\nAssuming \\(H_0\\) is true, how surprised are we with the observed results?\nEx: assuming that the true mean body temperature is 98.6°F, how surprised are we to get a sample mean of 98.25°F (or more extreme)?\n\n\n \n\nIf the \\(p\\)-value is “small,” it means there’s a small probability that we would get the observed statistic (or more extreme) when \\(H_0\\) is true."
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-5-p-value-calculation",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-5-p-value-calculation",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 5: p-value calculation",
     "text": "Step 5: p-value calculation\nCalculate the p-value using the Student’s t-distribution with \\(df = n-1 = 130-1=129\\):\n\\[\\text{p-value}=P(T \\leq -5.45) + P(T \\geq 5.45) = 2.410889 \\times 10^{-07}\\]\n\n# use pt() instead of pnorm()\n# need to specify df\n2*pt(-5.4548, df = 130-1, lower.tail = TRUE)\n\n[1] 2.410889e-07"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-6-conclusion-to-hypothesis-test",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-6-conclusion-to-hypothesis-test",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 6: Conclusion to hypothesis test",
     "text": "Step 6: Conclusion to hypothesis test\n\\[\\begin{aligned}\nH_0 &: \\mu = \\mu_0\\\\\n\\text{vs. } H_A&: \\mu \\neq \\mu_0\n\\end{aligned}\\]\n\nNeed to compare p-value to our selected \\(\\alpha = 0.05\\)\nDo we reject or fail to reject \\(H_0\\)?\n\n\n\n\n\n\n\nIf \\(\\text{p-value} &lt; \\alpha\\), reject the null hypothesis\n\n\n\nThere is sufficient evidence that the (population) mean body temperature is discernibly different from \\(\\mu_0\\) ( \\(p\\)-value = ___)\nThe average (insert measure) in the sample was \\(\\overline{x}\\) (95% CI , ), which is discernibly different from \\(\\mu_0\\) ( \\(p\\)-value = ____).\n\n\n\n\n\n\nIf \\(\\text{p-value} \\geq \\alpha\\), fail to reject the null hypothesis\n\n\n\nThere is insufficient evidence that the (population) mean body temperature is discernibly different from \\(\\mu_0\\) ( \\(p\\)-value = ___)\nThe average (insert measure) in the sample was \\(\\overline{x}\\) (95% CI , ), which is not discernibly different from \\(\\mu_0\\) ( \\(p\\)-value = ____)."
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-6-conclusion-to-hypothesis-test-1",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#step-6-conclusion-to-hypothesis-test-1",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Step 6: Conclusion to hypothesis test",
     "text": "Step 6: Conclusion to hypothesis test\n\\[\\begin{aligned}\nH_0 &: \\mu = 98.6\\\\\n\\text{vs. } H_A&: \\mu \\neq 98.6\n\\end{aligned}\\]\n\nRecall the \\(p\\)-value = \\(2.410889 \\times 10^{-07}\\)\nNeed to compare back to our selected \\(\\alpha = 0.05\\)\nDo we reject or fail to reject \\(H_0\\)?\n\nConclusion statement:\n\nBasic: (“stats class” conclusion)\n\nThere is sufficient evidence that the (population) mean body temperature is discernibly different from 98.6°F ( \\(p\\)-value &lt; 0.001).\n\nBetter: (“manuscript style” conclusion)\n\nThe average body temperature in the sample was 98.25°F (95% CI 98.12, 98.38°F), which is discernibly different from 98.6°F ( \\(p\\)-value &lt; 0.001)."
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#poll-everywhere-question-3",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#poll-everywhere-question-3",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Poll Everywhere Question 3",
     "text": "Poll Everywhere Question 3"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#load-the-dataset",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#load-the-dataset",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Load the dataset",
     "text": "Load the dataset\n\nThe data are in a csv file called BodyTemperatures.csv\n\n\nlibrary(here)   # first install this package\n\nBodyTemps &lt;- read.csv(here::here(\"data\", \"BodyTemperatures.csv\"))\n#                     location: look in \"data\" folder\n#                               for the file \"BodyTemperatures.csv\"\n\nglimpse(BodyTemps)\n\nRows: 130\nColumns: 3\n$ Temperature &lt;dbl&gt; 96.3, 96.7, 96.9, 97.0, 97.1, 97.1, 97.1, 97.2, 97.3, 97.4…\n$ Gender      &lt;int&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…\n$ HeartRate   &lt;int&gt; 70, 71, 74, 80, 73, 75, 82, 64, 69, 70, 68, 72, 78, 70, 75…"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#t.test-base-rs-function-for-testing-one-mean",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#t.test-base-rs-function-for-testing-one-mean",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "t.test: base R’s function for testing one mean",
     "text": "t.test: base R’s function for testing one mean\n\nUse the body temperature example with \\(H_A: \\mu \\neq 98.6\\)\nWe called the dataset BodyTemps when we loaded it\n\n\n(temps_ttest &lt;- t.test(x = BodyTemps$Temperature,\n       alternative = \"two.sided\", # default setting\n       mu = 98.6))\n\n\n    One Sample t-test\n\ndata:  BodyTemps$Temperature\nt = -5.4548, df = 129, p-value = 2.411e-07\nalternative hypothesis: true mean is not equal to 98.6\n95 percent confidence interval:\n 98.12200 98.37646\nsample estimates:\nmean of x \n 98.24923 \n\n\nNote that the test output also gives the 95% CI using the t-distribution."
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#tidy-the-t.test-output",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#tidy-the-t.test-output",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "tidy() the t.test output",
     "text": "tidy() the t.test output\n\nUse the tidy() function from the broom package for briefer output in table format that’s stored as a tibble\nCombined with the gt() function from the gt package, we get a nice table\n\n\ntidy(temps_ttest) %&gt;% \n  gt() %&gt;% \n  tab_options(table.font.size = 40) # use a different size in your HW\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n98.24923\n-5.454823\n2.410632e-07\n129\n98.122\n98.37646\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n\n\nSince the tidy() output is a tibble, we can easily pull() specific values from it:\n\n\n\nUsing base R’s $\n\ntidy(temps_ttest)$p.value  \n\n[1] 2.410632e-07"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#whats-next",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#whats-next",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "What’s next?",
     "text": "What’s next?\nCI’s and hypothesis testing for different scenarios:\n\n\n\n\n\n\n\n\n\n\n\nLesson\nSection\nPopulation parameter\nSymbol (pop)\nPoint estimate\nSymbol (sample)\n\n\n\n\n12\n5.1\nPop mean\n\\(\\mu\\)\nSample mean\n\\(\\overline{x}\\)\n\n\n13\n5.2\nPop mean of paired diff\n\\(\\mu_d\\) or \\(\\delta\\)\nSample mean of paired diff\n\\(\\overline{x}_{d}\\)\n\n\n14\n5.3\nDiff in pop means\n\\(\\mu_1-\\mu_2\\)\nDiff in sample means\n\\(\\overline{x}_1 - \\overline{x}_2\\)\n\n\n16\n8.1\nPop proportion\n\\(p\\)\nSample prop\n\\(\\widehat{p}\\)\n\n\n16\n8.2\nDiff in pop prop’s\n\\(p_1-p_2\\)\nDiff in sample prop’s\n\\(\\widehat{p}_1-\\widehat{p}_2\\)"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#reference-what-does-it-all-look-like-together",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#reference-what-does-it-all-look-like-together",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Reference: what does it all look like together?",
     "text": "Reference: what does it all look like together?\n\n\nExample of hypothesis test based on the 1992 JAMA data\n\n\nIs there evidence to support that the population mean body temperature is different from 98.6°F?\n\n\n\n\n\nAssumptions: The individual observations are independent and the number of individuals in our sample is 130. Thus, we can use CLT to approximate the sampling distribution.\n\n4-5.\n\n\nSet \\(\\alpha = 0.05\\)\n\n\n\nHypothesis:\n\\[\\begin{aligned}\nH_0 &: \\mu = 98.6\\\\\n\\text{vs. } H_A&: \\mu \\neq 98.6\n\\end{aligned}\\]\n\n\n\ntemps_ttest &lt;- t.test(x = BodyTemps$Temperature, mu = 98.6)\ntidy(temps_ttest) %&gt;% gt() %&gt;% tab_options(table.font.size = 36)\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n98.24923\n-5.454823\n2.410632e-07\n129\n98.122\n98.37646\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n\n\nConclusion: We reject the null hypothesis. The average body temperature in the sample was 98.25°F (95% CI 98.12, 98.38°F), which is discernibly different from 98.6°F ( \\(p\\)-value &lt; 0.001)."
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#answering-a-research-question-with-a-single-mean",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#answering-a-research-question-with-a-single-mean",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Answering a research question with a single mean",
     "text": "Answering a research question with a single mean\nResearch question is a generic form: Is there evidence to support that the population mean is different than \\(\\mu_0\\)?\n\n\\(\\mu_0\\) is the generic form for a prescribed value: \\(\\mu\\) is the population mean and we want to see if \\(\\mu=\\mu_0\\)\n\n \nTwo approaches to answer this question:\n\n\n\n\nConfidence interval\n\n\n\nCreate a confidence interval (CI) for the population mean \\(\\mu\\) from our sample data and determine whether a prescribed value (\\(\\mu_0\\)) is inside the CI or not\nAnswering the question: is \\(\\mu_0\\) a plausible value given our data?\n\nIf CI does NOT contain \\(\\mu_0\\) then the answer is “Yes, evidence to support population mean is different than \\(\\mu_0\\)\n\n\n\n\n\n\n\n\n\nHypothesis test\n\n\n\nRun a hypothesis test to see if there is evidence that the population mean \\(\\mu\\) is significantly different from a prescribed value (\\(\\mu_0\\))\nThis does not give us a range of plausible values for the population mean \\(\\mu\\).\nInstead, we calculate a test statistic and p-value\nSee how likely we are to observe the sample mean \\(\\overline{x}\\) or a more extreme sample mean assuming that the population mean \\(\\mu\\) is a prescribed value"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#general-steps-in-a-hypothesis-test",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#general-steps-in-a-hypothesis-test",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "General steps in a Hypothesis Test",
     "text": "General steps in a Hypothesis Test\n\nCheck the assumptions\nSet the level of significance \\(\\alpha\\)\nSpecify the null ( \\(H_0\\) ) and alternative ( \\(H_A\\) ) hypotheses\n\nIn symbols\nIn words\nAlternative: one- or two-sided?\n\nCalculate the test statistic.\nCalculate the p-value based on the observed test statistic and its sampling distribution\nWrite a conclusion to the hypothesis test\n\nDo we reject or fail to reject \\(H_0\\)?\nWrite a conclusion in the context of the problem"
   },
   {
     "objectID": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#hypothesis-tests-we-will-learn",
     "href": "lessons/12_Hyp_testing_01/12_Hyp_testing_01.html#hypothesis-tests-we-will-learn",
-    "title": "Lesson 13: Hypothesis Testing 1: Single-sample mean",
+    "title": "Lesson 12: Hypothesis Testing 1: Single-sample mean",
     "section": "Hypothesis tests we will learn",
     "text": "Hypothesis tests we will learn\nCI’s and hypothesis testing for different scenarios:\n\n\n\n\n\n\n\n\n\n\n\nLesson\nSection\nPopulation parameter\nSymbol (pop)\nPoint estimate\nSymbol (sample)\n\n\n\n\n12\n5.1\nPop mean\n\\(\\mu\\)\nSample mean\n\\(\\overline{x}\\)\n\n\n13\n5.2\nPop mean of paired diff\n\\(\\mu_d\\) or \\(\\delta\\)\nSample mean of paired diff\n\\(\\overline{x}_{d}\\)\n\n\n14\n5.3\nDiff in pop means\n\\(\\mu_1-\\mu_2\\)\nDiff in sample means\n\\(\\overline{x}_1 - \\overline{x}_2\\)\n\n\n16\n8.1\nPop proportion\n\\(p\\)\nSample prop\n\\(\\widehat{p}\\)\n\n\n16\n8.2\nDiff in pop prop’s\n\\(p_1-p_2\\)\nDiff in sample prop’s\n\\(\\widehat{p}_1-\\widehat{p}_2\\)"
   },
