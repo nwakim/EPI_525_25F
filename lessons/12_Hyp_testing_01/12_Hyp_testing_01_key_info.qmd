@@ -11,6 +11,13 @@ editor_options:
 ## Announcements
 
 - Mid-quarter feedback
+  - Dislikes/hindering
+    - Assignments released late
+    - Pace: fast and slow
+    - R in asynchronous format
+    - Powerpoints not updated to reflect notes in class?
+    - Fast in R
+    - Noise in classroom
   
 
 ## Key Dates
