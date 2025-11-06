@@ -7,18 +7,70 @@ format:
     link-external-newwindow: true
     page-layout: full
     toc: false
-    code-fold: true
 editor_options: 
   chunk_output_type: console
 ---
 
-## 1. What is the test statistic? (Is it the same as a t-test?)
+## Fall 2025
+
+### 1. Wording for reject vs fail to reject null hypothesis
+
+I asked Gemini to help me explain this one, and I really liked its analogy. From Gemini:
+
+**The "Innocent Until Proven Guilty" Analogy**
+
+Think of hypothesis testing like a criminal trial:
+
+- The Null Hypothesis ($H_0$): This is the default assumption, like the defendant being "innocent."
+- The Alternative Hypothesis ($H_A$): This is the new claim being tested, like the prosecutor arguing the defendant is "guilty."
+- The Data: This is the evidence presented in court.
+
+The jury's job is not to prove the defendant is innocent. Their job is to see if there is enough evidence beyond a reasonable doubt to reject the idea of their innocence.
+
+At the end of the trial, the jury has two possible verdicts:
+
+- "Guilty": There was enough strong evidence to reject the assumption of innocence. In statistics, we say we "reject the null hypothesis."
+- "Not Guilty": This does not mean the jury proved the defendant is innocent. It just means there was not enough evidence to convince them of guilt. In statistics, we say we "fail to reject the null hypothesis."
+
+We never say "accept the innocent" just like we never say "accept the null."
+
+### 2. why is the standard p threshold 0.05? Is it because it's similar to 95% CI?
+
+This is a very philosophical question! [The American Statistical Association barely has the answer!](https://www-tandfonline-com.proxy.lib.pdx.edu/doi/full/10.1080/00031305.2016.1154108#d1e167)
+
+### 3. Is the level of significance (alpha) always related to the confidence interval such that CI = 1- alpha?
+
+Yes! But just to correct you a little - for an $\alpha$, the CI is $\left(1-\dfrac{\alpha}{2}\right)\%$
+
+### 4. how the tidy () script changes the p-value moving forward
+
+It doesn't really. It just changes the formating of the results from `t.test()` so that we can view it differently. 
+
+### 5. I wasn't clear on how I would choose to do a one-sided t test in R
+
+Remember, you can go into the console in R and type `?t.test` to get information on the function. 
+
+Here's what I see when I type that: 
+```{r}
+#| eval: false
+
+t.test(x, y = NULL,
+       alternative = c("two.sided", "less", "greater"),
+       mu = 0, paired = FALSE, var.equal = FALSE,
+       conf.level = 0.95)
+```
+
+If we want to do a one-sided t-test in R, we would use "less" or "greater" for the `alternative` input.
+
+## Fall 2024
+
+### 1. What is the test statistic? (Is it the same as a t-test?)
 
 The "t-test" is the shorthand that people use to refer to the process of calculating the test statistic and p-value.
 
 The test statistic measures how far our sample mean ($\overline{x}$) is from the mean when we assume the null (aka the mean is $\mu$).
 
-## 2. The specific language around and conclusions that can be drawn from p-values
+### 2. The specific language around and conclusions that can be drawn from p-values
 
 We basically have two options once we have a p-value:
 
@@ -39,7 +91,7 @@ So let's get into it:
     - When the p-value is pretty large, then it is likely that our sample comes from our assumed null distribution. 
     - However, this is not what we're trying to prove in our hypothesis test, so we can't make any claims about "accepting the null." Instead, we fail to reject it. 
     
-## 3. 	Help with the bigger picture of $H_0$ and $H_A$. In a real world example, would it only be notable to reject $H_0$? If a researcher fails to reject the null, would their findings not be believable?
+### 3. 	Help with the bigger picture of $H_0$ and $H_A$. In a real world example, would it only be notable to reject $H_0$? If a researcher fails to reject the null, would their findings not be believable?
 
 The idea behind the hypothesis test is usually that the null is the currently accepted value, and that we are presenting a "challenger" to the null. The challenger is only noteworthy if we reject the null and establish a new range of values for the population mean (from the confidence interval).
 

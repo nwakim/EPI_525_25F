@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -172,7 +207,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 20, 2025</p>
+      <p class="date-modified">November 5, 2025</p>
     </div>
   </div>
     
@@ -183,13 +218,60 @@ window.Quarto = {
 </header>
 
 
-<section id="what-is-the-test-statistic-is-it-the-same-as-a-t-test" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-the-test-statistic-is-it-the-same-as-a-t-test">1. What is the test statistic? (Is it the same as a t-test?)</h2>
+<section id="fall-2025" class="level2">
+<h2 class="anchored" data-anchor-id="fall-2025">Fall 2025</h2>
+<section id="wording-for-reject-vs-fail-to-reject-null-hypothesis" class="level3">
+<h3 class="anchored" data-anchor-id="wording-for-reject-vs-fail-to-reject-null-hypothesis">1. Wording for reject vs fail to reject null hypothesis</h3>
+<p>I asked Gemini to help me explain this one, and I really liked its analogy. From Gemini:</p>
+<p><strong>The “Innocent Until Proven Guilty” Analogy</strong></p>
+<p>Think of hypothesis testing like a criminal trial:</p>
+<ul>
+<li>The Null Hypothesis (<span class="math inline">\(H_0\)</span>): This is the default assumption, like the defendant being “innocent.”</li>
+<li>The Alternative Hypothesis (<span class="math inline">\(H_A\)</span>): This is the new claim being tested, like the prosecutor arguing the defendant is “guilty.”</li>
+<li>The Data: This is the evidence presented in court.</li>
+</ul>
+<p>The jury’s job is not to prove the defendant is innocent. Their job is to see if there is enough evidence beyond a reasonable doubt to reject the idea of their innocence.</p>
+<p>At the end of the trial, the jury has two possible verdicts:</p>
+<ul>
+<li>“Guilty”: There was enough strong evidence to reject the assumption of innocence. In statistics, we say we “reject the null hypothesis.”</li>
+<li>“Not Guilty”: This does not mean the jury proved the defendant is innocent. It just means there was not enough evidence to convince them of guilt. In statistics, we say we “fail to reject the null hypothesis.”</li>
+</ul>
+<p>We never say “accept the innocent” just like we never say “accept the null.”</p>
+</section>
+<section id="why-is-the-standard-p-threshold-0.05-is-it-because-its-similar-to-95-ci" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-the-standard-p-threshold-0.05-is-it-because-its-similar-to-95-ci">2. why is the standard p threshold 0.05? Is it because it’s similar to 95% CI?</h3>
+<p>This is a very philosophical question! <a href="https://www-tandfonline-com.proxy.lib.pdx.edu/doi/full/10.1080/00031305.2016.1154108#d1e167">The American Statistical Association barely has the answer!</a></p>
+</section>
+<section id="is-the-level-of-significance-alpha-always-related-to-the-confidence-interval-such-that-ci-1--alpha" class="level3">
+<h3 class="anchored" data-anchor-id="is-the-level-of-significance-alpha-always-related-to-the-confidence-interval-such-that-ci-1--alpha">3. Is the level of significance (alpha) always related to the confidence interval such that CI = 1- alpha?</h3>
+<p>Yes! But just to correct you a little - for an <span class="math inline">\(\alpha\)</span>, the CI is <span class="math inline">\(\left(1-\dfrac{\alpha}{2}\right)\%\)</span></p>
+</section>
+<section id="how-the-tidy-script-changes-the-p-value-moving-forward" class="level3">
+<h3 class="anchored" data-anchor-id="how-the-tidy-script-changes-the-p-value-moving-forward">4. how the tidy () script changes the p-value moving forward</h3>
+<p>It doesn’t really. It just changes the formating of the results from <code>t.test()</code> so that we can view it differently.</p>
+</section>
+<section id="i-wasnt-clear-on-how-i-would-choose-to-do-a-one-sided-t-test-in-r" class="level3">
+<h3 class="anchored" data-anchor-id="i-wasnt-clear-on-how-i-would-choose-to-do-a-one-sided-t-test-in-r">5. I wasn’t clear on how I would choose to do a one-sided t test in R</h3>
+<p>Remember, you can go into the console in R and type <code>?t.test</code> to get information on the function.</p>
+<p>Here’s what I see when I type that:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(x, <span class="at">y =</span> <span class="cn">NULL</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>       <span class="at">alternative =</span> <span class="fu">c</span>(<span class="st">"two.sided"</span>, <span class="st">"less"</span>, <span class="st">"greater"</span>),</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">mu =</span> <span class="dv">0</span>, <span class="at">paired =</span> <span class="cn">FALSE</span>, <span class="at">var.equal =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>       <span class="at">conf.level =</span> <span class="fl">0.95</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>If we want to do a one-sided t-test in R, we would use “less” or “greater” for the <code>alternative</code> input.</p>
+</section>
+</section>
+<section id="fall-2024" class="level2">
+<h2 class="anchored" data-anchor-id="fall-2024">Fall 2024</h2>
+<section id="what-is-the-test-statistic-is-it-the-same-as-a-t-test" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-test-statistic-is-it-the-same-as-a-t-test">1. What is the test statistic? (Is it the same as a t-test?)</h3>
 <p>The “t-test” is the shorthand that people use to refer to the process of calculating the test statistic and p-value.</p>
 <p>The test statistic measures how far our sample mean (<span class="math inline">\(\overline{x}\)</span>) is from the mean when we assume the null (aka the mean is <span class="math inline">\(\mu\)</span>).</p>
 </section>
-<section id="the-specific-language-around-and-conclusions-that-can-be-drawn-from-p-values" class="level2">
-<h2 class="anchored" data-anchor-id="the-specific-language-around-and-conclusions-that-can-be-drawn-from-p-values">2. The specific language around and conclusions that can be drawn from p-values</h2>
+<section id="the-specific-language-around-and-conclusions-that-can-be-drawn-from-p-values" class="level3">
+<h3 class="anchored" data-anchor-id="the-specific-language-around-and-conclusions-that-can-be-drawn-from-p-values">2. The specific language around and conclusions that can be drawn from p-values</h3>
 <p>We basically have two options once we have a p-value:</p>
 <ol type="1">
 <li>The p-value is less than <span class="math inline">\(\alpha\)</span>, then we reject the null hypothesis.</li>
@@ -214,12 +296,13 @@ window.Quarto = {
 </ul></li>
 </ol>
 </section>
-<section id="help-with-the-bigger-picture-of-h_0-and-h_a.-in-a-real-world-example-would-it-only-be-notable-to-reject-h_0-if-a-researcher-fails-to-reject-the-null-would-their-findings-not-be-believable" class="level2">
-<h2 class="anchored" data-anchor-id="help-with-the-bigger-picture-of-h_0-and-h_a.-in-a-real-world-example-would-it-only-be-notable-to-reject-h_0-if-a-researcher-fails-to-reject-the-null-would-their-findings-not-be-believable">3. Help with the bigger picture of <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_A\)</span>. In a real world example, would it only be notable to reject <span class="math inline">\(H_0\)</span>? If a researcher fails to reject the null, would their findings not be believable?</h2>
+<section id="help-with-the-bigger-picture-of-h_0-and-h_a.-in-a-real-world-example-would-it-only-be-notable-to-reject-h_0-if-a-researcher-fails-to-reject-the-null-would-their-findings-not-be-believable" class="level3">
+<h3 class="anchored" data-anchor-id="help-with-the-bigger-picture-of-h_0-and-h_a.-in-a-real-world-example-would-it-only-be-notable-to-reject-h_0-if-a-researcher-fails-to-reject-the-null-would-their-findings-not-be-believable">3. Help with the bigger picture of <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_A\)</span>. In a real world example, would it only be notable to reject <span class="math inline">\(H_0\)</span>? If a researcher fails to reject the null, would their findings not be believable?</h3>
 <p>The idea behind the hypothesis test is usually that the null is the currently accepted value, and that we are presenting a “challenger” to the null. The challenger is only noteworthy if we reject the null and establish a new range of values for the population mean (from the confidence interval).</p>
 <p>Thus, if we fail to reject the null, it’s not that we don’t believe our findings, it just means that we are not presenting new information to the world.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
