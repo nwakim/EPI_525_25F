@@ -1,10 +1,10 @@
 ---
-title: "Lesson 12: Inference for mean difference from two-sample dependent/paired data"
+title: "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)"
 subtitle: "TB sections 5.2"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "11/11/2024"
+date: "`r library(here); source(here('class_dates.R')); w7d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -13,7 +13,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 12 Slides
+    footer: Lesson 13 Slides
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -55,7 +55,7 @@ set.seed(456)
 
 # Learning Objectives
 
-1.  Define paired data and explain how it differs from independent samples in the context of statistical analysis.
+1.  Define paired data and explain how it differs from independent 1-sample data.
 2.  Construct confidence intervals for the mean difference in paired data and interpret these intervals in the context of the research question.
 3.  Perform the appropriate hypothesis test for paired data and interpret the results.
 
@@ -69,11 +69,12 @@ set.seed(456)
 ::: column
 - Inference for a single-sample mean includes:
 
-  - Confidence intervals (Lesson 10)
-  - Hypothesis testing (Lesson 11)
+  1. Confidence intervals (Lesson 11)
+  2. Hypothesis testing (Lesson 12)
+      - Find p-value and compare to $\alpha$
 :::
 ::: column
-Single-sample mean:
+Single-sample mean under the null distribution:
 
 ```{r}
 #| echo: false
@@ -143,7 +144,7 @@ Is there evidence to support that the population mean body temperature is differ
 ::: {.column width="50%"}
 1.  **Assumptions:** The individual observations are independent and the number of individuals in our sample is 130. Thus, we can use CLT to approximate the sampling distribution.
 
-4-5.
+4-5. Calculate t-statistic and p-value
 :::
 
 ::: {.column width="25%"}
@@ -234,7 +235,7 @@ tidy(temps_ttest) %>% gt() %>% tab_options(table.font.size = 36)
 
  
 
-- Using $d$ helps us distinguish between a single sample and paired data
+- Using $d$ (for difference) helps us distinguish between a single sample and paired data
 
 ## Can a vegetarian diet change cholesterol levels?
 
@@ -252,7 +253,7 @@ tidy(temps_ttest) %>% gt() %>% tab_options(table.font.size = 36)
 -   How do we answer this question?
     -   First, calculate changes (differences) in cholesterol levels
         -   We usually do after - before if the data are longitudinal
-    - Then find CI or perform hypothesis test 
+    - Then find CI or perform hypothesis test on the difference
         
 ## EDA: Explore the cholesterol data
 
@@ -952,7 +953,7 @@ If $\text{p-value} \geq \alpha$, fail to reject the null hypothesis
 
 ::: green2-cont
 -   There is insufficient evidence that the (population) mean difference of (insert measure) is discernibly different from $\delta_0$ ( $p$-value = \_\_\_)
--   The average (insert measure) in the sample was $\overline{x}_d$ (95% CI \_\_\_,\_\_\_), which is not discernibly different from $\delta_0$ ( $p$-value = \_\_\_\_).
+-   The mean difference (insert measure) in the sample was $\overline{x}_d$ (95% CI \_\_\_,\_\_\_), which is not discernibly different from $\delta_0$ ( $p$-value = \_\_\_\_).
 :::
 :::::
 ::::::

@@ -24462,7 +24462,7 @@
     "href": "quiz.html",
     "title": "Quiz Info",
     "section": "",
-    "text": "Below is the general timing and lessons for each quiz:\n\n\n\n\n\n\n\n\n\nQuiz\nLessons\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n1-4\n10/22\n10/26\n\n\n2\n5-10\n11/12\n11/16\n\n\n3\n10-19\n12/08\n12/12\n\n\n\nQuizzes will be mostly conceptual questions with 10-15 multiple choice questions. Some calculations will need to be done for certain questions, but the focus will be on understanding concepts.\nMore information specific to each quiz will be posted below.\n\nInstructions that will presented for each quiz\n\nI have written a 30-minute quiz, but there is no time limit on the quiz. You will have from Wednesday at 3pm to Sunday at 11pm to finish the quiz.\nThe quiz is open book and open notes. You may use books other than the class textbook, you may use anything on our course webpage, and you may use reference websites (like Wikipedia, Googling expected value of specific distribution, etc.).\nNo cheating will be tolerated. Cheating includes:\n\nUsing ChatGPT or any other AI software\nCopy and pasting the question from Sakai to any search engine.\nUsing question and answer threads typically seen on sites like StackExchange, WikiHow, Quora, Reddit, StackOverflow, Chegg, etc.\nAsking other students, sharing quiz work or sharing quiz results.\n\nEach question is worth 1 point, including multiple choice and free response questions.\n\n\n\nQuiz 1\n\nA practice quiz is posted if you would like to do a trial run before the actual quiz\nIncludes Lessons 1-4\n\nCovers some data collection, sampling, data types (about half the questions)\nCovers some probability rules and calculations (about half the questions)\n\nTwo problems have calculations with probabilities\nFor a few questions with probabilities, you will be given a scenario, and you will need to connect it back to probability rules\n\nExample: If two events are mutually exclusive, what is the probability of their intersection?\n\n\n\n\nQuiz 2\n\nIncludes Lessons 5-10\n\nCovers Normal, Binomial, and Poisson distributions\nCovers data visualizations of one and two variables\nCovers variability in estimates (think sampling distribution)\n\n\n\n\nQuiz 3"
+    "text": "Below is the general timing and lessons for each quiz:\n\n\n\nQuiz\nLessons\nOpen Date @ 3pm\nClose Date @ 11pm\n\n\n\n\n1\n1-4\n10/22\n10/26\n\n\n2\n5-10\n11/12\n11/16\n\n\n3\n10-19\n12/08\n12/12\n\n\n\nQuizzes will be mostly conceptual questions with 10-15 multiple choice questions. Some calculations will need to be done for certain questions, but the focus will be on understanding concepts.\nMore information specific to each quiz will be posted below.\n\nInstructions that will presented for each quiz\n\nI have written a 30-minute quiz, but there is no time limit on the quiz. You will have from Wednesday at 3pm to Sunday at 11pm to finish the quiz.\nThe quiz is open book and open notes. You may use books other than the class textbook, you may use anything on our course webpage, and you may use reference websites (like Wikipedia, Googling expected value of specific distribution, etc.).\nNo cheating will be tolerated. Cheating includes:\n\nUsing ChatGPT or any other AI software\nCopy and pasting the question from Sakai to any search engine.\nUsing question and answer threads typically seen on sites like StackExchange, WikiHow, Quora, Reddit, StackOverflow, Chegg, etc.\nAsking other students, sharing quiz work or sharing quiz results.\n\nEach question is worth 1 point, including multiple choice and free response questions.\n\n\n\nQuiz 1\n\nA practice quiz is posted if you would like to do a trial run before the actual quiz\nIncludes Lessons 1-4\n\nCovers some data collection, sampling, data types (about half the questions)\nCovers some probability rules and calculations (about half the questions)\n\nTwo problems have calculations with probabilities\nFor a few questions with probabilities, you will be given a scenario, and you will need to connect it back to probability rules\n\nExample: If two events are mutually exclusive, what is the probability of their intersection?\n\n\n\n\nQuiz 2\n\nIncludes Lessons 5-10\n\nCovers Normal, Binomial, and Poisson distributions\nCovers data visualizations of one and two variables\nCovers variability in estimates (think sampling distribution)\n\n\n\n\nQuiz 3"
   },
   {
     "objectID": "quiz.html#quiz-1",
@@ -26147,217 +26147,217 @@
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#last-2-times-inference-for-a-single-sample-mean",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#last-2-times-inference-for-a-single-sample-mean",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
-    "section": "",
-    "text": "Inference for a single-sample mean includes:\n\nConfidence intervals (Lesson 10)\nHypothesis testing (Lesson 11)\n\n\n\nSingle-sample mean:"
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
+    "section": "Last 2 times: Inference for a single-sample mean",
+    "text": "Last 2 times: Inference for a single-sample mean\n\n\n\nInference for a single-sample mean includes:\n\nConfidence intervals (Lesson 11)\nHypothesis testing (Lesson 12)\n\nFind p-value and compare to \\(\\alpha\\)\n\n\n\n\nSingle-sample mean under the null distribution:"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#last-time-example-of-a-hypothesis-test-for-a-single-sample-mean",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#last-time-example-of-a-hypothesis-test-for-a-single-sample-mean",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
-    "section": "",
-    "text": "Example of hypothesis test based on the 1992 JAMA data\n\n\nIs there evidence to support that the population mean body temperature is different from 98.6°F?\n\n\n\n\n\nAssumptions: The individual observations are independent and the number of individuals in our sample is 130. Thus, we can use CLT to approximate the sampling distribution.\n\n4-5.\n\n\nSet \\(\\alpha = 0.05\\)\n\n\n\nHypothesis:\n\\[\\begin{aligned}\nH_0 &: \\mu = 98.6\\\\\n\\text{vs. } H_A&: \\mu \\neq 98.6\n\\end{aligned}\\]\n\n\n\n\ntemps_ttest &lt;- t.test(x = BodyTemps$Temperature, mu = 98.6)\ntidy(temps_ttest) %&gt;% gt() %&gt;% tab_options(table.font.size = 36)\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n98.24923\n-5.454823\n2.410632e-07\n129\n98.122\n98.37646\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n\n\nConclusion: We reject the null hypothesis. The average body temperature in the sample was 98.25°F (95% CI 98.12, 98.38°F), which is discernibly different from 98.6°F ( \\(p\\)-value &lt; 0.001)."
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
+    "section": "Last time: example of a hypothesis test for a single-sample mean",
+    "text": "Last time: example of a hypothesis test for a single-sample mean\n\n\nExample of hypothesis test based on the 1992 JAMA data\n\n\nIs there evidence to support that the population mean body temperature is different from 98.6°F?\n\n\n\n\n\nAssumptions: The individual observations are independent and the number of individuals in our sample is 130. Thus, we can use CLT to approximate the sampling distribution.\n\n4-5. Calculate t-statistic and p-value\n\n\nSet \\(\\alpha = 0.05\\)\n\n\n\nHypothesis:\n\\[\\begin{aligned}\nH_0 &: \\mu = 98.6\\\\\n\\text{vs. } H_A&: \\mu \\neq 98.6\n\\end{aligned}\\]\n\n\n\ntemps_ttest &lt;- t.test(x = BodyTemps$Temperature, mu = 98.6)\ntidy(temps_ttest) %&gt;% gt() %&gt;% tab_options(table.font.size = 36)\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n98.24923\n-5.454823\n2.410632e-07\n129\n98.122\n98.37646\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n\n\nConclusion: We reject the null hypothesis. The average body temperature in the sample was 98.25°F (95% CI 98.12, 98.38°F), which is discernibly different from 98.6°F ( \\(p\\)-value &lt; 0.001)."
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#different-types-of-inference-based-on-different-data-types",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#different-types-of-inference-based-on-different-data-types",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
-    "section": "",
-    "text": "Lesson\nSection\nPopulation parameter\nSymbol (pop)\nPoint estimate\nSymbol (sample)\nSE\n\n\n\n\n11\n5.1\nPop mean\n\\(\\mu\\)\nSample mean\n\\(\\overline{x}\\)\n\\(\\frac{s}{\\sqrt{n}}\\)\n\n\n12\n5.2\nPop mean of paired diff\n\\(\\mu_d\\) or \\(\\delta\\)\nSample mean of paired diff\n\\(\\overline{x}_{d}\\)\n???\n\n\n13\n5.3\nDiff in pop means\n\\(\\mu_1-\\mu_2\\)\nDiff in sample means\n\\(\\overline{x}_1 - \\overline{x}_2\\)\n\n\n\n15\n8.1\nPop proportion\n\\(p\\)\nSample prop\n\\(\\widehat{p}\\)\n\n\n\n15\n8.2\nDiff in pop prop’s\n\\(p_1-p_2\\)\nDiff in sample prop’s\n\\(\\widehat{p}_1-\\widehat{p}_2\\)"
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
+    "section": "Different types of inference based on different data types",
+    "text": "Different types of inference based on different data types\n\n\n\n\n\n\n\n\n\n\n\n\nLesson\nSection\nPopulation parameter\nSymbol (pop)\nPoint estimate\nSymbol (sample)\nSE\n\n\n\n\n11\n5.1\nPop mean\n\\(\\mu\\)\nSample mean\n\\(\\overline{x}\\)\n\\(\\frac{s}{\\sqrt{n}}\\)\n\n\n12\n5.2\nPop mean of paired diff\n\\(\\mu_d\\) or \\(\\delta\\)\nSample mean of paired diff\n\\(\\overline{x}_{d}\\)\n???\n\n\n13\n5.3\nDiff in pop means\n\\(\\mu_1-\\mu_2\\)\nDiff in sample means\n\\(\\overline{x}_1 - \\overline{x}_2\\)\n\n\n\n15\n8.1\nPop proportion\n\\(p\\)\nSample prop\n\\(\\widehat{p}\\)\n\n\n\n15\n8.2\nDiff in pop prop’s\n\\(p_1-p_2\\)\nDiff in sample prop’s\n\\(\\widehat{p}_1-\\widehat{p}_2\\)"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#what-are-paired-data",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#what-are-paired-data",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "What are paired data?",
     "text": "What are paired data?\n\nPaired data: two sets of observations are uniquely paired so that an observation in one set matches an observation in the other\n\n \n\nExamples\n\nEnroll pairs of identical twins to study a disease\nEnroll people and collect data before & after an intervention (longitudinal data)\nTextbook example: Compare maximal speed of competitive swimmers wearing a wetsuit vs. wearing a regular swimsuit\n\n\n \n\nPaired data result in a natural measure of difference\n\nExample: Enroll parent and child pairs to study cholesterol levels\n\nWe can look at the difference in cholesterol levels between parent and child"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#for-paired-data-population-parameters-vs.-sample-statistics",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#for-paired-data-population-parameters-vs.-sample-statistics",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "For paired data: Population parameters vs. sample statistics",
-    "text": "For paired data: Population parameters vs. sample statistics\n \n\n\nPopulation parameter\n\nMean difference: \\(\\delta\\) (“delta”, lowercase)\nStandard deviation: \\(\\sigma_d\\) (“sigma”)\nVariance: \\(\\sigma_d^2\\)\n\n\nSample statistic (point estimate)\n\nSample mean difference: \\(\\overline{x}_d\\)\nSample standard deviation: \\(s_d\\)\nSample variance: \\(s_d^2\\)\n\n\n\n \n\nUsing \\(d\\) helps us distinguish between a single sample and paired data"
+    "text": "For paired data: Population parameters vs. sample statistics\n \n\n\nPopulation parameter\n\nMean difference: \\(\\delta\\) (“delta”, lowercase)\nStandard deviation: \\(\\sigma_d\\) (“sigma”)\nVariance: \\(\\sigma_d^2\\)\n\n\nSample statistic (point estimate)\n\nSample mean difference: \\(\\overline{x}_d\\)\nSample standard deviation: \\(s_d\\)\nSample variance: \\(s_d^2\\)\n\n\n \n\nUsing \\(d\\) (for difference) helps us distinguish between a single sample and paired data"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#can-a-vegetarian-diet-change-cholesterol-levels",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#can-a-vegetarian-diet-change-cholesterol-levels",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Can a vegetarian diet change cholesterol levels?",
-    "text": "Can a vegetarian diet change cholesterol levels?\n\nWe will illustrate how to perform a hypothesis test and calculate a confidence interval for paired data as we work through this example\nScenario:\n\n43 non-vegetarian people were enrolled in a study and were instructed to adopt a vegetarian diet\nCholesterol levels were measured before and after the vegetarian diet\n\n\n \n\nQuestion: Is there evidence to support that cholesterol levels changed after the vegetarian diet?\n\n\nHow do we answer this question?\n\nFirst, calculate changes (differences) in cholesterol levels\n\nWe usually do after - before if the data are longitudinal\n\nThen find CI or perform hypothesis test"
+    "text": "Can a vegetarian diet change cholesterol levels?\n\nWe will illustrate how to perform a hypothesis test and calculate a confidence interval for paired data as we work through this example\nScenario:\n\n43 non-vegetarian people were enrolled in a study and were instructed to adopt a vegetarian diet\nCholesterol levels were measured before and after the vegetarian diet\n\n\n \n\nQuestion: Is there evidence to support that cholesterol levels changed after the vegetarian diet?\n\n\nHow do we answer this question?\n\nFirst, calculate changes (differences) in cholesterol levels\n\nWe usually do after - before if the data are longitudinal\n\nThen find CI or perform hypothesis test on the difference"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#eda-explore-the-cholesterol-data",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#eda-explore-the-cholesterol-data",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "EDA: Explore the cholesterol data",
     "text": "EDA: Explore the cholesterol data\n\nRead in the data with read.csv()\n\n\nchol &lt;- read.csv(here::here(\"data\", \"chol213_n40.csv\"))\n\n\nTake a look at the variables with glimpse()\n\n\nglimpse(chol)\n\nRows: 43\nColumns: 2\n$ Before &lt;int&gt; 195, 145, 205, 159, 244, 166, 250, 236, 192, 224, 238, 197, 169…\n$ After  &lt;int&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169, 182…\n\n\n \n\nGet summary statistics with get_summary_stats()\n\n\nchol %&gt;% get_summary_stats(type = \"common\") %&gt;% \n  gt() %&gt;% tab_options(table.font.size = 40)\n\n\n\n\n\n\n\nvariable\nn\nmin\nmax\nmedian\niqr\nmean\nsd\nse\nci\n\n\n\n\nBefore\n43\n132\n250\n197\n56.5\n193.977\n34.098\n5.200\n10.494\n\n\nAfter\n43\n101\n227\n176\n50.5\n172.209\n31.112\n4.744\n9.575"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#eda-cholesterol-levels-before-and-after-vegetarian-diet",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#eda-cholesterol-levels-before-and-after-vegetarian-diet",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "EDA: Cholesterol levels before and after vegetarian diet",
-    "text": "EDA: Cholesterol levels before and after vegetarian diet\n\nBehind the scenes: I changed the data from wide to long format to make this plot (to be covered in R08)\n\n\nggplot(chol_long, aes(x = Cholesterol)) + geom_histogram() +\n  facet_wrap(~ Time, ncol = 1) +\n  labs(y = \"Number of individuals\", x = \"Cholesterol level (mg/dL)\")\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`."
+    "text": "EDA: Cholesterol levels before and after vegetarian diet\n\nBehind the scenes: I changed the data from wide to long format to make this plot (to be covered in R08)\n\n\nggplot(chol_long, aes(x = Cholesterol)) + geom_histogram() +\n  facet_wrap(~ Time, ncol = 1) +\n  labs(y = \"Number of individuals\", x = \"Cholesterol level (mg/dL)\")"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#eda-differences-in-cholesterol-levels-after---before-diet",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#eda-differences-in-cholesterol-levels-after---before-diet",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "EDA: Differences in cholesterol levels: After - Before diet",
     "text": "EDA: Differences in cholesterol levels: After - Before diet\n\nHow do we calculate the difference in cholesterol levels?\nI can create a new variable called “DiffChol” using the mutate() function (look more closely at this in R08)\n\n \n\nchol &lt;- chol %&gt;% \n  mutate(DiffChol = After - Before) \nglimpse(chol)\n\nRows: 43\nColumns: 3\n$ Before   &lt;int&gt; 195, 145, 205, 159, 244, 166, 250, 236, 192, 224, 238, 197, 1…\n$ After    &lt;int&gt; 146, 155, 178, 146, 208, 147, 202, 215, 184, 208, 206, 169, 1…\n$ DiffChol &lt;int&gt; -49, 10, -27, -13, -36, -19, -48, -21, -8, -16, -32, -28, 13,…"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#poll-everywhere-question-1",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#poll-everywhere-question-1",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Poll Everywhere Question 1",
     "text": "Poll Everywhere Question 1\nSummary stats including difference in cholesterol:\n\n\n\n\n\n\n\n\nvariable\nn\nmin\nmax\nmedian\niqr\nmean\nsd\nse\nci\n\n\n\n\nBefore\n43\n132\n250\n197\n56.5\n193.977\n34.098\n5.200\n10.494\n\n\nAfter\n43\n101\n227\n176\n50.5\n172.209\n31.112\n4.744\n9.575\n\n\nDiffChol\n43\n-49\n13\n-23\n16.0\n-21.767\n13.890\n2.118\n4.275"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#eda-differences-in-cholesterol-levels-after---before-diet-1",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#eda-differences-in-cholesterol-levels-after---before-diet-1",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "EDA: Differences in cholesterol levels: After - Before diet",
-    "text": "EDA: Differences in cholesterol levels: After - Before diet\n\n\n\n\nCode for below plot\nggplot(chol_long, aes(x = Cholesterol)) + geom_histogram() +\n  facet_wrap(~ Time, ncol = 1) +\n  labs(y = \"Number of individuals\", x = \"Cholesterol level (mg/dL)\")\n\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n\n\n\n\n\n\n\n\n\n\nDifference:\n\nggplot(chol, aes(x=DiffChol)) + \n  geom_histogram() +\n  labs(y = \"Number of individuals\", \n       x = \"Difference in cholesterol level (mg/dL)\")\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`."
+    "text": "EDA: Differences in cholesterol levels: After - Before diet\n\n\n\n\nCode for below plot\nggplot(chol_long, aes(x = Cholesterol)) + geom_histogram() +\n  facet_wrap(~ Time, ncol = 1) +\n  labs(y = \"Number of individuals\", x = \"Cholesterol level (mg/dL)\")\n\n\n\n\n\n\n\n\n\n\nDifference:\n\nggplot(chol, aes(x=DiffChol)) + \n  geom_histogram() +\n  labs(y = \"Number of individuals\", \n       x = \"Difference in cholesterol level (mg/dL)\")"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#same-distribution-single-sample-mean-paired-mean-difference-12",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#same-distribution-single-sample-mean-paired-mean-difference-12",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Same distribution: single-sample mean & paired mean difference (1/2)",
     "text": "Same distribution: single-sample mean & paired mean difference (1/2)\n\nEven though we are looking at a difference, we have a single sample mean to represent the difference\n\nBefore, we had single sample mean \\(\\overline{x}\\)\nNow we have a sample mean difference \\(\\overline{x}_d\\)\n\n\n \n\nDistribution for the mean difference for paired data is the same as the distribution for a single mean\n\nUse the t-distribution to build our inference\n\n\n \n\nWe can use the same procedure for confidence intervals and hypothesis testing as we did for the single-sample mean"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#same-distribution-single-sample-mean-paired-mean-difference-22",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#same-distribution-single-sample-mean-paired-mean-difference-22",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Same distribution: single-sample mean & paired mean difference (2/2)",
     "text": "Same distribution: single-sample mean & paired mean difference (2/2)\n\n\nSingle-sample mean:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaired mean difference:"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#approaches-to-answer-a-research-question",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#approaches-to-answer-a-research-question",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Approaches to answer a research question",
     "text": "Approaches to answer a research question\n\nResearch question is a generic form for paired data: Is there evidence to support that the population mean difference is different than \\(\\delta_0\\)?\n\n\n\n\n\nCalculate CI for the mean difference \\(\\delta\\):\n\n\n\n\n\n\n\n\n\n\n\n\\[\\overline{x}_d \\pm t^*\\cdot\\frac{s_d}{\\sqrt{n}}\\]\n\nwith \\(t^*\\) = t-score that aligns with specific confidence interval\n\n\n\n\n\n\nRun a hypothesis test:\n\n\n\n\n\n\n\n\n\n\n\n\n\nHypotheses\n\\[\\begin{align}\nH_0:& \\delta = \\delta_0 \\\\\nH_A:& \\delta \\neq \\delta_0 \\\\\n(or&~ &lt;, &gt;)\n\\end{align}\\]\n\nTest statistic\n\\[\nt_{\\overline{x}_d} = \\frac{\\overline{x}_d - \\delta_0}{\\frac{s_d}{\\sqrt{n}}}\n\\]"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#ci-for-the-mean-difference-in-cholesterol-levels",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#ci-for-the-mean-difference-in-cholesterol-levels",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "95% CI for the mean difference in cholesterol levels",
     "text": "95% CI for the mean difference in cholesterol levels\n\nchol %&gt;% \n  select(DiffChol) %&gt;% \n  get_summary_stats(type = \"common\") %&gt;% \n  gt() %&gt;% tab_options(table.font.size = 40)\n\n\n\n\n\n\n\nvariable\nn\nmin\nmax\nmedian\niqr\nmean\nsd\nse\nci\n\n\n\n\nDiffChol\n43\n-49\n13\n-23\n16\n-21.767\n13.89\n2.118\n4.275\n\n\n\n\n\n\n\n95% CI for population mean difference \\(\\delta\\):\n\n\n\\[\\begin{align}\n\\overline{x}_d &\\pm t^*\\cdot\\frac{s_d}{\\sqrt{n}}\\\\\n-21.767 &\\pm 2.018\\cdot\\frac{13.89}{\\sqrt{43}}\\\\\n-21.767 &\\pm 2.018\\cdot 2.118\\\\\n-21.767 &\\pm 4.275\\\\\n(-26.042&, -17.493)\n\\end{align}\\]\n\nUsed \\(t^*\\) = qt(0.975, df=42) = 2.018\n \nConclusion:\nWe are 95% confident that the (population) mean difference in cholesterol levels after a vegetarian diet is between -26.042 mg/dL and -17.493 mg/dL."
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#ci-for-the-mean-difference-in-cholesterol-levels-using-r",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#ci-for-the-mean-difference-in-cholesterol-levels-using-r",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "95% CI for the mean difference in cholesterol levels (using R)",
     "text": "95% CI for the mean difference in cholesterol levels (using R)\n\nWe can use R to get those same values\n\n\nt.test(x = chol$DiffChol, mu = 0)\n\n\n    One Sample t-test\n\ndata:  chol$DiffChol\nt = -10.276, df = 42, p-value = 4.946e-13\nalternative hypothesis: true mean is not equal to 0\n95 percent confidence interval:\n -26.04229 -17.49259\nsample estimates:\nmean of x \n-21.76744 \n\n\n\n\nWe can tidy the output\nt.test(x = chol$DiffChol, mu = 0) %&gt;% tidy() %&gt;% gt() %&gt;% \n  tab_options(table.font.size = 35) # use a different size in your HW\n\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-21.76744\n-10.27603\n4.945625e-13\n42\n-26.04229\n-17.49259\nOne Sample t-test\ntwo.sided\n\n\n\n\n\n\n\nConclusion:\nWe are 95% confident that the (population) mean difference in cholesterol levels after a vegetarian diet is between -26.042 mg/dL and -17.493 mg/dL."
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#poll-everywhere-question-2",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#poll-everywhere-question-2",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Poll Everywhere Question 2",
     "text": "Poll Everywhere Question 2"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#reference-steps-in-a-hypothesis-test",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#reference-steps-in-a-hypothesis-test",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Reference: Steps in a Hypothesis Test",
     "text": "Reference: Steps in a Hypothesis Test\n\nCheck the assumptions\nSet the level of significance \\(\\alpha\\)\nSpecify the null ( \\(H_0\\) ) and alternative ( \\(H_A\\) ) hypotheses\n\nIn symbols\nIn words\nAlternative: one- or two-sided?\n\nCalculate the test statistic.\nCalculate the p-value based on the observed test statistic and its sampling distribution\nWrite a conclusion to the hypothesis test\n\nDo we reject or fail to reject \\(H_0\\)?\nWrite a conclusion in the context of the problem"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-1-check-the-assumptions",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-1-check-the-assumptions",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 1: Check the assumptions",
     "text": "Step 1: Check the assumptions\n\nThe assumptions to run a hypothesis test on a sample are:\n\nIndependent pairs: Each pair is independent from all other pairs,\nApproximately normal sample or big n: the distribution of the sample should be approximately normal, or the sample size should be at least 30\n\n\n \n\nThese are the criteria for the Central Limit Theorem in Lesson 09: Variability in estimates\n\n \n\nIn our example, we would check the assumptions with a statement:\n\nThe pairs of observations are independent from each other and the number of pairs in our sample is 43. Thus, we can use CLT to approximate the sampling distribution."
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-2-set-the-level-of-significance-alpha",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-2-set-the-level-of-significance-alpha",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 2: Set the level of significance \\(\\alpha\\)",
     "text": "Step 2: Set the level of significance \\(\\alpha\\)\n\nBefore doing a hypothesis test, we set a cut-off for how small the \\(p\\)-value should be in order to reject \\(H_0\\).\nTypically choose \\(\\alpha = 0.05\\)\n\n \n\nSee Lesson 11: Hypothesis Testing 1: Single-sample mean"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-3-null-alternative-hypotheses-12",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-3-null-alternative-hypotheses-12",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 3: Null & Alternative Hypotheses (1/2)",
     "text": "Step 3: Null & Alternative Hypotheses (1/2)\nIn statistics, a hypothesis is a statement about the value of an unknown population parameter.\nA hypothesis test consists of a test between two competing hypotheses:\n\na null hypothesis \\(H_0\\) (pronounced “H-naught”) vs.\nan alternative hypothesis \\(H_A\\) (also denoted \\(H_1\\))\n\nExample of hypotheses in words:\n\\[\\begin{aligned}\nH_0 :& \\text{The population mean difference in cholesterol levels after a vegetarian diet is zero}\\\\\n\\text{vs. } H_A :& \\text{The population mean difference in cholesterol levels after a vegetarian diet is} \\\\\n& \\text{ different than zero}\n\\end{aligned}\\]\n\n\\(H_0\\) is a claim that there is “no effect” or “no difference of interest.”\n\\(H_A\\) is the claim a researcher wants to establish or find evidence to support. It is viewed as a “challenger” hypothesis to the null hypothesis \\(H_0\\)"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-3-null-alternative-hypotheses-22",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-3-null-alternative-hypotheses-22",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 3: Null & Alternative Hypotheses (2/2)",
-    "text": "Step 3: Null & Alternative Hypotheses (2/2)\n\n\n\n\nNotation for hypotheses (for paired data)\n\n\n\\[\\begin{aligned}\nH_0 &: \\delta = \\delta_0\\\\\n\\text{vs. } H_A&: \\delta \\neq, &lt;, \\textrm{or}, &gt; \\delta_0\n\\end{aligned}\\]\n\n\n\n\n\nHypotheses test for example\n\n\n\\[\\begin{aligned}\nH_0 &: \\delta = 0\\\\\n\\text{vs. } H_A&: \\delta \\neq 0\n\\end{aligned}\\]\n\n\n\n\nWe call \\(\\delta_0\\) the null value (hypothesized population mean difference from \\(H_0\\))\n\n\n\\(H_A: \\delta \\neq \\delta_0\\)\n\nnot choosing a priori whether we believe the population mean difference is greater or less than the null value \\(\\delta_0\\)\n\n\n\n\n\\(H_A: \\delta &lt; \\delta_0\\)\n\nbelieve the population mean difference is less than the null value \\(\\delta_0\\)\n\n\n\n\n\\(H_A: \\delta &gt; \\delta_0\\)\n\nbelieve the population mean difference is greater than the null value \\(\\delta_0\\)\n\n\n\n\n\\(H_A: \\delta \\neq \\delta_0\\) is the most common option, since it’s the most conservative"
+    "text": "Step 3: Null & Alternative Hypotheses (2/2)\n\n\n\n\nNotation for hypotheses (for paired data)\n\n\n\\[\\begin{aligned}\nH_0 &: \\delta = \\delta_0\\\\\n\\text{vs. } H_A&: \\delta \\neq, &lt;, \\textrm{or}, &gt; \\delta_0\n\\end{aligned}\\]\n\n\n\n\n\nHypotheses test for example\n\n\n\\[\\begin{aligned}\nH_0 &: \\delta = 0\\\\\n\\text{vs. } H_A&: \\delta \\neq 0\n\\end{aligned}\\]\n\n\n\nWe call \\(\\delta_0\\) the null value (hypothesized population mean difference from \\(H_0\\))\n\n\n\\(H_A: \\delta \\neq \\delta_0\\)\n\nnot choosing a priori whether we believe the population mean difference is greater or less than the null value \\(\\delta_0\\)\n\n\n\n\n\\(H_A: \\delta &lt; \\delta_0\\)\n\nbelieve the population mean difference is less than the null value \\(\\delta_0\\)\n\n\n\n\n\\(H_A: \\delta &gt; \\delta_0\\)\n\nbelieve the population mean difference is greater than the null value \\(\\delta_0\\)\n\n\n\n\\(H_A: \\delta \\neq \\delta_0\\) is the most common option, since it’s the most conservative"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-4-test-statistic-where-we-do-not-know-population-sd",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-4-test-statistic-where-we-do-not-know-population-sd",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 4: Test statistic (where we do not know population sd)",
     "text": "Step 4: Test statistic (where we do not know population sd)\nFrom our example: Recall that \\(\\overline{x}_d = -21.767\\), \\(s_d=13.89\\), and \\(n=43\\)\nThe test statistic is:\n\\[\nt_{\\overline{x}_d} = \\frac{\\overline{x}_d - \\delta_0}{\\frac{s_d}{\\sqrt{n}}}\n= \\frac{-21.767 - 0}{\\frac{13.89}{\\sqrt{43}}}\n= -10.276\n\\]\n\nStatistical theory tells us that \\(t_{\\overline{x}}\\) follows a Student’s t-distribution with \\(df = n-1 = 42\\)"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-5-p-value",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-5-p-value",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 5: p-value",
     "text": "Step 5: p-value\nThe p-value is the probability of obtaining a test statistic just as extreme or more extreme than the observed test statistic assuming the null hypothesis \\(H_0\\) is true.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalculate the p-value using the Student’s t-distribution with \\(df = n-1 = 43-1=42\\):\n\\[\n\\begin{aligned}\n\\text{p-value} &=P(T \\leq -10.276) + P(T \\geq 10.276)\\\\\n&= 4.946032 \\times 10^{-13} &lt; 0.001\n\\end{aligned}\n\\]\n\n2*pt(-10.276, df = 43-1, \n     lower.tail = TRUE)\n\n[1] 4.946032e-13"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-4-5-test-statistic-and-p-value-together-using-t.test",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-4-5-test-statistic-and-p-value-together-using-t.test",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 4-5: test statistic and p-value together using t.test()",
     "text": "Step 4-5: test statistic and p-value together using t.test()\n\nI will have reference slides at the end of this lesson to show other options\n\n\nt.test(x = chol$DiffChol, mu = 0)\n\n\n    One Sample t-test\n\ndata:  chol$DiffChol\nt = -10.276, df = 42, p-value = 4.946e-13\nalternative hypothesis: true mean is not equal to 0\n95 percent confidence interval:\n -26.04229 -17.49259\nsample estimates:\nmean of x \n-21.76744 \n\n\n\nWe can “tidy” the results\n\n\nt.test(x = chol$DiffChol, mu = 0) %&gt;% tidy() %&gt;% gt() %&gt;% \n  tab_options(table.font.size = 40) # use a different size in your HW\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-21.76744\n-10.27603\n4.945625e-13\n42\n-26.04229\n-17.49259\nOne Sample t-test\ntwo.sided"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#poll-everywhere-question-3",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#poll-everywhere-question-3",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Poll Everywhere Question 3",
     "text": "Poll Everywhere Question 3"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-6-conclusion-to-hypothesis-test",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-6-conclusion-to-hypothesis-test",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 6: Conclusion to hypothesis test",
-    "text": "Step 6: Conclusion to hypothesis test\n\\[\\begin{aligned}\nH_0 &: \\delta = \\delta_0\\\\\n\\text{vs. } H_A&: \\delta \\neq \\delta_0\n\\end{aligned}\\]\n\nNeed to compare p-value to our selected \\(\\alpha = 0.05\\)\nDo we reject or fail to reject \\(H_0\\)?\n\n\n\n\n\n\n\nIf \\(\\text{p-value} &lt; \\alpha\\), reject the null hypothesis\n\n\n\nThere is sufficient evidence that the (population) mean difference is discernibly different from \\(\\delta_0\\) ( \\(p\\)-value = ___)\nThe mean difference (insert measure) in the sample was \\(\\overline{x}_d\\) (95% CI ___,___ ), which is discernibly different from \\(\\delta_0\\) ( \\(p\\)-value = ____).\n\n\n\n\n\n\nIf \\(\\text{p-value} \\geq \\alpha\\), fail to reject the null hypothesis\n\n\n\nThere is insufficient evidence that the (population) mean difference of (insert measure) is discernibly different from \\(\\delta_0\\) ( \\(p\\)-value = ___)\nThe average (insert measure) in the sample was \\(\\overline{x}_d\\) (95% CI ___,___), which is not discernibly different from \\(\\delta_0\\) ( \\(p\\)-value = ____)."
+    "text": "Step 6: Conclusion to hypothesis test\n\\[\\begin{aligned}\nH_0 &: \\delta = \\delta_0\\\\\n\\text{vs. } H_A&: \\delta \\neq \\delta_0\n\\end{aligned}\\]\n\nNeed to compare p-value to our selected \\(\\alpha = 0.05\\)\nDo we reject or fail to reject \\(H_0\\)?\n\n\n\n\n\n\n\nIf \\(\\text{p-value} &lt; \\alpha\\), reject the null hypothesis\n\n\n\nThere is sufficient evidence that the (population) mean difference is discernibly different from \\(\\delta_0\\) ( \\(p\\)-value = ___)\nThe mean difference (insert measure) in the sample was \\(\\overline{x}_d\\) (95% CI ___,___ ), which is discernibly different from \\(\\delta_0\\) ( \\(p\\)-value = ____).\n\n\n\n\n\n\nIf \\(\\text{p-value} \\geq \\alpha\\), fail to reject the null hypothesis\n\n\n\nThere is insufficient evidence that the (population) mean difference of (insert measure) is discernibly different from \\(\\delta_0\\) ( \\(p\\)-value = ___)\nThe mean difference (insert measure) in the sample was \\(\\overline{x}_d\\) (95% CI ___,___), which is not discernibly different from \\(\\delta_0\\) ( \\(p\\)-value = ____)."
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-6-conclusion-to-hypothesis-test-1",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#step-6-conclusion-to-hypothesis-test-1",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "Step 6: Conclusion to hypothesis test",
     "text": "Step 6: Conclusion to hypothesis test\n\\[\\begin{aligned}\nH_0 &: \\delta = 0\\\\\n\\text{vs. } H_A&: \\delta \\neq 0\n\\end{aligned}\\]\n\nRecall the \\(p\\)-value = \\(4.9456253\\times 10^{-13}\\)\nUse \\(\\alpha\\) = 0.05.\nDo we reject or fail to reject \\(H_0\\)?\n\nConclusion statement:\n\nStats class conclusion (and good enough for our class!)\n\nThere is sufficient evidence that the (population) mean difference in cholesterol levels after a vegetarian diet is different from 0 mg/dL ( \\(p\\)-value &lt; 0.001).\n\nMore realistic manuscript conclusion:\n\nAfter a vegetarian diet, cholesterol levels decreased by on average 21.77 mg/dL (95% CI: 17.49, 26.04), which is discernably different than 0 (\\(p\\)-value &lt; 0.001)."
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#what-if-we-wanted-to-test-whether-the-diet-decreased-cholesterol-levels",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "What if we wanted to test whether the diet decreased cholesterol levels?",
-    "text": "What if we wanted to test whether the diet decreased cholesterol levels?\n\n\nExample of hypothesis test\n\n\nIs there evidence to support that cholesterol levels decreased after the vegetarian diet?\n\n\n\n\n\nAssumptions: The pairs of observations are independent from each other and the number of pairs in our sample is 43. Thus, we can use CLT to approximate the sampling distribution.\n\n4-5.\n\n\nSet \\(\\alpha = 0.05\\)\n\n\n\nHypothesis:\n\\[\\begin{aligned}\nH_0 &: \\delta = 0\\\\\n\\text{vs. } H_A&: \\delta &lt; 0\n\\end{aligned}\\]\n\n\n\n\nchol_ttest &lt;- t.test(x = chol$DiffChol, mu = 0, alternative = \"less\")\ntidy(chol_ttest) %&gt;% gt() %&gt;% tab_options(table.font.size = 36)\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-21.76744\n-10.27603\n2.472813e-13\n42\n-Inf\n-18.20461\nOne Sample t-test\nless\n\n\n\n\n\n\n\n\nConclusion: We reject the null hypothesis. There is sufficient evidence that cholesterol levels decreased with the vegetarian diet ( \\(p\\)-value &lt; 0.001)."
+    "text": "What if we wanted to test whether the diet decreased cholesterol levels?\n\n\nExample of hypothesis test\n\n\nIs there evidence to support that cholesterol levels decreased after the vegetarian diet?\n\n\n\n\n\nAssumptions: The pairs of observations are independent from each other and the number of pairs in our sample is 43. Thus, we can use CLT to approximate the sampling distribution.\n\n4-5.\n\n\nSet \\(\\alpha = 0.05\\)\n\n\n\nHypothesis:\n\\[\\begin{aligned}\nH_0 &: \\delta = 0\\\\\n\\text{vs. } H_A&: \\delta &lt; 0\n\\end{aligned}\\]\n\n\n\nchol_ttest &lt;- t.test(x = chol$DiffChol, mu = 0, alternative = \"less\")\ntidy(chol_ttest) %&gt;% gt() %&gt;% tab_options(table.font.size = 36)\n\n\n\n\n\n\n\nestimate\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n-21.76744\n-10.27603\n2.472813e-13\n42\n-Inf\n-18.20461\nOne Sample t-test\nless\n\n\n\n\n\n\n\n\nConclusion: We reject the null hypothesis. There is sufficient evidence that cholesterol levels decreased with the vegetarian diet ( \\(p\\)-value &lt; 0.001)."
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#r-option-1-run-a-1-sample-t.test-using-the-paired-differences",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#r-option-1-run-a-1-sample-t.test-using-the-paired-differences",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "R option 1: Run a 1-sample t.test using the paired differences",
     "text": "R option 1: Run a 1-sample t.test using the paired differences\n\\(H_A: \\delta \\neq 0\\)\n\nt.test(x = chol$DiffChol, mu = 0)\n\n\n    One Sample t-test\n\ndata:  chol$DiffChol\nt = -10.276, df = 42, p-value = 4.946e-13\nalternative hypothesis: true mean is not equal to 0\n95 percent confidence interval:\n -26.04229 -17.49259\nsample estimates:\nmean of x \n-21.76744 \n\n\nRun the code without mu = 0. Do the results change? Why or why not?"
   },
   {
     "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#r-option-2-run-a-2-sample-t.test-with-paired-true-option",
     "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#r-option-2-run-a-2-sample-t.test-with-paired-true-option",
-    "title": "Lesson 12: Inference for mean difference from two-sample dependent/paired data",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
     "section": "R option 2: Run a 2-sample t.test with paired = TRUE option",
     "text": "R option 2: Run a 2-sample t.test with paired = TRUE option\n\\(H_A: \\delta \\neq 0\\)\n\nFor a 2-sample t-test we specify both x= and y=\nNote: mu = 0 is the default value and doesn’t need to be specified\n\n\nt.test(x = chol$Before, y = chol$After, mu = 0, paired = TRUE)\n\n\n    Paired t-test\n\ndata:  chol$Before and chol$After\nt = 10.276, df = 42, p-value = 4.946e-13\nalternative hypothesis: true mean difference is not equal to 0\n95 percent confidence interval:\n 17.49259 26.04229\nsample estimates:\nmean difference \n       21.76744 \n\n\nWhat is different in the output compared to option 1?"
   },
@@ -28012,5 +28012,12 @@
     "title": "Muddy Points",
     "section": "",
     "text": "I asked Gemini to help me explain this one, and I really liked its analogy. From Gemini:\nThe “Innocent Until Proven Guilty” Analogy\nThink of hypothesis testing like a criminal trial:\n\nThe Null Hypothesis (\\(H_0\\)): This is the default assumption, like the defendant being “innocent.”\nThe Alternative Hypothesis (\\(H_A\\)): This is the new claim being tested, like the prosecutor arguing the defendant is “guilty.”\nThe Data: This is the evidence presented in court.\n\nThe jury’s job is not to prove the defendant is innocent. Their job is to see if there is enough evidence beyond a reasonable doubt to reject the idea of their innocence.\nAt the end of the trial, the jury has two possible verdicts:\n\n“Guilty”: There was enough strong evidence to reject the assumption of innocence. In statistics, we say we “reject the null hypothesis.”\n“Not Guilty”: This does not mean the jury proved the defendant is innocent. It just means there was not enough evidence to convince them of guilt. In statistics, we say we “fail to reject the null hypothesis.”\n\nWe never say “accept the innocent” just like we never say “accept the null.”\n\n\n\nThis is a very philosophical question! The American Statistical Association barely has the answer!\n\n\n\nYes! But just to correct you a little - for an \\(\\alpha\\), the CI is \\(\\left(1-\\dfrac{\\alpha}{2}\\right)\\%\\)\n\n\n\nIt doesn’t really. It just changes the formating of the results from t.test() so that we can view it differently.\n\n\n\nRemember, you can go into the console in R and type ?t.test to get information on the function.\nHere’s what I see when I type that:\n\nt.test(x, y = NULL,\n       alternative = c(\"two.sided\", \"less\", \"greater\"),\n       mu = 0, paired = FALSE, var.equal = FALSE,\n       conf.level = 0.95)\n\nIf we want to do a one-sided t-test in R, we would use “less” or “greater” for the alternative input."
+  },
+  {
+    "objectID": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#where-are-we",
+    "href": "lessons/13_Hyp_testing_02/13_Hyp_testing_02.html#where-are-we",
+    "title": "Lesson 13: Inference for mean difference from two-sample dependent/paired data (Hypothesis testing 2)",
+    "section": "Where are we?",
+    "text": "Where are we?"
   }
 ]
