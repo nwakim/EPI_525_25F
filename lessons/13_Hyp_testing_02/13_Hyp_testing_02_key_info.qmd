@@ -1,6 +1,5 @@
 ---
 title: "Key Info and Announcements"
-date: "11/11/2024"
 date-modified: "today"
 format: 
   html:
@@ -12,12 +11,19 @@ editor_options:
 ## Announcements
 
 - Naming files
+  - When inserting an image, make sure your file names do not include things like `.` or `#` or other symbols
+    - Best practice is to only include `_` and `-` and letters and numbers
 - Check out the homework answers!!
 - Homework 4
   - `lower.tail = T` vs `lower.tail = F`
-  - Importing your dataset
+    - In `p____()` (like `pbinom()`)...
+        - `lower.tail=T` gives us $P(X \leq q)$ 
+        - `lower.tail=F` gives us $P(X > q)$ 
+  - Importing your dataset: will go over again today
 - Week of thanksgiving: all office hours are cancelled
   - Email the TAs for questions! 
 
 ## Key Dates
 
+- [Quiz 2](https://nwakim.github.io/EPI_525_25F/quiz.html#quiz-2) opens on Wednesday and due Sunday
+- Homework 6 due Sunday

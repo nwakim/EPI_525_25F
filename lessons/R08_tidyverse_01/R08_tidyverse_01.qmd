@@ -3,7 +3,7 @@ title: "R08: Transforming and subetting data with `tidyverse`"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "11/11/2024"
+date: "`r library(here); source(here('class_dates.R')); w7d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -400,6 +400,15 @@ dds.discr5 = dds.discr2 %>%
 
 glimpse(dds.discr5)
 ```
+
+## Your turn
+
+We will run a paired t-test for the cholesterol data:
+
+1. Download `chol213_n40.csv` from the shared folder
+2. Import the dataset into `R`
+3. Create a new variable for the difference (After - Before)
+4. Use `t.test()` to runa paired test
 
 # Resources
 
