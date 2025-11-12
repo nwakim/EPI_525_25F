@@ -15,10 +15,10 @@ source(here("class_dates.R"))
 Below is the general timing and lessons for each quiz:
 
 | Quiz | Lessons | Open Date \@ 3pm | Close Date \@ 11pm |
-|----|----|----|----|
+|------------------|------------------|------------------|------------------|
 | 1 | 1-4 | `r q1_open %>% format("%m/%d")` | `r q1_close %>% format("%m/%d")` |
 | 2 | 5-10 | `r q2_open %>% format("%m/%d")` | `r q2_close %>% format("%m/%d")` |
-| 3 | 10-19 | `r q3_open %>% format("%m/%d")` | `r q3_close %>% format("%m/%d")` |
+| 3 | 10-18 | `r q3_open %>% format("%m/%d")` | `r q3_close %>% format("%m/%d")` |
 
 Quizzes will be mostly conceptual questions with 10-15 multiple choice questions. Some calculations will need to be done for certain questions, but the focus will be on understanding concepts.
 
@@ -55,5 +55,7 @@ More information specific to each quiz will be posted below.
     -   Covers Normal, Binomial, and Poisson distributions
     -   Covers data visualizations of one and two variables
     -   Covers variability in estimates (think sampling distribution)
+-   13 questions
+    -   2-3 require some light calculations: think SE and E(X)
 
 ### Quiz 3

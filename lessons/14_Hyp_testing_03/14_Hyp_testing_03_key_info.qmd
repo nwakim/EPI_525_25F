@@ -10,8 +10,25 @@ editor_options:
 
 ## Announcements
 
+- When submitting a qmd and html, there are important settings at the top of my homework files
+  - Let's look at Homework 6 and the Github page for example
+- Homework 4 and 5 solutions are up!
+  - Just in case you want for quiz studying
+- [Quiz 2](https://nwakim.github.io/EPI_525_25F/quiz.html#quiz-2) info
+
+### Free Biostatistics Peer Tutoring Available Starting November 17th! 
+
+We have had a little delay with onboarding new peer-tutors this year, but Charles Parker will be available starting November 17th to support folks with biostatistics! 
+
+Unlike TAs, tutors are not closely associated with any particular course sections or professors, nor do they have any grading responsibilities. Consider meeting with a tutor when you feel stuck on a project, need help with R coding, want to review course concepts, or simply complete assignments in a social learning environment. There is no cost to use tutoring. ​
+
+Charles is looking forward to working with you in a one-to-one or group setting, depending on your needs. Starting November 17th, [you will be able to schedule to meet with them.](https://traccloud.go-redrock.com/ohsu)   
+
+You can contact  the Academic Success Center with questions learningsupport@ohsu.edu.​
   
 
 ## Key Dates
 
-
+- Homework 6 due Sunday 11/16
+- Quiz 2 opens today at 3pm
+- Quiz 2 closes Sunday at 11pm
