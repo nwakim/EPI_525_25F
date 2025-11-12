@@ -137,7 +137,7 @@ tstat <- (diff_x - mu)/se
 
 $$t_{\bar{d}} = `r round(tstat, 5)`$$
 
-$$p-value = `r round( 2*(1-pt(tstat, df=min(n1-1, n2-1))), 5)`$$
+$$p-value = `r round( 2*(1-pt(tstat, df=n1+n2-2)), 5)`$$
 
 Reject the null
 :::
