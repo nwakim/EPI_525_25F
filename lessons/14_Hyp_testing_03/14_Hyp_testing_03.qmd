@@ -1,10 +1,10 @@
 ---
-title: "Lesson 13: Inference for difference in means from two independent samples"
+title: "Lesson 14: Inference for difference in means from two independent samples"
 subtitle: "TB sections 5.3"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "11/13/2024"
+date: "`r library(here); source(here('class_dates.R')); w7d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -13,7 +13,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 13 Slides
+    footer: Lesson 14 Slides
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -678,8 +678,7 @@ $$\overline{x}_1 - \overline{x}_2 \pm\ t^*\times \text{SE}$$
 :::::::::
 
 -   $t^*$ depends on the confidence level and degrees of freedom
-    -   degrees of freedom (df) is: $df=n-1$
-    -   $n$ is minimum between $n_1$ and $n_2$
+    -   degrees of freedom (df) is: $df=n_1 + n_2 - 2$
 
 ## 95% CI for the difference in population mean taps
 
@@ -704,14 +703,14 @@ mu <- 0
 (se <- sqrt(sd1^2/n1 + sd2^2/n2))
 (tstat <- (diff_x - mu)/se)
 
-1-pt(tstat, df=min(n1 -1, n2-1))
-pt(tstat, df=min(n1 -1, n2-1), lower.tail = FALSE)
+1-pt(tstat, df=n1 + n2 - 2)
+pt(tstat, df=n1 + n2 - 2, lower.tail = FALSE)
 
-2*(1-pt(tstat, df=min(n1 -1, n2-1)))
+2*(1-pt(tstat, df=n1+n2 -2))
 alpha <- 0.05
 (p_area <- 1-alpha/2)
 
-(tstar <- qt(p_area, df=min(n1 -1, n2-1))) 
+(tstar <- qt(p_area, df=n1+n2 -2 )) 
 # (se <- sqrt(sd1^2/n1 + sd2^2/n2))
 (moe <- tstar * se) 
 (LB <- diff_x - moe)
@@ -733,7 +732,7 @@ $$
 :::
 
 ::: {.column width="47%"}
-Used $t^*$ = `qt(0.975, df=34)` = `r round(qt(0.975, df=34),3)`
+Used $t^*$ = `qt(0.975, df=68)` = `r round(qt(0.975, df=68),3)`
 
  
 
@@ -745,18 +744,19 @@ We are 95% confident that the difference in (population) mean finger taps/min be
 ## 95% CI for the difference in population mean taps (using R)
 
 ```{r}
-t.test(formula = Taps ~ Group, data = CaffTaps)
+t.test(formula = Taps ~ Group, data = CaffTaps, var.equal = T)
 ```
 
 ```{r}
 #| code-fold: true
 #| code-summary: We can tidy the output
-t.test(formula = Taps ~ Group, data = CaffTaps) %>% tidy() %>% gt() %>% 
+t_test_2samp = t.test(formula = Taps ~ Group, data = CaffTaps) %>% tidy()
+t_test_2samp %>% gt() %>% 
   tab_options(table.font.size = 35) # use a different size in your HW
 ```
 
 **Conclusion:**\
-We are 95% confident that the difference in (population) mean finger taps/min between the caffeine and control groups is between `r round(LB, 3)` mg/dL and `r round(UB, 3)` mg/dL.
+We are 95% confident that the difference in (population) mean finger taps/min between the caffeine and control groups is between `r round(t_test_2samp$conf.low, 3)` mg/dL and `r round(t_test_2samp$conf.high, 3)` mg/dL.
 
 ## Poll Everywhere Question 3
 
@@ -866,7 +866,7 @@ $H_A: \mu_1 \neq \mu_2$
 ::: {.column width="32%"}
 $H_A: \mu_1 < \mu_2$
 
--   believe that population mean of group 1 is greater than population mean of group 2
+-   believe that population mean of group 1 is less than population mean of group 2
 :::
 
 ::: {.column width="2%"}
@@ -875,7 +875,7 @@ $H_A: \mu_1 < \mu_2$
 ::: {.column width="32%"}
 $H_A: \mu_1 > \mu_2$
 
--   believe that population mean of group 1 is less than population mean of group 2
+-   believe that population mean of group 1 is greater than population mean of group 2
 :::
 ::::::::
 
@@ -990,8 +990,7 @@ $$
  
 
 -   Statistical theory tells us that $t_{\overline{x}_1 - \overline{x}_2}$ follows a **student's t-distribution** with
-    -   $df \approx$ smaller of $n_1-1$ and $n_2-1$
-    -   this is a conservative estimate (smaller than actual $df$ )
+    -   $df = n_1 + n_2 -2$
 
 ## Step 4: Test statistic (where we do not know population sd)
 
@@ -1016,10 +1015,10 @@ mu <- 0
 alpha <- 0.05
 (p_area <- 1-alpha/2)
 
-1-pt(tstat, df=min(n1 -1, n2-1))
-pt(tstat, df=min(n1 -1, n2-1), lower.tail = FALSE)
+1-pt(tstat, df=n1 + n2 - 2)
+pt(tstat, df=n1 + n2 - 2, lower.tail = FALSE)
 
-2*(1-pt(tstat, df=min(n1 -1, n2-1)))
+2*(1-pt(tstat, df=n1 + n2 - 2))
 ```
 
 The test statistic is:
@@ -1030,7 +1029,7 @@ $$
 = `r round(tstat, 4)`
 $$
 
--   Statistical theory tells us that $t_{\overline{x}}$ follows a **Student's t-distribution** with $df = n-1 = 34$
+-   Statistical theory tells us that $t_{\overline{x}_1 - \overline{x}_2}$ follows a **Student's t-distribution** with $df = n_1 + n_2 - 2 = 68$
 
 ```{r}
 #| fig.height: 4
@@ -1038,7 +1037,7 @@ $$
 #| fig-align: center
 #| echo: false
 ggplot(data = data.frame(x = c(-4, 4)), aes(x)) + 
-  stat_function(fun = dt, args = list(df = 34)) + 
+  stat_function(fun = dt, args = list(df = 68)) + 
   ylab("") + 
   xlab("t-dist with df = 34") +
   scale_y_continuous(breaks = NULL) + 
@@ -1082,7 +1081,7 @@ ggplot(data.frame(x = c(mu-5*std, mu+5*std)), aes(x = x)) +
 #| fig.width: 10
 #| echo: false
 ggplot(data = data.frame(x = c(-5, 5)), aes(x)) + 
-  stat_function(fun = dt, args = list(df = min(n1 -1, n2-1))) + 
+  stat_function(fun = dt, args = list(df = n1 + n2 -2)) + 
   ylab("") + 
   xlab("t-dist with df = 34") +
   scale_y_continuous(breaks = NULL) + 
@@ -1093,18 +1092,18 @@ ggplot(data = data.frame(x = c(-5, 5)), aes(x)) +
 :::
 
 ::: {.column width="50%"}
-Calculate the *p*-value using the **Student's t-distribution** with $df = n-1 = 35-1=34$:
+Calculate the *p*-value using the **Student's t-distribution** with $df = n_1 + n_2 - 2 = 68$:
 
 $$ 
 \begin{aligned}
 \text{p-value} &=P(T > `r round(tstat,5)`)\\
-&= `r round(pt(tstat, df=min(n1 -1, n2-1), lower.tail = FALSE), 8)`
+&= `r round(pt(tstat, df=68, lower.tail = FALSE), 8)`
 \end{aligned}
 $$
 
 ```{r}
 pt(tstat, 
-   df = min(n1 - 1, n2 - 1), 
+   df = 68, 
    lower.tail = FALSE)
 ```
 
@@ -1127,10 +1126,10 @@ pt(tstat,
 # alpha <- 0.05
 # (p_area <- 1-alpha/2)
 
-1-pt(tstat, df=min(n1 -1, n2-1))
-pt(tstat, df=min(n1 -1, n2-1), lower.tail = FALSE)
+1-pt(tstat, df=n1 + n2 - 2)
+pt(tstat, df=n1 + n2 - 2, lower.tail = FALSE)
 
-2*(1-pt(tstat, df=min(n1 -1, n2-1)))
+2*(1-pt(tstat, df=n1 + n2 - 2))
 ```
 :::
 :::::
@@ -1212,7 +1211,7 @@ H_A:& \mu_{caff} - \mu_{ctrl} > 0\\
 -   Stats class conclusion
     -   There is sufficient evidence that the (population) difference in mean finger taps/min with vs. without caffeine is greater than 0 ( $p$-value < 0.001).
 -   More realistic manuscript conclusion:
-    -   The mean finger taps/min were `r xbar1` (SD = `r sd1`) and `r xbar2` (SD = `r sd2`) for the control and caffeine groups, and the increase of `r xbar1 - xbar2` taps/min was statistically discrenible ( $p$-value = `r round(pt(tstat, df=min(n1 -1, n2-1), lower.tail = FALSE), 3)`).
+    -   The mean finger taps/min were `r xbar1` (SD = `r sd1`) and `r xbar2` (SD = `r sd2`) for the control and caffeine groups, and the increase of `r xbar1 - xbar2` taps/min was statistically discrenible ( $p$-value < 0.001).
 
 # Reference: Ways to run a 2-sample t-test in R
 
@@ -1269,10 +1268,9 @@ t.test(x = CaffTaps_wide$Caffeine, y = CaffTaps_wide$NoCaffeine, alternative = "
 From many slides ago:
 
 -   Statistical theory tells us that $t_{\overline{x}_1 - \overline{x}_2}$ follows a **student's t-distribution** with
-    -   $df \approx$ smaller of $n_1-1$ and $n_2-1$
-    -   this is a **conservative** estimate (smaller than actual $df$ )
+    -   $df = n_1 + n_2 - 2$
 
-The actual degrees of freedom are calculated using Satterthwaite's method:
+The actual degrees of freedom are calculated using Satterthwaite's method for the one-sided tests is:
 
 $$\nu = \frac{[ (s_1^2/n_1) + (s_2^2/n_2) ]^2}
 {(s_1^2/n_1)^2/(n_1 - 1) + (s_2^2/n_2)^2/(n_2-1) }
