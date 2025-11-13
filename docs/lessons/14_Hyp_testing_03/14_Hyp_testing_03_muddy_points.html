@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -69,6 +104,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -131,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Muddy Points</h1>
-<p class="subtitle lead">Lesson 13: Hypothesis testing part 03</p>
+<p class="subtitle lead">Lesson 14: Hypothesis testing part 03</p>
 </div>
 
 
@@ -143,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 20, 2025</p>
+      <p class="date-modified">November 12, 2025</p>
     </div>
   </div>
     
@@ -154,19 +218,149 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="difference-in-95-confidence-intervals-calculated-in-slide-23" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="difference-in-95-confidence-intervals-calculated-in-slide-23"><span class="header-section-number">1</span> Difference in 95% confidence intervals calculated in slide 23</h2>
+<section id="fall-2025" class="level2">
+<h2 class="anchored" data-anchor-id="fall-2025">Fall 2025</h2>
+<section id="how-to-rename-datasets-in-r-is-it-just-name2-name1-or-do-you-need-to-use-a-specific-functionpackage" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-rename-datasets-in-r-is-it-just-name2-name1-or-do-you-need-to-use-a-specific-functionpackage">1. How to rename datasets in R (is it just name2 = name1 or do you need to use a specific function/package?)</h3>
+<p>Yes, you can simply rename a dataset in R by assigning it to a new variable name using the assignment operator <code>&lt;-</code> or <code>=</code>.</p>
+<p>For example:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>new_dataset <span class="ot">&lt;-</span> old_dataset</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>or</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>new_dataset <span class="ot">=</span> old_dataset</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>This creates a new variable <code>new_dataset</code> that contains the same data as <code>old_dataset</code>.</p>
 </section>
-<section id="understanding-how-the-means-of-the-two-samples-fall-on-one-distributive-curve-still-a-bit-confused" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="understanding-how-the-means-of-the-two-samples-fall-on-one-distributive-curve-still-a-bit-confused"><span class="header-section-number">2</span> Understanding how the means of the two samples fall on one distributive curve (still a bit confused)</h2>
+<section id="understanding-how-the-means-of-the-two-samples-fall-on-one-distributive-curve-still-a-bit-confused" class="level3">
+<h3 class="anchored" data-anchor-id="understanding-how-the-means-of-the-two-samples-fall-on-one-distributive-curve-still-a-bit-confused">2. Understanding how the means of the two samples fall on one distributive curve (still a bit confused)</h3>
+<p>The confusion about how two sample means fall on <em>one</em> curve is resolved by understanding that the “one curve” isn’t about the individual sample means (<span class="math inline">\(\bar{X}_1\)</span> and <span class="math inline">\(\bar{X}_2\)</span>), but about the <strong>difference</strong> between them (<span class="math inline">\(\bar{X}_1 - \bar{X}_2\)</span>).</p>
+<p>The single distribution you are looking for is the <strong>Sampling Distribution of the Difference in Sample Means</strong>.</p>
+<p>The distribution of <span class="math inline">\(\bar{X}_1 - \bar{X}_2\)</span> is a <strong>Normal distribution</strong> with:</p>
+<ul>
+<li><strong>Mean:</strong> <span class="math inline">\(E[\overline{X}_1 - \overline{X}_2] = \mu_1 - \mu_2\)</span></li>
+<li><strong>Standard Deviation (Standard Error):</strong> <span class="math inline">\(SD(\overline{X}_1 - \overline{X}_2) = \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}\)</span></li>
+</ul>
+<p><span class="math display">\[\overline{X}_1 - \overline{X}_2 \sim \text{Normal} \left( \mu_1 - \mu_2, \sqrt{\frac{\sigma_1^2}{n_1} + \frac{\sigma_2^2}{n_2}} \right)\]</span></p>
+<section id="lets-look-at-the-distributions" class="level4">
+<h4 class="anchored" data-anchor-id="lets-look-at-the-distributions">Let’s look at the distributions</h4>
+<p>We’ll use R and <code>ggplot2</code> to simulate two hypothetical populations and show the three key distributions.</p>
 </section>
-<section id="what-does-a-wide-vs-narrow-confidence-interval-mean" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="what-does-a-wide-vs-narrow-confidence-interval-mean"><span class="header-section-number">3</span> what does a wide vs narrow confidence interval mean?</h2>
+<section id="r-setup-and-parameters" class="level4">
+<h4 class="anchored" data-anchor-id="r-setup-and-parameters">1. R Setup and Parameters</h4>
+<p>We define the true population means (<span class="math inline">\(\mu\)</span>) and standard deviations (<span class="math inline">\(\sigma\)</span>) and a sample size (<span class="math inline">\(n\)</span>).</p>
 </section>
-<section id="difference-between-running-a-t-test-in-r-vs-by-hand-when-dealing-with-2-different-sample-means-that-part-for-a-while-was-confusing." class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="difference-between-running-a-t-test-in-r-vs-by-hand-when-dealing-with-2-different-sample-means-that-part-for-a-while-was-confusing."><span class="header-section-number">4</span> Difference between running a t-test in R vs by hand, when dealing with 2 different sample means, that part for a while was confusing.</h2>
+<section id="visualize-the-individual-sample-mean-distributions." class="level4">
+<h4 class="anchored" data-anchor-id="visualize-the-individual-sample-mean-distributions.">2. Visualize the Individual Sample Mean Distributions.</h4>
+<p>This plot shows the two separate sampling distributions for <span class="math inline">\(\overline{X}_A\)</span> and <span class="math inline">\(\overline{X}_B\)</span>.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data for the individual sampling distributions (for plot limits)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>data_sd_A <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">mean_A =</span> <span class="fu">c</span>(mu_A <span class="sc">-</span> <span class="dv">3</span><span class="sc">*</span>sigma_A<span class="sc">/</span><span class="fu">sqrt</span>(n_A), mu_A <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span>sigma_A<span class="sc">/</span><span class="fu">sqrt</span>(n_A)))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>data_sd_B <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">mean_B =</span> <span class="fu">c</span>(mu_B <span class="sc">-</span> <span class="dv">3</span><span class="sc">*</span>sigma_B<span class="sc">/</span><span class="fu">sqrt</span>(n_B), mu_B <span class="sc">+</span> <span class="dv">3</span><span class="sc">*</span>sigma_B<span class="sc">/</span><span class="fu">sqrt</span>(n_B)))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Individual Sample Mean Distributions Plot ---</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">95</span>, <span class="dv">110</span>)), <span class="fu">aes</span>(x)) <span class="sc">+</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Distribution A (Centered at mu_A = 100)</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> dnorm, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> mu_A, <span class="at">sd =</span> sigma_A <span class="sc">/</span> <span class="fu">sqrt</span>(n_A)), </span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>                <span class="at">geom =</span> <span class="st">"area"</span>, <span class="at">fill =</span> <span class="st">"blue"</span>, <span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Distribution B (Centered at mu_B = 105)</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> dnorm, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> mu_B, <span class="at">sd =</span> sigma_B <span class="sc">/</span> <span class="fu">sqrt</span>(n_B)), </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">geom =</span> <span class="st">"area"</span>, <span class="at">fill =</span> <span class="st">"red"</span>, <span class="at">alpha =</span> <span class="fl">0.4</span>) <span class="sc">+</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Distributions of Individual Sample Means"</span>,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="fu">expression</span>(<span class="fu">paste</span>(<span class="fu">bar</span>(X)[A], <span class="st">" (Blue) and "</span>, <span class="fu">bar</span>(X)[B], <span class="st">" (Red)"</span>)),</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Sample Mean Value"</span>, <span class="at">y =</span> <span class="st">"Density"</span>) <span class="sc">+</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="14_Hyp_testing_03_muddy_points_files/figure-html/plot-individual-distributions-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="take-one-pair-of-random-samples" class="level4">
+<h4 class="anchored" data-anchor-id="take-one-pair-of-random-samples">3. Take One Pair of Random Samples</h4>
+<p>We simulate the result of one experiment by taking one pair of samples.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Take one random sample from each hypothetical population</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>sample_A <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> n_A, <span class="at">mean =</span> mu_A, <span class="at">sd =</span> sigma_A)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>sample_B <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="at">n =</span> n_B, <span class="at">mean =</span> mu_B, <span class="at">sd =</span> sigma_B)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the single observed sample means and their difference</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>x_bar_A <span class="ot">&lt;-</span> <span class="fu">mean</span>(sample_A)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>x_bar_B <span class="ot">&lt;-</span> <span class="fu">mean</span>(sample_B)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>observed_diff <span class="ot">&lt;-</span> x_bar_A <span class="sc">-</span> x_bar_B</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li>One Observed Sample Mean A (<code>x_bar_A</code>): 100.69</li>
+<li>One Observed Sample Mean B (<code>x_bar_B</code>): 104.02</li>
+<li>Observed Difference (<code>x_bar_A</code> - <code>x_bar_B</code>): -3.34</li>
+</ul>
+</section>
+<section id="visualize-the-sampling-distribution-of-the-difference" class="level4">
+<h4 class="anchored" data-anchor-id="visualize-the-sampling-distribution-of-the-difference">4. Visualize the Sampling Distribution of the Difference</h4>
+<p>This is the single curve where the observed difference from our samples falls. It’s centered at the true difference in population means (<span class="math inline">\(\mu_A - \mu_B = -5\)</span>)</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Sampling Distribution of the DIFFERENCE Plot ---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>max_density <span class="ot">&lt;-</span> <span class="fu">dnorm</span>(true_diff_mean, true_diff_mean, sd_diff_mean)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">c</span>(true_diff_mean <span class="sc">-</span> <span class="dv">4</span><span class="sc">*</span>sd_diff_mean, true_diff_mean <span class="sc">+</span> <span class="dv">4</span><span class="sc">*</span>sd_diff_mean)), <span class="fu">aes</span>(x)) <span class="sc">+</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># The Distribution of the DIFFERENCE (The "One Curve")</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">stat_function</span>(<span class="at">fun =</span> dnorm, <span class="at">args =</span> <span class="fu">list</span>(<span class="at">mean =</span> true_diff_mean, <span class="at">sd =</span> sd_diff_mean), </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>                <span class="at">geom =</span> <span class="st">"area"</span>, <span class="at">fill =</span> <span class="st">"purple"</span>, <span class="at">alpha =</span> <span class="fl">0.6</span>) <span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Line for the True Difference (Center of the distribution)</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> true_diff_mean, <span class="at">color =</span> <span class="st">"black"</span>, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Line for the ONE Observed Difference from our samples</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> observed_diff, <span class="at">color =</span> <span class="st">"darkgreen"</span>, <span class="at">size =</span> <span class="fl">1.2</span>) <span class="sc">+</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"The Sampling Distribution of the DIFFERENCE in Means"</span>,</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>       <span class="at">subtitle =</span> <span class="st">"The 'One Curve' for the Difference in Sample Means"</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>       <span class="co"># SIMPLIFIED X-AXIS LABEL (This is the stable fix)</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Difference in Sample Means (Xbar_A - Xbar_B)"</span>, </span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Density"</span>) <span class="sc">+</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Text for True Difference </span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x =</span> true_diff_mean, <span class="at">y =</span> max_density <span class="sc">*</span> <span class="fl">0.95</span>), </span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>            <span class="at">label =</span> <span class="st">"True Difference: -5"</span>, </span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>            <span class="at">hjust =</span> <span class="fl">1.1</span>, <span class="at">size =</span> <span class="dv">4</span>) <span class="sc">+</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Text for Observed Difference </span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">x =</span> observed_diff, <span class="at">y =</span> max_density <span class="sc">*</span> <span class="fl">0.85</span>), </span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>            <span class="at">label =</span> <span class="fu">paste</span>(<span class="st">"Observed Difference:"</span>, <span class="fu">round</span>(observed_diff, <span class="dv">2</span>)), </span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>            <span class="at">hjust =</span> <span class="sc">-</span><span class="fl">0.1</span>, <span class="at">size =</span> <span class="dv">4</span>, <span class="at">color =</span> <span class="st">"darkgreen"</span>) <span class="sc">+</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="14_Hyp_testing_03_muddy_points_files/figure-html/plot-difference-distribution-stable-1.png" class="img-fluid figure-img" width="768"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="the-takeaway" class="level4">
+<h4 class="anchored" data-anchor-id="the-takeaway">The Takeaway</h4>
+<p>The final graph demonstrates the core concept:</p>
+<ol type="1">
+<li>We collect two samples and calculate their means, <span class="math inline">\(\bar{X}_A\)</span> and <span class="math inline">\(\bar{X}_B\)</span>.</li>
+<li>We compute the single value of the observed difference: <span class="math inline">\(\bar{X}_A - \bar{X}_B\)</span> (the dark green line).</li>
+<li>This single value is positioned on the single distribution (the purple curve), which represents the likelihood of obtaining any possible difference, assuming the true difference is <span class="math inline">\(\mu_A - \mu_B\)</span> (the dashed black line).</li>
+</ol>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
