@@ -7,7 +7,6 @@ format:
     toc: true
     toc_float:
       collapsed: false
-    theme: sandstone
     self-contained: true
     html-math-method: mathjax
 editor_options: 
@@ -206,6 +205,78 @@ FALSE.
 
 ::: blue
 No
+:::
+
+## 8.28 True or false, Part II {.unnumbered}
+
+### (a)  {.unnumbered}
+
+::: blue
+TRUE.
+:::
+
+### (b)  {.unnumbered}
+
+::: blue
+
+:::
+
+### (c)  {.unnumbered}
+
+::: blue
+
+:::
+
+### (d)  {.unnumbered}
+
+::: blue
+FALSE.
+:::
+
+
+## 8.34 Coffee and Depression {.unnumbered}
+
+### (a) {.unnumbered}
+
+::: blue
+Not given
+:::
+
+### (b)
+
+::: blue
+Partial: 
+$H_A$: There is an association between caffeinated coffee consumption and depression in women
+:::
+
+### (c)
+
+::: blue
+Overall, the proportion of women who do and not suffer from depression are 0.05 and 0.95, respectively.
+:::
+
+### (d)
+
+::: blue
+Expected count: 339.99
+:::
+
+### (e)
+
+::: blue
+P-value is 0.0003269
+:::
+
+### (f)
+
+::: blue
+Not given
+:::
+
+### (g)
+
+::: blue
+Not given
 :::
 
 # PSS

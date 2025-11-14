@@ -744,7 +744,7 @@ We are 95% confident that the difference in (population) mean finger taps/min be
 ## 95% CI for the difference in population mean taps (using R)
 
 ```{r}
-t.test(formula = Taps ~ Group, data = CaffTaps, var.equal = T)
+t.test(formula = Taps ~ Group, data = CaffTaps)
 ```
 
 ```{r}

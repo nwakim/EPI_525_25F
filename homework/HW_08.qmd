@@ -9,14 +9,9 @@ format:
       collapsed: false
     number-sections: true
     number-depth: 3
-    theme: lumen
     embed-resources: true
     html-math-method: mathjax
 ---
-
-::: callout-important
-Homework is ready to be worked on!! (11/24/24)
-:::
 
 ```{r}
 #| label: "setup"
@@ -38,13 +33,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-**Due Friday 12/6/24**
-
 ## Directions {.unnumbered}
 
-[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/EPI-525-1-15028-F24/tool/137d7c54-61a9-4727-9018-374c3773c508) This homework must be submitted using a Quarto document. **Please keep it rendered as an html!** I know past homeworks said pdf, but all Quarto docs should be rendered as html for this class!
+**Please turn in this homework on Sakai. You will need to turn in an html file and a qmd file,** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** 
 
-You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/F24_EPI_525/blob/main/homework/HW_08.qmd)
+You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/EPI_525_25F/blob/main/homework/HW_08.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**
 
 :::{.callout-tip}
 It is a good idea to try rendering your document from time to time as you go along!  Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
@@ -97,6 +90,10 @@ Are the results from CI and hypothesis test consistent? Why or why not?
 ## 8.14 2010 Healthcare Law {.unnumbered}
 
 ## 8.26 An apple a day keeps the doctor away {.unnumbered}
+
+## 8.28 True or false, Part II {.unnumbered}
+
+## 8.34 Coffee and Depression {.unnumbered}
 
 # PSS
 

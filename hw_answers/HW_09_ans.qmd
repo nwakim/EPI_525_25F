@@ -10,7 +10,6 @@ format:
       collapsed: false
     number-sections: true
     number-depth: 3
-    theme: lumen
     embed-resources: true
     html-math-method: mathjax
 ---

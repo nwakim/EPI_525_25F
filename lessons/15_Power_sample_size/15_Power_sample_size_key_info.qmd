@@ -1,6 +1,5 @@
 ---
 title: "Key Info and Announcements"
-date: "11/20/2024"
 date-modified: "today"
 format: 
   html:
@@ -11,25 +10,13 @@ editor_options:
 
 ## Announcements
 
-- Grading HW 3 presentations this week!!
-  
-- I made quite a few changes to the homeworks
-  - HW 10 is gone
-  - HW 9 is optional
-  - Instead of a HW assignment due over late November break
-    - HW 8 will include material from Week 8 and 9 and be due 12/5
-
-- HW 6 presentations
-  - Meetings during 12/9-12/12
-  - Videos due 12/10
-  - Let me know if this interferes with any of your other classes' exams
-
-- Anything else?
+- Homework 5
+  - Poisson probability
+    - $P(X \leq q)$ and $P(X > q)$, coding in R with the `lower.tail=F` turns it into greater than NOT greater than or equal
+  - When submitting a qmd and html, there are important settings at the top of my homework files
+    - Let's look at Homework 6 and the Github page for example
   
 
 ## Key Dates
 
-- Friday (11/22): HW 7 assignment due
-- Sunday (11/24): HW 6 solutions due
-  - Only one problem: everyone must turn in their own, full problem
 

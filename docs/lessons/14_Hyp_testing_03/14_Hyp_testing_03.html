@@ -1764,16 +1764,16 @@ We are 95% confident that the difference in (population) mean finger taps/min be
 <section id="ci-for-the-difference-in-population-mean-taps-using-r" class="slide level2">
 <h2>95% CI for the difference in population mean taps (using R)</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">t.test</span>(<span class="at">formula =</span> Taps <span class="sc">~</span> Group, <span class="at">data =</span> CaffTaps, <span class="at">var.equal =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a><span class="fu">t.test</span>(<span class="at">formula =</span> Taps <span class="sc">~</span> Group, <span class="at">data =</span> CaffTaps)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
-    Two Sample t-test
+    Welch Two Sample t-test
 
 data:  Taps by Group
-t = 6.0867, df = 68, p-value = 5.996e-08
+t = 6.0867, df = 67.002, p-value = 6.266e-08
 alternative hypothesis: true difference in means between group Caffeine and group NoCaffeine is not equal to 0
 95 percent confidence interval:
- 2.419768 4.780232
+ 2.41945 4.78055
 sample estimates:
   mean in group Caffeine mean in group NoCaffeine 
                 248.1143                 244.5143 </code></pre>
