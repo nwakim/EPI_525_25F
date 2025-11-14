@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Meike Niederhausen and Nicky Wakim">
-  <meta name="dcterms.date" content="2024-11-20">
-  <title>Biostatistics 1 – Lesson 14: Power and sample size calculations for means</title>
+  <meta name="dcterms.date" content="2025-11-17">
+  <title>Biostatistics 1 – Lesson 15: Power and sample size calculations for means</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -196,7 +196,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-color="#3070BF" class="quarto-title-block center">
-  <h1 class="title">Lesson 14: Power and sample size calculations for means</h1>
+  <h1 class="title">Lesson 15: Power and sample size calculations for means</h1>
   <p class="subtitle">TB sections 5.4</p>
 
 <div class="quarto-title-authors">
@@ -207,7 +207,7 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div>
 
-  <p class="date">2024-11-20</p>
+  <p class="date">2025-11-17</p>
 </section>
 <section>
 <section id="learning-objectives" class="title-slide slide level1 center">
@@ -226,8 +226,152 @@ Meike Niederhausen and Nicky Wakim
 <img data-src="../img_slides/course_map.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="before-we-get-into-power-and-sample-size" class="slide level2">
 <h2>Before we get into power and sample size</h2>
-<p>Let’s watch this youtube video to jog our memory (remind us of what we learned):</p>
+<p>Let’s watch this youtube video to remind us of what we learned (stop at 3:30):</p>
 <iframe data-external="1" src="https://www.youtube.com/embed/Q_pO9NzWxPY" width="1400" height="850" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</section>
+<section id="from-lesson-12-14-what-do-our-hypothesis-tests-look-like" class="slide level2">
+<h2>From Lesson 12-14: What do our hypothesis tests look like?</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<p>Single-sample mean:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-1-2.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-1-3.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<p>Paired mean difference:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-2-2.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-2-3.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<p>Diff in means of 2 ind samples:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-3-2.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-3-3.png" class="quarto-figure quarto-figure-center" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="from-lesson-12-14-what-do-our-hypothesis-tests-look-like-1" class="slide level2">
+<h2>From Lesson 12-14: What do our hypothesis tests look like?</h2>
+<p>Try filling out this table:</p>
+<table class="caption-top" style="width:99%;">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 30%">
+<col style="width: 30%">
+<col style="width: 24%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>One-sample</th>
+<th>Independent two-sample</th>
+<th>Paired sample</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Example</td>
+<td>Body temp: Population mean is 98.6°F, is sample different?</td>
+<td>Caffeine: taps/min between caffeine and non-caffeine group</td>
+<td>Vegetarian diet: cholesterol before and after</td>
+</tr>
+<tr class="even">
+<td>Sample statistic</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Population parameter</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Possible hypothesis tests</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Standard error</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Test statistic</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Confidence intervals</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section></section>
 <section>
 <section id="learning-objectives-1" class="title-slide slide level1 center">
@@ -244,10 +388,10 @@ Meike Niederhausen and Nicky Wakim
 <li>Using R, calculate power and sample size for a single mean t-test and two independent mean t-test.</li>
 </ol>
 </section>
-<section id="from-lesson-13-does-caffeine-increase-finger-tapsmin-on-average" class="slide level2">
-<h2>From Lesson 13: Does caffeine increase finger taps/min (on average)?</h2>
+<section id="from-lesson-14-does-caffeine-increase-finger-tapsmin-on-average" class="slide level2">
+<h2>From Lesson 14: Does caffeine increase finger taps/min (on average)?</h2>
 <ul>
-<li><span style="color:#5BAFF8"><strong>Use this example to illustrate how to calculate a confidence interval and perform a hypothesis test for two independent samples</strong></span></li>
+<li><span style="color:#5BAFF8"><strong>Used this example to illustrate how to calculate a confidence interval and perform a hypothesis test for two independent samples</strong></span></li>
 </ul>
 <p><strong>Study Design</strong>:<sup>1</sup></p>
 <ul>
@@ -274,15 +418,15 @@ Meike Niederhausen and Nicky Wakim
 </details>
 
 </div>
-<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
 <section id="what-if-the-following-were-the-true-population-distributions-case-1" class="slide level2">
 <h2>What if the following were the true population distributions? Case 1</h2>
 <ul>
-<li>Difference in population means is <strong>5</strong></li>
+<li>Difference in population means is <strong>5</strong>: caffeine has 5 taps/min more on average</li>
 <li>Both have a standard deviation of 2</li>
 </ul>
 
-<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
+<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-6-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
 <li>When we take two samples from these groups, do you think it would be easy to distinguish between the mean taps/min?
 <ul>
 <li><strong>Depends on the number of samples we get: we might need a lot</strong></li>
@@ -296,7 +440,7 @@ Meike Niederhausen and Nicky Wakim
 <li>Both have a standard deviation of 1</li>
 </ul>
 
-<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
+<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
 <li>When we take two samples from these groups, do you think it would be easy to distinguish between the mean taps/min?
 <ul>
 <li><strong>Seems easier to distinguish here.</strong> How did the standard deviation decrease?</li>
@@ -310,7 +454,7 @@ Meike Niederhausen and Nicky Wakim
 <li>Both have a standard deviation of 2</li>
 </ul>
 
-<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
+<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"><ul>
 <li>When we take two samples from these groups, do you think it would be easy to distinguish between the mean taps/min?
 <ul>
 <li><strong>Also seems easier to distinguish here</strong></li>
@@ -369,7 +513,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -451,10 +595,10 @@ Meike Niederhausen and Nicky Wakim
 <section id="what-does-that-look-like-with-our-two-populations" class="slide level2">
 <h2>What does that look like with our two populations?</h2>
 <div class="columns">
-<div class="column" style="width:45%;">
+<div class="column" style="width:48%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../img_slides/type-i-and-type-ii-errors_chart.png" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="../img_slides/type-i-and-type-ii-errors_chart.png" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
 </figure>
 </div>
 <ul>
@@ -466,18 +610,18 @@ Meike Niederhausen and Nicky Wakim
 <li><span style="color:darkorange"><span class="math inline">\(\beta\)</span></span> = probability of making a <span style="color:darkorange"><strong>Type II error</strong></span></li>
 <li>Ideally we want
 <ul>
-<li>small Type I &amp; II errors and</li>
-<li>big power</li>
+<li>Small Type I &amp; II errors</li>
+<li>Big power</li>
 </ul></li>
 </ul>
-</div><div class="column" style="width:5%;">
+</div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -517,7 +661,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-8-1.png" width="960"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-11-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -613,11 +757,12 @@ Meike Niederhausen and Nicky Wakim
 <h2>Example calculating power (1/3)</h2>
 <p>Let’s say we have:</p>
 <ul>
-<li>a null population with a normal distribution, centered at 0 with a standard deviation of 1 (<span class="math inline">\(X_0 \sim Norm(0,1)\)</span>)</li>
-<li>an alternative population, centered at 3 with a standard deviation of 1 (<span class="math inline">\(X_A \sim Norm(3,1)\)</span>)</li>
+<li>a <span style="color:#E75B5C">null population</span> with a normal distribution, centered at 0 with a standard deviation of 1 (<span class="math inline">\(X_0 \sim Norm(0,1)\)</span>)</li>
+<li>an <span style="color:#3070BF">alternative population</span>, with normal dist’n, centered at 3 with standard deviation of 1 (<span class="math inline">\(X_A \sim Norm(3,1)\)</span>)</li>
 </ul>
 <p>Find the power of a 2-sided test if the actual mean is <span class="math inline">\(3\)</span> and our significance level is 0.05.</p>
-</section>
+
+<img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" width="576"></section>
 <section id="example-calculating-power-23" class="slide level2">
 <h2>Example calculating power (2/3)</h2>
 <p>Let’s say we have:</p>
@@ -632,7 +777,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-9-1.png" width="960"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-13-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -657,7 +802,7 @@ Meike Niederhausen and Nicky Wakim
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-10-1.png" width="960"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-14-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -739,8 +884,10 @@ Meike Niederhausen and Nicky Wakim
 </div><div class="column" style="width:2%;">
 
 </div><div class="column" style="width:20%;">
-<p><span class="math display">\[d = \frac{\mu-\mu_0}{s}\]</span></p>
-</div><div class="column" style="width:45%;">
+<p><span class="math display">\[d = \frac{\overline{x}-\mu_0}{s}\]</span></p>
+</div><div class="column" style="width:20%;">
+<p><span class="math display">\[d = \frac{\overline{x}_d-\delta_0}{s_d}\]</span></p>
+</div><div class="column" style="width:25%;">
 
 </div></div>
 <div class="columns">
@@ -758,35 +905,6 @@ Meike Niederhausen and Nicky Wakim
 <li><span class="math inline">\(s_{pooled}\)</span> is the pooled SD between the two groups - often assume have same sd in each group</li>
 </ul>
 </section>
-<section id="power-calculation-for-testing-one-mean" class="slide level2">
-<h2><strong>Power</strong> calculation for testing one mean</h2>
-<div style="font-size: 90%;">
-<p>Conversely, we can calculate how much power we had in our body temperature one-sample test, given the sample size of 130.</p>
-<ul>
-<li><span style="color:green"><strong>Calculate power</strong></span>,
-<ul>
-<li>given <span class="math inline">\(\alpha\)</span>, <span class="math inline">\(n\)</span>, “true” alternative mean <span class="math inline">\(\mu\)</span>, and null <span class="math inline">\(\mu_0\)</span>,</li>
-<li><em>assuming</em> the test statistic is normal (instead of t-distribution)</li>
-</ul></li>
-</ul>
-<p><span class="math display">\[1-\beta=
-        P\left(Z \leq z-z_{1-\alpha/2}\right)+P\left(Z \leq -z-z_{1-\alpha/2}\right)
-        \quad ,\quad \text{where } z=\frac{\mu-\mu_0}{s/\sqrt{n}}\]</span></p>
-<p><span class="math inline">\(\Phi\)</span> is the probability for a standard normal distribution</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>mu <span class="ot">&lt;-</span> <span class="fl">98.25</span>; mu0 <span class="ot">&lt;-</span> <span class="fl">98.6</span>; sd <span class="ot">&lt;-</span> <span class="fl">0.73</span>; alpha <span class="ot">&lt;-</span> <span class="fl">0.05</span>; n <span class="ot">&lt;-</span> <span class="dv">130</span></span>
-<span id="cb5-2"><a></a>(z <span class="ot">&lt;-</span> (mu<span class="sc">-</span>mu0) <span class="sc">/</span> (sd<span class="sc">/</span><span class="fu">sqrt</span>(n)) )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] -5.466595</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>(Power <span class="ot">&lt;-</span> <span class="fu">pnorm</span>(z<span class="sc">-</span><span class="fu">qnorm</span>(<span class="dv">1</span><span class="sc">-</span>alpha<span class="sc">/</span><span class="dv">2</span>)) <span class="sc">+</span> <span class="fu">pnorm</span>(<span class="sc">-</span>z<span class="sc">-</span><span class="fu">qnorm</span>(<span class="dv">1</span><span class="sc">-</span>alpha<span class="sc">/</span><span class="dv">2</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 0.9997731</code></pre>
-</div>
-</div>
-<p>If the population mean is 98.2 instead of 98.6, we have a 99.98% chance of correctly rejecting <span class="math inline">\(H_0\)</span> when the sample size is 130.</p>
-</div>
-</section>
 <section id="sample-size-calculation-for-testing-one-mean" class="slide level2">
 <h2><strong>Sample size</strong> calculation for testing one mean</h2>
 <ul>
@@ -797,8 +915,8 @@ Meike Niederhausen and Nicky Wakim
 </ul></li>
 <li><strong>Calculate</strong> <span class="math inline">\(n\)</span>
 <ul>
-<li>given <span class="math inline">\(\alpha\)</span>, power ( <span class="math inline">\(1-\beta\)</span> ), “true” alternative mean <span class="math inline">\(\mu\)</span>, and null <span class="math inline">\(\mu_0\)</span></li>
-<li>Calculate <code>d</code>: <span class="math inline">\(d = \frac{\mu-\mu_0}{s}\)</span></li>
+<li>Given <span class="math inline">\(\alpha\)</span>, power ( <span class="math inline">\(1-\beta\)</span> ), “true” alternative mean <span class="math inline">\(\mu\)</span>, and null <span class="math inline">\(\mu_0\)</span></li>
+<li>Using calculated <code>d</code>: <span class="math display">\[d = \frac{\overline{x}-\mu_0}{s}\]</span></li>
 </ul></li>
 </ul>
 </section>
@@ -808,14 +926,14 @@ Meike Niederhausen and Nicky Wakim
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">library</span>(pwr)</span>
-<span id="cb9-2"><a></a>t.n <span class="ot">&lt;-</span> <span class="fu">pwr.t.test</span>(</span>
-<span id="cb9-3"><a></a>  <span class="at">d =</span> (<span class="fl">98.6-98.25</span>)<span class="sc">/</span><span class="fl">0.73</span>, </span>
-<span id="cb9-4"><a></a>  <span class="at">sig.level =</span> <span class="fl">0.05</span>, </span>
-<span id="cb9-5"><a></a>  <span class="at">power =</span> <span class="fl">0.80</span>, </span>
-<span id="cb9-6"><a></a>  <span class="at">type =</span> <span class="st">"one.sample"</span>)</span>
-<span id="cb9-7"><a></a></span>
-<span id="cb9-8"><a></a>t.n</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">library</span>(pwr)</span>
+<span id="cb5-2"><a></a>t.n <span class="ot">&lt;-</span> <span class="fu">pwr.t.test</span>(</span>
+<span id="cb5-3"><a></a>  <span class="at">d =</span> (<span class="fl">98.6-98.25</span>)<span class="sc">/</span><span class="fl">0.73</span>, </span>
+<span id="cb5-4"><a></a>  <span class="at">sig.level =</span> <span class="fl">0.05</span>, </span>
+<span id="cb5-5"><a></a>  <span class="at">power =</span> <span class="fl">0.80</span>, </span>
+<span id="cb5-6"><a></a>  <span class="at">type =</span> <span class="st">"one.sample"</span>)</span>
+<span id="cb5-7"><a></a></span>
+<span id="cb5-8"><a></a>t.n</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
      One-sample t test power calculation 
@@ -829,11 +947,11 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div><div class="column" style="width:60%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">plot</span>(t.n)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">plot</span>(t.n)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-15-1.png" width="768"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-18-1.png" width="768"></p>
 </figure>
 </div>
 </div>
@@ -847,14 +965,14 @@ Meike Niederhausen and Nicky Wakim
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>t.power <span class="ot">&lt;-</span> <span class="fu">pwr.t.test</span>(</span>
-<span id="cb12-2"><a></a>  <span class="at">d =</span> (<span class="fl">98.6-98.25</span>)<span class="sc">/</span><span class="fl">0.73</span>, </span>
-<span id="cb12-3"><a></a>  <span class="at">sig.level =</span> <span class="fl">0.05</span>, </span>
-<span id="cb12-4"><a></a>  <span class="co"># power = 0.80, </span></span>
-<span id="cb12-5"><a></a>  <span class="at">n =</span> <span class="dv">130</span>,</span>
-<span id="cb12-6"><a></a>  <span class="at">type =</span> <span class="st">"one.sample"</span>)</span>
-<span id="cb12-7"><a></a></span>
-<span id="cb12-8"><a></a>t.power</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>t.power <span class="ot">&lt;-</span> <span class="fu">pwr.t.test</span>(</span>
+<span id="cb8-2"><a></a>  <span class="at">d =</span> (<span class="fl">98.6-98.25</span>)<span class="sc">/</span><span class="fl">0.73</span>, </span>
+<span id="cb8-3"><a></a>  <span class="at">sig.level =</span> <span class="fl">0.05</span>, </span>
+<span id="cb8-4"><a></a>  <span class="co"># power = 0.80, </span></span>
+<span id="cb8-5"><a></a>  <span class="at">n =</span> <span class="dv">130</span>,</span>
+<span id="cb8-6"><a></a>  <span class="at">type =</span> <span class="st">"one.sample"</span>)</span>
+<span id="cb8-7"><a></a></span>
+<span id="cb8-8"><a></a>t.power</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
      One-sample t test power calculation 
@@ -868,11 +986,11 @@ Meike Niederhausen and Nicky Wakim
 </div>
 </div><div class="column" style="width:60%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a><span class="fu">plot</span>(t.power)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">plot</span>(t.power)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-17-1.png" width="960"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-20-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -885,15 +1003,14 @@ Meike Niederhausen and Nicky Wakim
 <p><strong>Example</strong>: Let’s revisit our caffeine taps study. Investigators want to know what sample size they would need to detect a 2 point difference between the two groups. Assume the SD in both group samples is 2.6.</p>
 <p>Specify all parameters <em>except for</em> the sample size:</p>
 <div class="columns">
-<div class="column" style="width:45%;">
+<div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>t2.n <span class="ot">&lt;-</span> <span class="fu">pwr.t.test</span>(</span>
-<span id="cb15-2"><a></a>  <span class="at">d =</span> <span class="dv">2</span><span class="sc">/</span><span class="fl">2.6</span>, </span>
-<span id="cb15-3"><a></a>  <span class="at">sig.level =</span> <span class="fl">0.05</span>, </span>
-<span id="cb15-4"><a></a>  <span class="at">power =</span> <span class="fl">0.80</span>, </span>
-<span id="cb15-5"><a></a>  <span class="at">type =</span> <span class="st">"two.sample"</span>) </span>
-<span id="cb15-6"><a></a></span>
-<span id="cb15-7"><a></a>t2.n</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>t2.n <span class="ot">&lt;-</span> <span class="fu">pwr.t.test</span>(</span>
+<span id="cb11-2"><a></a>  <span class="at">d =</span> <span class="dv">2</span><span class="sc">/</span><span class="fl">2.6</span>, </span>
+<span id="cb11-3"><a></a>  <span class="at">sig.level =</span> <span class="fl">0.05</span>, </span>
+<span id="cb11-4"><a></a>  <span class="at">power =</span> <span class="fl">0.80</span>, </span>
+<span id="cb11-5"><a></a>  <span class="at">type =</span> <span class="st">"two.sample"</span>) </span>
+<span id="cb11-6"><a></a>t2.n</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
      Two-sample t test power calculation 
@@ -907,35 +1024,33 @@ Meike Niederhausen and Nicky Wakim
 NOTE: n is number in *each* group</code></pre>
 </div>
 </div>
-</div><div class="column" style="width:55%;">
+</div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a><span class="fu">plot</span>(t2.n)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">plot</span>(t2.n)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
 </figure>
 </div>
 </div>
 </div>
-<p>We <strong>need 28 individuals</strong> to detect this difference with 80% power.</p>
+<p>We <strong>need 28 individuals in each group</strong> to detect this difference with 80% power.</p>
 </div></div>
-<p>::::::</p>
 </section>
 <section id="pwr-two-sample-t-test-power" class="slide level2">
 <h2><code>pwr</code>: Two-sample t-test: <strong>power</strong></h2>
 <p><strong>Example</strong>: Let’s revisit our caffeine taps study. Investigators want to know what power they have to detect a 2 point difference between the two groups. The two groups are both size 35 (like in our previous example). Assume the SD in both group samples is 2.6.</p>
 <p>Specify all parameters <em>except for</em> the power:</p>
 <div class="columns">
-<div class="column" style="width:45%;">
+<div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>t2.power <span class="ot">&lt;-</span> <span class="fu">pwr.t.test</span>(</span>
-<span id="cb18-2"><a></a>  <span class="at">d =</span> <span class="dv">2</span><span class="sc">/</span><span class="fl">2.3</span>, </span>
-<span id="cb18-3"><a></a>  <span class="at">sig.level =</span> <span class="fl">0.05</span>, </span>
-<span id="cb18-4"><a></a>  <span class="at">n =</span> <span class="dv">35</span>,</span>
-<span id="cb18-5"><a></a>  <span class="at">type =</span> <span class="st">"two.sample"</span>) </span>
-<span id="cb18-6"><a></a></span>
-<span id="cb18-7"><a></a>t2.power</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>t2.power <span class="ot">&lt;-</span> <span class="fu">pwr.t.test</span>(</span>
+<span id="cb14-2"><a></a>  <span class="at">d =</span> <span class="dv">2</span><span class="sc">/</span><span class="fl">2.3</span>, </span>
+<span id="cb14-3"><a></a>  <span class="at">sig.level =</span> <span class="fl">0.05</span>, </span>
+<span id="cb14-4"><a></a>  <span class="at">n =</span> <span class="dv">35</span>,</span>
+<span id="cb14-5"><a></a>  <span class="at">type =</span> <span class="st">"two.sample"</span>) </span>
+<span id="cb14-6"><a></a>t2.power</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
      Two-sample t test power calculation 
@@ -949,13 +1064,13 @@ NOTE: n is number in *each* group</code></pre>
 NOTE: n is number in *each* group</code></pre>
 </div>
 </div>
-</div><div class="column" style="width:55%;">
+</div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">plot</span>(t2.power)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="fu">plot</span>(t2.power)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-21-1.png" width="960"></p>
+<p><img data-src="15_Power_sample_size_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
 </figure>
 </div>
 </div>
@@ -1020,7 +1135,7 @@ NOTE: n is number in *each* group</code></pre>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>Lesson 14 Slides</p>
+<p>Lesson 15 Slides</p>
 </div>
 </div></div>
 
