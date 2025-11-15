@@ -15,6 +15,8 @@ editor_options:
     - $P(X \leq q)$ and $P(X > q)$, coding in R with the `lower.tail=F` turns it into greater than NOT greater than or equal
   - When submitting a qmd and html, there are important settings at the top of my homework files
     - Let's look at Homework 6 and the Github page for example
+  - Sorry if you received feedback that you did not submit an html 
+    - Certain view settings that the TAs had - all fixed now
   
 
 ## Key Dates
