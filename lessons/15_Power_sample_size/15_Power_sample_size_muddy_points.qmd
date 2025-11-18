@@ -1,6 +1,6 @@
 ---
 title: "Muddy Points"
-subtitle: "Lesson 14: Power and sample size calculations for means"
+subtitle: "Lesson 15: Power and sample size calculations for means"
 date-modified: "today"
 format: 
   html:
@@ -13,7 +13,13 @@ editor_options:
   chunk_output_type: console
 ---
 
-## Do critical values dictate the rejection region? What helps to specify rejection region?
+## Fall 2025
+
+
+
+## Fall 2024
+
+### Do critical values dictate the rejection region? What helps to specify rejection region?
 
 I would say the significance level usually dictates the critical value and the rejection region.
 
@@ -197,7 +203,7 @@ t_dist_plot
 
 So a t-value of 2 is in the rejection region because 2 is greater than 1.677. 
 
-## Some extra videos on power and power analysis
+### Some extra videos on power and power analysis
 
 Here are two videos from StatQuest that I like:
 - [Statistical Power](https://www.youtube.com/watch?v=Rsc5znwR5FA&t=199s&ab_channel=StatQuestwithJoshStarmer)
