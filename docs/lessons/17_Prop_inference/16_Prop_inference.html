@@ -1,0 +1,3398 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Meike Niederhausen and Nicky Wakim">
+<meta name="dcterms.date" content="2024-11-25">
+
+<title>Lesson 15: Inference for a single proportion or difference of two (independent) proportions – Biostatistics 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4da70dc0036a0ccd620c9bcbe25ad2b8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-sm " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/EPI_525.png" alt="" class="navbar-logo light-content">
+    <img src="../../images/EPI_525.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Biostatistics 1</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../schedule.html"> 
+<span class="menu-text">Schedule</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../instructors.html"> 
+<span class="menu-text">Instructors</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../homework.html"> 
+<span class="menu-text">Homework</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../quiz.html"> 
+<span class="menu-text">Quizzes</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#where-are-we" id="toc-where-are-we" class="nav-link" data-scroll-target="#where-are-we">Where are we?</a></li>
+  </ul></li>
+  <li><a href="#learning-objectives-1" id="toc-learning-objectives-1" class="nav-link" data-scroll-target="#learning-objectives-1">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#moving-to-categorical-outcomes" id="toc-moving-to-categorical-outcomes" class="nav-link" data-scroll-target="#moving-to-categorical-outcomes">Moving to categorical outcomes</a></li>
+  <li><a href="#from-lesson-5-binomial-random-variable" id="toc-from-lesson-5-binomial-random-variable" class="nav-link" data-scroll-target="#from-lesson-5-binomial-random-variable">From Lesson 5: Binomial random variable</a></li>
+  <li><a href="#from-lesson-5-binomial-distribution" id="toc-from-lesson-5-binomial-distribution" class="nav-link" data-scroll-target="#from-lesson-5-binomial-distribution">From Lesson 5: Binomial distribution</a></li>
+  <li><a href="#from-lesson-6-normal-approximation-of-the-binomial-distribution" id="toc-from-lesson-6-normal-approximation-of-the-binomial-distribution" class="nav-link" data-scroll-target="#from-lesson-6-normal-approximation-of-the-binomial-distribution">From Lesson 6: Normal Approximation of the Binomial Distribution</a></li>
+  <li><a href="#poll-everywhere-question-1" id="toc-poll-everywhere-question-1" class="nav-link" data-scroll-target="#poll-everywhere-question-1">Poll Everywhere Question 1</a></li>
+  <li><a href="#sampling-distribution-of-hatp" id="toc-sampling-distribution-of-hatp" class="nav-link" data-scroll-target="#sampling-distribution-of-hatp">Sampling distribution of <span class="math inline">\(\hat{p}\)</span></a></li>
+  <li><a href="#for-proportions-population-parameters-vs.-sample-statistics" id="toc-for-proportions-population-parameters-vs.-sample-statistics" class="nav-link" data-scroll-target="#for-proportions-population-parameters-vs.-sample-statistics">For proportions: Population parameters vs.&nbsp;sample statistics</a></li>
+  <li><a href="#approaches-to-answer-a-research-question" id="toc-approaches-to-answer-a-research-question" class="nav-link" data-scroll-target="#approaches-to-answer-a-research-question">Approaches to answer a research question</a></li>
+  <li><a href="#r-code-1--and-2-sample-proportions-tests" id="toc-r-code-1--and-2-sample-proportions-tests" class="nav-link" data-scroll-target="#r-code-1--and-2-sample-proportions-tests">R code: 1- and 2-sample proportions tests</a></li>
+  </ul></li>
+  <li><a href="#learning-objectives-2" id="toc-learning-objectives-2" class="nav-link" data-scroll-target="#learning-objectives-2">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#example-immune-response-to-advanced-melanoma" id="toc-example-immune-response-to-advanced-melanoma" class="nav-link" data-scroll-target="#example-immune-response-to-advanced-melanoma">Example: immune response to advanced melanoma</a></li>
+  <li><a href="#reference-steps-in-a-hypothesis-test" id="toc-reference-steps-in-a-hypothesis-test" class="nav-link" data-scroll-target="#reference-steps-in-a-hypothesis-test">Reference: Steps in a Hypothesis Test</a></li>
+  <li><a href="#step-1-check-the-assumptions-easier-to-do-after-step-3" id="toc-step-1-check-the-assumptions-easier-to-do-after-step-3" class="nav-link" data-scroll-target="#step-1-check-the-assumptions-easier-to-do-after-step-3">Step 1: Check the assumptions (easier to do after Step 3)</a></li>
+  <li><a href="#step-2-set-the-level-of-significance" id="toc-step-2-set-the-level-of-significance" class="nav-link" data-scroll-target="#step-2-set-the-level-of-significance">Step 2: Set the level of significance</a></li>
+  <li><a href="#step-3-null-alternative-hypotheses-12" id="toc-step-3-null-alternative-hypotheses-12" class="nav-link" data-scroll-target="#step-3-null-alternative-hypotheses-12">Step 3: Null &amp; Alternative Hypotheses (1/2)</a></li>
+  <li><a href="#step-3-null-alternative-hypotheses-22" id="toc-step-3-null-alternative-hypotheses-22" class="nav-link" data-scroll-target="#step-3-null-alternative-hypotheses-22">Step 3: Null &amp; Alternative Hypotheses (2/2)</a></li>
+  <li><a href="#step-4-test-statistic" id="toc-step-4-test-statistic" class="nav-link" data-scroll-target="#step-4-test-statistic">Step 4: Test statistic</a></li>
+  <li><a href="#step-4-test-statistic-1" id="toc-step-4-test-statistic-1" class="nav-link" data-scroll-target="#step-4-test-statistic-1">Step 4: Test statistic</a></li>
+  <li><a href="#poll-everywhere-question-2" id="toc-poll-everywhere-question-2" class="nav-link" data-scroll-target="#poll-everywhere-question-2">Poll Everywhere Question 2</a></li>
+  <li><a href="#step-5-p-value" id="toc-step-5-p-value" class="nav-link" data-scroll-target="#step-5-p-value">Step 5: p-value</a></li>
+  <li><a href="#step-4-5-test-statistic-and-p-value-together-using-prop.test" id="toc-step-4-5-test-statistic-and-p-value-together-using-prop.test" class="nav-link" data-scroll-target="#step-4-5-test-statistic-and-p-value-together-using-prop.test">Step 4-5: test statistic and p-value together using <code>prop.test()</code></a></li>
+  <li><a href="#step-6-conclusion-to-hypothesis-test" id="toc-step-6-conclusion-to-hypothesis-test" class="nav-link" data-scroll-target="#step-6-conclusion-to-hypothesis-test">Step 6: Conclusion to hypothesis test</a></li>
+  </ul></li>
+  <li><a href="#learning-objectives-3" id="toc-learning-objectives-3" class="nav-link" data-scroll-target="#learning-objectives-3">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#conditions-for-one-proportion-test-vs.-ci" id="toc-conditions-for-one-proportion-test-vs.-ci" class="nav-link" data-scroll-target="#conditions-for-one-proportion-test-vs.-ci">Conditions for one proportion: <strong>test vs.&nbsp;CI</strong></a></li>
+  <li><a href="#ci-for-population-proportion" id="toc-ci-for-population-proportion" class="nav-link" data-scroll-target="#ci-for-population-proportion">95% CI for population proportion</a></li>
+  <li><a href="#ci-for-population-proportion-of-immune-response-by-hand" id="toc-ci-for-population-proportion-of-immune-response-by-hand" class="nav-link" data-scroll-target="#ci-for-population-proportion-of-immune-response-by-hand">95% CI for population proportion of immune response by hand</a></li>
+  <li><a href="#ci-for-population-proportion-of-immune-response-using-r" id="toc-ci-for-population-proportion-of-immune-response-using-r" class="nav-link" data-scroll-target="#ci-for-population-proportion-of-immune-response-using-r">95% CI for population proportion of immune response using R</a></li>
+  </ul></li>
+  <li><a href="#break-time" id="toc-break-time" class="nav-link" data-scroll-target="#break-time">Break Time!</a></li>
+  <li><a href="#learning-objectives-4" id="toc-learning-objectives-4" class="nav-link" data-scroll-target="#learning-objectives-4">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#inference-for-difference-of-two-independent-proportions-hatp_1-hatp_2" id="toc-inference-for-difference-of-two-independent-proportions-hatp_1-hatp_2" class="nav-link" data-scroll-target="#inference-for-difference-of-two-independent-proportions-hatp_1-hatp_2">Inference for difference of two independent proportions <br> <span class="math inline">\(\hat{p}_1-\hat{p}_2\)</span></a></li>
+  <li><a href="#poll-everywhere-question-3" id="toc-poll-everywhere-question-3" class="nav-link" data-scroll-target="#poll-everywhere-question-3">Poll Everywhere Question 3</a></li>
+  <li><a href="#for-difference-in-proportions-population-parameters-vs.-sample-statistics" id="toc-for-difference-in-proportions-population-parameters-vs.-sample-statistics" class="nav-link" data-scroll-target="#for-difference-in-proportions-population-parameters-vs.-sample-statistics">For difference in proportions: Population parameters vs.&nbsp;sample statistics</a></li>
+  <li><a href="#sampling-distribution-of-hatp_1-hatp_2" id="toc-sampling-distribution-of-hatp_1-hatp_2" class="nav-link" data-scroll-target="#sampling-distribution-of-hatp_1-hatp_2">Sampling distribution of <span class="math inline">\(\hat{p}_1-\hat{p}_2\)</span></a></li>
+  <li><a href="#approaches-to-answer-a-research-question-1" id="toc-approaches-to-answer-a-research-question-1" class="nav-link" data-scroll-target="#approaches-to-answer-a-research-question-1">Approaches to answer a research question</a></li>
+  </ul></li>
+  <li><a href="#learning-objectives-5" id="toc-learning-objectives-5" class="nav-link" data-scroll-target="#learning-objectives-5">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#motivating-example-effectiveness-of-mammograms" id="toc-motivating-example-effectiveness-of-mammograms" class="nav-link" data-scroll-target="#motivating-example-effectiveness-of-mammograms">Motivating example: effectiveness of mammograms</a></li>
+  <li><a href="#reference-steps-in-a-hypothesis-test-1" id="toc-reference-steps-in-a-hypothesis-test-1" class="nav-link" data-scroll-target="#reference-steps-in-a-hypothesis-test-1">Reference: Steps in a Hypothesis Test</a></li>
+  <li><a href="#before-we-start-we-need-to-calculate-the-pooled-proportion" id="toc-before-we-start-we-need-to-calculate-the-pooled-proportion" class="nav-link" data-scroll-target="#before-we-start-we-need-to-calculate-the-pooled-proportion">Before we start, we need to calculate the pooled proportion</a></li>
+  <li><a href="#poll-everywhere-question-4" id="toc-poll-everywhere-question-4" class="nav-link" data-scroll-target="#poll-everywhere-question-4">Poll Everywhere Question 4</a></li>
+  <li><a href="#step-1-check-the-assumptions" id="toc-step-1-check-the-assumptions" class="nav-link" data-scroll-target="#step-1-check-the-assumptions">Step 1: Check the assumptions</a></li>
+  <li><a href="#step-3-null-and-alternative-hypothesis-test" id="toc-step-3-null-and-alternative-hypothesis-test" class="nav-link" data-scroll-target="#step-3-null-and-alternative-hypothesis-test">Step 3: Null and Alternative Hypothesis test</a></li>
+  <li><a href="#step-4-test-statistic-12" id="toc-step-4-test-statistic-12" class="nav-link" data-scroll-target="#step-4-test-statistic-12">Step 4: Test statistic (1/2)</a></li>
+  <li><a href="#step-4-test-statistic-22" id="toc-step-4-test-statistic-22" class="nav-link" data-scroll-target="#step-4-test-statistic-22">Step 4: Test statistic (2/2)</a></li>
+  <li><a href="#step-5-p-value-1" id="toc-step-5-p-value-1" class="nav-link" data-scroll-target="#step-5-p-value-1">Step 5: p-value</a></li>
+  <li><a href="#step-4-5-test-statistic-and-p-value-together-using-prop.test-1" id="toc-step-4-5-test-statistic-and-p-value-together-using-prop.test-1" class="nav-link" data-scroll-target="#step-4-5-test-statistic-and-p-value-together-using-prop.test-1">Step 4-5: test statistic and p-value together using <code>prop.test()</code></a></li>
+  <li><a href="#step-6-conclusion-to-hypothesis-test-1" id="toc-step-6-conclusion-to-hypothesis-test-1" class="nav-link" data-scroll-target="#step-6-conclusion-to-hypothesis-test-1">Step 6: Conclusion to hypothesis test</a></li>
+  </ul></li>
+  <li><a href="#learning-objectives-6" id="toc-learning-objectives-6" class="nav-link" data-scroll-target="#learning-objectives-6">Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#conditions-for-difference-in-proportions-test-vs.-ci" id="toc-conditions-for-difference-in-proportions-test-vs.-ci" class="nav-link" data-scroll-target="#conditions-for-difference-in-proportions-test-vs.-ci">Conditions for difference in proportions: <strong>test vs.&nbsp;CI</strong></a></li>
+  <li><a href="#poll-everywhere-question-5" id="toc-poll-everywhere-question-5" class="nav-link" data-scroll-target="#poll-everywhere-question-5">Poll Everywhere Question 5</a></li>
+  <li><a href="#ci-for-population-difference-in-proportions" id="toc-ci-for-population-difference-in-proportions" class="nav-link" data-scroll-target="#ci-for-population-difference-in-proportions">95% CI for population difference in proportions</a></li>
+  <li><a href="#ci-for-the-population-difference-in-proportions" id="toc-ci-for-the-population-difference-in-proportions" class="nav-link" data-scroll-target="#ci-for-the-population-difference-in-proportions">95% CI for the population difference in proportions</a></li>
+  <li><a href="#ci-for-the-population-difference-in-proportions-1" id="toc-ci-for-the-population-difference-in-proportions-1" class="nav-link" data-scroll-target="#ci-for-the-population-difference-in-proportions-1">95% CI for the population difference in proportions</a></li>
+  </ul></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="16_Prop_inference.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Lesson 15: Inference for a single proportion or difference of two (independent) proportions</h1>
+<p class="subtitle lead">TB sections 8.1-8.2</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Meike Niederhausen and Nicky Wakim </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">November 25, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level1">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li><p>Remind ourselves of the Normal approximation of the binomial distribution and define the sampling distribution of a sample proportion</p></li>
+<li><p>Run a hypothesis test for a single proportion and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a single proportion.</p></li>
+<li><p>Understand how CLT applies to a difference in binomial random variables</p></li>
+<li><p>Run a hypothesis test for a difference in proportions and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a difference in proportions.</p></li>
+</ol>
+<div class="cell">
+<style type="text/css">
+.reveal code {
+  max-height: 100% !important;
+}
+</style>
+</div>
+<section id="where-are-we" class="level2">
+<h2 class="anchored" data-anchor-id="where-are-we">Where are we?</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img_slides/course_map.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</section>
+</section>
+<section id="learning-objectives-1" class="level1">
+<h1>Learning Objectives</h1>
+<div class="lob">
+<ol type="1">
+<li>Remind ourselves of the Normal approximation of the binomial distribution and define the sampling distribution of a sample proportion</li>
+</ol>
+</div>
+<ol start="2" type="1">
+<li><p>Run a hypothesis test for a single proportion and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a single proportion.</p></li>
+<li><p>Understand how CLT applies to a difference in binomial random variables</p></li>
+<li><p>Run a hypothesis test for a difference in proportions and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a difference in proportions.</p></li>
+</ol>
+<section id="moving-to-categorical-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="moving-to-categorical-outcomes">Moving to categorical outcomes</h2>
+<ul>
+<li><p>Previously, we have discussed methods of inference for numerical data</p>
+<ul>
+<li>Our outcomes were numerical values</li>
+<li>We were doing inference of <strong>means</strong></li>
+<li>We found confidence intervals for means</li>
+<li>We ran hypothesis tests for means</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Above methods used can be extended to <strong>categorical data</strong>, such as binomial <strong>proportions</strong> or data in two-way tables</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><p><strong>Categorical data arise frequently in medical research</strong></p>
+<ul>
+<li>Disease outcomes and patient characteristics are often recorded in natural categories</li>
+<li><strong>Examples:</strong> types of treatment received, whether or not disease advanced to a later stage, or whether or not a patient responded initially to a treatment</li>
+</ul></li>
+</ul>
+</section>
+<section id="from-lesson-5-binomial-random-variable" class="level2">
+<h2 class="anchored" data-anchor-id="from-lesson-5-binomial-random-variable">From Lesson 5: Binomial random variable</h2>
+<ul>
+<li><strong>One specific type of discrete random variable</strong> is a binomial random variable</li>
+</ul>
+<div class="definition">
+<div class="def-ttl">
+<p>Binomial random variable</p>
+</div>
+<div class="def-cont">
+<ul>
+<li><p><span class="math inline">\(X\)</span> is a binomial random variable if it represents the number of successes in <span class="math inline">\(n\)</span> independent replications (or trials) of an experiment where</p>
+<ul>
+<li>Each replicate has two possible outcomes: either <strong>success</strong> or <strong>failure</strong></li>
+<li>The probability of success is <span class="math inline">\(p\)</span></li>
+<li>The probability of failure is <span class="math inline">\(q=1-p\)</span></li>
+</ul></li>
+</ul>
+</div>
+</div>
+<ul>
+<li><p>A binomial random variable takes on values <span class="math inline">\(0, 1, 2, \dots, n\)</span>.</p></li>
+<li><p>If a r.v. <span class="math inline">\(X\)</span> is modeled by a Binomial distribution, then we write in shorthand <span class="math inline">\(X \sim \text{Binom}(n,p)\)</span></p></li>
+<li><p>Quick example: The number of heads in 3 tosses of a fair coin is a binomial random variable with parameters <span class="math inline">\(n = 3\)</span> and <span class="math inline">\(p = 0.5\)</span>.</p></li>
+</ul>
+</section>
+<section id="from-lesson-5-binomial-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="from-lesson-5-binomial-distribution">From Lesson 5: Binomial distribution</h2>
+<div class="definition">
+<div class="def-ttl">
+<p>Distribution of a <strong>Binomial</strong> random variable</p>
+</div>
+<div class="def-cont">
+<p>Let <span class="math inline">\(X\)</span> be the total number of successes in <span class="math inline">\(n\)</span> independent trials, each with probability <span class="math inline">\(p\)</span> of a success. Then probability of observing exactly <span class="math inline">\(k\)</span> successes in <span class="math inline">\(n\)</span> independent trials is</p>
+<p><span class="math display">\[P(X = x) = \binom{n}{x} p^x (1-p)^{n-x},  x= 0, 1, 2, \dots, n \]</span></p>
+</div>
+</div>
+<ul>
+<li><p>The parameters of a binomial distribution are <span class="math inline">\(p\)</span> and <span class="math inline">\(n\)</span>.</p></li>
+<li><p>If a r.v. <span class="math inline">\(X\)</span> is modeled by a binomial distribution, then we write in shorthand <span class="math inline">\(X \sim \text{Binom}(n,p)\)</span></p></li>
+</ul>
+<div class="orange">
+<div class="orange-ttl">
+<p>Mean and variance of a Binomial r.v</p>
+</div>
+<div class="orange-cont">
+<p>If <span class="math inline">\(X\)</span> is a binomial r.v. with probability of success <span class="math inline">\(p\)</span>, then <span class="math inline">\(E(X) = np\)</span> and <span class="math inline">\(\text{Var}(X)=np(1-p)\)</span></p>
+</div>
+</div>
+</section>
+<section id="from-lesson-6-normal-approximation-of-the-binomial-distribution" class="level2">
+<h2 class="anchored" data-anchor-id="from-lesson-6-normal-approximation-of-the-binomial-distribution">From Lesson 6: Normal Approximation of the Binomial Distribution</h2>
+<ul>
+<li><p>Also known as: <strong>Sampling distribution of</strong> <span class="math inline">\(\widehat{p}\)</span></p></li>
+<li><p>If <span class="math inline">\(X\sim \text{Binomial}(n,p)\)</span> and <span class="math inline">\(np&gt;10\)</span> and <span class="math inline">\(nq = n(1-p) &gt; 10\)</span></p>
+<ul>
+<li>Ensures sample size (<span class="math inline">\(n\)</span>) is moderately large and the <span class="math inline">\(p\)</span> is not too close to 0 or 1</li>
+<li>Other resources use other criteria (like <span class="math inline">\(npq&gt;5\)</span> or <span class="math inline">\(np&gt;5\)</span>)</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><p>THEN approximately <span class="math display">\[X\sim \text{Normal}\big(\mu_X = np, \sigma_X = \sqrt{np(1-p)} \big)\]</span></p></li>
+<li><p><strong>Continuity Correction</strong>: Applied to account for the fact that the binomial distribution is discrete, while the normal distribution is continuous</p>
+<ul>
+<li>Adjust the binomial value (# of successes) by ±0.5 before calculating the normal probability.</li>
+<li>For <span class="math inline">\(P(X \leq k)\)</span> (Binomial), you would instead calculate <span class="math inline">\(P(X \leq k + 0.5)\)</span> (Normal approx)</li>
+<li>For <span class="math inline">\(P(X \geq k)\)</span> (Binomial), you would instead calculate <span class="math inline">\(P(X \leq k - 0.5)\)</span> (Normal approx)</li>
+</ul></li>
+</ul>
+</section>
+<section id="poll-everywhere-question-1" class="level2">
+<h2 class="anchored" data-anchor-id="poll-everywhere-question-1">Poll Everywhere Question 1</h2>
+</section>
+<section id="sampling-distribution-of-hatp" class="level2">
+<h2 class="anchored" data-anchor-id="sampling-distribution-of-hatp">Sampling distribution of <span class="math inline">\(\hat{p}\)</span></h2>
+<ul>
+<li><span class="math inline">\(\hat{p}=\frac{X}{n}\)</span> where <span class="math inline">\(X\)</span> is the number of “successes” and <span class="math inline">\(n\)</span> is the sample size.</li>
+<li><span class="math inline">\(X \sim Bin(n,p)\)</span>, where <span class="math inline">\(p\)</span> is the population proportion.</li>
+<li>For <span class="math inline">\(n\)</span> “big enough”, the normal distribution can be used to approximate a binomial distribution:</li>
+</ul>
+<p><span class="math display">\[X \sim N\Big(\mu = np, \sigma = \sqrt{np(1-p)} \Big)\]</span></p>
+<ul>
+<li>Since <span class="math inline">\(\hat{p}=\frac{X}{n}\)</span> is a linear transformation of <span class="math inline">\(X\)</span>, we have for large n:</li>
+</ul>
+<p><span class="math display">\[\hat{p} \sim N\Big(\mu_{\hat{p}} = p, \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} \Big)\]</span></p>
+<ul>
+<li>What is “big enough”? At least 10 successes and 10 failures are expected in the sample: <span class="math inline">\(np \geq 10\)</span> and <span class="math inline">\(n(1-p) \geq 10\)</span></li>
+</ul>
+</section>
+<section id="for-proportions-population-parameters-vs.-sample-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="for-proportions-population-parameters-vs.-sample-statistics">For proportions: Population parameters vs.&nbsp;sample statistics</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span style="color:#C83532;"><strong>Population parameter</strong></span></p>
+<ul>
+<li>Proportion: <span class="math inline">\(p\)</span>, <span class="math inline">\(\pi\)</span> (“pi”)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><span style="color:#EF85B3;"><strong>Sample statistic (point estimate)</strong></span></p>
+<ul>
+<li>Sample proportion: <span class="math inline">\(\hat{p}\)</span> (“p-hat”)</li>
+</ul>
+</div>
+</div>
+<p>&nbsp;</p>
+</section>
+<section id="approaches-to-answer-a-research-question" class="level2">
+<h2 class="anchored" data-anchor-id="approaches-to-answer-a-research-question">Approaches to answer a research question</h2>
+<ul>
+<li><strong>Research question is a generic form for a single proportion:</strong> Is there evidence to support that the population proportion is different than <span class="math inline">\(p_0\)</span>?</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="green2">
+<div class="green2-ttl">
+<p>Calculate <strong>CI for the proportion</strong> <span class="math inline">\(p\)</span>:</p>
+</div>
+<div class="green2-cont">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><span class="math display">\[\hat{p} \pm z^* \cdot SE_{\hat{p}} = \hat{p} \pm z^* \cdot\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\]</span></p>
+<ul>
+<li>with <span class="math inline">\(z^*\)</span> = z-score that aligns with specific confidence interval</li>
+</ul>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="pink">
+<div class="pink-ttl">
+<p>Run a <strong>hypothesis test</strong>:</p>
+</div>
+<div class="pink-cont">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column">
+<p>Hypotheses</p>
+<p><span class="math display">\[\begin{align}
+H_0:&amp; p = p_0 \\
+H_A:&amp; p \neq p_0 \\
+(or&amp;~ &lt;, &gt;)
+\end{align}\]</span></p>
+</div><div class="column">
+<p>Test statistic</p>
+<p><span class="math display">\[
+z_{\hat{p}} = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0\cdot(1-p_0)}{n}}}
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="r-code-1--and-2-sample-proportions-tests" class="level2">
+<h2 class="anchored" data-anchor-id="r-code-1--and-2-sample-proportions-tests">R code: 1- and 2-sample proportions tests</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(x, </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>          n, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">p =</span> <span class="cn">NULL</span>, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">alternative =</span> <span class="fu">c</span>(<span class="st">"two.sided"</span>, <span class="st">"less"</span>, <span class="st">"greater"</span>), </span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">conf.level =</span> <span class="fl">0.95</span>, </span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">correct =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<ul>
+<li><code>x</code>: Counts of successes (can have one x or a vector of multiple x’s)</li>
+<li><code>n</code>: Number of trails (can have one n or a vector of multiple n’s)</li>
+<li><code>p</code>: Null value that we think the population proportion is</li>
+<li><code>alternative</code>: If alternative hypothesis is <span class="math inline">\(\neq\)</span>, <span class="math inline">\(&lt;\)</span>, or <span class="math inline">\(&gt;\)</span>
+<ul>
+<li>Default is “two.sided” (<span class="math inline">\(\neq\)</span>)</li>
+</ul></li>
+<li><code>conf.level</code> = Confidence level (<span class="math inline">\(1-\alpha\)</span>)
+<ul>
+<li>Default is <code>0.05</code></li>
+</ul></li>
+<li><code>correct</code>: Continuity correction, whether we should use it or not
+<ul>
+<li>Default is <code>TRUE</code> (Nicky says keep it this way!)</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="learning-objectives-2" class="level1">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li>Remind ourselves of the Normal approximation of the binomial distribution and define the sampling distribution of a sample proportion</li>
+</ol>
+<div class="lob">
+<ol start="2" type="1">
+<li>Run a hypothesis test for a single proportion and interpret the results.</li>
+</ol>
+</div>
+<ol start="3" type="1">
+<li><p>Construct and interpret confidence intervals for a single proportion.</p></li>
+<li><p>Understand how CLT applies to a difference in binomial random variables</p></li>
+<li><p>Run a hypothesis test for a difference in proportions and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a difference in proportions.</p></li>
+</ol>
+<section id="example-immune-response-to-advanced-melanoma" class="level2">
+<h2 class="anchored" data-anchor-id="example-immune-response-to-advanced-melanoma">Example: immune response to advanced melanoma</h2>
+<ul>
+<li><p>Looking for therapies that trigger an immune response to advanced melanoma</p></li>
+<li><p>In a study where 52 patients were treated concurrently with two new therapies, nivolumab and ipilimumab</p>
+<ul>
+<li>21 had an immune response.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+</ul></li>
+<li><p><strong>Outcome:</strong> whether or not each person has an immune response</p></li>
+</ul>
+<p>Questions that can be addressed with inference…</p>
+<ul>
+<li><p>What is the estimated population probability of immune response following concurrent therapy with nivolumab and ipilimumab? (calculate <span class="math inline">\(\hat{p}\)</span>)</p></li>
+<li><p>What is the 95% confidence interval for the estimated population probability of immune response following concurrent therapy with nivolumab and ipilimumab? (95% CI of <span class="math inline">\(p\)</span>)</p></li>
+<li><p>In previous studies, the proportion of patients responding to one of these agents was 30% or less. Do these results suggest that the probability of response to concurrent therapy is better than 0.30? (Hypothesis test of null of 0.3)</p></li>
+</ul>
+</section>
+<section id="reference-steps-in-a-hypothesis-test" class="level2">
+<h2 class="anchored" data-anchor-id="reference-steps-in-a-hypothesis-test">Reference: Steps in a Hypothesis Test</h2>
+<ol type="1">
+<li><p>Check the <span style="color:#3070BF"><strong>assumptions</strong></span></p></li>
+<li><p>Set the <span style="color:#3070BF"><strong>level of significance</strong></span> <span class="math inline">\(\alpha\)</span></p></li>
+<li><p>Specify the <span style="color:#3070BF"><strong>null</strong></span> ( <span class="math inline">\(H_0\)</span> ) and <span style="color:#3070BF"><strong>alternative</strong></span> ( <span class="math inline">\(H_A\)</span> ) <span style="color:#3070BF"><strong>hypotheses</strong></span></p>
+<ol type="1">
+<li>In symbols</li>
+<li>In words</li>
+<li>Alternative: one- or two-sided?</li>
+</ol></li>
+<li><p>Calculate the <span style="color:#3070BF"><strong>test statistic</strong></span>.</p></li>
+<li><p>Calculate the <span style="color:#3070BF"><strong>p-value</strong></span> based on the observed test statistic and its sampling distribution</p></li>
+<li><p>Write a <span style="color:#3070BF"><strong>conclusion</strong></span> to the hypothesis test</p>
+<ol type="1">
+<li>Do we reject or fail to reject <span class="math inline">\(H_0\)</span>?</li>
+<li>Write a conclusion in the context of the problem</li>
+</ol></li>
+</ol>
+</section>
+<section id="step-1-check-the-assumptions-easier-to-do-after-step-3" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-check-the-assumptions-easier-to-do-after-step-3">Step 1: Check the assumptions (easier to do after Step 3)</h2>
+<p>The sampling distribution of <span class="math inline">\(\hat{p}\)</span> is approximately normal when</p>
+<ol type="1">
+<li><p>The sample observations are independent, and</p></li>
+<li><p>At least 10 successes and 10 failures are expected in the sample: <span class="math inline">\(np_0 \geq 10\)</span> and <span class="math inline">\(n(1-p_0) \geq 10\)</span>.</p></li>
+</ol>
+<p>&nbsp;</p>
+<ul>
+<li>Since <span class="math inline">\(p\)</span> is unknown, it is necessary to substitute <span class="math inline">\(p_0\)</span> (the null value) for <span class="math inline">\(p\)</span> when using the standard error to conduct hypothesis tests
+<ul>
+<li>Because we are assuming the standard error of the null hypothesis!</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>For the example, we have <span class="math inline">\(p_0 = 0.30\)</span>
+<ul>
+<li>We check: <span class="math inline">\(n p_0 = 52 \cdot 0.3 = 15.6 &gt; 10\)</span></li>
+<li>We check: <span class="math inline">\(n (1- p_0) = 52 (1 -0.3)= 36.4 &gt; 10\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="step-2-set-the-level-of-significance" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-set-the-level-of-significance">Step 2: Set the level of significance</h2>
+<ul>
+<li><p><strong>Before doing a hypothesis test</strong>, we set a cut-off for how small the <span class="math inline">\(p\)</span>-value should be in order to reject <span class="math inline">\(H_0\)</span>.</p></li>
+<li><p>Typically choose <span class="math inline">\(\alpha = 0.05\)</span></p></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>See Lesson 11: Hypothesis Testing 1: Single-sample mean</li>
+</ul>
+</section>
+<section id="step-3-null-alternative-hypotheses-12" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-null-alternative-hypotheses-12">Step 3: Null &amp; Alternative Hypotheses (1/2)</h2>
+<div class="columns">
+<div class="column">
+<div class="blue">
+<div class="blue-ttl">
+<p>Notation for hypotheses (for paired data)</p>
+</div>
+<div class="blue-cont">
+<span class="math display">\[\begin{aligned}
+H_0 &amp;: p = p_0\\
+\text{vs. } H_A&amp;: p \neq, &lt;, \textrm{or}, &gt; p_0
+\end{aligned}\]</span>
+</div>
+</div>
+</div><div class="column">
+<div class="pink">
+<div class="pink-ttl">
+<p>Hypotheses test for example</p>
+</div>
+<div class="pink-cont">
+<span class="math display">\[\begin{aligned}
+H_0 &amp;: p = 0.30\\
+\text{vs. } H_A&amp;: p \neq 0.30
+\end{aligned}\]</span>
+</div>
+</div>
+</div>
+</div>
+<p>We call <span class="math inline">\(p_0\)</span> the <em>null value</em> (hypothesized population mean difference from <span class="math inline">\(H_0\)</span>)</p>
+<div class="columns">
+<div class="column" style="width:32%;">
+<p><span class="math inline">\(H_A: p \neq p_0\)</span></p>
+<ul>
+<li>not choosing a priori whether we believe the population proportion is greater or less than the null value <span class="math inline">\(p_0\)</span></li>
+</ul>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:32%;">
+<p><span class="math inline">\(H_A: p &lt; p_0\)</span></p>
+<ul>
+<li>believe the population proportion is <strong>less</strong> than the null value <span class="math inline">\(p_0\)</span></li>
+</ul>
+</div><div class="column" style="width:2%;">
+
+</div><div class="column" style="width:32%;">
+<p><span class="math inline">\(H_A: p &gt; p_0\)</span></p>
+<ul>
+<li>believe the population population proportion is <strong>greater</strong> than the null value <span class="math inline">\(p_0\)</span></li>
+</ul>
+</div>
+</div>
+<ul>
+<li><span class="math inline">\(H_A: p \neq p_0\)</span> is the most common option, since it’s the most conservative</li>
+</ul>
+</section>
+<section id="step-3-null-alternative-hypotheses-22" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-null-alternative-hypotheses-22">Step 3: Null &amp; Alternative Hypotheses (2/2)</h2>
+<p>Null and alternative hypotheses in <strong>words</strong> and in <strong>symbols</strong>.</p>
+<p><strong>One sample test</strong></p>
+<ul>
+<li><p><span class="math inline">\(H_0\)</span>: For individuals who have advanced melanoma and received a treatment of nivolumab and ipilimumab, the population proportion of immune response is 0.30</p></li>
+<li><p><span class="math inline">\(H_A\)</span>: For individuals who have advanced melanoma and received a treatment of nivolumab and ipilimumab, the population proportion of immune response is NOT 0.30</p></li>
+</ul>
+<p><span class="math display">\[\begin{align}
+H_0:&amp; p = 0.30\\
+H_A:&amp; p \neq 0.30\\
+\end{align}\]</span></p>
+</section>
+<section id="step-4-test-statistic" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-test-statistic">Step 4: Test statistic</h2>
+<p>Sampling distribution of <span class="math inline">\(\hat{p}\)</span> if we assume <span class="math inline">\(H_0: p=p_0\)</span> is true:</p>
+<p><span class="math display">\[\hat{p} \sim N\left(\mu_{\hat{p}} = p, \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} \right)
+\sim N\left(
+\mu_{\hat{p}}=p_0, \sigma_{\hat{p}}=\sqrt{\frac{p_0\cdot(1-p_0)}{n}}
+\right)\]</span></p>
+<p>Test statistic for a one sample proportion test:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\text{test stat} = &amp; \frac{\text{point estimate}-\text{null value}}{SE}\\
+z_{\hat{p}} = &amp; \frac{\hat{p} - p_0}{\sqrt{\frac{p_0\cdot(1-p_0)}{n}}}
+\end{aligned}
+\]</span></p>
+</section>
+<section id="step-4-test-statistic-1" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-test-statistic-1">Step 4: Test statistic</h2>
+<p>From our example: Recall that <span class="math inline">\(\hat{p} = \dfrac{21}{52}= 0.4038\)</span>, <span class="math inline">\(n=52\)</span>, and <span class="math inline">\(p_0 = 0.30\)</span></p>
+<p>The test statistic is:</p>
+<p><span class="math display">\[
+\begin{align}
+z_{\hat{p}} &amp;= \frac{\hat{p} - p_0}{\sqrt{\frac{p_0\cdot(1-p_0)}{n}}} = \frac{21/52 - 0.30}{\sqrt{\frac{0.30\cdot(1-0.30)}{52}}} = 1.6341143
+\end{align}
+\]</span></p>
+<ul>
+<li>Let’s see the z-score on a Z-distribution (Standard Normal curve)</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="poll-everywhere-question-2" class="level2">
+<h2 class="anchored" data-anchor-id="poll-everywhere-question-2">Poll Everywhere Question 2</h2>
+</section>
+<section id="step-5-p-value" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-p-value">Step 5: p-value</h2>
+<p>The <span style="color:#C83532"><strong>p-value</strong></span> is the <strong>probability</strong> of obtaining a test statistic <em>just as extreme or more extreme</em> than the observed test statistic assuming the null hypothesis <span class="math inline">\(H_0\)</span> is true.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<p>Calculate the <em>p</em>-value:</p>
+<p><span class="math display">\[\begin{align}
+2 &amp;\cdot P(\hat{p}&gt; 0.404) \\
+&amp;= 2 \cdot P\left(Z_{\hat{p}} &gt; \frac{0.404 - 0.30}{\sqrt{\frac{0.30\cdot(1-0.30)}{52}}}\right)\\
+&amp;=2 \cdot P(Z_{\hat{p}} &gt; 1.634)\\
+&amp;= 0.1022348
+\end{align}\]</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">*</span><span class="fu">pnorm</span>(<span class="fl">1.634</span>, <span class="at">lower.tail =</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.1022589</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-4-5-test-statistic-and-p-value-together-using-prop.test" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-5-test-statistic-and-p-value-together-using-prop.test">Step 4-5: test statistic and p-value together using <code>prop.test()</code></h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="dv">21</span>, <span class="at">n =</span> <span class="dv">52</span>, <span class="at">p =</span> <span class="fl">0.30</span>, <span class="at">correct =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    1-sample proportions test with continuity correction
+
+data:  21 out of 52, null probability 0.3
+X-squared = 2.1987, df = 1, p-value = 0.1381
+alternative hypothesis: true p is not equal to 0.3
+95 percent confidence interval:
+ 0.2731269 0.5487141
+sample estimates:
+        p 
+0.4038462 </code></pre>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Tidying the output of <code>prop.test()</code></summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="dv">21</span>, <span class="at">n =</span> <span class="dv">52</span>, <span class="at">p =</span> <span class="fl">0.30</span>, <span class="at">correct =</span> T) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">gt</span>() <span class="sc">%&gt;%</span> <span class="fu">tab_options</span>(<span class="at">table.font.size =</span> <span class="dv">40</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="efiufvaape" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#efiufvaape table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#efiufvaape thead, #efiufvaape tbody, #efiufvaape tfoot, #efiufvaape tr, #efiufvaape td, #efiufvaape th {
+  border-style: none;
+}
+
+#efiufvaape p {
+  margin: 0;
+  padding: 0;
+}
+
+#efiufvaape .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#efiufvaape .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#efiufvaape .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#efiufvaape .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#efiufvaape .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#efiufvaape .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#efiufvaape .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#efiufvaape .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#efiufvaape .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#efiufvaape .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#efiufvaape .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#efiufvaape .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#efiufvaape .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#efiufvaape .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#efiufvaape .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#efiufvaape .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#efiufvaape .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#efiufvaape .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#efiufvaape .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#efiufvaape .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#efiufvaape .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#efiufvaape .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#efiufvaape .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#efiufvaape .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#efiufvaape .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#efiufvaape .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#efiufvaape .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#efiufvaape .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#efiufvaape .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#efiufvaape .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#efiufvaape .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#efiufvaape .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#efiufvaape .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#efiufvaape .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#efiufvaape .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#efiufvaape .gt_left {
+  text-align: left;
+}
+
+#efiufvaape .gt_center {
+  text-align: center;
+}
+
+#efiufvaape .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#efiufvaape .gt_font_normal {
+  font-weight: normal;
+}
+
+#efiufvaape .gt_font_bold {
+  font-weight: bold;
+}
+
+#efiufvaape .gt_font_italic {
+  font-style: italic;
+}
+
+#efiufvaape .gt_super {
+  font-size: 65%;
+}
+
+#efiufvaape .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#efiufvaape .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#efiufvaape .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#efiufvaape .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#efiufvaape .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#efiufvaape .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#efiufvaape .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#efiufvaape .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#efiufvaape div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="estimate" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">estimate</th>
+<th id="statistic" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">statistic</th>
+<th id="p.value" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">p.value</th>
+<th id="parameter" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">parameter</th>
+<th id="conf.low" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">conf.low</th>
+<th id="conf.high" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">conf.high</th>
+<th id="method" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">method</th>
+<th id="alternative" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">alternative</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="estimate">0.4038462</td>
+<td class="gt_row gt_right" headers="statistic">2.198718</td>
+<td class="gt_row gt_right" headers="p.value">0.1381256</td>
+<td class="gt_row gt_right" headers="parameter">1</td>
+<td class="gt_row gt_right" headers="conf.low">0.2731269</td>
+<td class="gt_row gt_right" headers="conf.high">0.5487141</td>
+<td class="gt_row gt_left" headers="method">1-sample proportions test with continuity correction</td>
+<td class="gt_row gt_left" headers="alternative">two.sided</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<ul>
+<li>Note: We expect some differences between the test statistic and p-value calculated by hand vs.&nbsp;by R. R uses a slightly different method to calculate.</li>
+</ul>
+</section>
+<section id="step-6-conclusion-to-hypothesis-test" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-conclusion-to-hypothesis-test">Step 6: Conclusion to hypothesis test</h2>
+<p><span class="math display">\[\begin{align}
+H_0:&amp; p = 0.30\\
+H_A:&amp; p \neq 0.30\\
+\end{align}\]</span></p>
+<ul>
+<li>Recall the <span class="math inline">\(p\)</span>-value = 0.1022348</li>
+<li>Use <span class="math inline">\(\alpha\)</span> = 0.05.</li>
+<li>Do we reject or fail to reject <span class="math inline">\(H_0\)</span>?</li>
+</ul>
+<p><strong>Conclusion statement</strong>:</p>
+<ul>
+<li>Stats class conclusion
+<ul>
+<li>There is insufficient evidence that the (population) proportion of individuals who had an immune response is different than 0.30 ( <span class="math inline">\(p\)</span>-value = 0.102).</li>
+</ul></li>
+<li>More realistic manuscript conclusion:
+<ul>
+<li>In a sample of 52 individuals receiving treatment, 40.4% had an immune response, which is not different from 30% ( <span class="math inline">\(p\)</span>-value = 0.102).</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="learning-objectives-3" class="level1">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li>Remind ourselves of the Normal approximation of the binomial distribution and define the sampling distribution of a sample proportion</li>
+<li>Run a hypothesis test for a single proportion and interpret the results.</li>
+</ol>
+<div class="lob">
+<ol start="3" type="1">
+<li>Construct and interpret confidence intervals for a single proportion.</li>
+</ol>
+</div>
+<ol start="4" type="1">
+<li><p>Understand how CLT applies to a difference in binomial random variables</p></li>
+<li><p>Run a hypothesis test for a difference in proportions and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a difference in proportions.</p></li>
+</ol>
+<section id="conditions-for-one-proportion-test-vs.-ci" class="level2">
+<h2 class="anchored" data-anchor-id="conditions-for-one-proportion-test-vs.-ci">Conditions for one proportion: <strong>test vs.&nbsp;CI</strong></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="green2">
+<div class="green2-ttl">
+<p>Confidence interval conditions</p>
+</div>
+<div class="green2-cont">
+<ol type="1">
+<li><em>Independent observations</em>
+<ul>
+<li>The observations were collected independently.</li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="2" type="1">
+<li>The number of successes and failures is at least 10:</li>
+</ol>
+<p><span class="math display">\[n\hat{p} \ge 10, \ \ n(1-\hat{p})\ge 10\]</span></p>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="pink">
+<div class="pink-ttl">
+<p>Hypothesis test conditions</p>
+</div>
+<div class="pink-cont">
+<ol type="1">
+<li><em>Independent observations</em>
+<ul>
+<li>The observations were collected independently.</li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="2" type="1">
+<li>The number of <strong>expected</strong> successes and <strong>expected</strong> failures is at least 10.</li>
+</ol>
+<p><span class="math display">\[n p_0 \ge 10, \ \ n(1-p_0)\ge 10\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="ci-for-population-proportion" class="level2">
+<h2 class="anchored" data-anchor-id="ci-for-population-proportion">95% CI for population proportion</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>What to use for SE in CI formula?</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\hat{p} \pm z^* \cdot SE_{\hat{p}}\]</span></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Sampling distribution of <span class="math inline">\(\hat{p}\)</span>:</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\hat{p} \sim N\left(\mu_{\hat{p}} = p, \sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} \right)\]</span></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Problem: We don’t know what <span class="math inline">\(p\)</span> is - it’s what we’re estimating with the CI.<br>
+Solution: <span style="color:#5BAFF8">approximate <span class="math inline">\(p\)</span> with <span class="math inline">\(\hat{p}\)</span></span>:</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[SE_{\hat{p}} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\]</span></p>
+</div>
+</div>
+<ul>
+<li>Note that I am not using a continuity correction here! This means our “by hand” calculation will be different than our R calculation
+<ul>
+<li>Using the continuity correction is more widely accepted</li>
+<li>So I would suggest using R to calculate the confidence intervals when you can!</li>
+</ul></li>
+</ul>
+</section>
+<section id="ci-for-population-proportion-of-immune-response-by-hand" class="level2">
+<h2 class="anchored" data-anchor-id="ci-for-population-proportion-of-immune-response-by-hand">95% CI for population proportion of immune response by hand</h2>
+<p>95% CI for population mean difference <span class="math inline">\(p\)</span>:</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span class="math display">\[\begin{align}
+\hat{p} &amp;\pm z^* \cdot SE_{\hat{p}}\\
+\hat{p} &amp;\pm z^* \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \\
+0.404 &amp;\pm 1.96\cdot  \sqrt{\frac{0.404(1-0.404)}{52}}  \\
+0.404 &amp;\pm 1.96\cdot 0.068\\
+0.404 &amp;\pm 0.133\\
+(0.27&amp;, 0.537)
+\end{align}\]</span></p>
+</div><div class="column" style="width:50%;">
+<p>Used <span class="math inline">\(z^*\)</span> = <code>qnorm(0.975)</code> = 1.96</p>
+<p>&nbsp;</p>
+<p><strong>“By hand” Conclusion:</strong><br>
+We are 95% confident that the (population) proportion of individuals with an immune response is between 0.27 and 0.537.</p>
+</div>
+</div>
+</section>
+<section id="ci-for-population-proportion-of-immune-response-using-r" class="level2">
+<h2 class="anchored" data-anchor-id="ci-for-population-proportion-of-immune-response-using-r">95% CI for population proportion of immune response using R</h2>
+<ul>
+<li>We can use R to get similar values</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="dv">21</span>, <span class="at">n =</span> <span class="dv">52</span>, <span class="at">conf.level =</span> <span class="fl">0.95</span>, <span class="at">correct =</span> T)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    1-sample proportions test with continuity correction
+
+data:  21 out of 52, null probability 0.5
+X-squared = 1.5577, df = 1, p-value = 0.212
+alternative hypothesis: true p is not equal to 0.5
+95 percent confidence interval:
+ 0.2731269 0.5487141
+sample estimates:
+        p 
+0.4038462 </code></pre>
+</div>
+</div>
+<p><strong>R Conclusion:</strong><br>
+We are 95% confident that the (population) proportion of individuals with an immune response is between 0.273 and 0.549.</p>
+<ul>
+<li>Note: We expect some differences between the confidence interval calculated by hand vs.&nbsp;by R. R uses a slightly different method to calculate.</li>
+</ul>
+</section>
+</section>
+<section id="break-time" class="level1">
+<h1>Break Time!</h1>
+</section>
+<section id="learning-objectives-4" class="level1">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li><p>Remind ourselves of the Normal approximation of the binomial distribution and define the sampling distribution of a sample proportion</p></li>
+<li><p>Run a hypothesis test for a single proportion and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a single proportion.</p></li>
+</ol>
+<div class="lob">
+<ol start="4" type="1">
+<li>Understand how CLT applies to a difference in binomial random variables</li>
+</ol>
+</div>
+<ol start="5" type="1">
+<li><p>Run a hypothesis test for a difference in proportions and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a difference in proportions.</p></li>
+</ol>
+<section id="inference-for-difference-of-two-independent-proportions-hatp_1-hatp_2" class="level2">
+<h2 class="anchored" data-anchor-id="inference-for-difference-of-two-independent-proportions-hatp_1-hatp_2">Inference for difference of two independent proportions <br> <span class="math inline">\(\hat{p}_1-\hat{p}_2\)</span></h2>
+<ul>
+<li>For means, we went from <em>inferences on single sample mean</em> to <em>inferences on difference in means from two independent samples</em></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>We can do the same thing for proportions</li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>We will go from <span style="color:#BF396F"><em>inferences on single sample proportion</em></span> to <span style="color:#367B79"><em>inferences on difference in proportions from two independent samples</em></span></li>
+</ul>
+</section>
+<section id="poll-everywhere-question-3" class="level2">
+<h2 class="anchored" data-anchor-id="poll-everywhere-question-3">Poll Everywhere Question 3</h2>
+</section>
+<section id="for-difference-in-proportions-population-parameters-vs.-sample-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="for-difference-in-proportions-population-parameters-vs.-sample-statistics">For difference in proportions: Population parameters vs.&nbsp;sample statistics</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><span style="color:#C83532;"><strong>Population parameter</strong></span></p>
+<ul>
+<li><p>Population 1 proportion: <span class="math inline">\(p_1\)</span>, <span class="math inline">\(\pi_1\)</span> (“pi”)</p></li>
+<li><p>Population 2 proportion: <span class="math inline">\(p_2\)</span>, <span class="math inline">\(\pi_2\)</span> (“pi”) &nbsp;</p></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Difference in proportions: <span class="math inline">\(p_1 - p_2\)</span></li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><span style="color:#EF85B3;"><strong>Sample statistic (point estimate)</strong></span></p>
+<ul>
+<li><p>Sample 1 proportion: <span class="math inline">\(\hat{p}_1\)</span>, <span class="math inline">\(\hat{\pi}_1\)</span> (“pi”)</p></li>
+<li><p>Sample 1 proportion: <span class="math inline">\(\hat{p}_2\)</span>, <span class="math inline">\(\hat{\pi}_2\)</span> (“pi”) &nbsp;</p></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Difference in proportions: <span class="math inline">\(\hat{p}_1 - \hat{p}_2\)</span></li>
+</ul>
+</div>
+</div>
+<p>&nbsp;</p>
+</section>
+<section id="sampling-distribution-of-hatp_1-hatp_2" class="level2">
+<h2 class="anchored" data-anchor-id="sampling-distribution-of-hatp_1-hatp_2">Sampling distribution of <span class="math inline">\(\hat{p}_1-\hat{p}_2\)</span></h2>
+<ul>
+<li><span class="math inline">\(\hat{p}_1=\frac{X_1}{n_1}\)</span> and <span class="math inline">\(\hat{p}_2=\frac{X_2}{n_2}\)</span>,
+<ul>
+<li><span class="math inline">\(X_1\)</span> &amp; <span class="math inline">\(X_2\)</span> are the number of “successes”</li>
+<li><span class="math inline">\(n_1\)</span> &amp; <span class="math inline">\(n_2\)</span> are the sample sizes of the 1st &amp; 2nd samples</li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>Each <span class="math inline">\(\hat{p}\)</span> can be approximated by a normal distribution, for “big enough” <span class="math inline">\(n\)</span></li>
+<li>Since the difference of independent normal random variables is also normal, it follows that for “big enough” <span class="math inline">\(n_1\)</span> and <span class="math inline">\(n_2\)</span></li>
+</ul>
+<p><span class="math display">\[\hat{p}_1 - \hat{p}_2 \sim N \left(\mu_{\hat{p}_1 - \hat{p}_2} = p_1 - p_2, ~~
+\sigma_{\hat{p}_1 - \hat{p}_2} =
+\sqrt{
+\frac{p_1\cdot(1-p_1)}{n_1} + \frac{p_2\cdot(1-p_2)}{n_2}}
+\right)\]</span></p>
+<ul>
+<li>What is “big enough”? At least 10 successes and 10 failures are expected in the sample: <span class="math inline">\(n_1p \geq 10\)</span>, <span class="math inline">\(n_1(1-p) \geq 10\)</span>, <span class="math inline">\(n_2p \geq 10\)</span>, and <span class="math inline">\(n_2(1-p) \geq 10\)</span></li>
+</ul>
+</section>
+<section id="approaches-to-answer-a-research-question-1" class="level2">
+<h2 class="anchored" data-anchor-id="approaches-to-answer-a-research-question-1">Approaches to answer a research question</h2>
+<ul>
+<li><strong>Research question is a generic form for a single proportion:</strong> Is there evidence to support that the population proportions are different from each other?</li>
+</ul>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="green2">
+<div class="green2-ttl">
+<p>Calculate <strong>CI for the proportion difference</strong> <span class="math inline">\(p_1 - p_2\)</span>:</p>
+</div>
+<div class="green2-cont">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><span class="math display">\[\hat{p}_1 - \hat{p}_2 \pm z^* \cdot SE_{\hat{p}_1 - \hat{p}_2}\]</span></p>
+<ul>
+<li>with <span class="math inline">\(z^*\)</span> = z-score that aligns with specific confidence interval</li>
+</ul>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="pink">
+<div class="pink-ttl">
+<p>Run a <strong>hypothesis test</strong>:</p>
+</div>
+<div class="pink-cont">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-19-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="column">
+<p>Hypotheses</p>
+<p><span class="math display">\[\begin{align}
+H_0:&amp; p_1 - p_2 = 0 \\
+H_A:&amp; p_1 - p_2 \neq 0 \\
+(or&amp;~ &lt;, &gt;)
+\end{align}\]</span></p>
+</div><div class="column">
+<p>Test statistic</p>
+<p><span class="math display">\[
+z_{\hat{p}_1 - \hat{p}_2} = \frac{\hat{p}_1 - \hat{p}_2}{SE_{pool}}
+\]</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="learning-objectives-5" class="level1">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li><p>Remind ourselves of the Normal approximation of the binomial distribution and define the sampling distribution of a sample proportion</p></li>
+<li><p>Run a hypothesis test for a single proportion and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a single proportion.</p></li>
+<li><p>Understand how CLT applies to a difference in binomial random variables</p></li>
+</ol>
+<div class="lob">
+<ol start="5" type="1">
+<li>Run a hypothesis test for a difference in proportions and interpret the results.</li>
+</ol>
+</div>
+<ol start="6" type="1">
+<li>Construct and interpret confidence intervals for a difference in proportions.</li>
+</ol>
+<section id="motivating-example-effectiveness-of-mammograms" class="level2">
+<h2 class="anchored" data-anchor-id="motivating-example-effectiveness-of-mammograms">Motivating example: effectiveness of mammograms</h2>
+<p>A 30-year study to investigate the effectiveness of mammograms versus a standard non-mammogram breast cancer exam was conducted in Canada with 89,835 participants. Each person was randomized to receive either annual mammograms or standard physical exams for breast cancer over a 5-year screening period.</p>
+<p>By the end of the 25-year follow-up period, 1,005 people died from breast cancer. The results are summarized in the following table.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Displaying the contingency table in R</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>BC <span class="sc">%&gt;%</span> <span class="fu">tabyl</span>(Group, Death) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">adorn_totals</span>(<span class="at">where =</span> <span class="fu">c</span>(<span class="st">"row"</span>, <span class="st">"col"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_stubhead</span>(<span class="at">label =</span> <span class="st">"Group"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_spanner</span>(<span class="at">label =</span> <span class="st">"Death from breast cancer?"</span>, </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>              <span class="at">columns =</span> <span class="fu">c</span>(<span class="st">"Yes"</span>, <span class="st">"No"</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(<span class="at">table.font.size =</span> <span class="dv">45</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="iolypmfljx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#iolypmfljx table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#iolypmfljx thead, #iolypmfljx tbody, #iolypmfljx tfoot, #iolypmfljx tr, #iolypmfljx td, #iolypmfljx th {
+  border-style: none;
+}
+
+#iolypmfljx p {
+  margin: 0;
+  padding: 0;
+}
+
+#iolypmfljx .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 45px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#iolypmfljx .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#iolypmfljx .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#iolypmfljx .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#iolypmfljx .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#iolypmfljx .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#iolypmfljx .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#iolypmfljx .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#iolypmfljx .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#iolypmfljx .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#iolypmfljx .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#iolypmfljx .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#iolypmfljx .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#iolypmfljx .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#iolypmfljx .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iolypmfljx .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#iolypmfljx .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#iolypmfljx .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#iolypmfljx .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iolypmfljx .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#iolypmfljx .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iolypmfljx .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#iolypmfljx .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iolypmfljx .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#iolypmfljx .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#iolypmfljx .gt_left {
+  text-align: left;
+}
+
+#iolypmfljx .gt_center {
+  text-align: center;
+}
+
+#iolypmfljx .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#iolypmfljx .gt_font_normal {
+  font-weight: normal;
+}
+
+#iolypmfljx .gt_font_bold {
+  font-weight: bold;
+}
+
+#iolypmfljx .gt_font_italic {
+  font-style: italic;
+}
+
+#iolypmfljx .gt_super {
+  font-size: 65%;
+}
+
+#iolypmfljx .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#iolypmfljx .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#iolypmfljx .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#iolypmfljx .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#iolypmfljx .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#iolypmfljx .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#iolypmfljx .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#iolypmfljx .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#iolypmfljx div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="gt_col_headings gt_spanner_row header">
+<th rowspan="2" id="Group" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Group</th>
+<th colspan="2" id="Death from breast cancer?" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+Death from breast cancer?
+</div></th>
+<th rowspan="2" id="Total" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Total</th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="Yes" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Yes</th>
+<th id="No" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">No</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_left" headers="Group">Control Group</td>
+<td class="gt_row gt_right" headers="Yes">505</td>
+<td class="gt_row gt_right" headers="No">44405</td>
+<td class="gt_row gt_right" headers="Total">44910</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Group">Mammogram Group</td>
+<td class="gt_row gt_right" headers="Yes">500</td>
+<td class="gt_row gt_right" headers="No">44425</td>
+<td class="gt_row gt_right" headers="Total">44925</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Group">Total</td>
+<td class="gt_row gt_right" headers="Yes">1005</td>
+<td class="gt_row gt_right" headers="No">88830</td>
+<td class="gt_row gt_right" headers="Total">89835</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="reference-steps-in-a-hypothesis-test-1" class="level2">
+<h2 class="anchored" data-anchor-id="reference-steps-in-a-hypothesis-test-1">Reference: Steps in a Hypothesis Test</h2>
+<ol type="1">
+<li><p>Check the <span style="color:#3070BF"><strong>assumptions</strong></span></p></li>
+<li><p>Set the <span style="color:#3070BF"><strong>level of significance</strong></span> <span class="math inline">\(\alpha\)</span></p></li>
+<li><p>Specify the <span style="color:#3070BF"><strong>null</strong></span> ( <span class="math inline">\(H_0\)</span> ) and <span style="color:#3070BF"><strong>alternative</strong></span> ( <span class="math inline">\(H_A\)</span> ) <span style="color:#3070BF"><strong>hypotheses</strong></span></p>
+<ol type="1">
+<li>In symbols</li>
+<li>In words</li>
+<li>Alternative: one- or two-sided?</li>
+</ol></li>
+<li><p>Calculate the <span style="color:#3070BF"><strong>test statistic</strong></span>.</p></li>
+<li><p>Calculate the <span style="color:#3070BF"><strong>p-value</strong></span> based on the observed test statistic and its sampling distribution</p></li>
+<li><p>Write a <span style="color:#3070BF"><strong>conclusion</strong></span> to the hypothesis test</p>
+<ol type="1">
+<li>Do we reject or fail to reject <span class="math inline">\(H_0\)</span>?</li>
+<li>Write a conclusion in the context of the problem</li>
+</ol></li>
+</ol>
+</section>
+<section id="before-we-start-we-need-to-calculate-the-pooled-proportion" class="level2">
+<h2 class="anchored" data-anchor-id="before-we-start-we-need-to-calculate-the-pooled-proportion">Before we start, we need to calculate the pooled proportion</h2>
+<ul>
+<li>Often, our null hypothesis is that the two proportions are equal
+<ul>
+<li>And that both populations are the same</li>
+</ul></li>
+<li>Thus, we calculate a pooled proportion to represent the proportion under the null distribution</li>
+</ul>
+<p><span class="math display">\[\text{pooled proportion} = \hat{p}_{pool} = \dfrac{\text{total number of successes} }{ \text{total number of cases}} = \frac{x_1+x_2}{n_1+n_2}\]</span></p>
+<ul>
+<li>In this example:</li>
+</ul>
+<p><span class="math display">\[\hat{p}_{pool} = \frac{x_1+x_2}{n_1+n_2} = \frac{500 + 505}{(500 + 44425) + (505 + 44405)} = 0.01119\]</span></p>
+</section>
+<section id="poll-everywhere-question-4" class="level2">
+<h2 class="anchored" data-anchor-id="poll-everywhere-question-4">Poll Everywhere Question 4</h2>
+</section>
+<section id="step-1-check-the-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-check-the-assumptions">Step 1: Check the assumptions</h2>
+<p><strong>Conditions</strong>:</p>
+<ul>
+<li><em>Independent observations &amp; samples</em>
+<ul>
+<li>The observations were collected independently.</li>
+<li>In particular, observations from the two groups weren’t paired in any meaningful way.</li>
+</ul></li>
+<li>The number of expected successes and expected failures is at least 10 <em>for each group</em> - using the pooled proportion:
+<ul>
+<li><span class="math inline">\(n_1\hat{p}_{pool} \ge 10, \ \ n_1(1-\hat{p}_{pool}) \ge 10\)</span></li>
+<li><span class="math inline">\(n_2\hat{p}_{pool} \ge 10, \ \ n_2(1-\hat{p}_{pool}) \ge 10\)</span></li>
+</ul></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li>In the example, we check:
+<ul>
+<li><span class="math inline">\(n_1\hat{p}_{pool}=44925 \cdot 0.0112 = 502.5839 \ge 10\)</span></li>
+<li><span class="math inline">\(n_1(1-\hat{p}_{pool})=  44925 (1-0.0112) = 44422.42 \ge 10\)</span></li>
+<li><span class="math inline">\(n_2\hat{p}_{pool}=44910 \cdot 0.0112 = 502.4161 \ge 10\)</span></li>
+<li><span class="math inline">\(n_2(1-\hat{p}_{pool})=  44910 (1-0.0112) = 44407.58 \ge 10\)</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="step-3-null-and-alternative-hypothesis-test" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-null-and-alternative-hypothesis-test">Step 3: Null and Alternative Hypothesis test</h2>
+<p><strong>Two samples test</strong></p>
+<ul>
+<li><p><span class="math inline">\(H_0\)</span>: The difference in population proportions of deaths from breast cancer among people who received annual mammograms and annual physical check-ups is 0.</p></li>
+<li><p><span class="math inline">\(H_A\)</span>: The difference in population proportions of deaths from breast cancer among people who received annual mammograms and annual physical check-ups is not 0.</p></li>
+</ul>
+<p><span class="math display">\[\begin{align}
+H_0:&amp; p_{mamm} - p_{ctrl} = 0\\
+H_A:&amp; p_{mamm} - p_{ctrl} \neq 0\\
+\end{align}\]</span></p>
+</section>
+<section id="step-4-test-statistic-12" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-test-statistic-12">Step 4: Test statistic (1/2)</h2>
+<p>Sampling distribution of <span class="math inline">\(\hat{p}_1 - \hat{p}_2\)</span>: <span class="math display">\[\hat{p}_1 - \hat{p}_2 \sim N \left(\mu_{\hat{p}_1 - \hat{p}_2} = p_1 - p_2, ~~
+\sigma_{\hat{p}_1 - \hat{p}_2} =
+\sqrt{
+\frac{p_1\cdot(1-p_1)}{n_1} + \frac{p_2\cdot(1-p_2)}{n_2}}
+\right)\]</span></p>
+<p>Since we assume <span class="math inline">\(H_0: p_1 - p_2 = 0\)</span> is true, we “pool” the proportions of the two samples to calculate the SE:</p>
+<p><span class="math display">\[\text{pooled proportion} = \hat{p}_{pool} = \dfrac{\text{total number of successes} }{ \text{total number of cases}} = \frac{x_1+x_2}{n_1+n_2}\]</span></p>
+<p>Test statistic:</p>
+<p><span class="math display">\[
+\text{test statistic} = z_{\hat{p}_1 - \hat{p}_2} = \frac{\hat{p}_1 - \hat{p}_2 - 0}{\sqrt{\frac{\hat{p}_{pool}(1-\hat{p}_{pool})}{n_1} + \frac{\hat{p}_{pool}(1-\hat{p}_{pool})}{n_2}}}
+\]</span></p>
+</section>
+<section id="step-4-test-statistic-22" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-test-statistic-22">Step 4: Test statistic (2/2)</h2>
+<p>From our example: Recall that <span class="math inline">\(\hat{p}_1 = \dfrac{500}{44925}= 0.0111\)</span>, <span class="math inline">\(\hat{p}_2 = \dfrac{505}{44910}= 0.0112\)</span>, <span class="math inline">\(n_1=44925\)</span>, <span class="math inline">\(n_2=44910\)</span>, and <span class="math inline">\(\hat{p}_{pool} = 0.01119\)</span></p>
+<p>The test statistic is:</p>
+<p><span class="math display">\[
+\begin{align}
+z_{\hat{p}_1 - \hat{p}_2} = \frac{\hat{p}_1 - \hat{p}_2 - 0}{\sqrt{\frac{\hat{p}_{pool}\cdot(1-\hat{p}_{pool})}{n_1} + \frac{\hat{p}_{pool}\cdot(1-\hat{p}_{pool})}{n_2}}} = \frac{0.0111 -0.0112}{\sqrt{\frac{0.01119\cdot(1-0.01119)}{44925} + \frac{0.01119\cdot(1-0.01119)}{44910}}} = -0.163933
+\end{align}
+\]</span></p>
+<ul>
+<li>Let’s see the z-score on a Z-distribution (Standard Normal curve)</li>
+</ul>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="step-5-p-value-1" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-p-value-1">Step 5: p-value</h2>
+<p>The <span style="color:#C83532"><strong>p-value</strong></span> is the <strong>probability</strong> of obtaining a test statistic <em>just as extreme or more extreme</em> than the observed test statistic assuming the null hypothesis <span class="math inline">\(H_0\)</span> is true.</p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="16_Prop_inference_files/figure-html/unnamed-chunk-26-1.png" class="img-fluid figure-img" width="960"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:55%;">
+<p>Calculate the <em>p</em>-value:</p>
+<p><span class="math display">\[\begin{align}
+&amp; 2 \cdot P(\hat{p}_1 - \hat{p}_2&lt; 0.0111 - 0.0112) \\
+&amp;= P\left(Z_{\hat{p}_1 - \hat{p}_2} &lt; \frac{0.0111 - 0.0112}{\sqrt{\frac{0.01119\cdot(1-0.01119)}{44925} + \frac{0.01119\cdot(1-0.01119)}{44910}}}\right) \\
+&amp;= 2 \cdot P(Z_{\hat{p}} &gt; -0.164)\\
+&amp;= 0.8697839
+\end{align}\]</span></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span><span class="sc">*</span><span class="fu">pnorm</span>(<span class="sc">-</span><span class="fl">0.1639</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8698099</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-4-5-test-statistic-and-p-value-together-using-prop.test-1" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-5-test-statistic-and-p-value-together-using-prop.test-1">Step 4-5: test statistic and p-value together using <code>prop.test()</code></h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">505</span>, <span class="dv">500</span>), <span class="at">n =</span> <span class="fu">c</span>(<span class="dv">44910</span>, <span class="dv">44925</span>)) <span class="co"># no p needed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    2-sample test for equality of proportions with continuity correction
+
+data:  c(505, 500) out of c(44910, 44925)
+X-squared = 0.01748, df = 1, p-value = 0.8948
+alternative hypothesis: two.sided
+95 percent confidence interval:
+ -0.001282751  0.001512853
+sample estimates:
+    prop 1     prop 2 
+0.01124471 0.01112966 </code></pre>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold">
+<summary>Tidying the output of <code>prop.test()</code></summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">505</span>, <span class="dv">500</span>), <span class="at">n =</span> <span class="fu">c</span>(<span class="dv">44910</span>, <span class="dv">44925</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>() <span class="sc">%&gt;%</span> <span class="fu">gt</span>() <span class="sc">%&gt;%</span> <span class="fu">tab_options</span>(<span class="at">table.font.size =</span> <span class="dv">33</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output-display">
+<div id="utykogrdvm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#utykogrdvm table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#utykogrdvm thead, #utykogrdvm tbody, #utykogrdvm tfoot, #utykogrdvm tr, #utykogrdvm td, #utykogrdvm th {
+  border-style: none;
+}
+
+#utykogrdvm p {
+  margin: 0;
+  padding: 0;
+}
+
+#utykogrdvm .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 33px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#utykogrdvm .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#utykogrdvm .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#utykogrdvm .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#utykogrdvm .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#utykogrdvm .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#utykogrdvm .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#utykogrdvm .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#utykogrdvm .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#utykogrdvm .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#utykogrdvm .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#utykogrdvm .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#utykogrdvm .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#utykogrdvm .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#utykogrdvm .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#utykogrdvm .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#utykogrdvm .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#utykogrdvm .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#utykogrdvm .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#utykogrdvm .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#utykogrdvm .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#utykogrdvm .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#utykogrdvm .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#utykogrdvm .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#utykogrdvm .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#utykogrdvm .gt_left {
+  text-align: left;
+}
+
+#utykogrdvm .gt_center {
+  text-align: center;
+}
+
+#utykogrdvm .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#utykogrdvm .gt_font_normal {
+  font-weight: normal;
+}
+
+#utykogrdvm .gt_font_bold {
+  font-weight: bold;
+}
+
+#utykogrdvm .gt_font_italic {
+  font-style: italic;
+}
+
+#utykogrdvm .gt_super {
+  font-size: 65%;
+}
+
+#utykogrdvm .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#utykogrdvm .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#utykogrdvm .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#utykogrdvm .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#utykogrdvm .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#utykogrdvm .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#utykogrdvm .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#utykogrdvm .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#utykogrdvm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="estimate1" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">estimate1</th>
+<th id="estimate2" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">estimate2</th>
+<th id="statistic" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">statistic</th>
+<th id="p.value" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">p.value</th>
+<th id="parameter" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">parameter</th>
+<th id="conf.low" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">conf.low</th>
+<th id="conf.high" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">conf.high</th>
+<th id="method" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">method</th>
+<th id="alternative" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">alternative</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="estimate1">0.01124471</td>
+<td class="gt_row gt_right" headers="estimate2">0.01112966</td>
+<td class="gt_row gt_right" headers="statistic">0.01747975</td>
+<td class="gt_row gt_right" headers="p.value">0.8948174</td>
+<td class="gt_row gt_right" headers="parameter">1</td>
+<td class="gt_row gt_right" headers="conf.low">-0.001282751</td>
+<td class="gt_row gt_right" headers="conf.high">0.001512853</td>
+<td class="gt_row gt_left" headers="method">2-sample test for equality of proportions with continuity correction</td>
+<td class="gt_row gt_left" headers="alternative">two.sided</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<ul>
+<li>Note: We expect some differences between the test statistic and p-value calculated by hand vs.&nbsp;by R. R uses a slightly different method to calculate.</li>
+</ul>
+</section>
+<section id="step-6-conclusion-to-hypothesis-test-1" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-conclusion-to-hypothesis-test-1">Step 6: Conclusion to hypothesis test</h2>
+<p><span class="math display">\[\begin{align}
+H_0:&amp; p_{mamm} - p_{ctrl} = 0\\
+H_A:&amp; p_{mamm} - p_{ctrl} \neq 0\\
+\end{align}\]</span></p>
+<ul>
+<li>Recall the <span class="math inline">\(p\)</span>-value = 0.8698</li>
+<li>Use <span class="math inline">\(\alpha\)</span> = 0.05</li>
+<li>Do we reject or fail to reject <span class="math inline">\(H_0\)</span>?</li>
+</ul>
+<p><strong>Conclusion statement</strong>:</p>
+<ul>
+<li>Stats class conclusion
+<ul>
+<li>There is insufficient evidence that the difference in (population) proportions of deaths from breast cancer among people who received annual mammograms and annual physical check-ups different (<span class="math inline">\(p\)</span>-value = 0.87).</li>
+</ul></li>
+<li>More realistic manuscript conclusion:
+<ul>
+<li>1.11% of people receiving annual mammograms (n=44925) and 1.12% of people receiving annual physical exams (n=44925) died from breast cancer (<span class="math inline">\(p\)</span>-value = 0.87).</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="learning-objectives-6" class="level1">
+<h1>Learning Objectives</h1>
+<ol type="1">
+<li><p>Remind ourselves of the Normal approximation of the binomial distribution and define the sampling distribution of a sample proportion</p></li>
+<li><p>Run a hypothesis test for a single proportion and interpret the results.</p></li>
+<li><p>Construct and interpret confidence intervals for a single proportion.</p></li>
+<li><p>Understand how CLT applies to a difference in binomial random variables</p></li>
+<li><p>Run a hypothesis test for a difference in proportions and interpret the results.</p></li>
+</ol>
+<div class="lob">
+<ol start="6" type="1">
+<li>Construct and interpret confidence intervals for a difference in proportions.</li>
+</ol>
+</div>
+<section id="conditions-for-difference-in-proportions-test-vs.-ci" class="level2">
+<h2 class="anchored" data-anchor-id="conditions-for-difference-in-proportions-test-vs.-ci">Conditions for difference in proportions: <strong>test vs.&nbsp;CI</strong></h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="green2">
+<div class="green2-ttl">
+<p>Confidence interval conditions</p>
+</div>
+<div class="green2-cont">
+<ol type="1">
+<li><em>Independent observations &amp; samples</em>
+<ul>
+<li>The observations were collected independently.</li>
+<li>In particular, observations from the two groups weren’t paired in any meaningful way.</li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="2" type="1">
+<li>The number of successes and failures is at least 10 <em>for each group</em>.
+<ul>
+<li><span class="math inline">\(n_1\hat{p}_1 \ge 10, \ \ n_1(1-\hat{p}_1) \ge 10\)</span></li>
+<li><span class="math inline">\(n_2\hat{p}_2 \ge 10, \ \ n_2(1-\hat{p}_2) \ge 10\)</span></li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="pink">
+<div class="pink-ttl">
+<p>Hypothesis test conditions</p>
+</div>
+<div class="pink-cont">
+<ol type="1">
+<li><em>Independent observations &amp; samples</em>
+<ul>
+<li>The observations were collected independently.</li>
+<li>In particular, observations from the two groups weren’t paired in any meaningful way.</li>
+</ul></li>
+</ol>
+<p><br></p>
+<ol start="2" type="1">
+<li>The number of <strong>expected</strong> successes and <strong>expected</strong> failures is at least 10 <em>for each group</em> - using the pooled proportion:
+<ul>
+<li><span class="math inline">\(n_1\hat{p}_{pool} \ge 10, \ \ n_1(1-\hat{p}_{pool}) \ge 10\)</span></li>
+<li><span class="math inline">\(n_2\hat{p}_{pool} \ge 10, \ \ n_2(1-\hat{p}_{pool}) \ge 10\)</span></li>
+</ul></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="poll-everywhere-question-5" class="level2">
+<h2 class="anchored" data-anchor-id="poll-everywhere-question-5">Poll Everywhere Question 5</h2>
+</section>
+<section id="ci-for-population-difference-in-proportions" class="level2">
+<h2 class="anchored" data-anchor-id="ci-for-population-difference-in-proportions">95% CI for population difference in proportions</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>What to use for SE in CI formula?</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\hat{p}_1 - \hat{p}_2 \pm z^* \cdot SE_{\hat{p}_1 - \hat{p}_2}\]</span></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>SE in sampling distribution of <span class="math inline">\(\hat{p}_1 - \hat{p}_2\)</span></p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[\sigma_{\hat{p}_1 - \hat{p}_2} =
+\sqrt{
+\frac{p_1\cdot(1-p_1)}{n_1} + \frac{p_2\cdot(1-p_2)}{n_2}} \]</span></p>
+</div>
+</div>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Problem: We don’t know what <span class="math inline">\(p\)</span> is - it’s what we’re estimating with the CI.<br>
+Solution: <span style="color:#5BAFF8">approximate <span class="math inline">\(p_1\)</span>, <span class="math inline">\(p_2\)</span> with <span class="math inline">\(\hat{p}_1\)</span>, <span class="math inline">\(\hat{p}_2\)</span></span>:</p>
+</div><div class="column" style="width:50%;">
+<p><span class="math display">\[SE_{\hat{p}_1 - \hat{p}_2} = \sqrt{
+\frac{\hat{p}_1\cdot(1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2\cdot(1-\hat{p}_2)}{n_2}}\]</span></p>
+</div>
+</div>
+</section>
+<section id="ci-for-the-population-difference-in-proportions" class="level2">
+<h2 class="anchored" data-anchor-id="ci-for-the-population-difference-in-proportions">95% CI for the population difference in proportions</h2>
+<p>95% CI for population mean difference <span class="math inline">\(p_1 - p_2\)</span>:</p>
+<p><span class="math display">\[\begin{align}
+\hat{p}_1 - \hat{p}_2 &amp;\pm z^* \cdot SE_{\hat{p}_1 - \hat{p}_2}\\
+\hat{p}_1 - \hat{p}_2 &amp;\pm z^* \cdot \sqrt{
+\frac{\hat{p}_1\cdot(1-\hat{p}_1)}{n_1} + \frac{\hat{p}_2\cdot(1-\hat{p}_2)}{n_2}} \\
+0.01113 - 0.01124 &amp;\pm 1.96 \cdot \sqrt{\frac{0.01113\cdot(1-0.01113)}{44925} + \frac{0.01124\cdot(1-0.01124)}{44910}}\\
+0.35 &amp;\pm 1.96\cdot 0.001\\
+0.35 &amp;\pm 0.002\\
+(-0.002&amp;, 0.002)
+\end{align}\]</span></p>
+<p>Used <span class="math inline">\(z^*\)</span> = <code>qnorm(0.975)</code> = 1.96</p>
+<p>&nbsp;</p>
+<p><strong>Interpretation</strong>:<br>
+We are 95% confident that the difference in (population) proportions of deaths due to breast cancer comparing people who received annual mammograms to annual physical check-ups is between -0.002 and 0.002.</p>
+</section>
+<section id="ci-for-the-population-difference-in-proportions-1" class="level2">
+<h2 class="anchored" data-anchor-id="ci-for-the-population-difference-in-proportions-1">95% CI for the population difference in proportions</h2>
+<ul>
+<li>We can use R to get similar values</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">prop.test</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="dv">505</span>, <span class="dv">500</span>), <span class="at">n =</span> <span class="fu">c</span>(<span class="dv">44910</span>, <span class="dv">44925</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    2-sample test for equality of proportions with continuity correction
+
+data:  c(505, 500) out of c(44910, 44925)
+X-squared = 0.01748, df = 1, p-value = 0.8948
+alternative hypothesis: two.sided
+95 percent confidence interval:
+ -0.001282751  0.001512853
+sample estimates:
+    prop 1     prop 2 
+0.01124471 0.01112966 </code></pre>
+</div>
+</div>
+<p><strong>R Conclusion:</strong><br>
+We are 95% confident that the difference in (population) proportions of deaths due to breast cancer comparing people who received annual mammograms to annual physical check-ups is between -0.0013 and 0.0015.</p>
+<ul>
+<li>Note: We expect some differences between the confidence interval calculated by hand vs.&nbsp;by R. R uses a slightly different method to calculate.</li>
+</ul>
+
+
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Wolchok, et. al.&nbsp; (2013) 369(2): 122-33.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,10 +1,10 @@
 ---
-title: "Lesson 17: Comparing Means with ANOVA"
+title: "Lesson 16: Comparing Means with ANOVA"
 subtitle: "TB sections 5.5"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "12/2/2024"
+date: "`r library(here); source(here('class_dates.R')); w8d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -13,7 +13,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 17 Slides
+    footer: Lesson 16 Slides
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -74,10 +74,10 @@ theme_set(theme_bw(base_size = 22))
 ![](../img_slides/course_map.png){fig-align="center"}
 
 
-## A little while ago...
+## A few classes ago...
 
--   We looked at inference for a **single mean**
--   We looked at inference for a difference in **means from two independent samples**
+-   We looked at inference for a **single mean** ($\mu$)
+-   We looked at inference for a difference in **means from two independent samples** ($\mu_1 - \mu_2$)
 
  
 
@@ -215,8 +215,8 @@ Whether or not two means are significantly different depends on:
 
 __[Questions:]{style="color:#C83532"}__  
 
-* How to measure variability __between__ groups?
-* How to measure variability __within__ groups?
+* How to measure variability __between__ groups? (aka how far apart are the means?)
+* How to measure variability __within__ groups? (aka how much spread is there in each group?)
 * How to compare the two measures of variability?
 * How to determine significance?
 :::
@@ -226,9 +226,13 @@ __[Questions:]{style="color:#C83532"}__
 :::
 :::
 
-## Generic ANOVA table
+## Generic ANOVA table: typical output
 
 ![](../img_slides/anova_table.png){fig-align="center" height=7in}
+
+- You may see different names for the source of variability:
+    - Between Groups = Model (in example: `actn3.r577x`)
+    - Within Groups = Residuals/Error
 
 ## ANOVA: Analysis of Variance  {.nostretch}
 
@@ -316,9 +320,9 @@ __Analysis of Variance (ANOVA)__ compares the variability between groups to the 
 ![](../img_slides/anova_total_variability.png){fig-align="center" height=2in}
 
 
-$$\sum_{i = 1}^k \sum_{j = 1}^{n_i}(x_{ij} -\bar{x})^2 \ \ 
-= \ \sum_{i = 1}^k n_i(\bar{x}_{i}-\bar{x})^2 \ \ 
-+ \ \ \sum_{i = 1}^k\sum_{j = 1}^{n_i}(x_{ij}-\bar{x}_{i})^2$$
+$$\sum_{i = 1}^k \sum_{j = 1}^{n_i}(x_{ij} -\overline{x})^2 \ \ 
+= \ \sum_{i = 1}^k n_i(\overline{x}_{i}-\overline{x})^2 \ \ 
++ \ \ \sum_{i = 1}^k\sum_{j = 1}^{n_i}(x_{ij}-\overline{x}_{i})^2$$
 
 
 ![](../img_slides/anova_SS_total.png){fig-align="center" height=2in}
@@ -334,8 +338,8 @@ $$\sum_{i = 1}^k \sum_{j = 1}^{n_i}(x_{ij} -\bar{x})^2 \ \
 * _k_ groups
 * $n_i$ observations in each of the _k_ groups
 * Total sample size is $N=\sum_{i=1}^{k}n_i$
-* $\bar{x}_{i}$ = mean of observations in group _i_
-* $\bar{x}$ = mean of _all_ observations
+* $\overline{x}_{i}$ = mean of observations in group _i_
+* $\overline{x}$ = mean of _all_ observations
 * $s_{i}$ = sd of observations in group _i_
 * $s$ = sd of _all_ observations
 
@@ -351,7 +355,7 @@ $$\sum_{i = 1}^k \sum_{j = 1}^{n_i}(x_{ij} -\bar{x})^2 \ \
 | *j* = 4     | $x_{14}$      | $x_{24}$      | $x_{34}$      | $\ldots$ | $x_{k4}$      |           |
 | $\vdots$    | $\vdots$      | $\vdots$      | $\vdots$      | $\ddots$ | $\vdots$      |           |
 | *j* = $n_i$ | $x_{1n_1}$      | $x_{2n_2}$      | $x_{3n_3}$      | $\ldots$ | $x_{kn_k}$      |           |
-| Means       | $\bar{x}_{1}$ | $\bar{x}_{2}$ | $\bar{x}_{3}$ | $\ldots$ | $\bar{x}_{k}$ | $\bar{x}$ |
+| Means       | $\overline{x}_{1}$ | $\overline{x}_{2}$ | $\overline{x}_{3}$ | $\ldots$ | $\overline{x}_{k}$ | $\overline{x}$ |
 | Variance    | ${s}^2_{1}$   | ${s}^2_{2}$   | ${s}^2_{3}$   | $\ldots$ | ${s}^2_{k}$   | ${s}^2$   |
 
 :::
@@ -376,13 +380,13 @@ var_tot_plot
 
 Total Sums of Squares:
 
-$$SST = \sum_{i = 1}^k \sum_{j = 1}^{n_i}(x_{ij} -\bar{x})^2 = (N-1)s^2$$
+$$SST = \sum_{i = 1}^k \sum_{j = 1}^{n_i}(x_{ij} -\overline{x})^2 = (N-1)s^2$$
 
 * where 
     * $N=\sum_{i=1}^{k}n_i$ is the total sample size and
     * $s^2$ is the grand standard deviation of all the observations
 
-* This is the sum of the squared differences between each observed $x_{ij}$ value and the *grand mean*, $\bar{x}$. 
+* This is the sum of the squared differences between each observed $x_{ij}$ value and the *grand mean*, $\overline{x}$. 
 
 * That is, it is the total deviation of the $x_{ij}$'s from the grand mean. 
 
@@ -403,9 +407,9 @@ var_bw_gp_plot
 ::: {.column width="60%"}
 Sums of Squares due to Groups:
 
-$$SSG = \sum_{i = 1}^k n_i(\bar{x}_{i}-\bar{x})^2$$
+$$SSG = \sum_{i = 1}^k n_i(\overline{x}_{i}-\overline{x})^2$$
 
-* This is the sum of the squared differences between each *group* mean, $\bar{x}_{i}$, and the *grand mean*, $\bar{x}$. 
+* This is the sum of the squared differences between each *group* mean, $\overline{x}_{i}$, and the *grand mean*, $\overline{x}$. 
 
 * That is, it is the deviation of the group means from the grand mean.
 
@@ -429,10 +433,10 @@ var_win_gp_plot
 ::: {.column width="60%"}
 Sums of Squares Error:
 
-$$SSE = \sum_{i = 1}^k\sum_{j = 1}^{n_i}(x_{ij}-\bar{x}_{i})^2 = \sum_{i = 1}^k(n_i-1)s_{i}^2$$
+$$SSE = \sum_{i = 1}^k\sum_{j = 1}^{n_i}(x_{ij}-\overline{x}_{i})^2 = \sum_{i = 1}^k(n_i-1)s_{i}^2$$
 where $s_{i}$ is the standard deviation of the $i^{th}$ group
 
-* This is the sum of the squared differences between each observed $x_{ij}$ value and its group mean $\bar{x}_{i}$. 
+* This is the sum of the squared differences between each observed $x_{ij}$ value and its group mean $\overline{x}_{i}$. 
 
 * That is, it is the deviation of the $x_{ij}$'s from the predicted ndrm.ch by group.
 
