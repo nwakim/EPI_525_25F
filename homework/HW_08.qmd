@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-## Directions {.unnumbered}
+# Directions {.unnumbered}
 
 **Please turn in this homework on Sakai. You will need to turn in an html file and a qmd file,** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** 
 
@@ -49,6 +49,12 @@ It is a good idea to try rendering your document from time to time as you go alo
 
 Note from Nicky: I'm sorry. This problem was not supposed to be in HW 7... If you already did it, you can paste it here. Try to reflect and see if this problem is clearer now that we've covered power and sample size. 
 
+## 5.46 Child care hours {.unnumbered}
+
+## 5.48 True/False: ANOVA, Part II {.unnumbered}
+
+Skip parts c and d.
+
 ## 8.2 Young Americans, Part I {.unnumbered}
 
 Skip part a!
@@ -61,22 +67,6 @@ Skip part a!
 * (b): Calculate the CI both using the formula and using the appropriate R statistical test.
 * Add parts (e) & (f) as instructed below.
 :::
-
-### (a) {.unnumbered}
-
-
-
-### (b) {.unnumbered}
-
-
-
-### (c) {.unnumbered}
-
-
-
-### (d) {.unnumbered}
-
-
 
 ### (e) {.unnumbered}
 
@@ -91,9 +81,6 @@ Are the results from CI and hypothesis test consistent? Why or why not?
 
 ## 8.26 An apple a day keeps the doctor away {.unnumbered}
 
-## 8.28 True or false, Part II {.unnumbered}
-
-## 8.34 Coffee and Depression {.unnumbered}
 
 # PSS
 
@@ -114,7 +101,61 @@ Suppose the study has resources to include 30 people. What minimum effect size w
 
 # R
 
-## R1: The Strong Heart Study
+## R1: Palmer Penguins ANOVA
+
+
+* Use the `penguins` data from the `palmerpenguins` package.
+    * Don't forget to first __install__ the `palmerpenguins` package
+* You can learn more about the Palmer penguins data at <https://allisonhorst.github.io/palmerpenguins/>
+* We will test whether there are differences in penguins' mean bill depths when comparing different species.
+
+
+```{r}
+library(palmerpenguins)
+data(penguins)
+```
+
+
+### Plots
+
+Make a plot of the penguins' bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean. See example from class for the plot I'm describing. 
+
+
+### Assumptions
+
+Investigate whether the assumptions for using an ANOVA been satisfied. 
+
+### Which groups significantly different?
+
+Based on the figure, which pairs of species look like they have significantly different mean bill depths?
+
+
+### Hypotheses in symbols or words
+
+Write out in symbols or words the null and alternative hypotheses. 
+
+
+
+### Run ANOVA in R
+
+Using R, run the hypothesis test and display the output.
+
+### F statistic
+
+Using the values from the ANOVA table, verify (calculate) the value of the F statistic.
+
+
+### Decision?
+
+Based on the p-value, will we reject or fail to reject the null hypothesis? Why?
+
+
+### Conclusion
+
+Write a conclusion to the hypothesis test in the context of the problem.
+
+
+## R2: The Strong Heart Study
 
 The [Strong Heart Study](https://strongheartstudy.org/) is an ongoing study of American Indians residing in 13 tribal communities in three geographic areas (AZ, OK, and SD/ND) to study prevalence and incidence of cardiovascular disease and to identify risk factors. We will be examining the 4-year cumulative incidence of diabetes with one risk factor, glucose tolerance. We are curious if the proportion of individuals diagnosed with diabetes is different between glucose tolerances.
 

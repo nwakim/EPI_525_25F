@@ -10,14 +10,9 @@ format:
       collapsed: false
     number-sections: true
     number-depth: 4
-    theme: lumen
     self-contained: true
     html-math-method: mathjax
 ---
-
-::: callout-important
-Homework is ready to be worked on!! (12/5/24)
-:::
 
 ```{r}
 #| label: "setup"
@@ -26,13 +21,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-**Due 12/13/24**
-
 # Directions {.unnumbered}
 
-[Please turn in this homework on Sakai.](https://sakai.ohsu.edu/portal/site/EPI-525-1-15028-F24/tool/137d7c54-61a9-4727-9018-374c3773c508) This homework must be submitted using a Quarto document. **Please keep it rendered as an html and turn in the html document!** I know past homeworks said pdf, but all Quarto docs should be rendered as html for this class!
+**Please turn in this homework on Sakai. You will need to turn in an html file and a qmd file,** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** 
 
-You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/F24_EPI_525/blob/main/homework/HW_09.qmd)
+You can download the .qmd file for this assignment from [Github](https://github.com/nwakim/EPI_525_25F/blob/main/homework/HW_09.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**
 
 :::{.callout-tip}
 It is a good idea to try rendering your document from time to time as you go along!  Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly.
@@ -53,10 +46,6 @@ Instead of doing part (b) - (f), please run a hypothesis test using the Chi-squa
 
 ### (g)
 
-## 5.46 Child care hours {.unnumbered}
-
-
-## 5.48 True/False: ANOVA, Part II {.unnumbered}
 
 # R exercise
 
@@ -65,61 +54,6 @@ Instead of doing part (b) - (f), please run a hypothesis test using the Chi-squa
 ```{r}
 
 ```
-
-
-## R1: Palmer Penguins ANOVA
-
-
-* Use the `penguins` data from the `palmerpenguins` package.
-    * Don't forget to first __install__ the `palmerpenguins` package
-* You can learn more about the Palmer penguins data at <https://allisonhorst.github.io/palmerpenguins/>
-* We will test whether there are differences in penguins' mean bill depths when comparing different species.
-
-
-```{r}
-library(palmerpenguins)
-data(penguins)
-```
-
-
-### Dotplots
-
-__Make a dotplot of the penguins' bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean.__ _See example from class for the plot I'm describing._
-
-
-### Technical conditions
-
-__Investigate whether the technical conditions for using an ANOVA been satisfied. __
-
-### Which groups significantly different?
-
-__Based on the figure, which pairs of species look like they have significantly different mean bill depths?__ 
-
-
-### Hypotheses in symbols or words
-
-__Write out in symbols or words the null and alternative hypotheses.__  
-
-
-
-### Run ANOVA in R
-
-__Using R, run the hypothesis test and display the output.__  
-
-
-### F statistic
-
-__Using the values from the ANOVA table, verify (calculate) the value of the F statistic.__ 
-
-
-### Decision?
-
-__Based on the p-value, will we reject or fail to reject the null hypothesis? Why?__
-
-
-### Conclusion
-
-__Write a conclusion to the hypothesis test in the context of the problem.__
 
 # Nonparametric-Tests
 

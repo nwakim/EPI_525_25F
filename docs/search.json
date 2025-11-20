@@ -2153,7 +2153,7 @@
     "href": "homework/HW_08.html#truefalse-anova-part-ii",
     "title": "Homework 8",
     "section": "5.48 True/False: ANOVA, Part II",
-    "text": "5.48 True/False: ANOVA, Part II"
+    "text": "5.48 True/False: ANOVA, Part II\nSkip parts c and d."
   },
   {
     "objectID": "homework/HW_08.html#identify-relationships-part-ii",
@@ -2187,8 +2187,8 @@
     "objectID": "homework/HW_08.html#r1-palmer-penguins-anova",
     "href": "homework/HW_08.html#r1-palmer-penguins-anova",
     "title": "Homework 8",
-    "section": "1.2 R1: Palmer Penguins ANOVA",
-    "text": "1.2 R1: Palmer Penguins ANOVA\n\nUse the penguins data from the palmerpenguins package.\n\nDon’t forget to first install the palmerpenguins package\n\nYou can learn more about the Palmer penguins data at https://allisonhorst.github.io/palmerpenguins/\nWe will test whether there are differences in penguins’ mean bill depths when comparing different species.\n\n\nlibrary(palmerpenguins)\ndata(penguins)\n\n\n1.2.1 Dotplots\nMake a dotplot of the penguins’ bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean. See example from class for the plot I’m describing.\n\n\n1.2.2 Which groups significantly different?\nBased on the figure, which pairs of species look like they have significantly different mean bill depths?\n\n\n1.2.3 Hypotheses in words\nWrite out in words the null and alternative hypotheses.\n\n\n1.2.4 Hypotheses in symbols\nWrite out in symbols the null and alternative hypotheses.\n\n\n1.2.5 Run ANOVA in R\nUsing R, run the hypothesis test and display the output.\n\n\n1.2.6 SST\nUsing the values from the ANOVA table, calculate the value of the SST (total sum of squares).\n\n\n1.2.7 MSG & MSE\nUsing the values from the ANOVA table, verify (calculate) the values of the MSG (mean square groups) and MSE (mean square error).\n\n\n1.2.8 F statistic\nUsing the values from the ANOVA table, verify (calculate) the value of the F statistic.\n\n\n1.2.9 p-value\nUsing the values from the ANOVA table, verify (calculate) the p-value.\n\n\n1.2.10 Decision?\nBased on the p-value, will we reject or fail to reject the null hypothesis? Why?\n\n\n1.2.11 Conclusion\nWrite a conclusion to the hypothesis test in the context of the problem.\n\n\n1.2.12 Technical conditions\nInvestigate whether the technical conditions for using an ANOVA been satisfied. \n\n\n1.2.13 Post-hoc pairwise t-tests: no correction\nRun post-hoc pairwise t-tests using NO p-value correction. Which pairs of species have significantly different bill depths?\n\n\n1.2.14 Post-hoc pairwise t-tests: Bonferroni correction\nRun post-hoc pairwise t-tests using a Bonferroni correction. Which pairs of species have significantly different bill depths?\n\n\n1.2.15 Hypothetical Bonferroni correction\nIf hypothetically the p-value comparing the mean bill depths of the Adelie and Chinstrap species were 0.03 without any p-value adjustment, what would the p-value be after running the post-hoc pairwise t-tests using a Bonferroni correction?\n\n\n1.2.16 Post-hoc pairwise t-tests: Tukey’s Honest Significance Test correction\nRun post-hoc pairwise t-tests using Tukey’s Honest Significance Test correction. Which pairs of species have significantly different bill depths?\n\n\n1.2.17 Tukey confidence intervals\nMake a plot showing the 95% family-wise Tukey confidence intervals. How does this plot visually confirm the which pairs of species have significantly different bill depths?"
+    "section": "2.1 R1: Palmer Penguins ANOVA",
+    "text": "2.1 R1: Palmer Penguins ANOVA\n\nUse the penguins data from the palmerpenguins package.\n\nDon’t forget to first install the palmerpenguins package\n\nYou can learn more about the Palmer penguins data at https://allisonhorst.github.io/palmerpenguins/\nWe will test whether there are differences in penguins’ mean bill depths when comparing different species.\n\n\nlibrary(palmerpenguins)\n\n\nAttaching package: 'palmerpenguins'\n\n\nThe following objects are masked from 'package:datasets':\n\n    penguins, penguins_raw\n\ndata(penguins)\n\n\n2.1.1 Plots\nMake a plot of the penguins’ bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean. See example from class for the plot I’m describing.\n\n\n2.1.2 Assumptions\nInvestigate whether the assumptions for using an ANOVA been satisfied.\n\n\n2.1.3 Which groups significantly different?\nBased on the figure, which pairs of species look like they have significantly different mean bill depths?\n\n\n2.1.4 Hypotheses in symbols or words\nWrite out in symbols or words the null and alternative hypotheses.\n\n\n2.1.5 Run ANOVA in R\nUsing R, run the hypothesis test and display the output.\n\n\n2.1.6 F statistic\nUsing the values from the ANOVA table, verify (calculate) the value of the F statistic.\n\n\n2.1.7 Decision?\nBased on the p-value, will we reject or fail to reject the null hypothesis? Why?\n\n\n2.1.8 Conclusion\nWrite a conclusion to the hypothesis test in the context of the problem."
   },
   {
     "objectID": "homework/HW_08.html#r2-palmer-penguins-slr",
@@ -2251,7 +2251,7 @@
     "href": "homework/HW_09.html",
     "title": "Homework 9",
     "section": "",
-    "text": "Important\n\n\n\nHomework is ready to be worked on!! (12/5/24)\nDue 12/13/24"
+    "text": "Please turn in this homework on Sakai. You will need to turn in an html file and a qmd file, Please submit your homework in pdf format if you are not rendering a Quarto document. If you are using a Quarto doc to render your full homework, then you can keep it as an html!\nYou can download the .qmd file for this assignment from Github if you want to work in a Quarto doc. You do not need to work in a Quarto doc for this homework!!\n\n\n\n\n\n\nTip\n\n\n\nIt is a good idea to try rendering your document from time to time as you go along! Note that rendering automatically saves your Qmd file and rendering frequently helps you catch your errors more quickly."
   },
   {
     "objectID": "homework/HW_09.html#directions",
@@ -5121,7 +5121,7 @@
     "href": "homework/HW_09.html#r1-palmer-penguins-anova",
     "title": "Homework 9",
     "section": "1.2 R1: Palmer Penguins ANOVA",
-    "text": "1.2 R1: Palmer Penguins ANOVA\n\nUse the penguins data from the palmerpenguins package.\n\nDon’t forget to first install the palmerpenguins package\n\nYou can learn more about the Palmer penguins data at https://allisonhorst.github.io/palmerpenguins/\nWe will test whether there are differences in penguins’ mean bill depths when comparing different species.\n\n\nlibrary(palmerpenguins)\ndata(penguins)\n\n\n1.2.1 Dotplots\nMake a dotplot of the penguins’ bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean. See example from class for the plot I’m describing.\n\n\n1.2.2 Technical conditions\nInvestigate whether the technical conditions for using an ANOVA been satisfied. \n\n\n1.2.3 Which groups significantly different?\nBased on the figure, which pairs of species look like they have significantly different mean bill depths?\n\n\n1.2.4 Hypotheses in symbols or words\nWrite out in symbols or words the null and alternative hypotheses.\n\n\n1.2.5 Run ANOVA in R\nUsing R, run the hypothesis test and display the output.\n\n\n1.2.6 F statistic\nUsing the values from the ANOVA table, verify (calculate) the value of the F statistic.\n\n\n1.2.7 Decision?\nBased on the p-value, will we reject or fail to reject the null hypothesis? Why?\n\n\n1.2.8 Conclusion\nWrite a conclusion to the hypothesis test in the context of the problem."
+    "text": "1.2 R1: Palmer Penguins ANOVA\n\nUse the penguins data from the palmerpenguins package.\n\nDon’t forget to first install the palmerpenguins package\n\nYou can learn more about the Palmer penguins data at https://allisonhorst.github.io/palmerpenguins/\nWe will test whether there are differences in penguins’ mean bill depths when comparing different species.\n\n\nlibrary(palmerpenguins)\n\n\nAttaching package: 'palmerpenguins'\n\n\nThe following objects are masked from 'package:datasets':\n\n    penguins, penguins_raw\n\ndata(penguins)\n\n\n1.2.1 Dotplots\nMake a dotplot of the penguins’ bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean. See example from class for the plot I’m describing.\n\n\n1.2.2 Technical conditions\nInvestigate whether the technical conditions for using an ANOVA been satisfied. \n\n\n1.2.3 Which groups significantly different?\nBased on the figure, which pairs of species look like they have significantly different mean bill depths?\n\n\n1.2.4 Hypotheses in symbols or words\nWrite out in symbols or words the null and alternative hypotheses.\n\n\n1.2.5 Run ANOVA in R\nUsing R, run the hypothesis test and display the output.\n\n\n1.2.6 F statistic\nUsing the values from the ANOVA table, verify (calculate) the value of the F statistic.\n\n\n1.2.7 Decision?\nBased on the p-value, will we reject or fail to reject the null hypothesis? Why?\n\n\n1.2.8 Conclusion\nWrite a conclusion to the hypothesis test in the context of the problem."
   },
   {
     "objectID": "homework/HW_08.html#young-americans-part-i",
@@ -5135,7 +5135,7 @@
     "href": "homework/HW_08.html#legalization-of-marijuana-part-i",
     "title": "Homework 8",
     "section": "8.8 Legalization of marijuana, Part I",
-    "text": "8.8 Legalization of marijuana, Part I\n\n\n\n\n\n\nImportantAdditional instructions\n\n\n\n\n(b): Calculate the CI both using the formula and using the appropriate R statistical test.\nAdd parts (e) & (f) as instructed below.\n\n\n\n\n(a)\n\n\n(b)\n\n\n(c)\n\n\n(d)\n\n\n(e)\nTest whether the proportion of US residents who think marijuana should be made legal is different than 0.586.\n\n\n(f)\nAre the results from CI and hypothesis test consistent? Why or why not?"
+    "text": "8.8 Legalization of marijuana, Part I\n\n\n\n\n\n\nImportantAdditional instructions\n\n\n\n\n(b): Calculate the CI both using the formula and using the appropriate R statistical test.\nAdd parts (e) & (f) as instructed below.\n\n\n\n\n(e)\nTest whether the proportion of US residents who think marijuana should be made legal is different than 0.586.\n\n\n(f)\nAre the results from CI and hypothesis test consistent? Why or why not?"
   },
   {
     "objectID": "homework/HW_08.html#legalize-marijuana-part-ii",
@@ -22446,7 +22446,7 @@
     "href": "hw_answers/HW_08_ans.html",
     "title": "Homework 8 Answers",
     "section": "",
-    "text": "A food safety inspector is called upon to investigate a restaurant with a few customer reports of poor sanitation practices. The food safety inspector uses a hypothesis testing framework to evaluate whether regulations are not being met. If he decides the restaurant is in gross violation, its license to serve food will be revoked.\n\n\nWrite the hypotheses in words.\n\n\\(H_0:\\) The restaurant meets food safety and sanitation regulations.\n\\(H_a:\\) ???\n\n\n\n\nWhat is a Type~1 Error in this context?\n\n\n\n\n\n\nWhat is a Type~2 Error in this context?\n\nThe food safety inspector concludes that the restaurant meets food safety and sanitation regulations and the restaurant stays open when the restaurant is actually not safe.\n\n\n\n\nWhich error is more problematic for the restaurant owner? Why?\n\n\n\n\n\n\nWhich error is more problematic for the diners? Why?\n\n\n\n\n\n\nAs a diner, would you prefer that the food safety inspector requires strong evidence or very strong evidence of health concerns before revoking a restaurant’s license? Explain your reasoning.\n\n\n\n\n\n\n\nSkip part a!\n\n\n\nFALSE.\n\n\n\n\n\nFALSE\n\n\n\n\n\nTRUE.\n\n\n\n\n\n\n\n\n\n\n\nImportantAdditional instructions\n\n\n\n\n(b): Calculate the CI both using the formula and using the appropriate R statistical test.\nAdd parts (e) & (f) as instructed below.\n\n\n\n\n\n\nsample statistic\n\n\n\n\n\nBy hand: \\[(0.5862038, 0.6343285)\\]\nUsing R: \\[(0.5856442, 0.6343456)\\]\n\n\n\n\n\nYes, good approximation\n\n\n\n\n\nYes\n\n\n\n\nTest whether the proportion of US residents who think marijuana should be made legal is different than 0.586.\n\nBy hand: - \\(z = 1.957066\\) - \\(p-value = 0.05033966\\)\nUsing R: - \\(p-value = 0.05341977\\)\n\n\n\n\nAre the results from CI and hypothesis test consistent? Why or why not?\n\nYes!\n\n\n\n\n\n\n\n\nFALSE.\n\n\n\n\n\nTRUE.\n\n\n\n\n\nFALSE.\n\n\n\n\n\nFALSE.\n\n\n\n\n\n\nNo\n\n\n\n\n\n\n\nTRUE.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFALSE.\n\n\n\n\n\n\n\n\nNot given\n\n\n\n\n\nPartial: \\(H_A\\): There is an association between caffeinated coffee consumption and depression in women\n\n\n\n\n\nOverall, the proportion of women who do and not suffer from depression are 0.05 and 0.95, respectively.\n\n\n\n\n\nExpected count: 339.99\n\n\n\n\n\nP-value is 0.0003269\n\n\n\n\n\nNot given\n\n\n\n\n\nNot given"
+    "text": "A food safety inspector is called upon to investigate a restaurant with a few customer reports of poor sanitation practices. The food safety inspector uses a hypothesis testing framework to evaluate whether regulations are not being met. If he decides the restaurant is in gross violation, its license to serve food will be revoked.\n\n\nWrite the hypotheses in words.\n\n\\(H_0:\\) The restaurant meets food safety and sanitation regulations.\n\\(H_a:\\) ???\n\n\n\n\nWhat is a Type~1 Error in this context?\n\n\n\n\n\n\nWhat is a Type~2 Error in this context?\n\nThe food safety inspector concludes that the restaurant meets food safety and sanitation regulations and the restaurant stays open when the restaurant is actually not safe.\n\n\n\n\nWhich error is more problematic for the restaurant owner? Why?\n\n\n\n\n\n\nWhich error is more problematic for the diners? Why?\n\n\n\n\n\n\nAs a diner, would you prefer that the food safety inspector requires strong evidence or very strong evidence of health concerns before revoking a restaurant’s license? Explain your reasoning.\n\n\n\n\n\n\n\n\n\n\nNot given\n\n\n\n\n\nFail to reject\n\n\n\n\n\n\n\n\nFalse\n\n\n\n\n\nNot given\n\n\n\n\n\nSkip part a!\n\n\n\nFALSE.\n\n\n\n\n\nFALSE\n\n\n\n\n\nTRUE.\n\n\n\n\n\n\n\n\n\n\n\nImportantAdditional instructions\n\n\n\n\n(b): Calculate the CI both using the formula and using the appropriate R statistical test.\nAdd parts (e) & (f) as instructed below.\n\n\n\n\n\n\nsample statistic\n\n\n\n\n\nBy hand: \\[(0.5862038, 0.6343285)\\]\nUsing R: \\[(0.5856442, 0.6343456)\\]\n\n\n\n\n\nYes, good approximation\n\n\n\n\n\nYes\n\n\n\n\nTest whether the proportion of US residents who think marijuana should be made legal is different than 0.586.\n\nBy hand: - \\(z = 1.957066\\) - \\(p-value = 0.05033966\\)\nUsing R: - \\(p-value = 0.05341977\\)\n\n\n\n\nAre the results from CI and hypothesis test consistent? Why or why not?\n\nYes!\n\n\n\n\n\n\n\n\nFALSE.\n\n\n\n\n\nTRUE.\n\n\n\n\n\nFALSE.\n\n\n\n\n\nFALSE.\n\n\n\n\n\n\nNo"
   },
   {
     "objectID": "hw_answers/HW_08_ans.html#testing-for-food-safety",
@@ -23293,14 +23293,14 @@
     "href": "hw_answers/HW_09_ans.html#true-or-false-part-ii",
     "title": "Homework 9 Answers",
     "section": "8.28 True or false, Part II",
-    "text": "8.28 True or false, Part II\n\n(a)\nTRUE.\n\n\n(b)\nTRUE.\n\n\n(c)\nFALSE.\n\n\n(d)\nFALSE."
+    "text": "8.28 True or false, Part II\n\n(a)\n\nTRUE.\n\n\n\n(b)\n\n\n\n\n\n(c)\n\n\n\n\n\n(d)\n\nFALSE."
   },
   {
     "objectID": "hw_answers/HW_09_ans.html#coffee-and-depression",
     "href": "hw_answers/HW_09_ans.html#coffee-and-depression",
     "title": "Homework 9 Answers",
     "section": "8.34 Coffee and Depression",
-    "text": "8.34 Coffee and Depression\n\n0.0.1 (a)\n\n\n0.0.2 (b)-(f)\nInstead of doing part (b) - (f), please run a hypothesis test using the Chi-squared test.\n\n\n0.0.3 (g)"
+    "text": "8.34 Coffee and Depression\n\n(a)\n\nNot given\n\n\n\n0.0.1 (b)\n\nPartial: \\(H_A\\): There is an association between caffeinated coffee consumption and depression in women\n\n\n\n0.0.2 (c)\n\nOverall, the proportion of women who do and not suffer from depression are 0.05 and 0.95, respectively.\n\n\n\n0.0.3 (d)\n\nExpected count: 339.99\n\n\n\n0.0.4 (e)\n\nP-value is 0.0003269\n\n\n\n0.0.5 (f)\n\nNot given\n\n\n\n0.0.6 (g)\n\nNot given"
   },
   {
     "objectID": "hw_answers/HW_09_ans.html#child-care-hours",
@@ -28537,5 +28537,75 @@
     "title": "Muddy Points",
     "section": "",
     "text": "An ANOVA is more appropriate when you have more than two groups or means to compare. While a t-test is used to compare the means of two groups, ANOVA can handle three or more groups simultaneously.\n\n\n\nThe F-statistic is used to determine whether there are significant differences between group means in an ANOVA test. When reporting a conclusion, you typically report only the p-value. The F-statistic is more like the T-statistic that we used in the previous hypothesis tests. The p-value indicates the probability of observing the data (or more extreme data) if the null hypothesis (that all group means are equal) is true.\n\n\n\nIn the total sum of squares (SST) equation, you do not multiply xj and xi together. Instead, the total sum of squares is calculated as the sum of the squared differences between each observation and the overall mean. \\(x_{ij}\\) represents the observation for group i and observation j.\n\n\n\nThe sample is not from the F-distribution. In ANOVA, the F-statistic is calculated as the ratio of the variance between group means to the variance within the groups. If the null hypothesis is true (i.e., all group means are equal), this ratio follows an F-distribution. So it’s just the test statistic that follows the F-distribution, not the sample of data itself."
+  },
+  {
+    "objectID": "homework/HW_08.html#r2-the-strong-heart-study",
+    "href": "homework/HW_08.html#r2-the-strong-heart-study",
+    "title": "Homework 8",
+    "section": "2.2 R2: The Strong Heart Study",
+    "text": "2.2 R2: The Strong Heart Study\nThe Strong Heart Study is an ongoing study of American Indians residing in 13 tribal communities in three geographic areas (AZ, OK, and SD/ND) to study prevalence and incidence of cardiovascular disease and to identify risk factors. We will be examining the 4-year cumulative incidence of diabetes with one risk factor, glucose tolerance. We are curious if the proportion of individuals diagnosed with diabetes is different between glucose tolerances.\n\nImpaired glucose: normal or impaired glucose tolerance at baseline visit (between 1988 and 1991)\nDiabetes: Indicator of diabetes at follow-up visit (roughly four years after baseline) according to two-hour oral glucose tolerance test\n\nThe data are in SHS_data.csv located in the Data folder of the shared OneDrive folder. The following table summarizes the data:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGlucose\n\nDiabetes\n\nTotal\n\n\nNot diabetic\nDiabetic\n\n\n\n\nImpaired\n334\n198\n532\n\n\nNormal\n1004\n128\n1132\n\n\nTotal\n1338\n326\n1664\n\n\n\n\n\n\n\n\n2.2.1 Run a hypothesis test\nComplete the hypothesis test to see if the proportion of individuals diagnosed with diabetes is different between glucose tolerances. (Reminder: Follow all steps and put your conclusion in context of the Strong Heart Study)\n\n\n2.2.2 Calculate the confidence interval for the difference in proportions\nCalculate and interpret the 95% confidence interval for the difference in proportions using the formula. Is it consistent with CI from the R output of the hypothesis test? (Reminder: Make sure to check the assumptions!)"
+  },
+  {
+    "objectID": "lessons/17_Prop_inference/17_Prop_inference_key_info.html",
+    "href": "lessons/17_Prop_inference/17_Prop_inference_key_info.html",
+    "title": "Key Info and Announcements",
+    "section": "",
+    "text": "HW 8\n\nThis will be 1.5 times the normal homework length\nEven though it is not due until next week, I recommend starting early\n\nHW 6\n\nIn your R problems, sentences and context should given along with the R code\nt-test: in your R code, the mu should be the population mean from the null hypothesis\n\nAll office hours are cancelled this week!\n\nTAs say you are welcome to email them with questions\nHannah: and Sophia"
+  },
+  {
+    "objectID": "lessons/17_Prop_inference/17_Prop_inference_key_info.html#announcements",
+    "href": "lessons/17_Prop_inference/17_Prop_inference_key_info.html#announcements",
+    "title": "Key Info and Announcements",
+    "section": "",
+    "text": "HW 8\n\nThis will be 1.5 times the normal homework length\nEven though it is not due until next week, I recommend starting early\n\nHW 6\n\nIn your R problems, sentences and context should given along with the R code\nt-test: in your R code, the mu should be the population mean from the null hypothesis\n\nAll office hours are cancelled this week!\n\nTAs say you are welcome to email them with questions\nHannah: and Sophia"
+  },
+  {
+    "objectID": "lessons/17_Prop_inference/17_Prop_inference_key_info.html#key-dates",
+    "href": "lessons/17_Prop_inference/17_Prop_inference_key_info.html#key-dates",
+    "title": "Key Info and Announcements",
+    "section": "Key Dates",
+    "text": "Key Dates"
+  },
+  {
+    "objectID": "hw_answers/HW_08_ans.html#child-care-hours",
+    "href": "hw_answers/HW_08_ans.html#child-care-hours",
+    "title": "Homework 8 Answers",
+    "section": "",
+    "text": "Not given\n\n\n\n\n\nFail to reject"
+  },
+  {
+    "objectID": "hw_answers/HW_08_ans.html#truefalse-anova-part-ii",
+    "href": "hw_answers/HW_08_ans.html#truefalse-anova-part-ii",
+    "title": "Homework 8 Answers",
+    "section": "",
+    "text": "False\n\n\n\n\n\nNot given"
+  },
+  {
+    "objectID": "hw_answers/HW_08_ans.html#r1-palmer-penguins-anova",
+    "href": "hw_answers/HW_08_ans.html#r1-palmer-penguins-anova",
+    "title": "Homework 8 Answers",
+    "section": "R1: Palmer Penguins ANOVA",
+    "text": "R1: Palmer Penguins ANOVA\n\nUse the penguins data from the palmerpenguins package.\n\nDon’t forget to first install the palmerpenguins package\n\nYou can learn more about the Palmer penguins data at https://allisonhorst.github.io/palmerpenguins/\nWe will test whether there are differences in penguins’ mean bill depths when comparing different species.\n\n\nlibrary(palmerpenguins)\n\n\nAttaching package: 'palmerpenguins'\n\n\nThe following objects are masked from 'package:datasets':\n\n    penguins, penguins_raw\n\ndata(penguins)\n\n\nDotplots\nMake a dotplot of the penguins’ bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean. See example from class for the plot I’m describing.\n\nWe can use boxplots.\nThe following plot is not complete. You need to add the boxplots to it. I wanted to give you the code for the species-specific means and the grand sample mean.\n\nggplot(penguins,\n       aes(x = species,\n           y=bill_depth_mm,\n           fill = species,\n           color = species)) +\n  geom_hline(aes(yintercept = mean(bill_depth_mm, na.rm = TRUE)),\n             lty = \"dashed\") +\n  stat_summary(fun = \"mean\",\n               geom = \"point\",\n               size = 3,\n               color = \"grey33\",\n               alpha =1)  +\n  theme(legend.position = \"none\")\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_summary()`).\n\n\n\n\n\n\n\n\n\n\n\n\nAssumptions\nInvestigate whether the assumptions for using an ANOVA been satisfied.\n\nNot given\n\n\n\nWhich groups significantly different?\nBased on the figure, which pairs of species look like they have significantly different mean bill depths?\n\n\n\n\n\nHypotheses in symbols or words\nWrite out in symbols or words the null and alternative hypotheses.\n\nIn symbols\n\\[H_0: \\mu_{Adelie} = \\mu_{Chinstrap} = \\mu_{Gentoo}\\] \\[H_A: ???\\]\n\n\n\nRun ANOVA in R\nUsing R, run the hypothesis test and display the output.\n\nNot given\n\n\n\nF statistic\nUsing the values from the ANOVA table, verify (calculate) the value of the F statistic.\n\n\nDirectly with non-reproducible code (value will be slightly off due to rounding):\n\n\n# the value will be slightly off due to rounding\n(F_approx &lt;- 451.9/1.26)\n\n[1] 358.6508\n\n\n\n\n\nDecision?\nBased on the p-value, will we reject or fail to reject the null hypothesis? Why?\n\n\\(p\\)-value \\(1.507658 * 10^{-84}\\)\n\n\n\nConclusion\nWrite a conclusion to the hypothesis test in the context of the problem.\n\nNot given"
+  },
+  {
+    "objectID": "hw_answers/HW_08_ans.html#r2-the-strong-heart-study",
+    "href": "hw_answers/HW_08_ans.html#r2-the-strong-heart-study",
+    "title": "Homework 8 Answers",
+    "section": "R2: The Strong Heart Study",
+    "text": "R2: The Strong Heart Study\nThe Strong Heart Study is an ongoing study of American Indians residing in 13 tribal communities in three geographic areas (AZ, OK, and SD/ND) to study prevalence and incidence of cardiovascular disease and to identify risk factors. We will be examining the 4-year cumulative incidence of diabetes with one risk factor, glucose tolerance. We are curious if the proportion of individuals diagnosed with diabetes is different between glucose tolerances.\n\nImpaired glucose: normal or impaired glucose tolerance at baseline visit (between 1988 and 1991)\nDiabetes: Indicator of diabetes at follow-up visit (roughly four years after baseline) according to two-hour oral glucose tolerance test\n\nThe data are in SHS_data.csv located in the Data folder of the shared OneDrive folder. The following table summarizes the data:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGlucose\n\nDiabetes\n\nTotal\n\n\nNot diabetic\nDiabetic\n\n\n\n\nImpaired\n334\n198\n532\n\n\nNormal\n1004\n128\n1132\n\n\nTotal\n1338\n326\n1664\n\n\n\n\n\n\n\n\nRun a hypothesis test\nComplete the hypothesis test to see if the proportion of individuals diagnosed with diabetes is different between glucose tolerances. (Reminder: Follow all steps and put your conclusion in context of the Strong Heart Study)\n\nBy hand: - \\(z = 12.4420859\\) - \\(p-value = 1.5441e-35\\)\nUsing R: - Not part of answer, but to check: X-squared = 153.16 - \\(p-value = &lt; 2.2e-16\\)\n\n\n\nCalculate the confidence interval for the difference in proportions\nCalculate and interpret the 95% confidence interval for the difference in proportions using the formula. Is it consistent with CI from the R output of the hypothesis test? (Reminder: Make sure to check the assumptions!)\n\nBy hand: \\[(0.196, 0.324)\\]\nUsing R: \\[(0.213, 0.306)\\]"
+  },
+  {
+    "objectID": "hw_answers/HW_09_ans.html#true-or-false-part-ii-1",
+    "href": "hw_answers/HW_09_ans.html#true-or-false-part-ii-1",
+    "title": "Homework 9 Answers",
+    "section": "8.28 True or false, Part II",
+    "text": "8.28 True or false, Part II\n\n(a)\nTRUE.\n\n\n(b)\nTRUE.\n\n\n(c)\nFALSE.\n\n\n(d)\nFALSE."
+  },
+  {
+    "objectID": "hw_answers/HW_09_ans.html#coffee-and-depression-1",
+    "href": "hw_answers/HW_09_ans.html#coffee-and-depression-1",
+    "title": "Homework 9 Answers",
+    "section": "8.34 Coffee and Depression",
+    "text": "8.34 Coffee and Depression\n\n0.0.7 (a)\n\n\n0.0.8 (b)-(f)\nInstead of doing part (b) - (f), please run a hypothesis test using the Chi-squared test.\n\n\n0.0.9 (g)"
   }
 ]

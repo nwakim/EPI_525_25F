@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -187,7 +158,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">November 18, 2025</p>
+      <p class="date-modified">November 20, 2025</p>
     </div>
   </div>
     
@@ -201,66 +172,25 @@ window.Quarto = {
 <section id="announcements" class="level2">
 <h2 class="anchored" data-anchor-id="announcements">Announcements</h2>
 <ul>
-<li>Office hours today with me right after class: 2:50-3:15pm
+<li>HW 8
 <ul>
-<li>I’m on a STEM panel at 3:20</li>
+<li>This will be 1.5 times the normal homework length</li>
+<li>Even though it is not due until next week, I recommend starting early</li>
 </ul></li>
-<li>HW 3 presentations are graded!
+<li>HW 6
 <ul>
-<li>I loved seeing all your personalities shine through the presentations</li>
-<li>I saw some great connections between the 5% slowest and 90% slowest in part d
+<li>In your R problems, sentences and context should given along with the R code</li>
+<li>t-test: in your R code, the <code>mu</code> should be the population mean from the null hypothesis</li>
+</ul></li>
+<li>All office hours are cancelled this week!
 <ul>
-<li>Great use of complements since the total probability is 1!</li>
+<li>TAs say you are welcome to email them with questions</li>
+<li>Hannah: and Sophia</li>
 </ul></li>
-<li>I was making sure that you hit certain explanations visually, verbally, or written
-<ul>
-<li>Visually: drawing a normal plot to show what area is our probability or what cutoff time corresponds to a percentile
-<ul>
-<li><p>For example, in part a, our goal was to find the percent of people in the men’s group who finished in 4948 seconds or slower. I would include a figure like below with explanation “The red line represents the time of 4948 seconds, and we are looking for the blue area, which represents the probability of finishing in 4948 seconds or slower.”</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="17_Prop_inference_key_info_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="576"></p>
-</figure>
-</div>
-</div>
-</div></li>
-</ul></li>
-<li>Verbally: Saying a statement about the goal of the problem and the conclusion
-<ul>
-<li>For example, in part a, our goal was to find the percent of people in the men’s group who finished in 4948 seconds or slower. I would say: “We are calculating the probability that someone in the men’s group finished in 4948 seconds or greater than that. Then we convert to percentage.”</li>
-</ul></li>
-<li>Written: writing out the math is also helpful!
-<ul>
-<li>For example, in part a, our goal was to find the percent of people in the men’s group who finished in 4948 seconds or slower. I would write: <span class="math inline">\(P(X &gt; 4948) = ?\)</span>.</li>
-<li>In part c and d, I would use math to show that we are looking for a value <span class="math inline">\(k\)</span> that completes the following statement <span class="math inline">\(P(X &gt; k ) = 0.10\)</span> (for part d)</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li>I made quite a few changes to the homeworks
-<ul>
-<li>HW 10 is gone</li>
-<li>HW 9 is optional</li>
-<li>Instead of a HW assignment due over late November break
-<ul>
-<li>HW 8 will include material from Week 8 and 9 and be due 12/5</li>
-</ul></li>
-</ul></li>
-<li>HW 6 presentations
-<ul>
-<li>Meetings during 12/9-12/12</li>
-<li>Videos due 12/10</li>
-<li>Let me know if this interferes with any of your other classes’ exams</li>
-</ul></li>
-<li>Anything else?</li>
 </ul>
 </section>
 <section id="key-dates" class="level2">
 <h2 class="anchored" data-anchor-id="key-dates">Key Dates</h2>
-<ul>
-<li>Sunday (12/1): HW 7 solutions due</li>
-</ul>
 
 
 </section>

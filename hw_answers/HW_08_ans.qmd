@@ -91,6 +91,34 @@ As a diner, would you prefer that the food safety inspector requires strong evid
 
 :::
 
+## 5.46 Child care hours {.unnumbered}
+
+### (a) {.unnumbered}
+
+::: blue
+Not given
+:::
+
+### (b) {.unnumbered}
+
+::: blue
+Fail to reject
+:::
+
+
+## 5.48 True/False: ANOVA, Part II {.unnumbered}
+
+### (a) {.unnumbered}
+
+::: blue
+False
+:::
+
+### (b) {.unnumbered}
+
+::: blue
+Not given
+:::
 
 ## 8.2 Young Americans, Part I {.unnumbered}
 
@@ -207,78 +235,6 @@ FALSE.
 No
 :::
 
-## 8.28 True or false, Part II {.unnumbered}
-
-### (a)  {.unnumbered}
-
-::: blue
-TRUE.
-:::
-
-### (b)  {.unnumbered}
-
-::: blue
-
-:::
-
-### (c)  {.unnumbered}
-
-::: blue
-
-:::
-
-### (d)  {.unnumbered}
-
-::: blue
-FALSE.
-:::
-
-
-## 8.34 Coffee and Depression {.unnumbered}
-
-### (a) {.unnumbered}
-
-::: blue
-Not given
-:::
-
-### (b)
-
-::: blue
-Partial: 
-$H_A$: There is an association between caffeinated coffee consumption and depression in women
-:::
-
-### (c)
-
-::: blue
-Overall, the proportion of women who do and not suffer from depression are 0.05 and 0.95, respectively.
-:::
-
-### (d)
-
-::: blue
-Expected count: 339.99
-:::
-
-### (e)
-
-::: blue
-P-value is 0.0003269
-:::
-
-### (f)
-
-::: blue
-Not given
-:::
-
-### (g)
-
-::: blue
-Not given
-:::
-
 # PSS
 
 ## Power and Sample size: Auto exhaust and lead exposure revisited
@@ -309,7 +265,114 @@ Suppose the study has resources to include 30 people. What minimum effect size w
 
 # R
 
-## R1: The Strong Heart Study
+## R1: Palmer Penguins ANOVA
+
+* Use the `penguins` data from the `palmerpenguins` package.
+    * Don't forget to first __install__ the `palmerpenguins` package
+* You can learn more about the Palmer penguins data at <https://allisonhorst.github.io/palmerpenguins/>
+* We will test whether there are differences in penguins' mean bill depths when comparing different species.
+
+
+```{r}
+library(palmerpenguins)
+data(penguins)
+```
+
+
+### Dotplots
+
+Make a dotplot of the penguins' bill depths stratified by species type. Include points for the mean of each species type as well as a horizontal dashed line for the overall mean. See example from class for the plot I'm describing.
+
+::: blue
+We can use boxplots.
+
+The following plot is not complete. You need to add the boxplots to it. I wanted to give you the code for the species-specific means and the grand sample mean.
+
+```{r}
+ggplot(penguins,
+       aes(x = species,
+           y=bill_depth_mm,
+           fill = species,
+           color = species)) +
+  geom_hline(aes(yintercept = mean(bill_depth_mm, na.rm = TRUE)),
+             lty = "dashed") +
+  stat_summary(fun = "mean",
+               geom = "point",
+               size = 3,
+               color = "grey33",
+               alpha =1)  +
+  theme(legend.position = "none")
+```
+:::
+
+### Assumptions
+
+Investigate whether the assumptions for using an ANOVA been satisfied. 
+
+::: blue
+Not given
+:::
+
+
+### Which groups significantly different?
+
+Based on the figure, which pairs of species look like they have significantly different mean bill depths?
+
+::: blue
+
+:::
+
+### Hypotheses in symbols or words
+
+Write out in symbols or words the null and alternative hypotheses.
+
+::: blue
+#### In symbols
+$$H_0: \mu_{Adelie} = \mu_{Chinstrap} = \mu_{Gentoo}$$
+$$H_A: ???$$
+:::
+
+### Run ANOVA in R
+
+Using R, run the hypothesis test and display the output.  
+
+::: blue
+Not given
+:::
+
+### F statistic
+
+Using the values from the ANOVA table, verify (calculate) the value of the F statistic.
+
+::: blue
+* Directly with non-reproducible code (value will be slightly off due to rounding):
+
+```{r}
+# the value will be slightly off due to rounding
+(F_approx <- 451.9/1.26)
+```
+:::
+
+### Decision?
+
+Based on the p-value, will we reject or fail to reject the null hypothesis? Why?
+
+::: blue
+$p$-value $1.507658 * 10^{-84}$
+:::
+
+
+### Conclusion
+
+Write a conclusion to the hypothesis test in the context of the problem.
+
+::: blue
+Not given
+:::
+
+
+
+## R2: The Strong Heart Study
 
 The [Strong Heart Study](https://strongheartstudy.org/) is an ongoing study of American Indians residing in 13 tribal communities in three geographic areas (AZ, OK, and SD/ND) to study prevalence and incidence of cardiovascular disease and to identify risk factors. We will be examining the 4-year cumulative incidence of diabetes with one risk factor, glucose tolerance. We are curious if the proportion of individuals diagnosed with diabetes is different between glucose tolerances.
 

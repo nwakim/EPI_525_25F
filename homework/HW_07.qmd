@@ -22,7 +22,7 @@ format:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Directions {.unnumbered}
+# Directions {.unnumbered}
 
 **Please turn in this homework on Sakai. You will need to turn in an html file and a qmd file,** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** 
 
