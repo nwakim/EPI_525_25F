@@ -1,0 +1,30 @@
+---
+title: "Muddy Points"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+    page-layout: full
+    toc: false
+editor_options: 
+  chunk_output_type: console
+---
+
+## Fall 2025
+
+### 1. When is it more appropriate to use an ANOVA vs. t-test? Is it just when there’s more than two means to compare? 
+
+An ANOVA is more appropriate when you have **more than two groups or means to compare**. While a t-test is used to compare the **means of two groups**, ANOVA can handle three or more groups simultaneously. 
+
+### 2. Using the F stat -- understand the calculation, but how is it used when reporting a conclusion? Is it reported similarly to a p-value?
+
+The F-statistic is used to determine whether there are significant differences between group means in an ANOVA test. **When reporting a conclusion, you typically report only the p-value.** The F-statistic is more like the T-statistic that we used in the previous hypothesis tests. The p-value indicates the probability of observing the data (or more extreme data) if the null hypothesis (that all group means are equal) is true. 
+
+### 2. I am still a little confused on the total sum of squares equation so do you multiply xj and xi together?
+
+In the total sum of squares (SST) equation, you do not multiply xj and xi together. Instead, the total sum of squares is calculated as the sum of the squared differences between each observation and the overall mean. $x_{ij}$ represents the observation for group i and observation j.
+
+### 3. determining if a sample is distribution is a F distribution
+
+The sample is not from the F-distribution. In ANOVA, the F-statistic is calculated as the ratio of the variance between group means to the variance within the groups. If the null hypothesis is true (i.e., all group means are equal), this ratio follows an F-distribution. So it's just the test statistic that follows the F-distribution, not the sample of data itself. 
+
