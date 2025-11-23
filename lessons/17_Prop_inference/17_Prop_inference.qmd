@@ -1,10 +1,10 @@
 ---
-title: "Lesson 15: Inference for a single proportion or difference of two (independent) proportions"
+title: "Lesson 17: Inference for a single proportion or difference of two (independent) proportions"
 subtitle: "TB sections 8.1-8.2"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "11/25/2024"
+date: "`r library(here); source(here('class_dates.R')); w9d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -13,7 +13,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 15 Slides
+    footer: Lesson 17 Slides
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -359,7 +359,7 @@ prop.test(x,
 
 -   Looking for therapies that trigger an immune response to advanced melanoma
 
--   In a study where 52 patients were treated concurrently with two new therapies, nivolumab and ipilimumab
+-   In a study where 52 patients were **treated concurrently with two new therapies**, nivolumab and ipilimumab
     - 21 had an immune response.[^1]
 
 -   **Outcome:** whether or not each person has an immune response
@@ -368,11 +368,11 @@ prop.test(x,
 
 Questions that can be addressed with inference...
 
--   What is the estimated population probability of immune response following concurrent therapy with nivolumab and ipilimumab? (calculate $\hat{p}$)
+-   What is the **estimated population probability of immune response** following concurrent therapy with nivolumab and ipilimumab? (calculate $\hat{p}$)
 
--   What is the 95% confidence interval for the estimated population probability of immune response following concurrent therapy with nivolumab and ipilimumab? (95% CI of $p$)
+-   What is the **95% confidence interval for the estimated population probability of immune response** following concurrent therapy with nivolumab and ipilimumab? (95% CI of $p$)
 
--   In previous studies, the proportion of patients responding to one of these agents was 30% or less. Do these results suggest that the probability of response to concurrent therapy is better than 0.30? (Hypothesis test of null of 0.3)
+-   In previous studies, the proportion of patients responding to one of these agents was 30% or less. Do these results suggest that the **probability of response to concurrent therapy is better than 0.30**? (Hypothesis test of null of 0.3)
 
 ## Reference: Steps in a Hypothesis Test
 
@@ -645,6 +645,18 @@ pnorm(zp)
 
 ## Step 4-5: test statistic and p-value together using `prop.test()`
 
+- This will match our "by-hand" calculation
+- So far we have not used the continuity correction, but this will give us a different answer
+- **Conitinuity correction is more widely accepted, so I suggest using R to calculate the test statistic and p-value when you can!**
+
+```{r}
+prop.test(x = 21, n = 52, p = 0.30, correct = F)
+```
+
+## Step 4-5: test statistic and p-value together using `prop.test()`
+
+**USING THE CONTINUITY CORRECTION**
+
 ```{r}
 prop.test(x = 21, n = 52, p = 0.30, correct = T)
 ```
@@ -655,8 +667,6 @@ prop.test(x = 21, n = 52, p = 0.30, correct = T)
 prop.test(x = 21, n = 52, p = 0.30, correct = T) %>% 
   tidy() %>% gt() %>% tab_options(table.font.size = 40)
 ```
-
-- Note: We expect some differences between the test statistic and p-value calculated by hand vs. by R. R uses a slightly different method to calculate. 
 
 ## Step 6: Conclusion to hypothesis test
 
@@ -785,7 +795,7 @@ $$SE_{\hat{p}} = \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
 
 ## 95% CI for population proportion of immune response by hand
 
-95% CI for population mean difference $p$:
+95% CI for population proportion $p$:
 
 ```{r}
 #| include: false
@@ -1298,7 +1308,7 @@ prop.test(x = c(505, 500), n = c(44910, 44925)) %>%
   tidy() %>% gt() %>% tab_options(table.font.size = 33)
 ```
 
-- Note: We expect some differences between the test statistic and p-value calculated by hand vs. by R. R uses a slightly different method to calculate. 
+- Note: We expect some differences between the test statistic and p-value calculated by hand vs. by R bc R uses the continuity correction
 
 ## Step 6: Conclusion to hypothesis test
 
