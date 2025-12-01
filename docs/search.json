@@ -11,7 +11,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\nDate\nLes-son\nTopic\nTB sections\nKey Info\nSlides HTML\nSlides PDF\nSlides Notes\nExit tix\nRecord-ing\nMuddy Points\n\n\n\n\n1\n09/29\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n\n\n1\nData collection\n1.3\n\n\n\n\n\n \n\n\n\n\n10/01\n2\nIntro to data & numerical summaries\n1.2, 1.4\n\n\n\n\n\n\n\n\n\n\n10/02\n\nHW 0 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n10/06\n3\nDefining Probability\n2.1\n\n\n\n\n\n\n\n\n\n\n\nR01\nDownload R and RStudio\n\n\n\n\n\n\n\n\n\n\n\n10/08\n4\nConditional Probability\n2.2\n\n\n\n\n\n\n\n\n\n\n\nR02\nR Basics, pt 1\n\n\n\n\n\n\n\n\n\n\n\n10/12\n\nHW 1 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n10/13\n5\nRandom variables, Binomial distribution\n3.1-3.2\n\n\n\n\n\n\n\n\n\n\n\nR03\nR Basics, pt 2\n\n\n\n\n\n\n \n\n\n\n\n10/15\n5\nRandom variables, Binomial distribution, continued\n3.1-3.2\n\n\n\n\n\n \n\n\n\n\n\nR04\nReproducibility, File Organization, and Projects\n\n\n\n\n\n\n\n\n\n\n\n\nR05\nIntro to Quarto, packages, and importing data\n\n\n\n\n\n\n\n\n\n\n\n10/19\n\nHW 2 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n10/20\n6\nNormal distribution\n3.3\n\n\n\n\n\n\n\n\n\n\n10/22\nR05\nIntro to Quarto, packages, and importing data, continued\n\n\n\n\n\n\n \n\n\n\n\n\nR06\nggplot\n\n\n\n\n\n\n\n\n\n\n\n\n8\nData visualization of a single variable\n1.5-1.7\n\n\n\n\n\n\n\n\n\n\n10/22\n\nQuiz 1 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n10/26\n\nHW 3 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n10/26\n\nQuiz 1 closes @11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n10/27\n7\nPoisson distribution\n3.4\n\n\n\n\n\n\n\n\n\n\n\n9\nData visualization of two variables\n1.5-1.7\n\n\n\n\n\n\n\n\n\n\n10/29\n10\nVariability in estimates\n4.1\n\n\n\n\n\n\n\n\n\n\n\nR07\nLaTeX in Quarto\n\n\n\n\n\n\n\n\n\n\n\n11/02\n\nHW 4 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n11/02\n\nMidterm Feedback form due @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n11/03\n11\nConfidence Intervals\n4.2\n\n\n\n\n\n\n\n\n\n\n11/05\n12\nHypothesis Testing 1: Single-sample mean\n4.3, 5.1\n\n\n\n\n\n\n\n\n\n\n11/09\n\nHW 5 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n11/10\n13\nInference for mean difference from two-sample dependent/paired data (Hypothesis Testing 2)\n5.2\n\n\n\n\n\n\n\n\n\n\n\nR08\nTransforming and subetting data with tidyverse, part 1\n\n\n\n\n\n\n \n\n\n\n\n11/12\n14\nInference for difference in means from two independent samples (Hypothesis Testing 3)\n5.3\n\n\n\n\n\n\n\n\n\n\n\nR08\nTransforming and subetting data with tidyverse , part 2\n\n\n\n\n\n\n \n\n\n\n\n11/12\n\nQuiz 2 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n11/16\n\nHW 6 due @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n11/16\n\nQuiz 2 closes @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n11/17\n15\nPower and sample size calculations for means\n5.4\n\n\n\n\n\n \n\n\n\n\n11/19\n16\nComparing Means with ANOVA\n5.5\n\n\n\n\n\n\n\n\n\n\n11/23\n\nHW 7 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n11/24\n17\nInference for a single proportion or difference in proportions\n8.1-8.2\n\n\n\n\n\n \n\n\n\n\n11/26\n\nNo class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n12/01\n18\nChi-squared tests, Fishers exact test\n8.3-8.4\n\n\n\n\n\n\n\n\n\n\n12/03\n19\nNon-parametric tests\nOther TB\n\n\n\n\n\n\n\n\n\n\n\nR09\nSummarizing data with tidyverse and Table 1\n\n\n\n\n\n\n\n\n\n\n\n12/07\n\nHW 8 due 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n12/08\n20\nSimple Linear Regression\n6.1-6.4\n\n\n\n\n\n\n\n\n\n\n12/08\n\nQuiz 3 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n12/10\n\nClass if needed\n\n\n\n\n\n\n\n\n\n\n\n12/11\n\nOptional HW 9 due 11 pm\n\n\n\n\n\n\n\n\n\n\n\n12/12\n\nQuiz 3 closes @ 11pm"
+    "text": "Week\nDate\nLes-son\nTopic\nTB sections\nKey Info\nSlides HTML\nSlides PDF\nSlides Notes\nExit tix\nRecord-ing\nMuddy Points\n\n\n\n\n1\n09/29\n0\nWelcome\n\n\n\n\n\n\n\n\n\n\n\n\n1\nData collection\n1.3\n\n\n\n\n\n \n\n\n\n\n10/01\n2\nIntro to data & numerical summaries\n1.2, 1.4\n\n\n\n\n\n\n\n\n\n\n10/02\n\nHW 0 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n10/06\n3\nDefining Probability\n2.1\n\n\n\n\n\n\n\n\n\n\n\nR01\nDownload R and RStudio\n\n\n\n\n\n\n\n\n\n\n\n10/08\n4\nConditional Probability\n2.2\n\n\n\n\n\n\n\n\n\n\n\nR02\nR Basics, pt 1\n\n\n\n\n\n\n\n\n\n\n\n10/12\n\nHW 1 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n10/13\n5\nRandom variables, Binomial distribution\n3.1-3.2\n\n\n\n\n\n\n\n\n\n\n\nR03\nR Basics, pt 2\n\n\n\n\n\n\n \n\n\n\n\n10/15\n5\nRandom variables, Binomial distribution, continued\n3.1-3.2\n\n\n\n\n\n \n\n\n\n\n\nR04\nReproducibility, File Organization, and Projects\n\n\n\n\n\n\n\n\n\n\n\n\nR05\nIntro to Quarto, packages, and importing data\n\n\n\n\n\n\n\n\n\n\n\n10/19\n\nHW 2 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n10/20\n6\nNormal distribution\n3.3\n\n\n\n\n\n\n\n\n\n\n10/22\nR05\nIntro to Quarto, packages, and importing data, continued\n\n\n\n\n\n\n \n\n\n\n\n\nR06\nggplot\n\n\n\n\n\n\n\n\n\n\n\n\n8\nData visualization of a single variable\n1.5-1.7\n\n\n\n\n\n\n\n\n\n\n10/22\n\nQuiz 1 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n10/26\n\nHW 3 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n10/26\n\nQuiz 1 closes @11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n10/27\n7\nPoisson distribution\n3.4\n\n\n\n\n\n\n\n\n\n\n\n9\nData visualization of two variables\n1.5-1.7\n\n\n\n\n\n\n\n\n\n\n10/29\n10\nVariability in estimates\n4.1\n\n\n\n\n\n\n\n\n\n\n\nR07\nLaTeX in Quarto\n\n\n\n\n\n\n\n\n\n\n\n11/02\n\nHW 4 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n11/02\n\nMidterm Feedback form due @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n11/03\n11\nConfidence Intervals\n4.2\n\n\n\n\n\n\n\n\n\n\n11/05\n12\nHypothesis Testing 1: Single-sample mean\n4.3, 5.1\n\n\n\n\n\n\n\n\n\n\n11/09\n\nHW 5 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n11/10\n13\nInference for mean difference from two-sample dependent/paired data (Hypothesis Testing 2)\n5.2\n\n\n\n\n\n\n\n\n\n\n\nR08\nTransforming and subetting data with tidyverse, part 1\n\n\n\n\n\n\n \n\n\n\n\n11/12\n14\nInference for difference in means from two independent samples (Hypothesis Testing 3)\n5.3\n\n\n\n\n\n\n\n\n\n\n\nR08\nTransforming and subetting data with tidyverse , part 2\n\n\n\n\n\n\n \n\n\n\n\n11/12\n\nQuiz 2 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n11/16\n\nHW 6 due @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n11/16\n\nQuiz 2 closes @ 11pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n11/17\n15\nPower and sample size calculations for means\n5.4\n\n\n\n\n\n \n\n\n\n\n11/19\n16\nComparing Means with ANOVA\n5.5\n\n\n\n\n\n\n\n\n\n\n11/23\n\nHW 7 due @ 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n11/24\n17\nInference for a single proportion or difference in proportions\n8.1-8.2\n\n\n\n\n\n \n\n\n\n\n11/26\n\nNo class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n12/01\n18\nChi-squared test\n8.3-8.4\n\n\n\n\n\n\n\n\n\n\n12/03\n19\nNon-parametric tests\nOther TB\n\n\n\n\n\n\n\n\n\n\n\nR09\nSummarizing data with tidyverse and Table 1\n\n\n\n\n\n\n\n\n\n\n\n12/07\n\nHW 8 due 11 pm\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n11\n12/08\n20\nSimple Linear Regression\n6.1-6.4\n\n\n\n\n\n\n\n\n\n\n12/08\n\nQuiz 3 opens @ 3pm\n\n\n\n\n\n\n\n\n\n\n\n12/10\n\nClass if needed\n\n\n\n\n\n\n\n\n\n\n\n12/11\n\nOptional HW 9 due 11 pm\n\n\n\n\n\n\n\n\n\n\n\n12/12\n\nQuiz 3 closes @ 11pm"
   },
   {
     "objectID": "lessons/12_Prop_inference/12_Prop_inference.html",
@@ -28354,21 +28354,21 @@
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher_key_info.html",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "HW 7 solutions\n\nYou can turn this in until 12/6 at 11pm\nHalf the classes grades/feedback were not released\nI’m sorry for the extra stress!\n\nHW 6 presentations\n\nMeetings during 12/9-12/12\nVideos due 12/10\nLet me know if this interferes with any of your other classes’ exams\n\nPlease do your course evaluations!!\nAnything else?"
+    "text": "Finish proportional inference lesson (Lesson 17)"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher_key_info.html#announcements",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher_key_info.html#announcements",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "HW 7 solutions\n\nYou can turn this in until 12/6 at 11pm\nHalf the classes grades/feedback were not released\nI’m sorry for the extra stress!\n\nHW 6 presentations\n\nMeetings during 12/9-12/12\nVideos due 12/10\nLet me know if this interferes with any of your other classes’ exams\n\nPlease do your course evaluations!!\nAnything else?"
+    "text": "Finish proportional inference lesson (Lesson 17)"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher_key_info.html#key-dates",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher_key_info.html#key-dates",
     "title": "Key Info and Announcements",
     "section": "Key Dates",
-    "text": "Key Dates\n\nFriday (12/6): HW 8 assignment due\nFriday (12/6): HW 7 solutions due\nTuesday (12/10): HW 6 videos due"
+    "text": "Key Dates\nRemaining Dates:\n\nSunday 12/7: HW 8 due\nMonday 12/8: Quiz 3 opens\nThursday 12/11: optional HW 9 due\nFriday 12/12: Quiz 3 due\nIMPORTANT: ALL coursework needs to be in on 12/15 at 11pm!"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html",
@@ -28380,140 +28380,140 @@
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#last-time",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#last-time",
-    "title": "Lesson 16: Chi-squared test",
-    "section": "",
-    "text": "We looked at inference for a single proportion\nWe looked at inference for a difference in two independent proportions\n\n \n\nIf there are two groups, we could see if they had different proportions by testing if the difference between the proportions were the same (null) or different (alternative, two-sided, \\(\\neq\\))\n\n \n\nWhat happens when we want to compare two or more groups’ proportions?\n\nCan no longer rely on the difference in proportions\nNeed a new method to make inference (Chi-squared test!)"
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Last time",
+    "text": "Last time\n\nWe looked at inference for a single proportion\nWe looked at inference for a difference in two independent proportions\n\n \n\nIf there are two groups, we could see if they had different proportions by testing if the difference between the proportions were the same (null) or different (alternative, two-sided, \\(\\neq\\))\n\n \n\nWhat happens when we want to compare three or more groups’ proportions?\n\nCan no longer rely on the difference in proportions\nNeed a new method to make inference (Chi-squared test!)"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#from-lesson-4-example-hypertension-prevalence-12",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#from-lesson-4-example-hypertension-prevalence-12",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "From Lesson 4: Example: hypertension prevalence (1/2)",
-    "text": "From Lesson 4: Example: hypertension prevalence (1/2)\n\nUS CDC estimated that between 2011 and 20141, 29% of the population in America had hypertension\n\n \n\nA health care practitioner seeing a new patient would expect a 29% chance that the patient might have hypertension\n\nHowever, this is only the case if nothing else is known about the patient"
+    "text": "From Lesson 4: Example: hypertension prevalence (1/2)\n\nUS CDC estimated that between 2011 and 20141, 29% of the population in America had hypertension\n\n \n\nA health care practitioner seeing a new patient would expect a 29% chance that the patient might have hypertension\n\nHowever, this is only the case if nothing else is known about the patient\n\n\nhttps://www.cdc.gov/nchs/products/databriefs/db220.htm"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#from-lesson-4-example-hypertension-prevalence-22",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#from-lesson-4-example-hypertension-prevalence-22",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "From Lesson 4: Example: hypertension prevalence (2/2)",
     "text": "From Lesson 4: Example: hypertension prevalence (2/2)\n\nPrevalence of hypertension varies significantly with age\n\nAmong adults aged 18-39, 7.3% have hypertension\nAdults aged 40-59, 32.2%\nAdults aged 60 or older, 64.9% have hypertension\n\n\n \n\nKnowing the age of a patient provides important information about the likelihood of hypertension\n\nAge and hypertension status are not independent - Can we back up this claim??\n\nWhile the probability of hypertension of a randomly chosen adult is 0.29…\n\nThe conditional probability of hypertension in a person known to be 60 or older is 0.649\n\n\n \n\nQuestion: Is there an association between age group and hypertension?"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#from-lesson-4-contingency-tables",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#from-lesson-4-contingency-tables",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "From Lesson 4: Contingency tables",
     "text": "From Lesson 4: Contingency tables\n\nWe can start looking at the contingency table for hypertension for different age groups\n\nContingency table: type of data table that displays the frequency distribution of two or more categorical variables\n\n\n\n\n\nTable: Contingency table showing hypertension status and age group, in thousands.\n\n\nAge Group\nHypertension\nNo Hypertension\nTotal\n\n\n\n\n18-39 yrs\n8836\n112206\n121042\n\n\n40-59 yrs\n42109\n88663\n130772\n\n\n60+ yrs\n39917\n21589\n61506\n\n\nTotal\n90862\n222458\n313320"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#test-of-general-association-hypotheses",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#test-of-general-association-hypotheses",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Test of General Association + Hypotheses",
     "text": "Test of General Association + Hypotheses\n\nGeneral research question: Are two variables (both categorical, nominal) associated with each other?\n\n\n\n\n\nGeneral wording for hypotheses\n\n\nTest of “association” wording\n\n\\(H_0\\): There is no association between the two variables\n\\(H_A\\): There is an association between the two variables\n\nTest of “independence” wording\n\n\\(H_0\\): The variables are independent\n\\(H_A\\): The variables are not independent\n\n\n\n\n\n\nHypotheses test for example\n\n\nTest of “association” wording\n\n\\(H_0\\): There is no association between age and hypertension\n\\(H_A\\): There is an association between age and hypertension\n\nTest of “independence” wording\n\n\\(H_0\\): The variables age and hypertension are independent\n\\(H_A\\): The variables age and hypertension are not independent"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#h_0-variables-are-independent-under-the-null",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#h_0-variables-are-independent-under-the-null",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "\\(H_0\\): Variables are Independent (under the null)",
     "text": "\\(H_0\\): Variables are Independent (under the null)\n\n\n\nRecall from Chapter 2, that events \\(A\\) and \\(B\\) are independent if and only if\n\n\\[P(A \\cap B)=P(A)P(B)\\]\n\nIf age and hypertension are independent variables, then theoretically this condition needs to hold for every combination of levels, i.e.\n\n\\[\\begin{align}\nP(18-39 \\cap \\text{hyp}) &= P(18-39)P(\\text{hyp})\\\\\nP(18-39 \\cap \\text{no hyp}) &= P(18-39)P(\\text{no hyp})\\\\\nP(40-59 \\cap \\text{hyp}) &= P(40-59)P(\\text{hyp})\\\\\nP(40-59 \\cap \\text{no hyp}) &= P(40-59)P(\\text{no hyp})\\\\\nP(60+ \\cap \\text{hyp}) &= P(60+)P(\\text{hyp})\\\\\nP(60+ \\cap \\text{no hyp}) &= P(60+)P(\\text{no hyp})\\\\\n\\end{align}\\]\n\n\n\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\nTotal\n\n\n\n\n18-39 yrs\n8836\n112206\n121042\n\n\n40-59 yrs\n42109\n88663\n130772\n\n\n60+ yrs\n39917\n21589\n61506\n\n\nTotal\n90862\n222458\n313320\n\n\n\n\n\n\\[\\begin{align}\nP(18-39 \\cap \\text{hyp}) &= \\frac{121042}{313320}\\cdot\\frac{90862}{313320}\\\\\n& ...\\\\\nP(60+ \\cap \\text{no hyp}) &=\\frac{61506}{313320}\\cdot\\frac{222458}{313320}\n\\end{align}\\]\nWith these probabilities, for each cell of the table we calculate the expected counts for each cell under the \\(H_0\\) hypothesis that the variables are independent"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#expected-counts-if-variables-are-independent",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#expected-counts-if-variables-are-independent",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Expected counts (if variables are independent)",
-    "text": "Expected counts (if variables are independent)\n\n\n\nThe expected counts (if \\(H_0\\) is true & the variables are independent) for each cell are\n\n\\(np = \\text{total table size} \\cdot \\text{probability of cell}\\)\n\\(\\text{expected count} = \\dfrac{\\text{column total}\\cdot \\text{row total}}{\\text{table total}}\\)\n\n\nExpected count of 40-59 years old and hypertension:\n\\[\\begin{align}\n\\text{expected count} &= \\dfrac{\\text{column total}\\cdot \\text{row total}}{\\text{table total}} \\\\\n&= \\dfrac{\\text{90862}\\cdot \\text{130772}}{\\text{313320}} \\\\\n&= 37923.55\n\\end{align}\\]\n\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\nTotal\n\n\n\n\n18-39 yrs\n8836\n112206\n121042\n\n\n40-59 yrs\n42109\n88663\n130772\n\n\n60+ yrs\n39917\n21589\n61506\n\n\nTotal\n90862\n222458\n313320\n\n\n\n\n\n \n\nIf age group and hypertension are independent variables\n\n(as assumed by \\(H_0\\)),\n\nthen the observed counts should be close to the expected counts for each cell of the table\n\n\n\n\nTest to see how likely is it that we observe our data given the null hypothesis (no association)"
+    "text": "Expected counts (if variables are independent)\n\n\n\nThe expected counts (if \\(H_0\\) is true & the variables are independent) for each cell are\n\n\\(np = \\text{total table size} \\cdot \\text{probability of cell}\\)\n\\(\\text{expected count} = \\dfrac{\\text{column total}\\cdot \\text{row total}}{\\text{table total}}\\)\n\n\nExpected count of 40-59 years old and hypertension:\n\\[\\begin{align}\n\\text{expected count} &= \\dfrac{\\text{column total}\\cdot \\text{row total}}{\\text{table total}} \\\\\n&= \\dfrac{\\text{90862}\\cdot \\text{130772}}{\\text{313320}} \\\\\n&= 37923.55\n\\end{align}\\]\n\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\nTotal\n\n\n\n\n18-39 yrs\n8836\n112206\n121042\n\n\n40-59 yrs\n42109\n88663\n130772\n\n\n60+ yrs\n39917\n21589\n61506\n\n\nTotal\n90862\n222458\n313320\n\n\n\n\n\n \n\nIf age group and hypertension are independent variables\n\n(as assumed by \\(H_0\\)),\n\nthen the observed counts should be close to the expected counts for each cell of the table\n\n\n\nTest to see how likely is it that we observe our data given the null hypothesis (no association)"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#observed-vs.-expected-counts",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#observed-vs.-expected-counts",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Observed vs. Expected counts",
-    "text": "Observed vs. Expected counts\n\n\n\nThe observed counts are the counts in the 2-way table summarizing the data\n\n \n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n8836\n112206\n\n\n40-59 yrs\n42109\n88663\n\n\n60+ yrs\n39917\n21589\n\n\n\n\n\n\n\nThe expected counts are the counts the we would expect to see in the 2-way table if there was no association between age group and hypertension\n\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n35101.87\n85940.13\n\n\n40-59 yrs\n37923.55\n92848.45\n\n\n60+ yrs\n17836.58\n43669.42\n\n\n\n\n\n\n\n \nExpected count for cell \\(i,j\\) :\n\\[\\textrm{Expected Count}_{\\textrm{row } i,\\textrm{ col }j}=\\frac{(\\textrm{row}~i~ \\textrm{total})\\cdot(\\textrm{column}~j~ \\textrm{total})}{\\textrm{table total}}\\]"
+    "text": "Observed vs. Expected counts\n\n\n\nThe observed counts are the counts in the 2-way table summarizing the data\n\n \n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n8836\n112206\n\n\n40-59 yrs\n42109\n88663\n\n\n60+ yrs\n39917\n21589\n\n\n\n\n\n\n\nThe expected counts are the counts the we would expect to see in the 2-way table if there was no association between age group and hypertension\n\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n35101.87\n85940.13\n\n\n40-59 yrs\n37923.55\n92848.45\n\n\n60+ yrs\n17836.58\n43669.42\n\n\n\n\n\n\n \nExpected count for cell \\(i,j\\) :\n\\[\\textrm{Expected Count}_{\\textrm{row } i,\\textrm{ col }j}=\\frac{(\\textrm{row}~i~ \\textrm{total})\\cdot(\\textrm{column}~j~ \\textrm{total})}{\\textrm{table total}}\\]"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#poll-everywhere-question-2",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#poll-everywhere-question-2",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Poll Everywhere Question 2",
     "text": "Poll Everywhere Question 2"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#using-r-for-expected-cell-counts",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#using-r-for-expected-cell-counts",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Using R for expected cell counts",
     "text": "Using R for expected cell counts\n\nR calculates expected cell counts using the expected() function in the epitools package\nMake sure dataset is in matrix form using as.matrix()\n\n\nhyp_data2\n\n          Hypertension No_Hypertension\n18-39 yrs         8836          112206\n40-59 yrs        42109           88663\n60+ yrs          39917           21589\n\n\n \n \n\nlibrary(epitools)\nexpected(hyp_data2)\n\n          Hypertension No_Hypertension\n18-39 yrs     35101.87        85940.13\n40-59 yrs     37923.55        92848.45\n60+ yrs       17836.58        43669.42"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#reference-steps-in-a-hypothesis-test",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#reference-steps-in-a-hypothesis-test",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Reference: Steps in a Hypothesis Test",
     "text": "Reference: Steps in a Hypothesis Test\n\nCheck the assumptions\nSet the level of significance \\(\\alpha\\)\nSpecify the null ( \\(H_0\\) ) and alternative ( \\(H_A\\) ) hypotheses\n\nIn symbols\nIn words\nAlternative: one- or two-sided?\n\nCalculate the test statistic.\nCalculate the p-value based on the observed test statistic and its sampling distribution\nWrite a conclusion to the hypothesis test\n\nDo we reject or fail to reject \\(H_0\\)?\nWrite a conclusion in the context of the problem"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-1-check-assumptions",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-1-check-assumptions",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Step 1: Check assumptions",
     "text": "Step 1: Check assumptions\n\nIndependence\n\nAll individuals are independent from one another\n\nIn particular, observational units cannot be represented in more than one cell\nFor example, someone cannot be in two differnt age groups\n\n\n\n\n\n\nSample size\n\nIn order for the distribution of the test statistic to be appropriately modeled by a chi-squared distribution we need\n2 \\(\\times\\) 2 table\n\nexpected counts are at least 10 for each cell\n\nLarger tables\n\nNo more than 20% of expected counts are less than 5\nAll expected counts are greater than 1\n\n\n\n\n \n \n \n\nexpected(hyp_data2)\n\n          Hypertension No_Hypertension\n18-39 yrs     35101.87        85940.13\n40-59 yrs     37923.55        92848.45\n60+ yrs       17836.58        43669.42\n\n\nAll expected counts &gt; 5"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-2-and-3-significance-level-and-hypotheses",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-2-and-3-significance-level-and-hypotheses",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Step 2 and 3: Significance level and Hypotheses",
     "text": "Step 2 and 3: Significance level and Hypotheses\n\nSet \\(\\alpha = 0.05\\)\n\n \n\n\nHypotheses test for example\n\n\nTest of “association” wording\n\n\\(H_0\\): There is no association between age and hypertension\n\\(H_A\\): There is an association between age and hypertension\n\nTest of “independence” wording\n\n\\(H_0\\): The variables age and hypertension are independent\n\\(H_A\\): The variables age and hypertension are not independent"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-4-calculate-the-chi2-test-statistic-12",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-4-calculate-the-chi2-test-statistic-12",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Step 4: Calculate the \\(\\chi^2\\) test statistic (1/2)",
     "text": "Step 4: Calculate the \\(\\chi^2\\) test statistic (1/2)\nTest statistic for a test of association (independence):\n\\[\\chi^2 = \\sum_{\\textrm{all cells}} \\frac{(\\textrm{observed} - \\text{expected})^2}{\\text{expected}}\\]\n\nWhen the variables are independent, the observed and expected counts should be close to each other"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-4-calculate-the-chi2-test-statistic-22",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-4-calculate-the-chi2-test-statistic-22",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Step 4: Calculate the \\(\\chi^2\\) test statistic (2/2)",
     "text": "Step 4: Calculate the \\(\\chi^2\\) test statistic (2/2)\n\n\n\\[\\begin{align}\n\\chi^2 =&  \\sum\\frac{(O-E)^2}{E} \\\\\n=& \\frac{(8836-35101.87)^2}{35101.87} + \\frac{(112206-85940.13)^2}{85940.13} + \\\\\n& \\ldots + \\frac{(21589-43669.42)^2}{43669.42} \\\\\n=&  66831\n\\end{align}\\]\nIs this value big? Big enough to reject \\(H_0\\)?\n\nObserved:\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n8836\n112206\n\n\n40-59 yrs\n42109\n88663\n\n\n60+ yrs\n39917\n21589\n\n\n\n\n\n \nExpected:\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n35101.87\n85940.13\n\n\n40-59 yrs\n37923.55\n92848.45\n\n\n60+ yrs\n17836.58\n43669.42"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#poll-everywhere-question-2-1",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#poll-everywhere-question-2-1",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Poll Everywhere Question 2",
     "text": "Poll Everywhere Question 2"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-5-calculate-the-p-value",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-5-calculate-the-p-value",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Step 5: Calculate the p-value",
     "text": "Step 5: Calculate the p-value\n\n\nThe \\(\\chi^2\\) distribution shape depends on its degrees of freedom\n\nIt’s skewed right for smaller df,\n\ngets more symmetric for larger df\n\ndf = (# rows-1) x (# columns-1)\n\n\n\n\n\n\n\n\n\n\nThe p-value is always the area to the right of the test statistic for a \\(\\chi^2\\) test\n\n \n\nWe can use the pchisq function in R to calculate the probability of being at least as big as the \\(\\chi^2\\) test statistic:\n\n\npv &lt;- pchisq(66831, df = 2, \n       lower.tail = FALSE)\npv\n\n[1] 0"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-4-5-calculate-the-test-statistic-and-p-value",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-4-5-calculate-the-test-statistic-and-p-value",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Step 4-5: Calculate the test statistic and p-value",
-    "text": "Step 4-5: Calculate the test statistic and p-value\n\n\n\nData need to be in a matrix or table: use as.matrix() or table()\n\nUse matrix if data already in contingency table form\nUse table if data are two columns with each row for each observation (tidy version)\n\nNotice that age groups are rownames! Age does not have its own column\n\n\n\nhyp_data2\n\n          Hypertension No_Hypertension\n18-39 yrs         8836          112206\n40-59 yrs        42109           88663\n60+ yrs          39917           21589\n\n\n\n\n\nRun chisq.test() in R\n\n\nchisq.test(x = hyp_data2)\n\n\n    Pearson's Chi-squared test\n\ndata:  hyp_data2\nX-squared = 66831, df = 2, p-value &lt; 2.2e-16"
+    "text": "Step 4-5: Calculate the test statistic and p-value\n\n\n\nData need to be in a matrix or table: use as.matrix() or table()\n\nUse matrix if data already in contingency table form\nUse table if data are two columns with each row for each observation (tidy version)\n\nNotice that age groups are rownames! Age does not have its own column\n\n\n\nhyp_data2\n\n          Hypertension No_Hypertension\n18-39 yrs         8836          112206\n40-59 yrs        42109           88663\n60+ yrs          39917           21589\n\n\n\n\nRun chisq.test() in R\n\n\nchisq.test(x = hyp_data2)\n\n\n    Pearson's Chi-squared test\n\ndata:  hyp_data2\nX-squared = 66831, df = 2, p-value &lt; 2.2e-16"
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-6-conclusion",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#step-6-conclusion",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Step 6: Conclusion",
-    "text": "Step 6: Conclusion\nRecall the hypotheses to our \\(\\chi^2\\) test:\n\n\\(H_0\\): There is no association between age and hypertension\n\\(H_A\\): There is an association between age and hypertension\n\n \n\n\n\nRecall the \\(p\\)-value = 0.0402\nUse \\(\\alpha\\) = 0.05\nDo we reject or fail to reject \\(H_0\\)?\n\n\nConclusion statement:\n\nThere is sufficient evidence that there is an association between age group and hypertension (p-value &lt; 0.0001`)\n\n\n\n\n\nWarning!!\n\n\nIf we fail to reject, we DO NOT say variables are independent! We can say that we have insufficient evidence that there is an association."
+    "text": "Step 6: Conclusion\nRecall the hypotheses to our \\(\\chi^2\\) test:\n\n\\(H_0\\): There is no association between age and hypertension\n\\(H_A\\): There is an association between age and hypertension\n\n \n\n\n\nRecall the \\(p\\)-value = 0.0402\nUse \\(\\alpha\\) = 0.05\nDo we reject or fail to reject \\(H_0\\)?\n\n\nConclusion statement:\n\nThere is sufficient evidence that there is an association between age group and hypertension (p-value &lt; 0.0001`)\n\n\n\n\nWarning!!\n\n\nIf we fail to reject, we DO NOT say variables are independent! We can say that we have insufficient evidence that there is an association."
   },
   {
     "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#chi-squared-test-example-all-together",
     "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#chi-squared-test-example-all-together",
-    "title": "Lesson 16: Chi-squared test",
+    "title": "Lesson 18: Chi-squared test",
     "section": "Chi-squared test: Example all together",
     "text": "Chi-squared test: Example all together\n\n\n\nCheck expected cell counts threshold\n\n\nexpected(hyp_data2)\n\n          Hypertension No_Hypertension\n18-39 yrs     35101.87        85940.13\n40-59 yrs     37923.55        92848.45\n60+ yrs       17836.58        43669.42\n\n\nAll expected cells are greater than 5.\n\n\\(\\alpha = 0.05\\)\nHypothesis test:\n\n\\(H_0\\) : There is no association between age group and hypertension\n\\(H_1\\) : There is an association between age group and hypertension\n\n\n\n4-5. Calculate the test statistic and p-value for Chi-squared test in R\n\nchisq.test(x = hyp_data2)\n\n\n    Pearson's Chi-squared test\n\ndata:  hyp_data2\nX-squared = 66831, df = 2, p-value &lt; 2.2e-16\n\n\n\nConclusion\n\nWe reject the null hypothesis that age group and hypertension are not associated (\\(p&lt;2.2\\cdot10^{-16}\\)). There is sufficient evidence that age group and hypertension are associated."
   },
@@ -28943,5 +28943,194 @@
     "title": "Lesson 17: Inference for a single proportion or difference of two (independent) proportions",
     "section": "Step 4-5: test statistic and p-value together using prop.test()",
     "text": "Step 4-5: test statistic and p-value together using prop.test()\n\nprop.test(x = c(505, 500), n = c(44910, 44925)) # no p needed\n\n\n    2-sample test for equality of proportions with continuity correction\n\ndata:  c(505, 500) out of c(44910, 44925)\nX-squared = 0.01748, df = 1, p-value = 0.8948\nalternative hypothesis: two.sided\n95 percent confidence interval:\n -0.001282751  0.001512853\nsample estimates:\n    prop 1     prop 2 \n0.01124471 0.01112966 \n\n\n\n\nTidying the output of prop.test()\nprop.test(x = c(505, 500), n = c(44910, 44925)) %&gt;% \n  tidy() %&gt;% gt() %&gt;% tab_options(table.font.size = 33)\n\n\n\n\n\n\n\n\nestimate1\nestimate2\nstatistic\np.value\nparameter\nconf.low\nconf.high\nmethod\nalternative\n\n\n\n\n0.01124471\n0.01112966\n0.01747975\n0.8948174\n1\n-0.001282751\n0.001512853\n2-sample test for equality of proportions with continuity correction\ntwo.sided\n\n\n\n\n\n\n\n\nNote: We expect some differences between the test statistic and p-value calculated by hand vs. by R bc R uses the continuity correction"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#where-are-we",
+    "href": "lessons/18_Chi_sq_Fisher/18_Chi_sq_Fisher.html#where-are-we",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Where are we?",
+    "text": "Where are we?"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq_key_info.html",
+    "href": "lessons/18_Chi_sq/18_Chi_sq_key_info.html",
+    "title": "Key Info and Announcements",
+    "section": "",
+    "text": "Finish proportional inference lesson (Lesson 17)"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq_key_info.html#announcements",
+    "href": "lessons/18_Chi_sq/18_Chi_sq_key_info.html#announcements",
+    "title": "Key Info and Announcements",
+    "section": "",
+    "text": "Finish proportional inference lesson (Lesson 17)"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq_key_info.html#key-dates",
+    "href": "lessons/18_Chi_sq/18_Chi_sq_key_info.html#key-dates",
+    "title": "Key Info and Announcements",
+    "section": "Key Dates",
+    "text": "Key Dates\nRemaining Dates:\n\nSunday 12/7: HW 8 due\nMonday 12/8: Quiz 3 opens\nThursday 12/11: optional HW 9 due\nFriday 12/12: Quiz 3 due\nIMPORTANT: ALL coursework needs to be in on 12/15 at 11pm!"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "",
+    "text": "Understand the Chi-squared test and the expected cell counts under the null hypothesis distribution.\nDetermine if two categorical variables are associated with one another using the Chi-squared test.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe looked at inference for a single proportion\nWe looked at inference for a difference in two independent proportions\n\n \n\nIf there are two groups, we could see if they had different proportions by testing if the difference between the proportions were the same (null) or different (alternative, two-sided, \\(\\neq\\))\n\n \n\nWhat happens when we want to compare three or more groups’ proportions?\n\nCan no longer rely on the difference in proportions\nNeed a new method to make inference (Chi-squared test!)"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#last-time",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#last-time",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Last time",
+    "text": "Last time\n\nWe looked at inference for a single proportion\nWe looked at inference for a difference in two independent proportions\n\n \n\nIf there are two groups, we could see if they had different proportions by testing if the proportions were the same (null) or different (alternative, two-sided, \\(\\neq\\))\n\n \n\nWhat happens when we want to compare three or more groups’ proportions?\n\nCan no longer rely on the difference in proportions\nNeed a new method to make inference (Chi-squared test!)"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#from-lesson-4-example-hypertension-prevalence-12",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#from-lesson-4-example-hypertension-prevalence-12",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "From Lesson 4: Example: hypertension prevalence (1/2)",
+    "text": "From Lesson 4: Example: hypertension prevalence (1/2)\n\nUS CDC estimated that between 2011 and 20141, 29% of the population in America had hypertension\n\n \n\nA health care practitioner seeing a new patient would expect a 29% chance that the patient might have hypertension\n\nHowever, this is only the case if nothing else is known about the patient\n\n\nhttps://www.cdc.gov/nchs/products/databriefs/db220.htm"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#from-lesson-4-example-hypertension-prevalence-22",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#from-lesson-4-example-hypertension-prevalence-22",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "From Lesson 4: Example: hypertension prevalence (2/2)",
+    "text": "From Lesson 4: Example: hypertension prevalence (2/2)\n\nPrevalence of hypertension varies significantly with age\n\nAmong adults aged 18-39, 7.3% have hypertension\nAdults aged 40-59, 32.2%\nAdults aged 60 or older, 64.9% have hypertension\n\n\n \n\nKnowing the age of a patient provides important information about the likelihood of hypertension\n\nAge and hypertension status are not independent - Can we back up this claim??\n\nWhile the probability of hypertension of a randomly chosen adult is 0.29…\n\nThe conditional probability of hypertension in a person known to be 60 or older is 0.649\n\n\n \n\nQuestion: Is there an association between age group and hypertension?"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#from-lesson-4-contingency-tables",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#from-lesson-4-contingency-tables",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "From Lesson 4: Contingency tables",
+    "text": "From Lesson 4: Contingency tables\n\nWe can start looking at the contingency table for hypertension for different age groups\n\nContingency table: type of data table that displays the frequency distribution of two or more categorical variables\n\n\n\n\n\nTable: Contingency table showing hypertension status and age group, in thousands.\n\n\nAge Group\nHypertension\nNo Hypertension\nTotal\n\n\n\n\n18-39 yrs\n8836\n112206\n121042\n\n\n40-59 yrs\n42109\n88663\n130772\n\n\n60+ yrs\n39917\n21589\n61506\n\n\nTotal\n90862\n222458\n313320"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#test-of-general-association-hypotheses",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#test-of-general-association-hypotheses",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Test of General Association + Hypotheses",
+    "text": "Test of General Association + Hypotheses\n\nGeneral research question: Are two variables (both categorical, nominal) associated with each other?\n\n\n\n\n\nGeneral wording for hypotheses\n\n\nTest of “association” wording\n\n\\(H_0\\): There is no association between the two variables\n\\(H_A\\): There is an association between the two variables\n\nTest of “independence” wording\n\n\\(H_0\\): The variables are independent\n\\(H_A\\): The variables are not independent\n\n\n\n\n\n\nHypotheses test for example\n\n\nTest of “association” wording\n\n\\(H_0\\): There is no association between age and hypertension\n\\(H_A\\): There is an association between age and hypertension\n\nTest of “independence” wording\n\n\\(H_0\\): The variables age and hypertension are independent\n\\(H_A\\): The variables age and hypertension are not independent"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#h_0-variables-are-independent-under-the-null",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#h_0-variables-are-independent-under-the-null",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "\\(H_0\\): Variables are Independent (under the null)",
+    "text": "\\(H_0\\): Variables are Independent (under the null)\n\n\n\nRecall from Chapter 2, that events \\(A\\) and \\(B\\) are independent if and only if\n\n\\[P(A \\cap B)=P(A)P(B)\\]\n\nIf age and hypertension are independent variables, then theoretically this condition needs to hold for every combination of levels, i.e.\n\n\\[\\begin{align}\nP(18-39 \\cap \\text{hyp}) &= P(18-39)P(\\text{hyp})\\\\\nP(18-39 \\cap \\text{no hyp}) &= P(18-39)P(\\text{no hyp})\\\\\nP(40-59 \\cap \\text{hyp}) &= P(40-59)P(\\text{hyp})\\\\\nP(40-59 \\cap \\text{no hyp}) &= P(40-59)P(\\text{no hyp})\\\\\nP(60+ \\cap \\text{hyp}) &= P(60+)P(\\text{hyp})\\\\\nP(60+ \\cap \\text{no hyp}) &= P(60+)P(\\text{no hyp})\\\\\n\\end{align}\\]\n\n\n\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\nTotal\n\n\n\n\n18-39 yrs\n8836\n112206\n121042\n\n\n40-59 yrs\n42109\n88663\n130772\n\n\n60+ yrs\n39917\n21589\n61506\n\n\nTotal\n90862\n222458\n313320\n\n\n\n\n\n\\[\\begin{align}\nP(18-39 \\cap \\text{hyp}) &= \\frac{121042}{313320}\\cdot\\frac{90862}{313320}\\\\\n& ...\\\\\nP(60+ \\cap \\text{no hyp}) &=\\frac{61506}{313320}\\cdot\\frac{222458}{313320}\n\\end{align}\\]\nWith these probabilities, for each cell of the table we calculate the expected counts for each cell under the \\(H_0\\) hypothesis that the variables are independent"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#expected-counts-if-variables-are-independent",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#expected-counts-if-variables-are-independent",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Expected counts (if variables are independent)",
+    "text": "Expected counts (if variables are independent)\n\n\n\nThe expected counts (if \\(H_0\\) is true & the variables are independent) for each cell are\n\n\\(np = \\text{total table size} \\cdot \\text{probability of cell}\\)\n\\(\\text{expected count} = \\dfrac{\\text{column total}\\cdot \\text{row total}}{\\text{table total}}\\)\n\n\nExpected count of 40-59 years old and hypertension:\n\\[\\begin{align}\n\\text{expected count} &= \\dfrac{\\text{column total}\\cdot \\text{row total}}{\\text{table total}} \\\\\n&= \\dfrac{\\text{90862}\\cdot \\text{130772}}{\\text{313320}} \\\\\n&= 37923.55\n\\end{align}\\]\n\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\nTotal\n\n\n\n\n18-39 yrs\n8836\n112206\n121042\n\n\n40-59 yrs\n42109\n88663\n130772\n\n\n60+ yrs\n39917\n21589\n61506\n\n\nTotal\n90862\n222458\n313320\n\n\n\n\n\n \n\nIf age group and hypertension are independent variables\n\n(as assumed by \\(H_0\\)),\n\nthen the observed counts should be close to the expected counts for each cell of the table\n\n\n\nTest to see how likely is it that we observe our data given the null hypothesis (no association)"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#observed-vs.-expected-counts",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#observed-vs.-expected-counts",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Observed vs. Expected counts",
+    "text": "Observed vs. Expected counts\n\n\n\nThe observed counts are the counts in the 2-way table summarizing the data\n\n \n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n8836\n112206\n\n\n40-59 yrs\n42109\n88663\n\n\n60+ yrs\n39917\n21589\n\n\n\n\n\n\n\nThe expected counts are the counts the we would expect to see in the 2-way table if there was no association between age group and hypertension\n\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n35101.87\n85940.13\n\n\n40-59 yrs\n37923.55\n92848.45\n\n\n60+ yrs\n17836.58\n43669.42\n\n\n\n\n\n\n \nExpected count for cell \\(i,j\\) :\n\\[\\textrm{Expected Count}_{\\textrm{row } i,\\textrm{ col }j}=\\frac{(\\textrm{row}~i~ \\textrm{total})\\cdot(\\textrm{column}~j~ \\textrm{total})}{\\textrm{table total}}\\]"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#poll-everywhere-question-2",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#poll-everywhere-question-2",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Poll Everywhere Question 2",
+    "text": "Poll Everywhere Question 2"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#using-r-for-expected-cell-counts",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#using-r-for-expected-cell-counts",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Using R for expected cell counts",
+    "text": "Using R for expected cell counts\n\nR calculates expected cell counts using the expected() function in the epitools package\nMake sure dataset is in matrix form using as.matrix()\n\n\nhyp_data2\n\n          Hypertension No_Hypertension\n18-39 yrs         8836          112206\n40-59 yrs        42109           88663\n60+ yrs          39917           21589\n\n\n \n \n\nlibrary(epitools)\nexpected(hyp_data2)\n\n          Hypertension No_Hypertension\n18-39 yrs     35101.87        85940.13\n40-59 yrs     37923.55        92848.45\n60+ yrs       17836.58        43669.42"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#reference-steps-in-a-hypothesis-test",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#reference-steps-in-a-hypothesis-test",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Reference: Steps in a Hypothesis Test",
+    "text": "Reference: Steps in a Hypothesis Test\n\nCheck the assumptions\nSet the level of significance \\(\\alpha\\)\nSpecify the null ( \\(H_0\\) ) and alternative ( \\(H_A\\) ) hypotheses\n\nIn symbols\nIn words\nAlternative: one- or two-sided?\n\nCalculate the test statistic.\nCalculate the p-value based on the observed test statistic and its sampling distribution\nWrite a conclusion to the hypothesis test\n\nDo we reject or fail to reject \\(H_0\\)?\nWrite a conclusion in the context of the problem"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#step-1-check-assumptions",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#step-1-check-assumptions",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Step 1: Check assumptions",
+    "text": "Step 1: Check assumptions\n\nIndependence\n\nAll individuals are independent from one another and each group is independent\n\nIn particular, observational units cannot be represented in more than one cell\nFor example, someone cannot be in two different age groups\n\n\n\n\n\n\nSample size\n\nIn order for the distribution of the test statistic to be appropriately modeled by a chi-squared distribution we need\n2 \\(\\times\\) 2 table\n\nexpected counts are at least 10 for each cell\n\nLarger tables\n\nNo more than 20% of expected counts are less than 5\nAll expected counts are greater than 1\n\n\n\n\n \n \n \n\nexpected(hyp_data2)\n\n          Hypertension No_Hypertension\n18-39 yrs     35101.87        85940.13\n40-59 yrs     37923.55        92848.45\n60+ yrs       17836.58        43669.42\n\n\nAll expected counts &gt; 5"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#step-2-and-3-significance-level-and-hypotheses",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#step-2-and-3-significance-level-and-hypotheses",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Step 2 and 3: Significance level and Hypotheses",
+    "text": "Step 2 and 3: Significance level and Hypotheses\n\nSet \\(\\alpha = 0.05\\)\n\n \n\n\nHypotheses test for example\n\n\nTest of “association” wording\n\n\\(H_0\\): There is no association between age and hypertension\n\\(H_A\\): There is an association between age and hypertension\n\nTest of “independence” wording\n\n\\(H_0\\): The variables age and hypertension are independent\n\\(H_A\\): The variables age and hypertension are not independent"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#step-4-calculate-the-chi2-test-statistic-12",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#step-4-calculate-the-chi2-test-statistic-12",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Step 4: Calculate the \\(\\chi^2\\) test statistic (1/2)",
+    "text": "Step 4: Calculate the \\(\\chi^2\\) test statistic (1/2)\nTest statistic for a test of association (independence):\n\\[\\chi^2 = \\sum_{\\textrm{all cells}} \\frac{(\\textrm{observed} - \\text{expected})^2}{\\text{expected}}\\]\n\nWhen the variables are independent, the observed and expected counts should be close to each other"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#step-4-calculate-the-chi2-test-statistic-22",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#step-4-calculate-the-chi2-test-statistic-22",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Step 4: Calculate the \\(\\chi^2\\) test statistic (2/2)",
+    "text": "Step 4: Calculate the \\(\\chi^2\\) test statistic (2/2)\n\n\n\\[\\begin{align}\n\\chi^2 =&  \\sum\\frac{(O-E)^2}{E} \\\\\n=& \\frac{(8836-35101.87)^2}{35101.87} + \\frac{(112206-85940.13)^2}{85940.13} + \\\\\n& \\ldots + \\frac{(21589-43669.42)^2}{43669.42} \\\\\n=&  66831\n\\end{align}\\]\nIs this value big? Big enough to reject \\(H_0\\)?\n\nObserved:\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n8836\n112206\n\n\n40-59 yrs\n42109\n88663\n\n\n60+ yrs\n39917\n21589\n\n\n\n\n\n \nExpected:\n\n\n\n\n\nAge Group\nHypertension\nNo Hypertension\n\n\n\n\n18-39 yrs\n35101.87\n85940.13\n\n\n40-59 yrs\n37923.55\n92848.45\n\n\n60+ yrs\n17836.58\n43669.42"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#poll-everywhere-question-2-1",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#poll-everywhere-question-2-1",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Poll Everywhere Question 2",
+    "text": "Poll Everywhere Question 2"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#step-5-calculate-the-p-value",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#step-5-calculate-the-p-value",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Step 5: Calculate the p-value",
+    "text": "Step 5: Calculate the p-value\n\n\nThe \\(\\chi^2\\) distribution shape depends on its degrees of freedom\n\nIt’s skewed right for smaller df,\n\ngets more symmetric for larger df\n\ndf = (# rows-1) x (# columns-1)\n\n\n\n\n\n\n\n\n\n\nThe p-value is always the area to the right of the test statistic for a \\(\\chi^2\\) test\n\n \n\nWe can use the pchisq function in R to calculate the probability of being at least as big as the \\(\\chi^2\\) test statistic:\n\n\npv &lt;- pchisq(66831, df = 2, \n       lower.tail = FALSE)\npv\n\n[1] 0"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#step-4-5-calculate-the-test-statistic-and-p-value",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#step-4-5-calculate-the-test-statistic-and-p-value",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Step 4-5: Calculate the test statistic and p-value",
+    "text": "Step 4-5: Calculate the test statistic and p-value\n\n\n\nData need to be in a matrix or table: use as.matrix() or table()\n\nUse matrix if data already in contingency table form\nUse table if data are two columns with each row for each observation (tidy version)\n\nNotice that age groups are rownames! Age does not have its own column\n\n\n\nhyp_data2\n\n          Hypertension No_Hypertension\n18-39 yrs         8836          112206\n40-59 yrs        42109           88663\n60+ yrs          39917           21589\n\n\n\n\nRun chisq.test() in R\n\n\nchisq.test(x = hyp_data2)\n\n\n    Pearson's Chi-squared test\n\ndata:  hyp_data2\nX-squared = 66831, df = 2, p-value &lt; 2.2e-16"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#step-6-conclusion",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#step-6-conclusion",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Step 6: Conclusion",
+    "text": "Step 6: Conclusion\nRecall the hypotheses to our \\(\\chi^2\\) test:\n\n\\(H_0\\): There is no association between age and hypertension\n\\(H_A\\): There is an association between age and hypertension\n\n \n\n\n\nRecall the \\(p\\)-value = 0\nUse \\(\\alpha\\) = 0.05\nDo we reject or fail to reject \\(H_0\\)?\n\n\nConclusion statement:\n\nThere is sufficient evidence that there is an association between age group and hypertension (p-value &lt; 0.0001`)\n\n\n\n\nWarning!!\n\n\nIf we fail to reject, we DO NOT say variables are independent! We can say that we have insufficient evidence that there is an association."
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#chi-squared-test-example-all-together",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#chi-squared-test-example-all-together",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Chi-squared test: Example all together",
+    "text": "Chi-squared test: Example all together\n\n\n\nCheck expected cell counts threshold\n\n\nexpected(hyp_data2)\n\n          Hypertension No_Hypertension\n18-39 yrs     35101.87        85940.13\n40-59 yrs     37923.55        92848.45\n60+ yrs       17836.58        43669.42\n\n\nAll expected cells are greater than 5.\n\n\\(\\alpha = 0.05\\)\nHypothesis test:\n\n\\(H_0\\) : There is no association between age group and hypertension\n\\(H_1\\) : There is an association between age group and hypertension\n\n\n\n4-5. Calculate the test statistic and p-value for Chi-squared test in R\n\nchisq.test(x = hyp_data2)\n\n\n    Pearson's Chi-squared test\n\ndata:  hyp_data2\nX-squared = 66831, df = 2, p-value &lt; 2.2e-16\n\n\n\nConclusion\n\nWe reject the null hypothesis that age group and hypertension are not associated (\\(p&lt;2.2\\cdot10^{-16}\\)). There is sufficient evidence that age group and hypertension are associated."
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#footnotes",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#footnotes",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://www.cdc.gov/nchs/products/databriefs/db220.htm↩︎"
+  },
+  {
+    "objectID": "lessons/18_Chi_sq/18_Chi_sq.html#where-are-we",
+    "href": "lessons/18_Chi_sq/18_Chi_sq.html#where-are-we",
+    "title": "Lesson 18: Chi-squared test",
+    "section": "Where are we?",
+    "text": "Where are we?"
   }
 ]

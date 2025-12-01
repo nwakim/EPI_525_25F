@@ -1,10 +1,10 @@
 ---
-title: "Lesson 16: Chi-squared test"
+title: "Lesson 18: Chi-squared test"
 subtitle: "TB sections 8.3-8.4"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "12/2/2024"
+date: "`r library(here); source(here('class_dates.R')); w10d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -13,7 +13,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 16 Slides
+    footer: Lesson 18 Slides
     html-math-method: mathjax
     highlight-style: arrow
 execute:
@@ -73,11 +73,11 @@ theme_set(theme_bw(base_size = 22))
 
  
 
--   If there are two groups, we could see if they had different proportions by testing if the difference between the proportions were the same (null) or different (alternative, two-sided, $\neq$)
+-   If there are two groups, we could see if they had different proportions by testing if the proportions were the same (null) or different (alternative, two-sided, $\neq$)
 
  
 
--   What happens when we want to compare two **or more** groups' proportions?
+-   What happens when we want to compare three **or more** groups' proportions?
 
     -   Can no longer rely on the difference in proportions
     -   Need a new method to make inference (Chi-squared test!)
@@ -365,9 +365,9 @@ expected(hyp_data2)
 ## Step 1: Check assumptions
 
 -   **Independence**
-    -   All individuals are independent from one another
+    -   All individuals are independent from one another and each group is independent
         -   In particular, observational units cannot be represented in more than one cell
-        -   For example, someone cannot be in two differnt age groups
+        -   For example, someone cannot be in two different age groups
 
 ::::: columns
 ::: {.column width="55%"}
@@ -539,7 +539,7 @@ Recall the hypotheses to our $\chi^2$ test:
 
 ::: columns
 ::: column
--   Recall the $p$-value = `r round(0.04022, 4)`
+-   Recall the $p$-value = `r round(pv, 10)`
 -   Use $\alpha$ = 0.05
 -   Do we reject or fail to reject $H_0$?
 :::

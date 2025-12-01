@@ -1,0 +1,24 @@
+---
+title: "Key Info and Announcements"
+date-modified: "today"
+format: 
+  html:
+    link-external-newwindow: true
+editor_options: 
+  chunk_output_type: console
+---
+
+## Announcements
+
+- Finish proportional inference lesson (Lesson 17)
+
+## Key Dates
+
+Remaining Dates:
+
+- Sunday 12/7: HW 8 due
+- Monday 12/8: Quiz 3 opens
+- Thursday 12/11: **optional** HW 9 due
+- Friday 12/12: Quiz 3 due
+
+- **IMPORTANT**: ALL coursework needs to be in on 12/15 at 11pm!
