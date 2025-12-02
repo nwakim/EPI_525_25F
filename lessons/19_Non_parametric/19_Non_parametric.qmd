@@ -4,7 +4,7 @@ subtitle: "Pagona TB, Chapter 13"
 author: "Meike Niederhausen and Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "12/4/2024"
+date: "`r library(here); source(here('class_dates.R')); w10d2`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -397,7 +397,7 @@ IOP_ranks %>% gt() %>% tab_options(table.font.size = 40)
 
 <br>
 
-$$p-value = 2 * P(\min(T^+,T^−) \leq t)$$
+$$p-value = 2 * P(\min(T^+,|T^−|) \leq t)$$
 
 -   $t$ is the smaller of the calculated sums of the positive and negative ranks
 -   To calculate the exact p-value, we need the probability of each possible sum of ranks
@@ -690,7 +690,7 @@ $$P(a, b, c, d) = \dfrac{(a+b)!\cdot(c+d)!\cdot(a+c)!\cdot(b+d)!}{n!\cdot a!\cdo
 -   There is no test statistic nor CI
 -   There is no continuity correction since the hypergeometric distribution is discrete
 
-## Recall our example from Lesson 4 and 16
+## Recall our example from Lesson 4 and 18
 
 ::: lob
 **Question:** Is there an association between age group and hypertension?
@@ -738,7 +738,7 @@ We're going to pretend they are less than 5.
 :::
 
 ::: column
-4.  Calculate the test statistic and p-value for Chi-squared test in R
+4.  Calculate the p-value for Fisher's Exact test in R
 
 ```{r}
 fisher.test(x = hyp_data2)
