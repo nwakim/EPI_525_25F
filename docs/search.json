@@ -23244,21 +23244,21 @@
     "href": "lessons/19_Non_parametric/19_Non_parametric_key_info.html",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "Class on 12/9!!!\n\nIt will be our last class\n\nFor homework, please make sure to include: embed-resources: true at the top of your file\n\nIn all of the homeworks, I have a link to the HW qmd file in GitHub!\n\n\n\n---\ntitle: \"Homework 7\"\nauthor: \"Your name here - update this!!!!\"\ndate: \"today\"\nformat: \n  html:\n    link-external-newwindow: true\n    toc: true\n    toc_float:\n      collapsed: false\n    number-sections: true\n    number-depth: 3\n    theme: lumen\n    embed-resources: true\n    html-math-method: mathjax\n---\n\n\nHW 7 solutions\n\nYou can turn this in until 12/6 at 11pm\n\nHW 6 presentations\n\nMeetings during 12/9-12/12\nVideos due 12/10\nCalendly is up! Check our announcements in Sakai!\n\nI will be finalizing and posting HW 9 tomorrow\n\nOptional!\n\nFriday 12/13 is the absolute deadline for turning in materials if you are completing the course!\n\nPlease check Sakai to make sure I have all your HW grades in!\n\nPlease do your course evaluations!!\nAnything else?"
+    "text": "Monday (12/8) is the last day of class!\n\nKinda optional: will be covered next quarter, but I think it’s helpful to see now"
   },
   {
     "objectID": "lessons/19_Non_parametric/19_Non_parametric_key_info.html#announcements",
     "href": "lessons/19_Non_parametric/19_Non_parametric_key_info.html#announcements",
     "title": "Key Info and Announcements",
     "section": "",
-    "text": "Class on 12/9!!!\n\nIt will be our last class\n\nFor homework, please make sure to include: embed-resources: true at the top of your file\n\nIn all of the homeworks, I have a link to the HW qmd file in GitHub!\n\n\n\n---\ntitle: \"Homework 7\"\nauthor: \"Your name here - update this!!!!\"\ndate: \"today\"\nformat: \n  html:\n    link-external-newwindow: true\n    toc: true\n    toc_float:\n      collapsed: false\n    number-sections: true\n    number-depth: 3\n    theme: lumen\n    embed-resources: true\n    html-math-method: mathjax\n---\n\n\nHW 7 solutions\n\nYou can turn this in until 12/6 at 11pm\n\nHW 6 presentations\n\nMeetings during 12/9-12/12\nVideos due 12/10\nCalendly is up! Check our announcements in Sakai!\n\nI will be finalizing and posting HW 9 tomorrow\n\nOptional!\n\nFriday 12/13 is the absolute deadline for turning in materials if you are completing the course!\n\nPlease check Sakai to make sure I have all your HW grades in!\n\nPlease do your course evaluations!!\nAnything else?"
+    "text": "Monday (12/8) is the last day of class!\n\nKinda optional: will be covered next quarter, but I think it’s helpful to see now"
   },
   {
     "objectID": "lessons/19_Non_parametric/19_Non_parametric_key_info.html#key-dates",
     "href": "lessons/19_Non_parametric/19_Non_parametric_key_info.html#key-dates",
     "title": "Key Info and Announcements",
     "section": "Key Dates",
-    "text": "Key Dates\nRemaining Dates:\n\nSunday 12/7: HW 8 due\nMonday 12/8: Quiz 3 opens\nThursday 12/11: optional HW 9 due\nFriday 12/12: Quiz 3 due\nIMPORTANT: ALL coursework needs to be in on 12/15 at 11pm!"
+    "text": "Key Dates\nRemaining Dates:\n\nSunday 12/7: HW 8 due\nMonday 12/8: Quiz 3 opens\nThursday 12/11: optional HW 9 due\nFriday 12/12: Quiz 3 due\n\n \n\nIMPORTANT: ALL coursework needs to be in on 12/15 at 11pm!"
   },
   {
     "objectID": "homework/HW_09.html#directions-1",

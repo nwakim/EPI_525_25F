@@ -10,6 +10,9 @@ editor_options:
 
 ## Announcements
 
+- Monday (12/8) is the last day of class!
+  - Kinda optional: will be covered next quarter, but I think it's helpful to see now
+
 
 ## Key Dates
 
@@ -19,6 +22,8 @@ Remaining Dates:
 - Monday 12/8: Quiz 3 opens
 - Thursday 12/11: **optional** HW 9 due
 - Friday 12/12: Quiz 3 due
+
+ 
 
 - **IMPORTANT**: ALL coursework needs to be in on 12/15 at 11pm!
 
