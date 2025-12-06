@@ -1,0 +1,15 @@
+{
+  "hash": "4c90d540f7d41c05131b6a77207e889f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Homework 3\"\nsubtitle: \"Lessons 5\"\nauthor: \"Your name here - update this!!!!\"\ndescription: \"Due: 10/26 at 11pm\"\ndate-modified: \"today\"\nformat: \n  html:\n    link-external-newwindow: true\n    toc: true\n    toc_float:\n      collapsed: false\n    self-contained: true\n    html-math-method: mathjax\n---\n\n\n\n\n\n## Directions {.unnumbered}\n\n**Please turn in this homework on Sakai.** Please submit your homework in pdf format if you are not rendering a Quarto document. **If you are using a Quarto doc to render your full homework, then you can keep it as an html!** You can type your work on your computer or submit a single file with photos of your written work or any other method that can be turned into a pdf. The Adobe Scan phone app is an easy way to scan photos and compile into a PDF. Please let me know if you greatly prefer to submit a physical copy. We can work out another way for you to turn in homework.\n\nYou can download the .qmd file for this assignment from [Github](https://github.com/nwakim/EPI_525_25F/blob/main/homework/HW_03.qmd) if you want to work in a Quarto doc. **You do not need to work in a Quarto doc for this homework!!**\n\n\n:::{.callout-important}\n* The non-R exercises may be completed not using Quarto. I especially recommend writing out by hand the chapter 3 probability questions, whether on paper or a tablet.\n    * _Some problems involve R code to calculate a probability, but the code is brief and you can write out the code and the answer by hand if you want._\n    * You can also have all your R code together at the end of your homework file\n* If you are completing the homework on paper, you can use a scanning app, such as Adobe Scan or iPhone notes, to create a pdf of your assignment.\n:::\n\n# Book exercises {.unnumbered}\n\n## 3.5 Gull clutch size {.unnumbered}\n\n::: callout-important\nNote that the solutions in the back of the book are not quite right. For part (a), the answer is correct, but there is an error in the work and the notation is sloppy. For part (b), the answer is _not_ correct, as a result of the error in the work for part (a).\n:::\n\nFor part b, you can assume the seagulls are independent!\n\n## 3.6 Scooping ice cream  {.unnumbered}\n\nAssume all random varibles are independent.\n\n## 3.8 Chickenpox, Part I.  {.unnumbered}\n\nFor #3.8, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.\n\n\n## 3.10 Chickenpox, Part II.  {.unnumbered}\n\nFor #3.10, you can use R functions to calculate the binomial probabilities instead of directly using the formula. However, include the mathematical formulas that would be used to calculate the probabilities.\n\n\n\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
