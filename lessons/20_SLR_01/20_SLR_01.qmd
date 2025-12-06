@@ -1,9 +1,9 @@
 ---
-title: "Lesson 18: Simple Linear Regression (SLR)"
+title: "Lesson 20: Simple Linear Regression (SLR)"
 author: "Nicky Wakim"
 title-slide-attributes:
     data-background-color: "#3070BF"
-date: "12/9/2024"
+date: "`r library(here); source(here('class_dates.R')); w11d1`"
 format: 
   revealjs:
     theme: "../simple_NW.scss"
@@ -12,7 +12,7 @@ format:
     show-slide-number: all
     width: 1955
     height: 1100
-    footer: Lesson 18 Slides
+    footer: Lesson 20 Slides
     html-math-method: mathjax
     highlight-style: ayu
 execute:
@@ -895,7 +895,7 @@ $$\widehat{\text{life expectancy}} =  50.9 + 0.232\cdot\text{female literacy rat
         for a country with 0% female literacy.
 -   **Slope**
     -   For every increase of 1 unit in the $X$-variable, there is an
-        expected increase of, on average, $\widehat\beta_1$ units in the
+        expected increase of $\widehat\beta_1$ units in the
         $Y$-variable.
 
     -   We only say that there is an expected increase and not
@@ -1269,7 +1269,7 @@ model1_b0 %>% gt() %>%
 
 We reject the null hypothesis that the intercept is 0 at the $5\%$
 significance level. There is sufficient evidence that the intercept for
-the association between average female life expectancy and female
+the association between life expectancy and female
 literacy rates is different from 0 (p-value \< 0.0001).
 
    
@@ -1442,8 +1442,7 @@ General statement for population slope inference
 :::
 
 ::: blue-cont
-For every increase of 1 unit in the $X$-variable, there is an expected
-average increase of $\widehat\beta_1$ units in the $Y$-variable (95%:
+For every increase of 1 unit in the $X$-variable, there is an expected/average increase of $\widehat\beta_1$ units in the $Y$-variable (95%:
 LB, UB).
 :::
 :::::

@@ -1,6 +1,5 @@
 ---
 title: "Key Info and Announcements"
-date: "12/09/2024"
 date-modified: "today"
 format: 
   html:
@@ -11,13 +10,10 @@ editor_options:
 
 ## Announcements
 
--   HW 6 presentations
-    -   Meetings during 12/9-12/12
-    -   Videos due 12/10
-    -   Let me know if this interferes with any of your other classes' exams
--   Please do your course evaluations!!
--   Anything else?
+- HW 7
+  - Written conclusions!!
+  - Steps in hypothesis test! Do them all!
+  
 
 ## Key Dates
 
--   Tuesday (12/10): HW 6 videos due
