@@ -10,10 +10,19 @@ editor_options:
 
 ## Announcements
 
-- HW 7
-  - Written conclusions!!
-  - Steps in hypothesis test! Do them all!
+- LAST CLASS!!  
+- [Quiz 3 opens today](../../quiz.qmd)
+- Please do your course evals!!
   
 
 ## Key Dates
 
+Remaining Dates:
+
+- Monday 12/8: Quiz 3 opens
+- Thursday 12/11: **optional** HW 9 due
+- Friday 12/12: Quiz 3 due
+
+ 
+
+- **IMPORTANT**: ALL coursework needs to be in on 12/15 at 11pm!
